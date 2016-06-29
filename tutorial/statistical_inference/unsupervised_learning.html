@@ -65,28 +65,28 @@
         </a>
         </p><div class="navbar">
             <ul>
-                <li><a href="../../index.html">Home</a></li>
-                <li><a href="../../install.html">Installation</a></li>
+                <li><a href="../../index.html">主页</a></li>
+                <li><a href="../../install.html">安装</a></li>
                 <li class="btn-li"><div class="btn-group">
-              <a href="../../documentation.html">Documentation</a>
+              <a href="../../documentation.html">文档</a>
               <a class="btn dropdown-toggle" data-toggle="dropdown">
                  <span class="caret"></span>
               </a>
               <ul class="dropdown-menu">
             <li class="link-title">Scikit-learn 0.17 (stable)</li>
-            <li><a href="../index.html">Tutorials</a></li>
-            <li><a href="../../user_guide.html">User guide</a></li>
+            <li><a href="../index.html">入门指南</a></li>
+            <li><a href="../../user_guide.html">使用手册</a></li>
             <li><a href="../../modules/classes.html">API</a></li>
             <li><a href="../../faq.html">FAQ</a></li>
-            <li><a href="../../developers.html">Contributing</a></li>
+            <li><a href="../../developers.html">贡献</a></li>
             <li class="divider"></li>
                 <li><a href="http://scikit-learn.org/dev/documentation.html">Scikit-learn 0.18 (development)</a></li>
                 <li><a href="http://scikit-learn.org/0.16/documentation.html">Scikit-learn 0.16</a></li>
-				<li><a href="../../_downloads/user_guide.pdf">PDF documentation</a></li>
+				<li><a href="../../_downloads/user_guide.pdf">PDF 文档</a></li>
               </ul>
             </div>
         </li>
-            <li><a href="../../auto_examples/index.html">Examples</a></li>
+            <li><a href="../../auto_examples/index.html">例子</a></li>
             </ul>
 
             <div class="search_form">
@@ -117,7 +117,7 @@
         accesskey="P">Previous
         <br/>
         <span class="smallrellink">
-        Model selection:...
+        Model selecti...
         </span>
             <span class="hiddenrellink">
             Model selection: choosing estimators and their parameters
@@ -134,7 +134,7 @@
         Up
         <br/>
         <span class="smallrellink">
-        A tutorial on st...
+        A tutorial on...
         </span>
             <span class="hiddenrellink">
             A tutorial on statistical-learning for scientific data processing
@@ -198,7 +198,7 @@ called <em>clusters</em>.</p>
 algorithms. The simplest clustering algorithm is
 <a class="reference internal" href="../../modules/clustering.html#k-means"><span class="std std-ref">K-means</span></a>.</p>
 <a class="reference external image-reference" href="../../auto_examples/cluster/plot_cluster_iris.html"><img alt="../../_images/plot_cluster_iris_0021.png" class="align-right" src="../../_images/plot_cluster_iris_0021.png" style="width: 280.0px; height: 210.0px;" /></a>
-<div class="highlight-default"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">sklearn</span> <span class="k">import</span> <span class="n">cluster</span><span class="p">,</span> <span class="n">datasets</span>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">sklearn</span> <span class="k">import</span> <span class="n">cluster</span><span class="p">,</span> <span class="n">datasets</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">iris</span> <span class="o">=</span> <span class="n">datasets</span><span class="o">.</span><span class="n">load_iris</span><span class="p">()</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">X_iris</span> <span class="o">=</span> <span class="n">iris</span><span class="o">.</span><span class="n">data</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">y_iris</span> <span class="o">=</span> <span class="n">iris</span><span class="o">.</span><span class="n">target</span>
@@ -244,13 +244,13 @@ of choosing a small number of exemplars to compress the information.
 The problem is sometimes known as
 <a class="reference external" href="http://en.wikipedia.org/wiki/Vector_quantization">vector quantization</a>.
 For instance, this can be used to posterize an image:</p>
-<div class="highlight-default"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">scipy</span> <span class="k">as</span> <span class="nn">sp</span>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">scipy</span> <span class="k">as</span> <span class="nn">sp</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="k">try</span><span class="p">:</span>
 <span class="gp">... </span>   <span class="n">lena</span> <span class="o">=</span> <span class="n">sp</span><span class="o">.</span><span class="n">lena</span><span class="p">()</span>
 <span class="gp">... </span><span class="k">except</span> <span class="ne">AttributeError</span><span class="p">:</span>
 <span class="gp">... </span>   <span class="kn">from</span> <span class="nn">scipy</span> <span class="k">import</span> <span class="n">misc</span>
 <span class="gp">... </span>   <span class="n">lena</span> <span class="o">=</span> <span class="n">misc</span><span class="o">.</span><span class="n">lena</span><span class="p">()</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">X</span> <span class="o">=</span> <span class="n">lena</span><span class="o">.</span><span class="n">reshape</span><span class="p">((</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">))</span> <span class="c"># We need an (n_sample, n_feature) array</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">X</span> <span class="o">=</span> <span class="n">lena</span><span class="o">.</span><span class="n">reshape</span><span class="p">((</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">))</span> <span class="c1"># We need an (n_sample, n_feature) array</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">k_means</span> <span class="o">=</span> <span class="n">cluster</span><span class="o">.</span><span class="n">KMeans</span><span class="p">(</span><span class="n">n_clusters</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span> <span class="n">n_init</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">k_means</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X</span><span class="p">)</span> 
 <span class="go">KMeans(copy_x=True, init=&#39;k-means++&#39;, ...</span>
@@ -311,31 +311,31 @@ This can be useful, for instance, to retrieve connected regions (sometimes
 also referred to as connected components) when
 clustering an image:</p>
 <a class="reference external image-reference" href="../../auto_examples/cluster/plot_lena_ward_segmentation.html"><img alt="../../_images/plot_lena_ward_segmentation_0012.png" class="align-right" src="../../_images/plot_lena_ward_segmentation_0012.png" style="width: 200.0px; height: 200.0px;" /></a>
-<div class="highlight-default"><div class="highlight"><pre><span class="kn">from</span> <span class="nn">sklearn.feature_extraction.image</span> <span class="k">import</span> <span class="n">grid_to_graph</span>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.feature_extraction.image</span> <span class="k">import</span> <span class="n">grid_to_graph</span>
 <span class="kn">from</span> <span class="nn">sklearn.cluster</span> <span class="k">import</span> <span class="n">AgglomerativeClustering</span>
 
-<span class="c">###############################################################################</span>
-<span class="c"># Generate data</span>
+<span class="c1">###############################################################################</span>
+<span class="c1"># Generate data</span>
 <span class="n">lena</span> <span class="o">=</span> <span class="n">sp</span><span class="o">.</span><span class="n">misc</span><span class="o">.</span><span class="n">lena</span><span class="p">()</span>
-<span class="c"># Downsample the image by a factor of 4</span>
+<span class="c1"># Downsample the image by a factor of 4</span>
 <span class="n">lena</span> <span class="o">=</span> <span class="n">lena</span><span class="p">[::</span><span class="mi">2</span><span class="p">,</span> <span class="p">::</span><span class="mi">2</span><span class="p">]</span> <span class="o">+</span> <span class="n">lena</span><span class="p">[</span><span class="mi">1</span><span class="p">::</span><span class="mi">2</span><span class="p">,</span> <span class="p">::</span><span class="mi">2</span><span class="p">]</span> <span class="o">+</span> <span class="n">lena</span><span class="p">[::</span><span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">::</span><span class="mi">2</span><span class="p">]</span> <span class="o">+</span> <span class="n">lena</span><span class="p">[</span><span class="mi">1</span><span class="p">::</span><span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">::</span><span class="mi">2</span><span class="p">]</span>
 <span class="n">X</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">reshape</span><span class="p">(</span><span class="n">lena</span><span class="p">,</span> <span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">))</span>
 
-<span class="c">###############################################################################</span>
-<span class="c"># Define the structure A of the data. Pixels connected to their neighbors.</span>
+<span class="c1">###############################################################################</span>
+<span class="c1"># Define the structure A of the data. Pixels connected to their neighbors.</span>
 <span class="n">connectivity</span> <span class="o">=</span> <span class="n">grid_to_graph</span><span class="p">(</span><span class="o">*</span><span class="n">lena</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
 
-<span class="c">###############################################################################</span>
-<span class="c"># Compute clustering</span>
-<span class="nb">print</span><span class="p">(</span><span class="s">&quot;Compute structured hierarchical clustering...&quot;</span><span class="p">)</span>
+<span class="c1">###############################################################################</span>
+<span class="c1"># Compute clustering</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Compute structured hierarchical clustering...&quot;</span><span class="p">)</span>
 <span class="n">st</span> <span class="o">=</span> <span class="n">time</span><span class="o">.</span><span class="n">time</span><span class="p">()</span>
-<span class="n">n_clusters</span> <span class="o">=</span> <span class="mi">15</span>  <span class="c"># number of regions</span>
+<span class="n">n_clusters</span> <span class="o">=</span> <span class="mi">15</span>  <span class="c1"># number of regions</span>
 <span class="n">ward</span> <span class="o">=</span> <span class="n">AgglomerativeClustering</span><span class="p">(</span><span class="n">n_clusters</span><span class="o">=</span><span class="n">n_clusters</span><span class="p">,</span>
-        <span class="n">linkage</span><span class="o">=</span><span class="s">&#39;ward&#39;</span><span class="p">,</span> <span class="n">connectivity</span><span class="o">=</span><span class="n">connectivity</span><span class="p">)</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X</span><span class="p">)</span>
+        <span class="n">linkage</span><span class="o">=</span><span class="s1">&#39;ward&#39;</span><span class="p">,</span> <span class="n">connectivity</span><span class="o">=</span><span class="n">connectivity</span><span class="p">)</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X</span><span class="p">)</span>
 <span class="n">label</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">reshape</span><span class="p">(</span><span class="n">ward</span><span class="o">.</span><span class="n">labels_</span><span class="p">,</span> <span class="n">lena</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s">&quot;Elapsed time: &quot;</span><span class="p">,</span> <span class="n">time</span><span class="o">.</span><span class="n">time</span><span class="p">()</span> <span class="o">-</span> <span class="n">st</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s">&quot;Number of pixels: &quot;</span><span class="p">,</span> <span class="n">label</span><span class="o">.</span><span class="n">size</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s">&quot;Number of clusters: &quot;</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">unique</span><span class="p">(</span><span class="n">label</span><span class="p">)</span><span class="o">.</span><span class="n">size</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Elapsed time: &quot;</span><span class="p">,</span> <span class="n">time</span><span class="o">.</span><span class="n">time</span><span class="p">()</span> <span class="o">-</span> <span class="n">st</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Number of pixels: &quot;</span><span class="p">,</span> <span class="n">label</span><span class="o">.</span><span class="n">size</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Number of clusters: &quot;</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">unique</span><span class="p">(</span><span class="n">label</span><span class="p">)</span><span class="o">.</span><span class="n">size</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -348,7 +348,7 @@ features: <strong>feature agglomeration</strong>. This approach can be implement
 clustering in the feature direction, in other words clustering the
 transposed data.</p>
 <a class="reference external image-reference" href="../../auto_examples/cluster/plot_digits_agglomeration.html"><img alt="../../_images/plot_digits_agglomeration_0011.png" class="align-right" src="../../_images/plot_digits_agglomeration_0011.png" style="width: 228.0px; height: 199.5px;" /></a>
-<div class="highlight-default"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">digits</span> <span class="o">=</span> <span class="n">datasets</span><span class="o">.</span><span class="n">load_digits</span><span class="p">()</span>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">digits</span> <span class="o">=</span> <span class="n">datasets</span><span class="o">.</span><span class="n">load_digits</span><span class="p">()</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">images</span> <span class="o">=</span> <span class="n">digits</span><span class="o">.</span><span class="n">images</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">X</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">reshape</span><span class="p">(</span><span class="n">images</span><span class="p">,</span> <span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">images</span><span class="p">),</span> <span class="o">-</span><span class="mi">1</span><span class="p">))</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">connectivity</span> <span class="o">=</span> <span class="n">grid_to_graph</span><span class="p">(</span><span class="o">*</span><span class="n">images</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
@@ -391,7 +391,7 @@ computed using the other two. PCA finds the directions in which the data is
 not <em>flat</em></p>
 <p>When used to <em>transform</em> data, PCA can reduce the dimensionality of the
 data by projecting on a principal subspace.</p>
-<div class="highlight-default"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="c"># Create a signal with only 2 useful dimensions</span>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="c1"># Create a signal with only 2 useful dimensions</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">x1</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">normal</span><span class="p">(</span><span class="n">size</span><span class="o">=</span><span class="mi">100</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">x2</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">normal</span><span class="p">(</span><span class="n">size</span><span class="o">=</span><span class="mi">100</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">x3</span> <span class="o">=</span> <span class="n">x1</span> <span class="o">+</span> <span class="n">x2</span>
@@ -404,7 +404,7 @@ data by projecting on a principal subspace.</p>
 <span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="n">pca</span><span class="o">.</span><span class="n">explained_variance_</span><span class="p">)</span>  
 <span class="go">[  2.18565811e+00   1.19346747e+00   8.43026679e-32]</span>
 
-<span class="gp">&gt;&gt;&gt; </span><span class="c"># As we can see, only the 2 first components are useful</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="c1"># As we can see, only the 2 first components are useful</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">pca</span><span class="o">.</span><span class="n">n_components</span> <span class="o">=</span> <span class="mi">2</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">X_reduced</span> <span class="o">=</span> <span class="n">pca</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">X</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">X_reduced</span><span class="o">.</span><span class="n">shape</span>
@@ -418,20 +418,20 @@ data by projecting on a principal subspace.</p>
 a maximum amount of independent information. It is able to recover
 <strong>non-Gaussian</strong> independent signals:</p>
 <a class="reference external image-reference" href="../../auto_examples/decomposition/plot_ica_blind_source_separation.html"><img alt="../../_images/plot_ica_blind_source_separation_0012.png" class="align-center" src="../../_images/plot_ica_blind_source_separation_0012.png" style="width: 560.0px; height: 420.0px;" /></a>
-<div class="highlight-default"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="c"># Generate sample data</span>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="c1"># Generate sample data</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">time</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">2000</span><span class="p">)</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">s1</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">sin</span><span class="p">(</span><span class="mi">2</span> <span class="o">*</span> <span class="n">time</span><span class="p">)</span>  <span class="c"># Signal 1 : sinusoidal signal</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">s2</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">sign</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">sin</span><span class="p">(</span><span class="mi">3</span> <span class="o">*</span> <span class="n">time</span><span class="p">))</span>  <span class="c"># Signal 2 : square signal</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">s1</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">sin</span><span class="p">(</span><span class="mi">2</span> <span class="o">*</span> <span class="n">time</span><span class="p">)</span>  <span class="c1"># Signal 1 : sinusoidal signal</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">s2</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">sign</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">sin</span><span class="p">(</span><span class="mi">3</span> <span class="o">*</span> <span class="n">time</span><span class="p">))</span>  <span class="c1"># Signal 2 : square signal</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">S</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">c_</span><span class="p">[</span><span class="n">s1</span><span class="p">,</span> <span class="n">s2</span><span class="p">]</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">S</span> <span class="o">+=</span> <span class="mf">0.2</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">normal</span><span class="p">(</span><span class="n">size</span><span class="o">=</span><span class="n">S</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>  <span class="c"># Add noise</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">S</span> <span class="o">/=</span> <span class="n">S</span><span class="o">.</span><span class="n">std</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>  <span class="c"># Standardize data</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="c"># Mix data</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">A</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">],</span> <span class="p">[</span><span class="mf">0.5</span><span class="p">,</span> <span class="mi">2</span><span class="p">]])</span>  <span class="c"># Mixing matrix</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">X</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">dot</span><span class="p">(</span><span class="n">S</span><span class="p">,</span> <span class="n">A</span><span class="o">.</span><span class="n">T</span><span class="p">)</span>  <span class="c"># Generate observations</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">S</span> <span class="o">+=</span> <span class="mf">0.2</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">normal</span><span class="p">(</span><span class="n">size</span><span class="o">=</span><span class="n">S</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>  <span class="c1"># Add noise</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">S</span> <span class="o">/=</span> <span class="n">S</span><span class="o">.</span><span class="n">std</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>  <span class="c1"># Standardize data</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="c1"># Mix data</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">A</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">],</span> <span class="p">[</span><span class="mf">0.5</span><span class="p">,</span> <span class="mi">2</span><span class="p">]])</span>  <span class="c1"># Mixing matrix</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">X</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">dot</span><span class="p">(</span><span class="n">S</span><span class="p">,</span> <span class="n">A</span><span class="o">.</span><span class="n">T</span><span class="p">)</span>  <span class="c1"># Generate observations</span>
 
-<span class="gp">&gt;&gt;&gt; </span><span class="c"># Compute ICA</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="c1"># Compute ICA</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">ica</span> <span class="o">=</span> <span class="n">decomposition</span><span class="o">.</span><span class="n">FastICA</span><span class="p">()</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">S_</span> <span class="o">=</span> <span class="n">ica</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">X</span><span class="p">)</span>  <span class="c"># Get the estimated sources</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">S_</span> <span class="o">=</span> <span class="n">ica</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">X</span><span class="p">)</span>  <span class="c1"># Get the estimated sources</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">A_</span> <span class="o">=</span> <span class="n">ica</span><span class="o">.</span><span class="n">mixing_</span><span class="o">.</span><span class="n">T</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">np</span><span class="o">.</span><span class="n">allclose</span><span class="p">(</span><span class="n">X</span><span class="p">,</span>  <span class="n">np</span><span class="o">.</span><span class="n">dot</span><span class="p">(</span><span class="n">S_</span><span class="p">,</span> <span class="n">A_</span><span class="p">)</span> <span class="o">+</span> <span class="n">ica</span><span class="o">.</span><span class="n">mean_</span><span class="p">)</span>
 <span class="go">True</span>

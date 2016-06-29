@@ -65,28 +65,28 @@
         </a>
         </p><div class="navbar">
             <ul>
-                <li><a href="../../index.html">Home</a></li>
-                <li><a href="../../install.html">Installation</a></li>
+                <li><a href="../../index.html">主页</a></li>
+                <li><a href="../../install.html">安装</a></li>
                 <li class="btn-li"><div class="btn-group">
-              <a href="../../documentation.html">Documentation</a>
+              <a href="../../documentation.html">文档</a>
               <a class="btn dropdown-toggle" data-toggle="dropdown">
                  <span class="caret"></span>
               </a>
               <ul class="dropdown-menu">
             <li class="link-title">Scikit-learn 0.17 (stable)</li>
-            <li><a href="../../tutorial/index.html">Tutorials</a></li>
-            <li><a href="../../user_guide.html">User guide</a></li>
+            <li><a href="../../tutorial/index.html">入门指南</a></li>
+            <li><a href="../../user_guide.html">使用手册</a></li>
             <li><a href="../../modules/classes.html">API</a></li>
             <li><a href="../../faq.html">FAQ</a></li>
-            <li><a href="../../developers.html">Contributing</a></li>
+            <li><a href="../../developers.html">贡献</a></li>
             <li class="divider"></li>
                 <li><a href="http://scikit-learn.org/dev/documentation.html">Scikit-learn 0.18 (development)</a></li>
                 <li><a href="http://scikit-learn.org/0.16/documentation.html">Scikit-learn 0.16</a></li>
-				<li><a href="../../_downloads/user_guide.pdf">PDF documentation</a></li>
+				<li><a href="../../_downloads/user_guide.pdf">PDF 文档</a></li>
               </ul>
             </div>
         </li>
-            <li><a href="../index.html">Examples</a></li>
+            <li><a href="../index.html">例子</a></li>
             </ul>
 
             <div class="search_form">
@@ -117,7 +117,7 @@
         accesskey="P">Previous
         <br/>
         <span class="smallrellink">
-        Normal and Shrin...
+        Normal and Sh...
         </span>
             <span class="hiddenrellink">
             Normal and Shrinkage Linear Discriminant Analysis for classification
@@ -175,17 +175,17 @@ setting.</p>
 a result it can identify only the first class.</p>
 <img alt="../../_images/plot_classification_probability_001.png" class="align-center" src="../../_images/plot_classification_probability_001.png" />
 <p><strong>Script output</strong>:</p>
-<div class="highlight-default"><div class="highlight"><pre><span class="n">classif_rate</span> <span class="k">for</span> <span class="n">L2</span> <span class="n">logistic</span> <span class="p">(</span><span class="n">OvR</span><span class="p">)</span> <span class="p">:</span> <span class="mf">76.666667</span>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">classif_rate</span> <span class="k">for</span> <span class="n">L2</span> <span class="n">logistic</span> <span class="p">(</span><span class="n">OvR</span><span class="p">)</span> <span class="p">:</span> <span class="mf">76.666667</span>
 <span class="n">classif_rate</span> <span class="k">for</span> <span class="n">L1</span> <span class="n">logistic</span> <span class="p">:</span> <span class="mf">79.333333</span>
 <span class="n">classif_rate</span> <span class="k">for</span> <span class="n">Linear</span> <a href="../../modules/generated/sklearn.svm.SVC.html#sklearn.svm.SVC"><span class="n">SVC</span></a> <span class="p">:</span> <span class="mf">82.000000</span>
 <span class="n">classif_rate</span> <span class="k">for</span> <span class="n">L2</span> <span class="n">logistic</span> <span class="p">(</span><span class="n">Multinomial</span><span class="p">)</span> <span class="p">:</span> <span class="mf">82.000000</span>
 </pre></div>
 </div>
 <p><strong>Python source code:</strong> <a class="reference download internal" href="../../_downloads/plot_classification_probability.py" download=""><code class="xref download docutils literal"><span class="pre">plot_classification_probability.py</span></code></a></p>
-<div class="highlight-default"><div class="highlight"><pre><span class="nb">print</span><span class="p">(</span><span class="n">__doc__</span><span class="p">)</span>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">__doc__</span><span class="p">)</span>
 
-<span class="c"># Author: Alexandre Gramfort &lt;alexandre.gramfort@inria.fr&gt;</span>
-<span class="c"># License: BSD 3 clause</span>
+<span class="c1"># Author: Alexandre Gramfort &lt;alexandre.gramfort@inria.fr&gt;</span>
+<span class="c1"># License: BSD 3 clause</span>
 
 <span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
 <span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
@@ -195,21 +195,21 @@ a result it can identify only the first class.</p>
 <span class="kn">from</span> <span class="nn">sklearn</span> <span class="k">import</span> <span class="n">datasets</span>
 
 <span class="n">iris</span> <span class="o">=</span> <a href="../../modules/generated/sklearn.datasets.load_iris.html#sklearn.datasets.load_iris"><span class="n">datasets</span><span class="o">.</span><span class="n">load_iris</span></a><span class="p">()</span>
-<span class="n">X</span> <span class="o">=</span> <span class="n">iris</span><span class="o">.</span><span class="n">data</span><span class="p">[:,</span> <span class="mi">0</span><span class="p">:</span><span class="mi">2</span><span class="p">]</span>  <span class="c"># we only take the first two features for visualization</span>
+<span class="n">X</span> <span class="o">=</span> <span class="n">iris</span><span class="o">.</span><span class="n">data</span><span class="p">[:,</span> <span class="mi">0</span><span class="p">:</span><span class="mi">2</span><span class="p">]</span>  <span class="c1"># we only take the first two features for visualization</span>
 <span class="n">y</span> <span class="o">=</span> <span class="n">iris</span><span class="o">.</span><span class="n">target</span>
 
 <span class="n">n_features</span> <span class="o">=</span> <span class="n">X</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
 
 <span class="n">C</span> <span class="o">=</span> <span class="mf">1.0</span>
 
-<span class="c"># Create different classifiers. The logistic regression cannot do</span>
-<span class="c"># multiclass out of the box.</span>
-<span class="n">classifiers</span> <span class="o">=</span> <span class="p">{</span><span class="s">&#39;L1 logistic&#39;</span><span class="p">:</span> <a href="../../modules/generated/sklearn.linear_model.LogisticRegression.html#sklearn.linear_model.LogisticRegression"><span class="n">LogisticRegression</span></a><span class="p">(</span><span class="n">C</span><span class="o">=</span><span class="n">C</span><span class="p">,</span> <span class="n">penalty</span><span class="o">=</span><span class="s">&#39;l1&#39;</span><span class="p">),</span>
-               <span class="s">&#39;L2 logistic (OvR)&#39;</span><span class="p">:</span> <a href="../../modules/generated/sklearn.linear_model.LogisticRegression.html#sklearn.linear_model.LogisticRegression"><span class="n">LogisticRegression</span></a><span class="p">(</span><span class="n">C</span><span class="o">=</span><span class="n">C</span><span class="p">,</span> <span class="n">penalty</span><span class="o">=</span><span class="s">&#39;l2&#39;</span><span class="p">),</span>
-               <span class="s">&#39;Linear SVC&#39;</span><span class="p">:</span> <a href="../../modules/generated/sklearn.svm.SVC.html#sklearn.svm.SVC"><span class="n">SVC</span></a><span class="p">(</span><span class="n">kernel</span><span class="o">=</span><span class="s">&#39;linear&#39;</span><span class="p">,</span> <span class="n">C</span><span class="o">=</span><span class="n">C</span><span class="p">,</span> <span class="n">probability</span><span class="o">=</span><span class="k">True</span><span class="p">,</span>
+<span class="c1"># Create different classifiers. The logistic regression cannot do</span>
+<span class="c1"># multiclass out of the box.</span>
+<span class="n">classifiers</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;L1 logistic&#39;</span><span class="p">:</span> <a href="../../modules/generated/sklearn.linear_model.LogisticRegression.html#sklearn.linear_model.LogisticRegression"><span class="n">LogisticRegression</span></a><span class="p">(</span><span class="n">C</span><span class="o">=</span><span class="n">C</span><span class="p">,</span> <span class="n">penalty</span><span class="o">=</span><span class="s1">&#39;l1&#39;</span><span class="p">),</span>
+               <span class="s1">&#39;L2 logistic (OvR)&#39;</span><span class="p">:</span> <a href="../../modules/generated/sklearn.linear_model.LogisticRegression.html#sklearn.linear_model.LogisticRegression"><span class="n">LogisticRegression</span></a><span class="p">(</span><span class="n">C</span><span class="o">=</span><span class="n">C</span><span class="p">,</span> <span class="n">penalty</span><span class="o">=</span><span class="s1">&#39;l2&#39;</span><span class="p">),</span>
+               <span class="s1">&#39;Linear SVC&#39;</span><span class="p">:</span> <a href="../../modules/generated/sklearn.svm.SVC.html#sklearn.svm.SVC"><span class="n">SVC</span></a><span class="p">(</span><span class="n">kernel</span><span class="o">=</span><span class="s1">&#39;linear&#39;</span><span class="p">,</span> <span class="n">C</span><span class="o">=</span><span class="n">C</span><span class="p">,</span> <span class="n">probability</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
                                  <span class="n">random_state</span><span class="o">=</span><span class="mi">0</span><span class="p">),</span>
-               <span class="s">&#39;L2 logistic (Multinomial)&#39;</span><span class="p">:</span> <a href="../../modules/generated/sklearn.linear_model.LogisticRegression.html#sklearn.linear_model.LogisticRegression"><span class="n">LogisticRegression</span></a><span class="p">(</span>
-                <span class="n">C</span><span class="o">=</span><span class="n">C</span><span class="p">,</span> <span class="n">solver</span><span class="o">=</span><span class="s">&#39;lbfgs&#39;</span><span class="p">,</span> <span class="n">multi_class</span><span class="o">=</span><span class="s">&#39;multinomial&#39;</span>
+               <span class="s1">&#39;L2 logistic (Multinomial)&#39;</span><span class="p">:</span> <a href="../../modules/generated/sklearn.linear_model.LogisticRegression.html#sklearn.linear_model.LogisticRegression"><span class="n">LogisticRegression</span></a><span class="p">(</span>
+                <span class="n">C</span><span class="o">=</span><span class="n">C</span><span class="p">,</span> <span class="n">solver</span><span class="o">=</span><span class="s1">&#39;lbfgs&#39;</span><span class="p">,</span> <span class="n">multi_class</span><span class="o">=</span><span class="s1">&#39;multinomial&#39;</span>
                 <span class="p">)}</span>
 
 <span class="n">n_classifiers</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">classifiers</span><span class="p">)</span>
@@ -227,27 +227,27 @@ a result it can identify only the first class.</p>
 
     <span class="n">y_pred</span> <span class="o">=</span> <span class="n">classifier</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">X</span><span class="p">)</span>
     <span class="n">classif_rate</span> <span class="o">=</span> <a href="http://docs.scipy.org/doc/numpy-1.6.0/reference/generated/numpy.mean.html#numpy.mean"><span class="n">np</span><span class="o">.</span><span class="n">mean</span></a><span class="p">(</span><span class="n">y_pred</span><span class="o">.</span><span class="n">ravel</span><span class="p">()</span> <span class="o">==</span> <span class="n">y</span><span class="o">.</span><span class="n">ravel</span><span class="p">())</span> <span class="o">*</span> <span class="mi">100</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s">&quot;classif_rate for %s : %f &quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="n">classif_rate</span><span class="p">))</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;classif_rate for </span><span class="si">%s</span><span class="s2"> : </span><span class="si">%f</span><span class="s2"> &quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="n">classif_rate</span><span class="p">))</span>
 
-    <span class="c"># View probabilities=</span>
+    <span class="c1"># View probabilities=</span>
     <span class="n">probas</span> <span class="o">=</span> <span class="n">classifier</span><span class="o">.</span><span class="n">predict_proba</span><span class="p">(</span><span class="n">Xfull</span><span class="p">)</span>
     <span class="n">n_classes</span> <span class="o">=</span> <a href="http://docs.scipy.org/doc/numpy-1.6.0/reference/generated/numpy.unique.html#numpy.unique"><span class="n">np</span><span class="o">.</span><span class="n">unique</span></a><span class="p">(</span><span class="n">y_pred</span><span class="p">)</span><span class="o">.</span><span class="n">size</span>
     <span class="k">for</span> <span class="n">k</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n_classes</span><span class="p">):</span>
         <a href="http://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.subplot"><span class="n">plt</span><span class="o">.</span><span class="n">subplot</span></a><span class="p">(</span><span class="n">n_classifiers</span><span class="p">,</span> <span class="n">n_classes</span><span class="p">,</span> <span class="n">index</span> <span class="o">*</span> <span class="n">n_classes</span> <span class="o">+</span> <span class="n">k</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span>
-        <a href="http://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.title"><span class="n">plt</span><span class="o">.</span><span class="n">title</span></a><span class="p">(</span><span class="s">&quot;Class %d&quot;</span> <span class="o">%</span> <span class="n">k</span><span class="p">)</span>
+        <a href="http://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.title"><span class="n">plt</span><span class="o">.</span><span class="n">title</span></a><span class="p">(</span><span class="s2">&quot;Class </span><span class="si">%d</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="n">k</span><span class="p">)</span>
         <span class="k">if</span> <span class="n">k</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
             <a href="http://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.ylabel"><span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span></a><span class="p">(</span><span class="n">name</span><span class="p">)</span>
         <span class="n">imshow_handle</span> <span class="o">=</span> <a href="http://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.imshow"><span class="n">plt</span><span class="o">.</span><span class="n">imshow</span></a><span class="p">(</span><span class="n">probas</span><span class="p">[:,</span> <span class="n">k</span><span class="p">]</span><span class="o">.</span><span class="n">reshape</span><span class="p">((</span><span class="mi">100</span><span class="p">,</span> <span class="mi">100</span><span class="p">)),</span>
-                                   <span class="n">extent</span><span class="o">=</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">9</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">5</span><span class="p">),</span> <span class="n">origin</span><span class="o">=</span><span class="s">&#39;lower&#39;</span><span class="p">)</span>
+                                   <span class="n">extent</span><span class="o">=</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">9</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">5</span><span class="p">),</span> <span class="n">origin</span><span class="o">=</span><span class="s1">&#39;lower&#39;</span><span class="p">)</span>
         <a href="http://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.xticks"><span class="n">plt</span><span class="o">.</span><span class="n">xticks</span></a><span class="p">(())</span>
         <a href="http://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.yticks"><span class="n">plt</span><span class="o">.</span><span class="n">yticks</span></a><span class="p">(())</span>
         <span class="n">idx</span> <span class="o">=</span> <span class="p">(</span><span class="n">y_pred</span> <span class="o">==</span> <span class="n">k</span><span class="p">)</span>
         <span class="k">if</span> <span class="n">idx</span><span class="o">.</span><span class="n">any</span><span class="p">():</span>
-            <a href="http://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.scatter"><span class="n">plt</span><span class="o">.</span><span class="n">scatter</span></a><span class="p">(</span><span class="n">X</span><span class="p">[</span><span class="n">idx</span><span class="p">,</span> <span class="mi">0</span><span class="p">],</span> <span class="n">X</span><span class="p">[</span><span class="n">idx</span><span class="p">,</span> <span class="mi">1</span><span class="p">],</span> <span class="n">marker</span><span class="o">=</span><span class="s">&#39;o&#39;</span><span class="p">,</span> <span class="n">c</span><span class="o">=</span><span class="s">&#39;k&#39;</span><span class="p">)</span>
+            <a href="http://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.scatter"><span class="n">plt</span><span class="o">.</span><span class="n">scatter</span></a><span class="p">(</span><span class="n">X</span><span class="p">[</span><span class="n">idx</span><span class="p">,</span> <span class="mi">0</span><span class="p">],</span> <span class="n">X</span><span class="p">[</span><span class="n">idx</span><span class="p">,</span> <span class="mi">1</span><span class="p">],</span> <span class="n">marker</span><span class="o">=</span><span class="s1">&#39;o&#39;</span><span class="p">,</span> <span class="n">c</span><span class="o">=</span><span class="s1">&#39;k&#39;</span><span class="p">)</span>
 
 <span class="n">ax</span> <span class="o">=</span> <a href="http://matplotlib.org/api/axes_api.html#matplotlib.axes"><span class="n">plt</span><span class="o">.</span><span class="n">axes</span></a><span class="p">([</span><span class="mf">0.15</span><span class="p">,</span> <span class="mf">0.04</span><span class="p">,</span> <span class="mf">0.7</span><span class="p">,</span> <span class="mf">0.05</span><span class="p">])</span>
-<a href="http://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.title"><span class="n">plt</span><span class="o">.</span><span class="n">title</span></a><span class="p">(</span><span class="s">&quot;Probability&quot;</span><span class="p">)</span>
-<a href="http://matplotlib.org/api/colorbar_api.html#matplotlib.colorbar"><span class="n">plt</span><span class="o">.</span><span class="n">colorbar</span></a><span class="p">(</span><span class="n">imshow_handle</span><span class="p">,</span> <span class="n">cax</span><span class="o">=</span><span class="n">ax</span><span class="p">,</span> <span class="n">orientation</span><span class="o">=</span><span class="s">&#39;horizontal&#39;</span><span class="p">)</span>
+<a href="http://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.title"><span class="n">plt</span><span class="o">.</span><span class="n">title</span></a><span class="p">(</span><span class="s2">&quot;Probability&quot;</span><span class="p">)</span>
+<a href="http://matplotlib.org/api/colorbar_api.html#matplotlib.colorbar"><span class="n">plt</span><span class="o">.</span><span class="n">colorbar</span></a><span class="p">(</span><span class="n">imshow_handle</span><span class="p">,</span> <span class="n">cax</span><span class="o">=</span><span class="n">ax</span><span class="p">,</span> <span class="n">orientation</span><span class="o">=</span><span class="s1">&#39;horizontal&#39;</span><span class="p">)</span>
 
 <a href="http://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.show"><span class="n">plt</span><span class="o">.</span><span class="n">show</span></a><span class="p">()</span>
 </pre></div>

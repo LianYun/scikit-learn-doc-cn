@@ -65,28 +65,28 @@
         </a>
         </p><div class="navbar">
             <ul>
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="../install.html">Installation</a></li>
+                <li><a href="../index.html">主页</a></li>
+                <li><a href="../install.html">安装</a></li>
                 <li class="btn-li"><div class="btn-group">
-              <a href="../documentation.html">Documentation</a>
+              <a href="../documentation.html">文档</a>
               <a class="btn dropdown-toggle" data-toggle="dropdown">
                  <span class="caret"></span>
               </a>
               <ul class="dropdown-menu">
             <li class="link-title">Scikit-learn 0.17 (stable)</li>
-            <li><a href="../tutorial/index.html">Tutorials</a></li>
-            <li><a href="../user_guide.html">User guide</a></li>
+            <li><a href="../tutorial/index.html">入门指南</a></li>
+            <li><a href="../user_guide.html">使用手册</a></li>
             <li><a href="../modules/classes.html">API</a></li>
             <li><a href="../faq.html">FAQ</a></li>
-            <li><a href="../developers.html">Contributing</a></li>
+            <li><a href="../developers.html">贡献</a></li>
             <li class="divider"></li>
                 <li><a href="http://scikit-learn.org/dev/documentation.html">Scikit-learn 0.18 (development)</a></li>
                 <li><a href="http://scikit-learn.org/0.16/documentation.html">Scikit-learn 0.16</a></li>
-				<li><a href="../_downloads/user_guide.pdf">PDF documentation</a></li>
+				<li><a href="../_downloads/user_guide.pdf">PDF 文档</a></li>
               </ul>
             </div>
         </li>
-            <li><a href="index.html">Examples</a></li>
+            <li><a href="index.html">例子</a></li>
             </ul>
 
             <div class="search_form">
@@ -117,7 +117,7 @@
         accesskey="P">Previous
         <br/>
         <span class="smallrellink">
-        Plotting Cross-V...
+        Plotting Cros...
         </span>
             <span class="hiddenrellink">
             Plotting Cross-Validated Predictions
@@ -176,10 +176,10 @@ cross validation and grid searches over the whole process.</p>
 <p>The combination used in this example is not particularly helpful on this
 dataset and is only used to illustrate the usage of FeatureUnion.</p>
 <p><strong>Python source code:</strong> <a class="reference download internal" href="../_downloads/feature_stacker.py" download=""><code class="xref download docutils literal"><span class="pre">feature_stacker.py</span></code></a></p>
-<div class="highlight-default"><div class="highlight"><pre>
-<span class="c"># Author: Andreas Mueller &lt;amueller@ais.uni-bonn.de&gt;</span>
-<span class="c">#</span>
-<span class="c"># License: BSD 3 clause</span>
+<div class="highlight-default"><div class="highlight"><pre><span></span>
+<span class="c1"># Author: Andreas Mueller &lt;amueller@ais.uni-bonn.de&gt;</span>
+<span class="c1">#</span>
+<span class="c1"># License: BSD 3 clause</span>
 
 <span class="kn">from</span> <span class="nn">sklearn.pipeline</span> <span class="k">import</span> <a href="../modules/generated/sklearn.pipeline.Pipeline.html#sklearn.pipeline.Pipeline"><span class="n">Pipeline</span></a><span class="p">,</span> <span class="n">FeatureUnion</span>
 <span class="kn">from</span> <span class="nn">sklearn.grid_search</span> <span class="k">import</span> <a href="../modules/generated/sklearn.grid_search.GridSearchCV.html#sklearn.grid_search.GridSearchCV"><span class="n">GridSearchCV</span></a>
@@ -192,24 +192,24 @@ dataset and is only used to illustrate the usage of FeatureUnion.</p>
 
 <span class="n">X</span><span class="p">,</span> <span class="n">y</span> <span class="o">=</span> <span class="n">iris</span><span class="o">.</span><span class="n">data</span><span class="p">,</span> <span class="n">iris</span><span class="o">.</span><span class="n">target</span>
 
-<span class="c"># This dataset is way to high-dimensional. Better do PCA:</span>
+<span class="c1"># This dataset is way to high-dimensional. Better do PCA:</span>
 <span class="n">pca</span> <span class="o">=</span> <a href="../modules/generated/sklearn.decomposition.PCA.html#sklearn.decomposition.PCA"><span class="n">PCA</span></a><span class="p">(</span><span class="n">n_components</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
 
-<span class="c"># Maybe some original features where good, too?</span>
+<span class="c1"># Maybe some original features where good, too?</span>
 <span class="n">selection</span> <span class="o">=</span> <a href="../modules/generated/sklearn.feature_selection.SelectKBest.html#sklearn.feature_selection.SelectKBest"><span class="n">SelectKBest</span></a><span class="p">(</span><span class="n">k</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
 
-<span class="c"># Build estimator from PCA and Univariate selection:</span>
+<span class="c1"># Build estimator from PCA and Univariate selection:</span>
 
-<span class="n">combined_features</span> <span class="o">=</span> <span class="n">FeatureUnion</span><span class="p">([(</span><span class="s">&quot;pca&quot;</span><span class="p">,</span> <span class="n">pca</span><span class="p">),</span> <span class="p">(</span><span class="s">&quot;univ_select&quot;</span><span class="p">,</span> <span class="n">selection</span><span class="p">)])</span>
+<span class="n">combined_features</span> <span class="o">=</span> <span class="n">FeatureUnion</span><span class="p">([(</span><span class="s2">&quot;pca&quot;</span><span class="p">,</span> <span class="n">pca</span><span class="p">),</span> <span class="p">(</span><span class="s2">&quot;univ_select&quot;</span><span class="p">,</span> <span class="n">selection</span><span class="p">)])</span>
 
-<span class="c"># Use combined features to transform dataset:</span>
+<span class="c1"># Use combined features to transform dataset:</span>
 <span class="n">X_features</span> <span class="o">=</span> <span class="n">combined_features</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span><span class="o">.</span><span class="n">transform</span><span class="p">(</span><span class="n">X</span><span class="p">)</span>
 
-<span class="n">svm</span> <span class="o">=</span> <a href="../modules/generated/sklearn.svm.SVC.html#sklearn.svm.SVC"><span class="n">SVC</span></a><span class="p">(</span><span class="n">kernel</span><span class="o">=</span><span class="s">&quot;linear&quot;</span><span class="p">)</span>
+<span class="n">svm</span> <span class="o">=</span> <a href="../modules/generated/sklearn.svm.SVC.html#sklearn.svm.SVC"><span class="n">SVC</span></a><span class="p">(</span><span class="n">kernel</span><span class="o">=</span><span class="s2">&quot;linear&quot;</span><span class="p">)</span>
 
-<span class="c"># Do grid search over k, n_components and C:</span>
+<span class="c1"># Do grid search over k, n_components and C:</span>
 
-<span class="n">pipeline</span> <span class="o">=</span> <a href="../modules/generated/sklearn.pipeline.Pipeline.html#sklearn.pipeline.Pipeline"><span class="n">Pipeline</span></a><span class="p">([(</span><span class="s">&quot;features&quot;</span><span class="p">,</span> <span class="n">combined_features</span><span class="p">),</span> <span class="p">(</span><span class="s">&quot;svm&quot;</span><span class="p">,</span> <span class="n">svm</span><span class="p">)])</span>
+<span class="n">pipeline</span> <span class="o">=</span> <a href="../modules/generated/sklearn.pipeline.Pipeline.html#sklearn.pipeline.Pipeline"><span class="n">Pipeline</span></a><span class="p">([(</span><span class="s2">&quot;features&quot;</span><span class="p">,</span> <span class="n">combined_features</span><span class="p">),</span> <span class="p">(</span><span class="s2">&quot;svm&quot;</span><span class="p">,</span> <span class="n">svm</span><span class="p">)])</span>
 
 <span class="n">param_grid</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">(</span><span class="n">features__pca__n_components</span><span class="o">=</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">],</span>
                   <span class="n">features__univ_select__k</span><span class="o">=</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">],</span>

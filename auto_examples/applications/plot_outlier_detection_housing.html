@@ -65,28 +65,28 @@
         </a>
         </p><div class="navbar">
             <ul>
-                <li><a href="../../index.html">Home</a></li>
-                <li><a href="../../install.html">Installation</a></li>
+                <li><a href="../../index.html">主页</a></li>
+                <li><a href="../../install.html">安装</a></li>
                 <li class="btn-li"><div class="btn-group">
-              <a href="../../documentation.html">Documentation</a>
+              <a href="../../documentation.html">文档</a>
               <a class="btn dropdown-toggle" data-toggle="dropdown">
                  <span class="caret"></span>
               </a>
               <ul class="dropdown-menu">
             <li class="link-title">Scikit-learn 0.17 (stable)</li>
-            <li><a href="../../tutorial/index.html">Tutorials</a></li>
-            <li><a href="../../user_guide.html">User guide</a></li>
+            <li><a href="../../tutorial/index.html">入门指南</a></li>
+            <li><a href="../../user_guide.html">使用手册</a></li>
             <li><a href="../../modules/classes.html">API</a></li>
             <li><a href="../../faq.html">FAQ</a></li>
-            <li><a href="../../developers.html">Contributing</a></li>
+            <li><a href="../../developers.html">贡献</a></li>
             <li class="divider"></li>
                 <li><a href="http://scikit-learn.org/dev/documentation.html">Scikit-learn 0.18 (development)</a></li>
                 <li><a href="http://scikit-learn.org/0.16/documentation.html">Scikit-learn 0.16</a></li>
-				<li><a href="../../_downloads/user_guide.pdf">PDF documentation</a></li>
+				<li><a href="../../_downloads/user_guide.pdf">PDF 文档</a></li>
               </ul>
             </div>
         </li>
-            <li><a href="../index.html">Examples</a></li>
+            <li><a href="../index.html">例子</a></li>
             </ul>
 
             <div class="search_form">
@@ -117,7 +117,7 @@
         accesskey="P">Previous
         <br/>
         <span class="smallrellink">
-        Topic extraction...
+        Topic extract...
         </span>
             <span class="hiddenrellink">
             Topic extraction with Non-negative Matrix Factorization and Latent Dirichlet Allocation
@@ -215,10 +215,10 @@ risk of over-fitting the data.</p>
 </li>
 </ul>
 <p><strong>Python source code:</strong> <a class="reference download internal" href="../../_downloads/plot_outlier_detection_housing.py" download=""><code class="xref download docutils literal"><span class="pre">plot_outlier_detection_housing.py</span></code></a></p>
-<div class="highlight-default"><div class="highlight"><pre><span class="nb">print</span><span class="p">(</span><span class="n">__doc__</span><span class="p">)</span>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">__doc__</span><span class="p">)</span>
 
-<span class="c"># Author: Virgile Fritsch &lt;virgile.fritsch@inria.fr&gt;</span>
-<span class="c"># License: BSD 3 clause</span>
+<span class="c1"># Author: Virgile Fritsch &lt;virgile.fritsch@inria.fr&gt;</span>
+<span class="c1"># License: BSD 3 clause</span>
 
 <span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
 <span class="kn">from</span> <span class="nn">sklearn.covariance</span> <span class="k">import</span> <a href="../../modules/generated/sklearn.covariance.EllipticEnvelope.html#sklearn.covariance.EllipticEnvelope"><span class="n">EllipticEnvelope</span></a>
@@ -227,22 +227,22 @@ risk of over-fitting the data.</p>
 <span class="kn">import</span> <span class="nn">matplotlib.font_manager</span>
 <span class="kn">from</span> <span class="nn">sklearn.datasets</span> <span class="k">import</span> <a href="../../modules/generated/sklearn.datasets.load_boston.html#sklearn.datasets.load_boston"><span class="n">load_boston</span></a>
 
-<span class="c"># Get data</span>
-<span class="n">X1</span> <span class="o">=</span> <a href="../../modules/generated/sklearn.datasets.load_boston.html#sklearn.datasets.load_boston"><span class="n">load_boston</span></a><span class="p">()[</span><span class="s">&#39;data&#39;</span><span class="p">][:,</span> <span class="p">[</span><span class="mi">8</span><span class="p">,</span> <span class="mi">10</span><span class="p">]]</span>  <span class="c"># two clusters</span>
-<span class="n">X2</span> <span class="o">=</span> <a href="../../modules/generated/sklearn.datasets.load_boston.html#sklearn.datasets.load_boston"><span class="n">load_boston</span></a><span class="p">()[</span><span class="s">&#39;data&#39;</span><span class="p">][:,</span> <span class="p">[</span><span class="mi">5</span><span class="p">,</span> <span class="mi">12</span><span class="p">]]</span>  <span class="c"># &quot;banana&quot;-shaped</span>
+<span class="c1"># Get data</span>
+<span class="n">X1</span> <span class="o">=</span> <a href="../../modules/generated/sklearn.datasets.load_boston.html#sklearn.datasets.load_boston"><span class="n">load_boston</span></a><span class="p">()[</span><span class="s1">&#39;data&#39;</span><span class="p">][:,</span> <span class="p">[</span><span class="mi">8</span><span class="p">,</span> <span class="mi">10</span><span class="p">]]</span>  <span class="c1"># two clusters</span>
+<span class="n">X2</span> <span class="o">=</span> <a href="../../modules/generated/sklearn.datasets.load_boston.html#sklearn.datasets.load_boston"><span class="n">load_boston</span></a><span class="p">()[</span><span class="s1">&#39;data&#39;</span><span class="p">][:,</span> <span class="p">[</span><span class="mi">5</span><span class="p">,</span> <span class="mi">12</span><span class="p">]]</span>  <span class="c1"># &quot;banana&quot;-shaped</span>
 
-<span class="c"># Define &quot;classifiers&quot; to be used</span>
+<span class="c1"># Define &quot;classifiers&quot; to be used</span>
 <span class="n">classifiers</span> <span class="o">=</span> <span class="p">{</span>
-    <span class="s">&quot;Empirical Covariance&quot;</span><span class="p">:</span> <a href="../../modules/generated/sklearn.covariance.EllipticEnvelope.html#sklearn.covariance.EllipticEnvelope"><span class="n">EllipticEnvelope</span></a><span class="p">(</span><span class="n">support_fraction</span><span class="o">=</span><span class="mf">1.</span><span class="p">,</span>
+    <span class="s2">&quot;Empirical Covariance&quot;</span><span class="p">:</span> <a href="../../modules/generated/sklearn.covariance.EllipticEnvelope.html#sklearn.covariance.EllipticEnvelope"><span class="n">EllipticEnvelope</span></a><span class="p">(</span><span class="n">support_fraction</span><span class="o">=</span><span class="mf">1.</span><span class="p">,</span>
                                              <span class="n">contamination</span><span class="o">=</span><span class="mf">0.261</span><span class="p">),</span>
-    <span class="s">&quot;Robust Covariance (Minimum Covariance Determinant)&quot;</span><span class="p">:</span>
+    <span class="s2">&quot;Robust Covariance (Minimum Covariance Determinant)&quot;</span><span class="p">:</span>
     <a href="../../modules/generated/sklearn.covariance.EllipticEnvelope.html#sklearn.covariance.EllipticEnvelope"><span class="n">EllipticEnvelope</span></a><span class="p">(</span><span class="n">contamination</span><span class="o">=</span><span class="mf">0.261</span><span class="p">),</span>
-    <span class="s">&quot;OCSVM&quot;</span><span class="p">:</span> <a href="../../modules/generated/sklearn.svm.OneClassSVM.html#sklearn.svm.OneClassSVM"><span class="n">OneClassSVM</span></a><span class="p">(</span><span class="n">nu</span><span class="o">=</span><span class="mf">0.261</span><span class="p">,</span> <span class="n">gamma</span><span class="o">=</span><span class="mf">0.05</span><span class="p">)}</span>
-<span class="n">colors</span> <span class="o">=</span> <span class="p">[</span><span class="s">&#39;m&#39;</span><span class="p">,</span> <span class="s">&#39;g&#39;</span><span class="p">,</span> <span class="s">&#39;b&#39;</span><span class="p">]</span>
+    <span class="s2">&quot;OCSVM&quot;</span><span class="p">:</span> <a href="../../modules/generated/sklearn.svm.OneClassSVM.html#sklearn.svm.OneClassSVM"><span class="n">OneClassSVM</span></a><span class="p">(</span><span class="n">nu</span><span class="o">=</span><span class="mf">0.261</span><span class="p">,</span> <span class="n">gamma</span><span class="o">=</span><span class="mf">0.05</span><span class="p">)}</span>
+<span class="n">colors</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;m&#39;</span><span class="p">,</span> <span class="s1">&#39;g&#39;</span><span class="p">,</span> <span class="s1">&#39;b&#39;</span><span class="p">]</span>
 <span class="n">legend1</span> <span class="o">=</span> <span class="p">{}</span>
 <span class="n">legend2</span> <span class="o">=</span> <span class="p">{}</span>
 
-<span class="c"># Learn a frontier for outlier detection with several classifiers</span>
+<span class="c1"># Learn a frontier for outlier detection with several classifiers</span>
 <span class="n">xx1</span><span class="p">,</span> <span class="n">yy1</span> <span class="o">=</span> <a href="http://docs.scipy.org/doc/numpy-1.6.0/reference/generated/numpy.meshgrid.html#numpy.meshgrid"><span class="n">np</span><span class="o">.</span><span class="n">meshgrid</span></a><span class="p">(</span><a href="http://docs.scipy.org/doc/numpy-1.6.0/reference/generated/numpy.linspace.html#numpy.linspace"><span class="n">np</span><span class="o">.</span><span class="n">linspace</span></a><span class="p">(</span><span class="o">-</span><span class="mi">8</span><span class="p">,</span> <span class="mi">28</span><span class="p">,</span> <span class="mi">500</span><span class="p">),</span> <a href="http://docs.scipy.org/doc/numpy-1.6.0/reference/generated/numpy.linspace.html#numpy.linspace"><span class="n">np</span><span class="o">.</span><span class="n">linspace</span></a><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">40</span><span class="p">,</span> <span class="mi">500</span><span class="p">))</span>
 <span class="n">xx2</span><span class="p">,</span> <span class="n">yy2</span> <span class="o">=</span> <a href="http://docs.scipy.org/doc/numpy-1.6.0/reference/generated/numpy.meshgrid.html#numpy.meshgrid"><span class="n">np</span><span class="o">.</span><span class="n">meshgrid</span></a><span class="p">(</span><a href="http://docs.scipy.org/doc/numpy-1.6.0/reference/generated/numpy.linspace.html#numpy.linspace"><span class="n">np</span><span class="o">.</span><span class="n">linspace</span></a><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">500</span><span class="p">),</span> <a href="http://docs.scipy.org/doc/numpy-1.6.0/reference/generated/numpy.linspace.html#numpy.linspace"><span class="n">np</span><span class="o">.</span><span class="n">linspace</span></a><span class="p">(</span><span class="o">-</span><span class="mi">5</span><span class="p">,</span> <span class="mi">45</span><span class="p">,</span> <span class="mi">500</span><span class="p">))</span>
 <span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="p">(</span><span class="n">clf_name</span><span class="p">,</span> <span class="n">clf</span><span class="p">)</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">classifiers</span><span class="o">.</span><span class="n">items</span><span class="p">()):</span>
@@ -262,14 +262,14 @@ risk of over-fitting the data.</p>
 <span class="n">legend1_values_list</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span> <span class="n">legend1</span><span class="o">.</span><span class="n">values</span><span class="p">()</span> <span class="p">)</span>
 <span class="n">legend1_keys_list</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span> <span class="n">legend1</span><span class="o">.</span><span class="n">keys</span><span class="p">()</span> <span class="p">)</span>
 
-<span class="c"># Plot the results (= shape of the data points cloud)</span>
-<a href="http://matplotlib.org/api/figure_api.html#matplotlib.figure"><span class="n">plt</span><span class="o">.</span><span class="n">figure</span></a><span class="p">(</span><span class="mi">1</span><span class="p">)</span>  <span class="c"># two clusters</span>
-<a href="http://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.title"><span class="n">plt</span><span class="o">.</span><span class="n">title</span></a><span class="p">(</span><span class="s">&quot;Outlier detection on a real data set (boston housing)&quot;</span><span class="p">)</span>
-<a href="http://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.scatter"><span class="n">plt</span><span class="o">.</span><span class="n">scatter</span></a><span class="p">(</span><span class="n">X1</span><span class="p">[:,</span> <span class="mi">0</span><span class="p">],</span> <span class="n">X1</span><span class="p">[:,</span> <span class="mi">1</span><span class="p">],</span> <span class="n">color</span><span class="o">=</span><span class="s">&#39;black&#39;</span><span class="p">)</span>
-<span class="n">bbox_args</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">(</span><span class="n">boxstyle</span><span class="o">=</span><span class="s">&quot;round&quot;</span><span class="p">,</span> <span class="n">fc</span><span class="o">=</span><span class="s">&quot;0.8&quot;</span><span class="p">)</span>
-<span class="n">arrow_args</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">(</span><span class="n">arrowstyle</span><span class="o">=</span><span class="s">&quot;-&gt;&quot;</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">annotate</span><span class="p">(</span><span class="s">&quot;several confounded points&quot;</span><span class="p">,</span> <span class="n">xy</span><span class="o">=</span><span class="p">(</span><span class="mi">24</span><span class="p">,</span> <span class="mi">19</span><span class="p">),</span>
-             <span class="n">xycoords</span><span class="o">=</span><span class="s">&quot;data&quot;</span><span class="p">,</span> <span class="n">textcoords</span><span class="o">=</span><span class="s">&quot;data&quot;</span><span class="p">,</span>
+<span class="c1"># Plot the results (= shape of the data points cloud)</span>
+<a href="http://matplotlib.org/api/figure_api.html#matplotlib.figure"><span class="n">plt</span><span class="o">.</span><span class="n">figure</span></a><span class="p">(</span><span class="mi">1</span><span class="p">)</span>  <span class="c1"># two clusters</span>
+<a href="http://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.title"><span class="n">plt</span><span class="o">.</span><span class="n">title</span></a><span class="p">(</span><span class="s2">&quot;Outlier detection on a real data set (boston housing)&quot;</span><span class="p">)</span>
+<a href="http://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.scatter"><span class="n">plt</span><span class="o">.</span><span class="n">scatter</span></a><span class="p">(</span><span class="n">X1</span><span class="p">[:,</span> <span class="mi">0</span><span class="p">],</span> <span class="n">X1</span><span class="p">[:,</span> <span class="mi">1</span><span class="p">],</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;black&#39;</span><span class="p">)</span>
+<span class="n">bbox_args</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">(</span><span class="n">boxstyle</span><span class="o">=</span><span class="s2">&quot;round&quot;</span><span class="p">,</span> <span class="n">fc</span><span class="o">=</span><span class="s2">&quot;0.8&quot;</span><span class="p">)</span>
+<span class="n">arrow_args</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">(</span><span class="n">arrowstyle</span><span class="o">=</span><span class="s2">&quot;-&gt;&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">annotate</span><span class="p">(</span><span class="s2">&quot;several confounded points&quot;</span><span class="p">,</span> <span class="n">xy</span><span class="o">=</span><span class="p">(</span><span class="mi">24</span><span class="p">,</span> <span class="mi">19</span><span class="p">),</span>
+             <span class="n">xycoords</span><span class="o">=</span><span class="s2">&quot;data&quot;</span><span class="p">,</span> <span class="n">textcoords</span><span class="o">=</span><span class="s2">&quot;data&quot;</span><span class="p">,</span>
              <span class="n">xytext</span><span class="o">=</span><span class="p">(</span><span class="mi">13</span><span class="p">,</span> <span class="mi">10</span><span class="p">),</span> <span class="n">bbox</span><span class="o">=</span><span class="n">bbox_args</span><span class="p">,</span> <span class="n">arrowprops</span><span class="o">=</span><span class="n">arrow_args</span><span class="p">)</span>
 <a href="http://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.xlim"><span class="n">plt</span><span class="o">.</span><span class="n">xlim</span></a><span class="p">((</span><span class="n">xx1</span><span class="o">.</span><span class="n">min</span><span class="p">(),</span> <span class="n">xx1</span><span class="o">.</span><span class="n">max</span><span class="p">()))</span>
 <a href="http://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.ylim"><span class="n">plt</span><span class="o">.</span><span class="n">ylim</span></a><span class="p">((</span><span class="n">yy1</span><span class="o">.</span><span class="n">min</span><span class="p">(),</span> <span class="n">yy1</span><span class="o">.</span><span class="n">max</span><span class="p">()))</span>
@@ -277,27 +277,27 @@ risk of over-fitting the data.</p>
             <span class="n">legend1_values_list</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">collections</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span>
             <span class="n">legend1_values_list</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span><span class="o">.</span><span class="n">collections</span><span class="p">[</span><span class="mi">0</span><span class="p">]),</span>
            <span class="p">(</span><span class="n">legend1_keys_list</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">legend1_keys_list</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">legend1_keys_list</span><span class="p">[</span><span class="mi">2</span><span class="p">]),</span>
-           <span class="n">loc</span><span class="o">=</span><span class="s">&quot;upper center&quot;</span><span class="p">,</span>
+           <span class="n">loc</span><span class="o">=</span><span class="s2">&quot;upper center&quot;</span><span class="p">,</span>
            <span class="n">prop</span><span class="o">=</span><span class="n">matplotlib</span><span class="o">.</span><span class="n">font_manager</span><span class="o">.</span><span class="n">FontProperties</span><span class="p">(</span><span class="n">size</span><span class="o">=</span><span class="mi">12</span><span class="p">))</span>
-<a href="http://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.ylabel"><span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span></a><span class="p">(</span><span class="s">&quot;accessibility to radial highways&quot;</span><span class="p">)</span>
-<a href="http://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.xlabel"><span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span></a><span class="p">(</span><span class="s">&quot;pupil-teacher ratio by town&quot;</span><span class="p">)</span>
+<a href="http://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.ylabel"><span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span></a><span class="p">(</span><span class="s2">&quot;accessibility to radial highways&quot;</span><span class="p">)</span>
+<a href="http://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.xlabel"><span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span></a><span class="p">(</span><span class="s2">&quot;pupil-teacher ratio by town&quot;</span><span class="p">)</span>
 
 <span class="n">legend2_values_list</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span> <span class="n">legend2</span><span class="o">.</span><span class="n">values</span><span class="p">()</span> <span class="p">)</span>
 <span class="n">legend2_keys_list</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span> <span class="n">legend2</span><span class="o">.</span><span class="n">keys</span><span class="p">()</span> <span class="p">)</span>
 
-<a href="http://matplotlib.org/api/figure_api.html#matplotlib.figure"><span class="n">plt</span><span class="o">.</span><span class="n">figure</span></a><span class="p">(</span><span class="mi">2</span><span class="p">)</span>  <span class="c"># &quot;banana&quot; shape</span>
-<a href="http://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.title"><span class="n">plt</span><span class="o">.</span><span class="n">title</span></a><span class="p">(</span><span class="s">&quot;Outlier detection on a real data set (boston housing)&quot;</span><span class="p">)</span>
-<a href="http://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.scatter"><span class="n">plt</span><span class="o">.</span><span class="n">scatter</span></a><span class="p">(</span><span class="n">X2</span><span class="p">[:,</span> <span class="mi">0</span><span class="p">],</span> <span class="n">X2</span><span class="p">[:,</span> <span class="mi">1</span><span class="p">],</span> <span class="n">color</span><span class="o">=</span><span class="s">&#39;black&#39;</span><span class="p">)</span>
+<a href="http://matplotlib.org/api/figure_api.html#matplotlib.figure"><span class="n">plt</span><span class="o">.</span><span class="n">figure</span></a><span class="p">(</span><span class="mi">2</span><span class="p">)</span>  <span class="c1"># &quot;banana&quot; shape</span>
+<a href="http://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.title"><span class="n">plt</span><span class="o">.</span><span class="n">title</span></a><span class="p">(</span><span class="s2">&quot;Outlier detection on a real data set (boston housing)&quot;</span><span class="p">)</span>
+<a href="http://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.scatter"><span class="n">plt</span><span class="o">.</span><span class="n">scatter</span></a><span class="p">(</span><span class="n">X2</span><span class="p">[:,</span> <span class="mi">0</span><span class="p">],</span> <span class="n">X2</span><span class="p">[:,</span> <span class="mi">1</span><span class="p">],</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;black&#39;</span><span class="p">)</span>
 <a href="http://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.xlim"><span class="n">plt</span><span class="o">.</span><span class="n">xlim</span></a><span class="p">((</span><span class="n">xx2</span><span class="o">.</span><span class="n">min</span><span class="p">(),</span> <span class="n">xx2</span><span class="o">.</span><span class="n">max</span><span class="p">()))</span>
 <a href="http://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.ylim"><span class="n">plt</span><span class="o">.</span><span class="n">ylim</span></a><span class="p">((</span><span class="n">yy2</span><span class="o">.</span><span class="n">min</span><span class="p">(),</span> <span class="n">yy2</span><span class="o">.</span><span class="n">max</span><span class="p">()))</span>
 <a href="http://matplotlib.org/api/legend_api.html#matplotlib.legend"><span class="n">plt</span><span class="o">.</span><span class="n">legend</span></a><span class="p">((</span><span class="n">legend2_values_list</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">collections</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span>
             <span class="n">legend2_values_list</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">collections</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span>
             <span class="n">legend2_values_list</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span><span class="o">.</span><span class="n">collections</span><span class="p">[</span><span class="mi">0</span><span class="p">]),</span>
            <span class="p">(</span><span class="n">legend2_values_list</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">legend2_values_list</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">legend2_values_list</span><span class="p">[</span><span class="mi">2</span><span class="p">]),</span>
-           <span class="n">loc</span><span class="o">=</span><span class="s">&quot;upper center&quot;</span><span class="p">,</span>
+           <span class="n">loc</span><span class="o">=</span><span class="s2">&quot;upper center&quot;</span><span class="p">,</span>
            <span class="n">prop</span><span class="o">=</span><span class="n">matplotlib</span><span class="o">.</span><span class="n">font_manager</span><span class="o">.</span><span class="n">FontProperties</span><span class="p">(</span><span class="n">size</span><span class="o">=</span><span class="mi">12</span><span class="p">))</span>
-<a href="http://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.ylabel"><span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span></a><span class="p">(</span><span class="s">&quot;% lower status of the population&quot;</span><span class="p">)</span>
-<a href="http://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.xlabel"><span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span></a><span class="p">(</span><span class="s">&quot;average number of rooms per dwelling&quot;</span><span class="p">)</span>
+<a href="http://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.ylabel"><span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span></a><span class="p">(</span><span class="s2">&quot;</span><span class="si">% lo</span><span class="s2">wer status of the population&quot;</span><span class="p">)</span>
+<a href="http://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.xlabel"><span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span></a><span class="p">(</span><span class="s2">&quot;average number of rooms per dwelling&quot;</span><span class="p">)</span>
 
 <a href="http://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.show"><span class="n">plt</span><span class="o">.</span><span class="n">show</span></a><span class="p">()</span>
 </pre></div>

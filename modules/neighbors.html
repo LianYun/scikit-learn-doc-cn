@@ -37,7 +37,7 @@
     <link rel="top" title="scikit-learn 0.17.1 documentation" href="../index.html" />
     <link rel="up" title="1. Supervised learning" href="../supervised_learning.html" />
     <link rel="next" title="1.7. Gaussian Processes" href="gaussian_process.html" />
-    <link rel="prev" title="1.5. Stochastic Gradient Descent" href="sgd.html" />
+    <link rel="prev" title="1.5. Stochastic Gradient Descent随机梯度下降" href="sgd.html" />
   
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -65,28 +65,28 @@
         </a>
         </p><div class="navbar">
             <ul>
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="../install.html">Installation</a></li>
+                <li><a href="../index.html">主页</a></li>
+                <li><a href="../install.html">安装</a></li>
                 <li class="btn-li"><div class="btn-group">
-              <a href="../documentation.html">Documentation</a>
+              <a href="../documentation.html">文档</a>
               <a class="btn dropdown-toggle" data-toggle="dropdown">
                  <span class="caret"></span>
               </a>
               <ul class="dropdown-menu">
             <li class="link-title">Scikit-learn 0.17 (stable)</li>
-            <li><a href="../tutorial/index.html">Tutorials</a></li>
-            <li><a href="../user_guide.html">User guide</a></li>
+            <li><a href="../tutorial/index.html">入门指南</a></li>
+            <li><a href="../user_guide.html">使用手册</a></li>
             <li><a href="classes.html">API</a></li>
             <li><a href="../faq.html">FAQ</a></li>
-            <li><a href="../developers.html">Contributing</a></li>
+            <li><a href="../developers.html">贡献</a></li>
             <li class="divider"></li>
                 <li><a href="http://scikit-learn.org/dev/documentation.html">Scikit-learn 0.18 (development)</a></li>
                 <li><a href="http://scikit-learn.org/0.16/documentation.html">Scikit-learn 0.16</a></li>
-				<li><a href="../_downloads/user_guide.pdf">PDF documentation</a></li>
+				<li><a href="../_downloads/user_guide.pdf">PDF 文档</a></li>
               </ul>
             </div>
         </li>
-            <li><a href="../auto_examples/index.html">Examples</a></li>
+            <li><a href="../auto_examples/index.html">例子</a></li>
             </ul>
 
             <div class="search_form">
@@ -117,10 +117,10 @@
         accesskey="P">Previous
         <br/>
         <span class="smallrellink">
-        1.5. Stochastic ...
+        1.5. Stochast...
         </span>
             <span class="hiddenrellink">
-            1.5. Stochastic Gradient Descent
+            1.5. Stochastic Gradient Descent随机梯度下降
             </span>
         </a>
         </div>
@@ -134,7 +134,7 @@
         Up
         <br/>
         <span class="smallrellink">
-        1. Supervised le...
+        1. Supervised...
         </span>
             <span class="hiddenrellink">
             1. Supervised learning
@@ -248,10 +248,10 @@ training data.</p>
 <p>For the simple task of finding the nearest neighbors between two sets of
 data, the unsupervised algorithms within <a class="reference internal" href="classes.html#module-sklearn.neighbors" title="sklearn.neighbors"><code class="xref py py-mod docutils literal"><span class="pre">sklearn.neighbors</span></code></a> can be
 used:</p>
-<div class="highlight-default"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">sklearn.neighbors</span> <span class="k">import</span> <span class="n">NearestNeighbors</span>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">sklearn.neighbors</span> <span class="k">import</span> <span class="n">NearestNeighbors</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">X</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">],</span> <span class="p">[</span><span class="o">-</span><span class="mi">2</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">],</span> <span class="p">[</span><span class="o">-</span><span class="mi">3</span><span class="p">,</span> <span class="o">-</span><span class="mi">2</span><span class="p">],</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">],</span> <span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">],</span> <span class="p">[</span><span class="mi">3</span><span class="p">,</span> <span class="mi">2</span><span class="p">]])</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">nbrs</span> <span class="o">=</span> <span class="n">NearestNeighbors</span><span class="p">(</span><span class="n">n_neighbors</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="n">algorithm</span><span class="o">=</span><span class="s">&#39;ball_tree&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">nbrs</span> <span class="o">=</span> <span class="n">NearestNeighbors</span><span class="p">(</span><span class="n">n_neighbors</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="n">algorithm</span><span class="o">=</span><span class="s1">&#39;ball_tree&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">distances</span><span class="p">,</span> <span class="n">indices</span> <span class="o">=</span> <span class="n">nbrs</span><span class="o">.</span><span class="n">kneighbors</span><span class="p">(</span><span class="n">X</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">indices</span>                                           
 <span class="go">array([[0, 1],</span>
@@ -273,7 +273,7 @@ used:</p>
 point is the point itself, at a distance of zero.</p>
 <p>It is also possible to efficiently produce a sparse graph showing the
 connections between neighboring points:</p>
-<div class="highlight-default"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">nbrs</span><span class="o">.</span><span class="n">kneighbors_graph</span><span class="p">(</span><span class="n">X</span><span class="p">)</span><span class="o">.</span><span class="n">toarray</span><span class="p">()</span>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">nbrs</span><span class="o">.</span><span class="n">kneighbors_graph</span><span class="p">(</span><span class="n">X</span><span class="p">)</span><span class="o">.</span><span class="n">toarray</span><span class="p">()</span>
 <span class="go">array([[ 1.,  1.,  0.,  0.,  0.,  0.],</span>
 <span class="go">       [ 1.,  1.,  0.,  0.,  0.,  0.],</span>
 <span class="go">       [ 0.,  1.,  1.,  0.,  0.,  0.],</span>
@@ -296,11 +296,11 @@ unsupervised learning: in particular, see <a class="reference internal" href="ge
 directly to find nearest neighbors.  This is the functionality wrapped by
 the <a class="reference internal" href="generated/sklearn.neighbors.NearestNeighbors.html#sklearn.neighbors.NearestNeighbors" title="sklearn.neighbors.NearestNeighbors"><code class="xref py py-class docutils literal"><span class="pre">NearestNeighbors</span></code></a> class used above.  The Ball Tree and KD Tree
 have the same interface; we&#8217;ll show an example of using the KD Tree here:</p>
-<div class="highlight-default"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">sklearn.neighbors</span> <span class="k">import</span> <span class="n">KDTree</span>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">sklearn.neighbors</span> <span class="k">import</span> <span class="n">KDTree</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">X</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">],</span> <span class="p">[</span><span class="o">-</span><span class="mi">2</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">],</span> <span class="p">[</span><span class="o">-</span><span class="mi">3</span><span class="p">,</span> <span class="o">-</span><span class="mi">2</span><span class="p">],</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">],</span> <span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">],</span> <span class="p">[</span><span class="mi">3</span><span class="p">,</span> <span class="mi">2</span><span class="p">]])</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">kdt</span> <span class="o">=</span> <span class="n">KDTree</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">leaf_size</span><span class="o">=</span><span class="mi">30</span><span class="p">,</span> <span class="n">metric</span><span class="o">=</span><span class="s">&#39;euclidean&#39;</span><span class="p">)</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">kdt</span><span class="o">.</span><span class="n">query</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">k</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="n">return_distance</span><span class="o">=</span><span class="k">False</span><span class="p">)</span>          
+<span class="gp">&gt;&gt;&gt; </span><span class="n">kdt</span> <span class="o">=</span> <span class="n">KDTree</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">leaf_size</span><span class="o">=</span><span class="mi">30</span><span class="p">,</span> <span class="n">metric</span><span class="o">=</span><span class="s1">&#39;euclidean&#39;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">kdt</span><span class="o">.</span><span class="n">query</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">k</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="n">return_distance</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>          
 <span class="go">array([[0, 1],</span>
 <span class="go">       [1, 0],</span>
 <span class="go">       [2, 1],</span>
@@ -605,7 +605,7 @@ assumed. See Linear Discriminant Analysis (<a class="reference internal" href="g
 and Quadratic Discriminant Analysis (<a class="reference internal" href="generated/sklearn.discriminant_analysis.QuadraticDiscriminantAnalysis.html#sklearn.discriminant_analysis.QuadraticDiscriminantAnalysis" title="sklearn.discriminant_analysis.QuadraticDiscriminantAnalysis"><code class="xref py py-class docutils literal"><span class="pre">sklearn.discriminant_analysis.QuadraticDiscriminantAnalysis</span></code></a>)
 for more complex methods that do not make this assumption. Usage of the default
 <a class="reference internal" href="generated/sklearn.neighbors.NearestCentroid.html#sklearn.neighbors.NearestCentroid" title="sklearn.neighbors.NearestCentroid"><code class="xref py py-class docutils literal"><span class="pre">NearestCentroid</span></code></a> is simple:</p>
-<div class="highlight-default"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">sklearn.neighbors.nearest_centroid</span> <span class="k">import</span> <span class="n">NearestCentroid</span>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">sklearn.neighbors.nearest_centroid</span> <span class="k">import</span> <span class="n">NearestCentroid</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">X</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">],</span> <span class="p">[</span><span class="o">-</span><span class="mi">2</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">],</span> <span class="p">[</span><span class="o">-</span><span class="mi">3</span><span class="p">,</span> <span class="o">-</span><span class="mi">2</span><span class="p">],</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">],</span> <span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">],</span> <span class="p">[</span><span class="mi">3</span><span class="p">,</span> <span class="mi">2</span><span class="p">]])</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">y</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">])</span>

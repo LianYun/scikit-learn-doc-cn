@@ -65,28 +65,28 @@
         </a>
         </p><div class="navbar">
             <ul>
-                <li><a href="../../index.html">Home</a></li>
-                <li><a href="../../install.html">Installation</a></li>
+                <li><a href="../../index.html">主页</a></li>
+                <li><a href="../../install.html">安装</a></li>
                 <li class="btn-li"><div class="btn-group">
-              <a href="../../documentation.html">Documentation</a>
+              <a href="../../documentation.html">文档</a>
               <a class="btn dropdown-toggle" data-toggle="dropdown">
                  <span class="caret"></span>
               </a>
               <ul class="dropdown-menu">
             <li class="link-title">Scikit-learn 0.17 (stable)</li>
-            <li><a href="../../tutorial/index.html">Tutorials</a></li>
-            <li><a href="../../user_guide.html">User guide</a></li>
+            <li><a href="../../tutorial/index.html">入门指南</a></li>
+            <li><a href="../../user_guide.html">使用手册</a></li>
             <li><a href="../../modules/classes.html">API</a></li>
             <li><a href="../../faq.html">FAQ</a></li>
-            <li><a href="../../developers.html">Contributing</a></li>
+            <li><a href="../../developers.html">贡献</a></li>
             <li class="divider"></li>
                 <li><a href="http://scikit-learn.org/dev/documentation.html">Scikit-learn 0.18 (development)</a></li>
                 <li><a href="http://scikit-learn.org/0.16/documentation.html">Scikit-learn 0.16</a></li>
-				<li><a href="../../_downloads/user_guide.pdf">PDF documentation</a></li>
+				<li><a href="../../_downloads/user_guide.pdf">PDF 文档</a></li>
               </ul>
             </div>
         </li>
-            <li><a href="../index.html">Examples</a></li>
+            <li><a href="../index.html">例子</a></li>
             </ul>
 
             <div class="search_form">
@@ -117,7 +117,7 @@
         accesskey="P">Previous
         <br/>
         <span class="smallrellink">
-        Univariate Featu...
+        Univariate Fe...
         </span>
             <span class="hiddenrellink">
             Univariate Feature Selection
@@ -177,36 +177,36 @@ nugget of 1e-2 to account for the (strong) noise in the targets.</p>
 determination (R2) without reperforming MLE, using the set of correlation
 parameters found on the whole dataset.</p>
 <p><strong>Python source code:</strong> <a class="reference download internal" href="../../_downloads/gp_diabetes_dataset.py" download=""><code class="xref download docutils literal"><span class="pre">gp_diabetes_dataset.py</span></code></a></p>
-<div class="highlight-default"><div class="highlight"><pre><span class="nb">print</span><span class="p">(</span><span class="n">__doc__</span><span class="p">)</span>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">__doc__</span><span class="p">)</span>
 
-<span class="c"># Author: Vincent Dubourg &lt;vincent.dubourg@gmail.com&gt;</span>
-<span class="c"># Licence: BSD 3 clause</span>
+<span class="c1"># Author: Vincent Dubourg &lt;vincent.dubourg@gmail.com&gt;</span>
+<span class="c1"># Licence: BSD 3 clause</span>
 
 <span class="kn">from</span> <span class="nn">sklearn</span> <span class="k">import</span> <span class="n">datasets</span>
 <span class="kn">from</span> <span class="nn">sklearn.gaussian_process</span> <span class="k">import</span> <a href="../../modules/generated/sklearn.gaussian_process.GaussianProcess.html#sklearn.gaussian_process.GaussianProcess"><span class="n">GaussianProcess</span></a>
 <span class="kn">from</span> <span class="nn">sklearn.cross_validation</span> <span class="k">import</span> <a href="../../modules/generated/sklearn.cross_validation.cross_val_score.html#sklearn.cross_validation.cross_val_score"><span class="n">cross_val_score</span></a><span class="p">,</span> <a href="../../modules/generated/sklearn.cross_validation.KFold.html#sklearn.cross_validation.KFold"><span class="n">KFold</span></a>
 
-<span class="c"># Load the dataset from scikit&#39;s data sets</span>
+<span class="c1"># Load the dataset from scikit&#39;s data sets</span>
 <span class="n">diabetes</span> <span class="o">=</span> <span class="n">datasets</span><span class="o">.</span><span class="n">load_diabetes</span><span class="p">()</span>
 <span class="n">X</span><span class="p">,</span> <span class="n">y</span> <span class="o">=</span> <span class="n">diabetes</span><span class="o">.</span><span class="n">data</span><span class="p">,</span> <span class="n">diabetes</span><span class="o">.</span><span class="n">target</span>
 
-<span class="c"># Instanciate a GP model</span>
-<span class="n">gp</span> <span class="o">=</span> <a href="../../modules/generated/sklearn.gaussian_process.GaussianProcess.html#sklearn.gaussian_process.GaussianProcess"><span class="n">GaussianProcess</span></a><span class="p">(</span><span class="n">regr</span><span class="o">=</span><span class="s">&#39;constant&#39;</span><span class="p">,</span> <span class="n">corr</span><span class="o">=</span><span class="s">&#39;absolute_exponential&#39;</span><span class="p">,</span>
+<span class="c1"># Instanciate a GP model</span>
+<span class="n">gp</span> <span class="o">=</span> <a href="../../modules/generated/sklearn.gaussian_process.GaussianProcess.html#sklearn.gaussian_process.GaussianProcess"><span class="n">GaussianProcess</span></a><span class="p">(</span><span class="n">regr</span><span class="o">=</span><span class="s1">&#39;constant&#39;</span><span class="p">,</span> <span class="n">corr</span><span class="o">=</span><span class="s1">&#39;absolute_exponential&#39;</span><span class="p">,</span>
                      <span class="n">theta0</span><span class="o">=</span><span class="p">[</span><span class="mi">1</span><span class="n">e</span><span class="o">-</span><span class="mi">4</span><span class="p">]</span> <span class="o">*</span> <span class="mi">10</span><span class="p">,</span> <span class="n">thetaL</span><span class="o">=</span><span class="p">[</span><span class="mi">1</span><span class="n">e</span><span class="o">-</span><span class="mi">12</span><span class="p">]</span> <span class="o">*</span> <span class="mi">10</span><span class="p">,</span>
-                     <span class="n">thetaU</span><span class="o">=</span><span class="p">[</span><span class="mi">1</span><span class="n">e</span><span class="o">-</span><span class="mi">2</span><span class="p">]</span> <span class="o">*</span> <span class="mi">10</span><span class="p">,</span> <span class="n">nugget</span><span class="o">=</span><span class="mi">1</span><span class="n">e</span><span class="o">-</span><span class="mi">2</span><span class="p">,</span> <span class="n">optimizer</span><span class="o">=</span><span class="s">&#39;Welch&#39;</span><span class="p">)</span>
+                     <span class="n">thetaU</span><span class="o">=</span><span class="p">[</span><span class="mi">1</span><span class="n">e</span><span class="o">-</span><span class="mi">2</span><span class="p">]</span> <span class="o">*</span> <span class="mi">10</span><span class="p">,</span> <span class="n">nugget</span><span class="o">=</span><span class="mi">1</span><span class="n">e</span><span class="o">-</span><span class="mi">2</span><span class="p">,</span> <span class="n">optimizer</span><span class="o">=</span><span class="s1">&#39;Welch&#39;</span><span class="p">)</span>
 
-<span class="c"># Fit the GP model to the data performing maximum likelihood estimation</span>
+<span class="c1"># Fit the GP model to the data performing maximum likelihood estimation</span>
 <span class="n">gp</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span>
 
-<span class="c"># Deactivate maximum likelihood estimation for the cross-validation loop</span>
-<span class="n">gp</span><span class="o">.</span><span class="n">theta0</span> <span class="o">=</span> <span class="n">gp</span><span class="o">.</span><span class="n">theta_</span>  <span class="c"># Given correlation parameter = MLE</span>
-<span class="n">gp</span><span class="o">.</span><span class="n">thetaL</span><span class="p">,</span> <span class="n">gp</span><span class="o">.</span><span class="n">thetaU</span> <span class="o">=</span> <span class="k">None</span><span class="p">,</span> <span class="k">None</span>  <span class="c"># None bounds deactivate MLE</span>
+<span class="c1"># Deactivate maximum likelihood estimation for the cross-validation loop</span>
+<span class="n">gp</span><span class="o">.</span><span class="n">theta0</span> <span class="o">=</span> <span class="n">gp</span><span class="o">.</span><span class="n">theta_</span>  <span class="c1"># Given correlation parameter = MLE</span>
+<span class="n">gp</span><span class="o">.</span><span class="n">thetaL</span><span class="p">,</span> <span class="n">gp</span><span class="o">.</span><span class="n">thetaU</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="kc">None</span>  <span class="c1"># None bounds deactivate MLE</span>
 
-<span class="c"># Perform a cross-validation estimate of the coefficient of determination using</span>
-<span class="c"># the cross_validation module using all CPUs available on the machine</span>
-<span class="n">K</span> <span class="o">=</span> <span class="mi">20</span>  <span class="c"># folds</span>
+<span class="c1"># Perform a cross-validation estimate of the coefficient of determination using</span>
+<span class="c1"># the cross_validation module using all CPUs available on the machine</span>
+<span class="n">K</span> <span class="o">=</span> <span class="mi">20</span>  <span class="c1"># folds</span>
 <span class="n">R2</span> <span class="o">=</span> <a href="../../modules/generated/sklearn.cross_validation.cross_val_score.html#sklearn.cross_validation.cross_val_score"><span class="n">cross_val_score</span></a><span class="p">(</span><span class="n">gp</span><span class="p">,</span> <span class="n">X</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="n">y</span><span class="p">,</span> <span class="n">cv</span><span class="o">=</span><a href="../../modules/generated/sklearn.cross_validation.KFold.html#sklearn.cross_validation.KFold"><span class="n">KFold</span></a><span class="p">(</span><span class="n">y</span><span class="o">.</span><span class="n">size</span><span class="p">,</span> <span class="n">K</span><span class="p">),</span> <span class="n">n_jobs</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span>
-<span class="nb">print</span><span class="p">(</span><span class="s">&quot;The %d-Folds estimate of the coefficient of determination is R2 = %s&quot;</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;The </span><span class="si">%d</span><span class="s2">-Folds estimate of the coefficient of determination is R2 = </span><span class="si">%s</span><span class="s2">&quot;</span>
       <span class="o">%</span> <span class="p">(</span><span class="n">K</span><span class="p">,</span> <span class="n">R2</span><span class="p">))</span>
 </pre></div>
 </div>

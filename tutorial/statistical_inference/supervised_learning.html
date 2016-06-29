@@ -65,28 +65,28 @@
         </a>
         </p><div class="navbar">
             <ul>
-                <li><a href="../../index.html">Home</a></li>
-                <li><a href="../../install.html">Installation</a></li>
+                <li><a href="../../index.html">主页</a></li>
+                <li><a href="../../install.html">安装</a></li>
                 <li class="btn-li"><div class="btn-group">
-              <a href="../../documentation.html">Documentation</a>
+              <a href="../../documentation.html">文档</a>
               <a class="btn dropdown-toggle" data-toggle="dropdown">
                  <span class="caret"></span>
               </a>
               <ul class="dropdown-menu">
             <li class="link-title">Scikit-learn 0.17 (stable)</li>
-            <li><a href="../index.html">Tutorials</a></li>
-            <li><a href="../../user_guide.html">User guide</a></li>
+            <li><a href="../index.html">入门指南</a></li>
+            <li><a href="../../user_guide.html">使用手册</a></li>
             <li><a href="../../modules/classes.html">API</a></li>
             <li><a href="../../faq.html">FAQ</a></li>
-            <li><a href="../../developers.html">Contributing</a></li>
+            <li><a href="../../developers.html">贡献</a></li>
             <li class="divider"></li>
                 <li><a href="http://scikit-learn.org/dev/documentation.html">Scikit-learn 0.18 (development)</a></li>
                 <li><a href="http://scikit-learn.org/0.16/documentation.html">Scikit-learn 0.16</a></li>
-				<li><a href="../../_downloads/user_guide.pdf">PDF documentation</a></li>
+				<li><a href="../../_downloads/user_guide.pdf">PDF 文档</a></li>
               </ul>
             </div>
         </li>
-            <li><a href="../../auto_examples/index.html">Examples</a></li>
+            <li><a href="../../auto_examples/index.html">例子</a></li>
             </ul>
 
             <div class="search_form">
@@ -117,7 +117,7 @@
         accesskey="P">Previous
         <br/>
         <span class="smallrellink">
-        Statistical lear...
+        Statistical l...
         </span>
             <span class="hiddenrellink">
             Statistical learning: the setting and the estimator object in scikit-learn
@@ -134,7 +134,7 @@
         Up
         <br/>
         <span class="smallrellink">
-        A tutorial on st...
+        A tutorial on...
         </span>
             <span class="hiddenrellink">
             A tutorial on statistical-learning for scientific data processing
@@ -219,7 +219,7 @@ learning vocabulary used within scikit-learn.</p>
 <p>The iris dataset is a classification task consisting in identifying 3
 different types of irises (Setosa, Versicolour, and Virginica) from
 their petal and sepal length and width:</p>
-<div class="highlight-default"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">sklearn</span> <span class="k">import</span> <span class="n">datasets</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">iris</span> <span class="o">=</span> <span class="n">datasets</span><span class="o">.</span><span class="n">load_iris</span><span class="p">()</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">iris_X</span> <span class="o">=</span> <span class="n">iris</span><span class="o">.</span><span class="n">data</span>
@@ -247,15 +247,15 @@ estimator on <strong>new data</strong>. This is why datasets are often split int
 </div>
 <p><strong>KNN (k nearest neighbors) classification example</strong>:</p>
 <a class="reference external image-reference" href="../../auto_examples/neighbors/plot_classification.html"><img alt="../../_images/plot_classification_0012.png" class="align-center" src="../../_images/plot_classification_0012.png" style="width: 560.0px; height: 420.0px;" /></a>
-<div class="highlight-default"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="c"># Split iris data in train and test data</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="c"># A random permutation, to split the data randomly</span>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="c1"># Split iris data in train and test data</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="c1"># A random permutation, to split the data randomly</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">seed</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">indices</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">permutation</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">iris_X</span><span class="p">))</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">iris_X_train</span> <span class="o">=</span> <span class="n">iris_X</span><span class="p">[</span><span class="n">indices</span><span class="p">[:</span><span class="o">-</span><span class="mi">10</span><span class="p">]]</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">iris_y_train</span> <span class="o">=</span> <span class="n">iris_y</span><span class="p">[</span><span class="n">indices</span><span class="p">[:</span><span class="o">-</span><span class="mi">10</span><span class="p">]]</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">iris_X_test</span>  <span class="o">=</span> <span class="n">iris_X</span><span class="p">[</span><span class="n">indices</span><span class="p">[</span><span class="o">-</span><span class="mi">10</span><span class="p">:]]</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">iris_y_test</span>  <span class="o">=</span> <span class="n">iris_y</span><span class="p">[</span><span class="n">indices</span><span class="p">[</span><span class="o">-</span><span class="mi">10</span><span class="p">:]]</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="c"># Create and fit a nearest-neighbor classifier</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="c1"># Create and fit a nearest-neighbor classifier</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">sklearn.neighbors</span> <span class="k">import</span> <span class="n">KNeighborsClassifier</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">knn</span> <span class="o">=</span> <span class="n">KNeighborsClassifier</span><span class="p">()</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">knn</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">iris_X_train</span><span class="p">,</span> <span class="n">iris_y_train</span><span class="p">)</span> 
@@ -300,7 +300,7 @@ and is a core problem that machine learning addresses.</p>
 <p>The diabetes dataset consists of 10 physiological variables (age,
 sex, weight, blood pressure) measure on 442 patients, and an
 indication of disease progression after one year:</p>
-<div class="highlight-default"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">diabetes</span> <span class="o">=</span> <span class="n">datasets</span><span class="o">.</span><span class="n">load_diabetes</span><span class="p">()</span>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">diabetes</span> <span class="o">=</span> <span class="n">datasets</span><span class="o">.</span><span class="n">load_diabetes</span><span class="p">()</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">diabetes_X_train</span> <span class="o">=</span> <span class="n">diabetes</span><span class="o">.</span><span class="n">data</span><span class="p">[:</span><span class="o">-</span><span class="mi">20</span><span class="p">]</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">diabetes_X_test</span>  <span class="o">=</span> <span class="n">diabetes</span><span class="o">.</span><span class="n">data</span><span class="p">[</span><span class="o">-</span><span class="mi">20</span><span class="p">:]</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">diabetes_y_train</span> <span class="o">=</span> <span class="n">diabetes</span><span class="o">.</span><span class="n">target</span><span class="p">[:</span><span class="o">-</span><span class="mi">20</span><span class="p">]</span>
@@ -326,7 +326,7 @@ of the model as small as possible.</p>
 <li><img class="math" src="../../_images/math/19bc0073dde1bcd1a8e6a32b251e80cced668f04.png" alt="\epsilon"/>: Observation noise</li>
 </ul>
 </div></blockquote>
-<div class="highlight-default"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">sklearn</span> <span class="k">import</span> <span class="n">linear_model</span>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">sklearn</span> <span class="k">import</span> <span class="n">linear_model</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">regr</span> <span class="o">=</span> <span class="n">linear_model</span><span class="o">.</span><span class="n">LinearRegression</span><span class="p">()</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">regr</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">diabetes_X_train</span><span class="p">,</span> <span class="n">diabetes_y_train</span><span class="p">)</span>
 <span class="go">LinearRegression(copy_X=True, fit_intercept=True, n_jobs=1, normalize=False)</span>
@@ -334,13 +334,13 @@ of the model as small as possible.</p>
 <span class="go">[   0.30349955 -237.63931533  510.53060544  327.73698041 -814.13170937</span>
 <span class="go">  492.81458798  102.84845219  184.60648906  743.51961675   76.09517222]</span>
 
-<span class="gp">&gt;&gt;&gt; </span><span class="c"># The mean square error</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="c1"># The mean square error</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">np</span><span class="o">.</span><span class="n">mean</span><span class="p">((</span><span class="n">regr</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">diabetes_X_test</span><span class="p">)</span><span class="o">-</span><span class="n">diabetes_y_test</span><span class="p">)</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span>
 <span class="go">2004.56760268...</span>
 
-<span class="gp">&gt;&gt;&gt; </span><span class="c"># Explained variance score: 1 is perfect prediction</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="c"># and 0 means that there is no linear relationship</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="c"># between X and Y.</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="c1"># Explained variance score: 1 is perfect prediction</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="c1"># and 0 means that there is no linear relationship</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="c1"># between X and Y.</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">regr</span><span class="o">.</span><span class="n">score</span><span class="p">(</span><span class="n">diabetes_X_test</span><span class="p">,</span> <span class="n">diabetes_y_test</span><span class="p">)</span> 
 <span class="go">0.5850753022690...</span>
 </pre></div>
@@ -351,7 +351,7 @@ of the model as small as possible.</p>
 <p>If there are few data points per dimension, noise in the observations
 induces high variance:</p>
 <a class="reference external image-reference" href="../../auto_examples/linear_model/plot_ols_ridge_variance.html"><img alt="../../_images/plot_ols_ridge_variance_0011.png" class="align-right" src="../../_images/plot_ols_ridge_variance_0011.png" style="width: 280.0px; height: 210.0px;" /></a>
-<div class="highlight-default"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">X</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">c_</span><span class="p">[</span> <span class="o">.</span><span class="mi">5</span><span class="p">,</span> <span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">T</span>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">X</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">c_</span><span class="p">[</span> <span class="o">.</span><span class="mi">5</span><span class="p">,</span> <span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">T</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">y</span> <span class="o">=</span> <span class="p">[</span><span class="o">.</span><span class="mi">5</span><span class="p">,</span> <span class="mi">1</span><span class="p">]</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">test</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">c_</span><span class="p">[</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">2</span><span class="p">]</span><span class="o">.</span><span class="n">T</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">regr</span> <span class="o">=</span> <span class="n">linear_model</span><span class="o">.</span><span class="n">LinearRegression</span><span class="p">()</span>
@@ -372,7 +372,7 @@ regression coefficients to zero: any two randomly chosen set of
 observations are likely to be uncorrelated. This is called <a class="reference internal" href="../../modules/generated/sklearn.linear_model.Ridge.html#sklearn.linear_model.Ridge" title="sklearn.linear_model.Ridge"><code class="xref py py-class docutils literal"><span class="pre">Ridge</span></code></a>
 regression:</p>
 <a class="reference external image-reference" href="../../auto_examples/linear_model/plot_ols_ridge_variance.html"><img alt="../../_images/plot_ols_ridge_variance_0021.png" class="align-right" src="../../_images/plot_ols_ridge_variance_0021.png" style="width: 280.0px; height: 210.0px;" /></a>
-<div class="highlight-default"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">regr</span> <span class="o">=</span> <span class="n">linear_model</span><span class="o">.</span><span class="n">Ridge</span><span class="p">(</span><span class="n">alpha</span><span class="o">=.</span><span class="mi">1</span><span class="p">)</span>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">regr</span> <span class="o">=</span> <span class="n">linear_model</span><span class="o">.</span><span class="n">Ridge</span><span class="p">(</span><span class="n">alpha</span><span class="o">=.</span><span class="mi">1</span><span class="p">)</span>
 
 <span class="gp">&gt;&gt;&gt; </span><span class="n">pl</span><span class="o">.</span><span class="n">figure</span><span class="p">()</span> 
 
@@ -388,7 +388,7 @@ regression:</p>
 <code class="docutils literal"><span class="pre">alpha</span></code> parameter, the higher the bias and the lower the variance.</p>
 <p>We can choose <code class="docutils literal"><span class="pre">alpha</span></code> to minimize left out error, this time using the
 diabetes dataset rather than our synthetic data:</p>
-<div class="highlight-default"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">alphas</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">logspace</span><span class="p">(</span><span class="o">-</span><span class="mi">4</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">6</span><span class="p">)</span>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">alphas</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">logspace</span><span class="p">(</span><span class="o">-</span><span class="mi">4</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">6</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">__future__</span> <span class="k">import</span> <span class="n">print_function</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">([</span><span class="n">regr</span><span class="o">.</span><span class="n">set_params</span><span class="p">(</span><span class="n">alpha</span><span class="o">=</span><span class="n">alpha</span>
 <span class="gp">... </span>            <span class="p">)</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">diabetes_X_train</span><span class="p">,</span> <span class="n">diabetes_y_train</span><span class="p">,</span>
@@ -426,7 +426,7 @@ penalization approach, called <a class="reference internal" href="../../modules/
 selection operator), can set some coefficients to zero. Such methods are
 called <strong>sparse method</strong> and sparsity can be seen as an
 application of Occam&#8217;s razor: <em>prefer simpler models</em>.</p>
-<div class="highlight-default"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">regr</span> <span class="o">=</span> <span class="n">linear_model</span><span class="o">.</span><span class="n">Lasso</span><span class="p">()</span>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">regr</span> <span class="o">=</span> <span class="n">linear_model</span><span class="o">.</span><span class="n">Lasso</span><span class="p">()</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">scores</span> <span class="o">=</span> <span class="p">[</span><span class="n">regr</span><span class="o">.</span><span class="n">set_params</span><span class="p">(</span><span class="n">alpha</span><span class="o">=</span><span class="n">alpha</span>
 <span class="gp">... </span>            <span class="p">)</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">diabetes_X_train</span><span class="p">,</span> <span class="n">diabetes_y_train</span>
 <span class="gp">... </span>            <span class="p">)</span><span class="o">.</span><span class="n">score</span><span class="p">(</span><span class="n">diabetes_X_test</span><span class="p">,</span> <span class="n">diabetes_y_test</span><span class="p">)</span>
@@ -465,7 +465,7 @@ function or <strong>logistic</strong> function:</p>
 <div class="math">
 <p><img src="../../_images/math/872ec7749e8c29c01412320161d6635a9225cae0.png" alt="y = \textrm{sigmoid}(X\beta - \textrm{offset}) + \epsilon =
 \frac{1}{1 + \textrm{exp}(- X\beta + \textrm{offset})} + \epsilon"/></p>
-</div><div class="highlight-default"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">logistic</span> <span class="o">=</span> <span class="n">linear_model</span><span class="o">.</span><span class="n">LogisticRegression</span><span class="p">(</span><span class="n">C</span><span class="o">=</span><span class="mi">1</span><span class="n">e5</span><span class="p">)</span>
+</div><div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">logistic</span> <span class="o">=</span> <span class="n">linear_model</span><span class="o">.</span><span class="n">LogisticRegression</span><span class="p">(</span><span class="n">C</span><span class="o">=</span><span class="mi">1</span><span class="n">e5</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">logistic</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">iris_X_train</span><span class="p">,</span> <span class="n">iris_y_train</span><span class="p">)</span>
 <span class="go">LogisticRegression(C=100000.0, class_weight=None, dual=False,</span>
 <span class="go">          fit_intercept=True, intercept_scaling=1, max_iter=100,</span>
@@ -494,7 +494,7 @@ less regularization.
 <p>Try classifying the digits dataset with nearest neighbors and a linear
 model. Leave out the last 10% and test prediction performance on these
 observations.</p>
-<div class="highlight-default"><div class="highlight"><pre><span class="kn">from</span> <span class="nn">sklearn</span> <span class="k">import</span> <span class="n">datasets</span><span class="p">,</span> <span class="n">neighbors</span><span class="p">,</span> <span class="n">linear_model</span>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn</span> <span class="k">import</span> <span class="n">datasets</span><span class="p">,</span> <span class="n">neighbors</span><span class="p">,</span> <span class="n">linear_model</span>
 
 <span class="n">digits</span> <span class="o">=</span> <span class="n">datasets</span><span class="o">.</span><span class="n">load_digits</span><span class="p">()</span>
 <span class="n">X_digits</span> <span class="o">=</span> <span class="n">digits</span><span class="o">.</span><span class="n">data</span>
@@ -540,8 +540,8 @@ the separating line (less regularization).</p>
 </div>
 <p>SVMs can be used in regression &#8211;<a class="reference internal" href="../../modules/generated/sklearn.svm.SVR.html#sklearn.svm.SVR" title="sklearn.svm.SVR"><code class="xref py py-class docutils literal"><span class="pre">SVR</span></code></a> (Support Vector Regression)&#8211;, or in
 classification &#8211;<a class="reference internal" href="../../modules/generated/sklearn.svm.SVC.html#sklearn.svm.SVC" title="sklearn.svm.SVC"><code class="xref py py-class docutils literal"><span class="pre">SVC</span></code></a> (Support Vector Classification).</p>
-<div class="highlight-default"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">sklearn</span> <span class="k">import</span> <span class="n">svm</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">svc</span> <span class="o">=</span> <span class="n">svm</span><span class="o">.</span><span class="n">SVC</span><span class="p">(</span><span class="n">kernel</span><span class="o">=</span><span class="s">&#39;linear&#39;</span><span class="p">)</span>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">sklearn</span> <span class="k">import</span> <span class="n">svm</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">svc</span> <span class="o">=</span> <span class="n">svm</span><span class="o">.</span><span class="n">SVC</span><span class="p">(</span><span class="n">kernel</span><span class="o">=</span><span class="s1">&#39;linear&#39;</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">svc</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">iris_X_train</span><span class="p">,</span> <span class="n">iris_y_train</span><span class="p">)</span>    
 <span class="go">SVC(C=1.0, cache_size=200, class_weight=None, coef0=0.0,</span>
 <span class="go">    decision_function_shape=None, degree=3, gamma=&#39;auto&#39;, kernel=&#39;linear&#39;,</span>
@@ -575,13 +575,13 @@ creating a decision energy by positioning <em>kernels</em> on observations:</p>
 <tr class="row-even"><td><a class="reference external" href="../../auto_examples/svm/plot_svm_kernels.html"><img alt="svm_kernel_linear" src="../../_images/plot_svm_kernels_0011.png" style="width: 260.0px; height: 195.0px;" /></a></td>
 <td><a class="reference external" href="../../auto_examples/svm/plot_svm_kernels.html"><img alt="svm_kernel_poly" src="../../_images/plot_svm_kernels_0021.png" style="width: 260.0px; height: 195.0px;" /></a></td>
 </tr>
-<tr class="row-odd"><td><div class="first last highlight-default"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">svc</span> <span class="o">=</span> <span class="n">svm</span><span class="o">.</span><span class="n">SVC</span><span class="p">(</span><span class="n">kernel</span><span class="o">=</span><span class="s">&#39;linear&#39;</span><span class="p">)</span>
+<tr class="row-odd"><td><div class="first last highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">svc</span> <span class="o">=</span> <span class="n">svm</span><span class="o">.</span><span class="n">SVC</span><span class="p">(</span><span class="n">kernel</span><span class="o">=</span><span class="s1">&#39;linear&#39;</span><span class="p">)</span>
 </pre></div>
 </div>
 </td>
-<td><div class="first last highlight-default"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">svc</span> <span class="o">=</span> <span class="n">svm</span><span class="o">.</span><span class="n">SVC</span><span class="p">(</span><span class="n">kernel</span><span class="o">=</span><span class="s">&#39;poly&#39;</span><span class="p">,</span>
+<td><div class="first last highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">svc</span> <span class="o">=</span> <span class="n">svm</span><span class="o">.</span><span class="n">SVC</span><span class="p">(</span><span class="n">kernel</span><span class="o">=</span><span class="s1">&#39;poly&#39;</span><span class="p">,</span>
 <span class="gp">... </span>              <span class="n">degree</span><span class="o">=</span><span class="mi">3</span><span class="p">)</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="c"># degree: polynomial degree</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="c1"># degree: polynomial degree</span>
 </pre></div>
 </div>
 </td>
@@ -597,9 +597,9 @@ creating a decision energy by positioning <em>kernels</em> on observations:</p>
 </tr>
 <tr class="row-even"><td><a class="reference external" href="../../auto_examples/svm/plot_svm_kernels.html"><img alt="svm_kernel_rbf" src="../../_images/plot_svm_kernels_0031.png" style="width: 260.0px; height: 195.0px;" /></a></td>
 </tr>
-<tr class="row-odd"><td><div class="first last highlight-default"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">svc</span> <span class="o">=</span> <span class="n">svm</span><span class="o">.</span><span class="n">SVC</span><span class="p">(</span><span class="n">kernel</span><span class="o">=</span><span class="s">&#39;rbf&#39;</span><span class="p">)</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="c"># gamma: inverse of size of</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="c"># radial kernel</span>
+<tr class="row-odd"><td><div class="first last highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">svc</span> <span class="o">=</span> <span class="n">svm</span><span class="o">.</span><span class="n">SVC</span><span class="p">(</span><span class="n">kernel</span><span class="o">=</span><span class="s1">&#39;rbf&#39;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="c1"># gamma: inverse of size of</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="c1"># radial kernel</span>
 </pre></div>
 </div>
 </td>
@@ -622,7 +622,7 @@ performance on these observations.</p>
 you would be testing on only one class.</p>
 <p><strong>Hint</strong>: You can use the <code class="docutils literal"><span class="pre">decision_function</span></code> method on a grid to get
 intuitions.</p>
-<div class="highlight-default"><div class="highlight"><pre><span class="n">iris</span> <span class="o">=</span> <span class="n">datasets</span><span class="o">.</span><span class="n">load_iris</span><span class="p">()</span>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">iris</span> <span class="o">=</span> <span class="n">datasets</span><span class="o">.</span><span class="n">load_iris</span><span class="p">()</span>
 <span class="n">X</span> <span class="o">=</span> <span class="n">iris</span><span class="o">.</span><span class="n">data</span>
 <span class="n">y</span> <span class="o">=</span> <span class="n">iris</span><span class="o">.</span><span class="n">target</span>
 

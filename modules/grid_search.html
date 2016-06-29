@@ -65,28 +65,28 @@
         </a>
         </p><div class="navbar">
             <ul>
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="../install.html">Installation</a></li>
+                <li><a href="../index.html">主页</a></li>
+                <li><a href="../install.html">安装</a></li>
                 <li class="btn-li"><div class="btn-group">
-              <a href="../documentation.html">Documentation</a>
+              <a href="../documentation.html">文档</a>
               <a class="btn dropdown-toggle" data-toggle="dropdown">
                  <span class="caret"></span>
               </a>
               <ul class="dropdown-menu">
             <li class="link-title">Scikit-learn 0.17 (stable)</li>
-            <li><a href="../tutorial/index.html">Tutorials</a></li>
-            <li><a href="../user_guide.html">User guide</a></li>
+            <li><a href="../tutorial/index.html">入门指南</a></li>
+            <li><a href="../user_guide.html">使用手册</a></li>
             <li><a href="classes.html">API</a></li>
             <li><a href="../faq.html">FAQ</a></li>
-            <li><a href="../developers.html">Contributing</a></li>
+            <li><a href="../developers.html">贡献</a></li>
             <li class="divider"></li>
                 <li><a href="http://scikit-learn.org/dev/documentation.html">Scikit-learn 0.18 (development)</a></li>
                 <li><a href="http://scikit-learn.org/0.16/documentation.html">Scikit-learn 0.16</a></li>
-				<li><a href="../_downloads/user_guide.pdf">PDF documentation</a></li>
+				<li><a href="../_downloads/user_guide.pdf">PDF 文档</a></li>
               </ul>
             </div>
         </li>
-            <li><a href="../auto_examples/index.html">Examples</a></li>
+            <li><a href="../auto_examples/index.html">例子</a></li>
             </ul>
 
             <div class="search_form">
@@ -117,7 +117,7 @@
         accesskey="P">Previous
         <br/>
         <span class="smallrellink">
-        3.1. Cross-valid...
+        3.1. Cross-va...
         </span>
             <span class="hiddenrellink">
             3.1. Cross-validation: evaluating estimator performance
@@ -134,7 +134,7 @@
         Up
         <br/>
         <span class="smallrellink">
-        3. Model selecti...
+        3. Model sele...
         </span>
             <span class="hiddenrellink">
             3. Model selection and evaluation
@@ -192,7 +192,7 @@ Classifier, <code class="docutils literal"><span class="pre">alpha</span></code>
 <p>Any parameter provided when constructing an estimator may be optimized in this
 manner.  Specifically, to find the names and current values for all parameters
 for a given estimator, use:</p>
-<div class="highlight-default"><div class="highlight"><pre><span class="n">estimator</span><span class="o">.</span><span class="n">get_params</span><span class="p">()</span>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">estimator</span><span class="o">.</span><span class="n">get_params</span><span class="p">()</span>
 </pre></div>
 </div>
 <p>Such parameters are often referred to as <em>hyperparameters</em> (particularly in
@@ -219,9 +219,9 @@ distribution. After describing these tools we detail
 <p>The grid search provided by <a class="reference internal" href="generated/sklearn.grid_search.GridSearchCV.html#sklearn.grid_search.GridSearchCV" title="sklearn.grid_search.GridSearchCV"><code class="xref py py-class docutils literal"><span class="pre">GridSearchCV</span></code></a> exhaustively generates
 candidates from a grid of parameter values specified with the <code class="docutils literal"><span class="pre">param_grid</span></code>
 parameter. For instance, the following <code class="docutils literal"><span class="pre">param_grid</span></code>:</p>
-<div class="highlight-default"><div class="highlight"><pre><span class="n">param_grid</span> <span class="o">=</span> <span class="p">[</span>
-  <span class="p">{</span><span class="s">&#39;C&#39;</span><span class="p">:</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">100</span><span class="p">,</span> <span class="mi">1000</span><span class="p">],</span> <span class="s">&#39;kernel&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s">&#39;linear&#39;</span><span class="p">]},</span>
-  <span class="p">{</span><span class="s">&#39;C&#39;</span><span class="p">:</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">100</span><span class="p">,</span> <span class="mi">1000</span><span class="p">],</span> <span class="s">&#39;gamma&#39;</span><span class="p">:</span> <span class="p">[</span><span class="mf">0.001</span><span class="p">,</span> <span class="mf">0.0001</span><span class="p">],</span> <span class="s">&#39;kernel&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s">&#39;rbf&#39;</span><span class="p">]},</span>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">param_grid</span> <span class="o">=</span> <span class="p">[</span>
+  <span class="p">{</span><span class="s1">&#39;C&#39;</span><span class="p">:</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">100</span><span class="p">,</span> <span class="mi">1000</span><span class="p">],</span> <span class="s1">&#39;kernel&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;linear&#39;</span><span class="p">]},</span>
+  <span class="p">{</span><span class="s1">&#39;C&#39;</span><span class="p">:</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">100</span><span class="p">,</span> <span class="mi">1000</span><span class="p">],</span> <span class="s1">&#39;gamma&#39;</span><span class="p">:</span> <span class="p">[</span><span class="mf">0.001</span><span class="p">,</span> <span class="mf">0.0001</span><span class="p">],</span> <span class="s1">&#39;kernel&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;rbf&#39;</span><span class="p">]},</span>
  <span class="p">]</span>
 </pre></div>
 </div>
@@ -263,8 +263,8 @@ a computation budget, being the number of sampled candidates or sampling
 iterations, is specified using the <code class="docutils literal"><span class="pre">n_iter</span></code> parameter.
 For each parameter, either a distribution over possible values or a list of
 discrete choices (which will be sampled uniformly) can be specified:</p>
-<div class="highlight-default"><div class="highlight"><pre><span class="p">[{</span><span class="s">&#39;C&#39;</span><span class="p">:</span> <span class="n">scipy</span><span class="o">.</span><span class="n">stats</span><span class="o">.</span><span class="n">expon</span><span class="p">(</span><span class="n">scale</span><span class="o">=</span><span class="mi">100</span><span class="p">),</span> <span class="s">&#39;gamma&#39;</span><span class="p">:</span> <span class="n">scipy</span><span class="o">.</span><span class="n">stats</span><span class="o">.</span><span class="n">expon</span><span class="p">(</span><span class="n">scale</span><span class="o">=.</span><span class="mi">1</span><span class="p">),</span>
-  <span class="s">&#39;kernel&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s">&#39;rbf&#39;</span><span class="p">],</span> <span class="s">&#39;class_weight&#39;</span><span class="p">:[</span><span class="s">&#39;auto&#39;</span><span class="p">,</span> <span class="k">None</span><span class="p">]}]</span>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="p">[{</span><span class="s1">&#39;C&#39;</span><span class="p">:</span> <span class="n">scipy</span><span class="o">.</span><span class="n">stats</span><span class="o">.</span><span class="n">expon</span><span class="p">(</span><span class="n">scale</span><span class="o">=</span><span class="mi">100</span><span class="p">),</span> <span class="s1">&#39;gamma&#39;</span><span class="p">:</span> <span class="n">scipy</span><span class="o">.</span><span class="n">stats</span><span class="o">.</span><span class="n">expon</span><span class="p">(</span><span class="n">scale</span><span class="o">=.</span><span class="mi">1</span><span class="p">),</span>
+  <span class="s1">&#39;kernel&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;rbf&#39;</span><span class="p">],</span> <span class="s1">&#39;class_weight&#39;</span><span class="p">:[</span><span class="s1">&#39;auto&#39;</span><span class="p">,</span> <span class="kc">None</span><span class="p">]}]</span>
 </pre></div>
 </div>
 <p>This example uses the <code class="docutils literal"><span class="pre">scipy.stats</span></code> module, which contains many useful

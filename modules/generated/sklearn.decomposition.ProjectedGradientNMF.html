@@ -65,28 +65,28 @@
         </a>
         </p><div class="navbar">
             <ul>
-                <li><a href="../../index.html">Home</a></li>
-                <li><a href="../../install.html">Installation</a></li>
+                <li><a href="../../index.html">主页</a></li>
+                <li><a href="../../install.html">安装</a></li>
                 <li class="btn-li"><div class="btn-group">
-              <a href="../../documentation.html">Documentation</a>
+              <a href="../../documentation.html">文档</a>
               <a class="btn dropdown-toggle" data-toggle="dropdown">
                  <span class="caret"></span>
               </a>
               <ul class="dropdown-menu">
             <li class="link-title">Scikit-learn 0.17 (stable)</li>
-            <li><a href="../../tutorial/index.html">Tutorials</a></li>
-            <li><a href="../../user_guide.html">User guide</a></li>
+            <li><a href="../../tutorial/index.html">入门指南</a></li>
+            <li><a href="../../user_guide.html">使用手册</a></li>
             <li><a href="../classes.html">API</a></li>
             <li><a href="../../faq.html">FAQ</a></li>
-            <li><a href="../../developers.html">Contributing</a></li>
+            <li><a href="../../developers.html">贡献</a></li>
             <li class="divider"></li>
                 <li><a href="http://scikit-learn.org/dev/documentation.html">Scikit-learn 0.18 (development)</a></li>
                 <li><a href="http://scikit-learn.org/0.16/documentation.html">Scikit-learn 0.16</a></li>
-				<li><a href="../../_downloads/user_guide.pdf">PDF documentation</a></li>
+				<li><a href="../../_downloads/user_guide.pdf">PDF 文档</a></li>
               </ul>
             </div>
         </li>
-            <li><a href="../../auto_examples/index.html">Examples</a></li>
+            <li><a href="../../auto_examples/index.html">例子</a></li>
             </ul>
 
             <div class="search_form">
@@ -117,7 +117,7 @@
         accesskey="P">Previous
         <br/>
         <span class="smallrellink">
-        sklearn.decompos...
+        sklearn.decom...
         </span>
             <span class="hiddenrellink">
             sklearn.decomposition.IncrementalPCA
@@ -175,7 +175,7 @@
 negative matrix X. This factorization can be used for example for
 dimensionality reduction, source separation or topic extraction.</p>
 <p>The objective function is:</p>
-<div class="highlight-default"><div class="highlight"><pre><span class="mf">0.5</span> <span class="o">*</span> <span class="o">||</span><span class="n">X</span> <span class="o">-</span> <span class="n">WH</span><span class="o">||</span><span class="n">_Fro</span><span class="o">^</span><span class="mi">2</span>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="mf">0.5</span> <span class="o">*</span> <span class="o">||</span><span class="n">X</span> <span class="o">-</span> <span class="n">WH</span><span class="o">||</span><span class="n">_Fro</span><span class="o">^</span><span class="mi">2</span>
 <span class="o">+</span> <span class="n">alpha</span> <span class="o">*</span> <span class="n">l1_ratio</span> <span class="o">*</span> <span class="o">||</span><span class="n">vec</span><span class="p">(</span><span class="n">W</span><span class="p">)</span><span class="o">||</span><span class="n">_1</span>
 <span class="o">+</span> <span class="n">alpha</span> <span class="o">*</span> <span class="n">l1_ratio</span> <span class="o">*</span> <span class="o">||</span><span class="n">vec</span><span class="p">(</span><span class="n">H</span><span class="p">)</span><span class="o">||</span><span class="n">_1</span>
 <span class="o">+</span> <span class="mf">0.5</span> <span class="o">*</span> <span class="n">alpha</span> <span class="o">*</span> <span class="p">(</span><span class="mi">1</span> <span class="o">-</span> <span class="n">l1_ratio</span><span class="p">)</span> <span class="o">*</span> <span class="o">||</span><span class="n">W</span><span class="o">||</span><span class="n">_Fro</span><span class="o">^</span><span class="mi">2</span>
@@ -183,7 +183,7 @@ dimensionality reduction, source separation or topic extraction.</p>
 </pre></div>
 </div>
 <p>Where:</p>
-<div class="highlight-default"><div class="highlight"><pre><span class="o">||</span><span class="n">A</span><span class="o">||</span><span class="n">_Fro</span><span class="o">^</span><span class="mi">2</span> <span class="o">=</span> \<span class="n">sum_</span><span class="p">{</span><span class="n">i</span><span class="p">,</span><span class="n">j</span><span class="p">}</span> <span class="n">A_</span><span class="p">{</span><span class="n">ij</span><span class="p">}</span><span class="o">^</span><span class="mi">2</span> <span class="p">(</span><span class="n">Frobenius</span> <span class="n">norm</span><span class="p">)</span>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="o">||</span><span class="n">A</span><span class="o">||</span><span class="n">_Fro</span><span class="o">^</span><span class="mi">2</span> <span class="o">=</span> \<span class="n">sum_</span><span class="p">{</span><span class="n">i</span><span class="p">,</span><span class="n">j</span><span class="p">}</span> <span class="n">A_</span><span class="p">{</span><span class="n">ij</span><span class="p">}</span><span class="o">^</span><span class="mi">2</span> <span class="p">(</span><span class="n">Frobenius</span> <span class="n">norm</span><span class="p">)</span>
 <span class="o">||</span><span class="n">vec</span><span class="p">(</span><span class="n">A</span><span class="p">)</span><span class="o">||</span><span class="n">_1</span> <span class="o">=</span> \<span class="n">sum_</span><span class="p">{</span><span class="n">i</span><span class="p">,</span><span class="n">j</span><span class="p">}</span> <span class="nb">abs</span><span class="p">(</span><span class="n">A_</span><span class="p">{</span><span class="n">ij</span><span class="p">})</span> <span class="p">(</span><span class="n">Elementwise</span> <span class="n">L1</span> <span class="n">norm</span><span class="p">)</span>
 </pre></div>
 </div>
@@ -349,17 +349,17 @@ large scale nonnegative matrix and tensor factorizations.&#8221;
 IEICE transactions on fundamentals of electronics, communications and
 computer sciences 92.3: 708-721, 2009.</p>
 <p class="rubric">Examples</p>
-<div class="highlight-default"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">X</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">],</span> <span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">],</span> <span class="p">[</span><span class="mi">3</span><span class="p">,</span> <span class="mf">1.2</span><span class="p">],</span> <span class="p">[</span><span class="mi">4</span><span class="p">,</span> <span class="mi">1</span><span class="p">],</span> <span class="p">[</span><span class="mi">5</span><span class="p">,</span> <span class="mf">0.8</span><span class="p">],</span> <span class="p">[</span><span class="mi">6</span><span class="p">,</span> <span class="mi">1</span><span class="p">]])</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">sklearn.decomposition</span> <span class="k">import</span> <span class="n">NMF</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">model</span> <span class="o">=</span> <span class="n">NMF</span><span class="p">(</span><span class="n">n_components</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="n">init</span><span class="o">=</span><span class="s">&#39;random&#39;</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">model</span> <span class="o">=</span> <span class="n">NMF</span><span class="p">(</span><span class="n">n_components</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="n">init</span><span class="o">=</span><span class="s1">&#39;random&#39;</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">model</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X</span><span class="p">)</span> 
 <span class="go">NMF(alpha=0.0, beta=1, eta=0.1, init=&#39;random&#39;, l1_ratio=0.0, max_iter=200,</span>
 <span class="go">  n_components=2, nls_max_iter=2000, random_state=0, shuffle=False,</span>
 <span class="go">  solver=&#39;cd&#39;, sparseness=None, tol=0.0001, verbose=0)</span>
 </pre></div>
 </div>
-<div class="highlight-default"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">model</span><span class="o">.</span><span class="n">components_</span>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">model</span><span class="o">.</span><span class="n">components_</span>
 <span class="go">array([[ 2.09783018,  0.30560234],</span>
 <span class="go">       [ 2.13443044,  2.13171694]])</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">model</span><span class="o">.</span><span class="n">reconstruction_err_</span> 

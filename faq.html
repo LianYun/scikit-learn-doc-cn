@@ -65,28 +65,28 @@
         </a>
         </p><div class="navbar">
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="install.html">Installation</a></li>
+                <li><a href="index.html">主页</a></li>
+                <li><a href="install.html">安装</a></li>
                 <li class="btn-li"><div class="btn-group">
-              <a href="documentation.html">Documentation</a>
+              <a href="documentation.html">文档</a>
               <a class="btn dropdown-toggle" data-toggle="dropdown">
                  <span class="caret"></span>
               </a>
               <ul class="dropdown-menu">
             <li class="link-title">Scikit-learn 0.17 (stable)</li>
-            <li><a href="tutorial/index.html">Tutorials</a></li>
-            <li><a href="user_guide.html">User guide</a></li>
+            <li><a href="tutorial/index.html">入门指南</a></li>
+            <li><a href="user_guide.html">使用手册</a></li>
             <li><a href="modules/classes.html">API</a></li>
             <li><a href="#">FAQ</a></li>
-            <li><a href="developers.html">Contributing</a></li>
+            <li><a href="developers.html">贡献</a></li>
             <li class="divider"></li>
                 <li><a href="http://scikit-learn.org/dev/documentation.html">Scikit-learn 0.18 (development)</a></li>
                 <li><a href="http://scikit-learn.org/0.16/documentation.html">Scikit-learn 0.16</a></li>
-				<li><a href="_downloads/user_guide.pdf">PDF documentation</a></li>
+				<li><a href="_downloads/user_guide.pdf">PDF 文档</a></li>
               </ul>
             </div>
         </li>
-            <li><a href="auto_examples/index.html">Examples</a></li>
+            <li><a href="auto_examples/index.html">例子</a></li>
             </ul>
 
             <div class="search_form">
@@ -117,7 +117,7 @@
         accesskey="P">Previous
         <br/>
         <span class="smallrellink">
-        Installing sciki...
+        Installing sc...
         </span>
             <span class="hiddenrellink">
             Installing scikit-learn
@@ -328,12 +328,12 @@ If the dataset is large, you can use feature vectors with only one &#8220;featur
 which is an index into a separate data structure, and supply a custom metric
 function that looks up the actual data in this data structure. E.g., to use
 DBSCAN with Levenshtein distances:</p>
-<div class="highlight-default"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">leven</span> <span class="k">import</span> <span class="n">levenshtein</span>       
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">leven</span> <span class="k">import</span> <span class="n">levenshtein</span>       
 <span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">sklearn.cluster</span> <span class="k">import</span> <span class="n">dbscan</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">data</span> <span class="o">=</span> <span class="p">[</span><span class="s">&quot;ACCTCCTAGAAG&quot;</span><span class="p">,</span> <span class="s">&quot;ACCTACTAGAAGTT&quot;</span><span class="p">,</span> <span class="s">&quot;GAATATTAGGCCGA&quot;</span><span class="p">]</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">data</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;ACCTCCTAGAAG&quot;</span><span class="p">,</span> <span class="s2">&quot;ACCTACTAGAAGTT&quot;</span><span class="p">,</span> <span class="s2">&quot;GAATATTAGGCCGA&quot;</span><span class="p">]</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="k">def</span> <span class="nf">lev_metric</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">):</span>
-<span class="gp">... </span>    <span class="n">i</span><span class="p">,</span> <span class="n">j</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">x</span><span class="p">[</span><span class="mi">0</span><span class="p">]),</span> <span class="nb">int</span><span class="p">(</span><span class="n">y</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>     <span class="c"># extract indices</span>
+<span class="gp">... </span>    <span class="n">i</span><span class="p">,</span> <span class="n">j</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">x</span><span class="p">[</span><span class="mi">0</span><span class="p">]),</span> <span class="nb">int</span><span class="p">(</span><span class="n">y</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>     <span class="c1"># extract indices</span>
 <span class="gp">... </span>    <span class="k">return</span> <span class="n">levenshtein</span><span class="p">(</span><span class="n">data</span><span class="p">[</span><span class="n">i</span><span class="p">],</span> <span class="n">data</span><span class="p">[</span><span class="n">j</span><span class="p">])</span>
 <span class="gp">...</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">X</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">data</span><span class="p">))</span><span class="o">.</span><span class="n">reshape</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
@@ -378,14 +378,14 @@ that setting by default (under Python 3.4 and later).</p>
 <p>If you have custom code that uses <code class="docutils literal"><span class="pre">multiprocessing</span></code> directly instead of using
 it via joblib you can enable the the &#8216;forkserver&#8217; mode globally for your
 program: Insert the following instructions in your main script:</p>
-<div class="highlight-default"><div class="highlight"><pre><span class="kn">import</span> <span class="nn">multiprocessing</span>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">multiprocessing</span>
 
-<span class="c"># other imports, custom code, load data, define model...</span>
+<span class="c1"># other imports, custom code, load data, define model...</span>
 
-<span class="k">if</span> <span class="n">__name__</span> <span class="o">==</span> <span class="s">&#39;__main__&#39;</span><span class="p">:</span>
-    <span class="n">multiprocessing</span><span class="o">.</span><span class="n">set_start_method</span><span class="p">(</span><span class="s">&#39;forkserver&#39;</span><span class="p">)</span>
+<span class="k">if</span> <span class="n">__name__</span> <span class="o">==</span> <span class="s1">&#39;__main__&#39;</span><span class="p">:</span>
+    <span class="n">multiprocessing</span><span class="o">.</span><span class="n">set_start_method</span><span class="p">(</span><span class="s1">&#39;forkserver&#39;</span><span class="p">)</span>
 
-    <span class="c"># call scikit-learn utils with n_jobs &gt; 1 here</span>
+    <span class="c1"># call scikit-learn utils with n_jobs &gt; 1 here</span>
 </pre></div>
 </div>
 <p>You can find more default on the new start methods in the <a class="reference external" href="https://docs.python.org/3/library/multiprocessing.html#contexts-and-start-methods">multiprocessing

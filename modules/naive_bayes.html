@@ -65,28 +65,28 @@
         </a>
         </p><div class="navbar">
             <ul>
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="../install.html">Installation</a></li>
+                <li><a href="../index.html">主页</a></li>
+                <li><a href="../install.html">安装</a></li>
                 <li class="btn-li"><div class="btn-group">
-              <a href="../documentation.html">Documentation</a>
+              <a href="../documentation.html">文档</a>
               <a class="btn dropdown-toggle" data-toggle="dropdown">
                  <span class="caret"></span>
               </a>
               <ul class="dropdown-menu">
             <li class="link-title">Scikit-learn 0.17 (stable)</li>
-            <li><a href="../tutorial/index.html">Tutorials</a></li>
-            <li><a href="../user_guide.html">User guide</a></li>
+            <li><a href="../tutorial/index.html">入门指南</a></li>
+            <li><a href="../user_guide.html">使用手册</a></li>
             <li><a href="classes.html">API</a></li>
             <li><a href="../faq.html">FAQ</a></li>
-            <li><a href="../developers.html">Contributing</a></li>
+            <li><a href="../developers.html">贡献</a></li>
             <li class="divider"></li>
                 <li><a href="http://scikit-learn.org/dev/documentation.html">Scikit-learn 0.18 (development)</a></li>
                 <li><a href="http://scikit-learn.org/0.16/documentation.html">Scikit-learn 0.16</a></li>
-				<li><a href="../_downloads/user_guide.pdf">PDF documentation</a></li>
+				<li><a href="../_downloads/user_guide.pdf">PDF 文档</a></li>
               </ul>
             </div>
         </li>
-            <li><a href="../auto_examples/index.html">Examples</a></li>
+            <li><a href="../auto_examples/index.html">例子</a></li>
             </ul>
 
             <div class="search_form">
@@ -117,7 +117,7 @@
         accesskey="P">Previous
         <br/>
         <span class="smallrellink">
-        1.8. Cross decom...
+        1.8. Cross de...
         </span>
             <span class="hiddenrellink">
             1.8. Cross decomposition
@@ -134,7 +134,7 @@
         Up
         <br/>
         <span class="smallrellink">
-        1. Supervised le...
+        1. Supervised...
         </span>
             <span class="hiddenrellink">
             1. Supervised learning
@@ -232,12 +232,12 @@ classification. The likelihood of the features is assumed to be Gaussian:</p>
 <p><img src="../_images/math/c020016d0ce2954b38f2bcca5fcf477bd96b89e9.png" alt="P(x_i \mid y) &amp;= \frac{1}{\sqrt{2\pi\sigma^2_y}} \exp\left(-\frac{(x_i - \mu_y)^2}{2\sigma^2_y}\right)"/></p>
 </div><p>The parameters <img class="math" src="../_images/math/eafb759b3682cc78f395f0f31b2d1c453c61b662.png" alt="\sigma_y"/> and <img class="math" src="../_images/math/e85e9172fdbaf56c03dced3ea4be9eb4787d0514.png" alt="\mu_y"/>
 are estimated using maximum likelihood.</p>
-<div class="highlight-default"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">sklearn</span> <span class="k">import</span> <span class="n">datasets</span>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">sklearn</span> <span class="k">import</span> <span class="n">datasets</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">iris</span> <span class="o">=</span> <span class="n">datasets</span><span class="o">.</span><span class="n">load_iris</span><span class="p">()</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">sklearn.naive_bayes</span> <span class="k">import</span> <span class="n">GaussianNB</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">gnb</span> <span class="o">=</span> <span class="n">GaussianNB</span><span class="p">()</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">y_pred</span> <span class="o">=</span> <span class="n">gnb</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">iris</span><span class="o">.</span><span class="n">data</span><span class="p">,</span> <span class="n">iris</span><span class="o">.</span><span class="n">target</span><span class="p">)</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">iris</span><span class="o">.</span><span class="n">data</span><span class="p">)</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="s">&quot;Number of mislabeled points out of a total %d points : %d&quot;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Number of mislabeled points out of a total </span><span class="si">%d</span><span class="s2"> points : </span><span class="si">%d</span><span class="s2">&quot;</span>
 <span class="gp">... </span>      <span class="o">%</span> <span class="p">(</span><span class="n">iris</span><span class="o">.</span><span class="n">data</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">],(</span><span class="n">iris</span><span class="o">.</span><span class="n">target</span> <span class="o">!=</span> <span class="n">y_pred</span><span class="p">)</span><span class="o">.</span><span class="n">sum</span><span class="p">()))</span>
 <span class="go">Number of mislabeled points out of a total 150 points : 6</span>
 </pre></div>

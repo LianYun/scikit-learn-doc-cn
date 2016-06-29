@@ -65,28 +65,28 @@
         </a>
         </p><div class="navbar">
             <ul>
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="../install.html">Installation</a></li>
+                <li><a href="../index.html">主页</a></li>
+                <li><a href="../install.html">安装</a></li>
                 <li class="btn-li"><div class="btn-group">
-              <a href="../documentation.html">Documentation</a>
+              <a href="../documentation.html">文档</a>
               <a class="btn dropdown-toggle" data-toggle="dropdown">
                  <span class="caret"></span>
               </a>
               <ul class="dropdown-menu">
             <li class="link-title">Scikit-learn 0.17 (stable)</li>
-            <li><a href="../tutorial/index.html">Tutorials</a></li>
-            <li><a href="../user_guide.html">User guide</a></li>
+            <li><a href="../tutorial/index.html">入门指南</a></li>
+            <li><a href="../user_guide.html">使用手册</a></li>
             <li><a href="classes.html">API</a></li>
             <li><a href="../faq.html">FAQ</a></li>
-            <li><a href="../developers.html">Contributing</a></li>
+            <li><a href="../developers.html">贡献</a></li>
             <li class="divider"></li>
                 <li><a href="http://scikit-learn.org/dev/documentation.html">Scikit-learn 0.18 (development)</a></li>
                 <li><a href="http://scikit-learn.org/0.16/documentation.html">Scikit-learn 0.16</a></li>
-				<li><a href="../_downloads/user_guide.pdf">PDF documentation</a></li>
+				<li><a href="../_downloads/user_guide.pdf">PDF 文档</a></li>
               </ul>
             </div>
         </li>
-            <li><a href="../auto_examples/index.html">Examples</a></li>
+            <li><a href="../auto_examples/index.html">例子</a></li>
             </ul>
 
             <div class="search_form">
@@ -117,7 +117,7 @@
         accesskey="P">Previous
         <br/>
         <span class="smallrellink">
-        1.10. Decision T...
+        1.10. Decisio...
         </span>
             <span class="hiddenrellink">
             1.10. Decision Trees
@@ -134,7 +134,7 @@
         Up
         <br/>
         <span class="smallrellink">
-        1. Supervised le...
+        1. Supervised...
         </span>
             <span class="hiddenrellink">
             1. Supervised learning
@@ -273,7 +273,7 @@ out-of-bag samples by setting <code class="docutils literal"><span class="pre">o
 snippet below illustrates how to instantiate a bagging ensemble of
 <code class="xref py py-class docutils literal"><span class="pre">KNeighborsClassifier</span></code> base estimators, each built on random subsets of
 50% of the samples and 50% of the features.</p>
-<div class="highlight-default"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">sklearn.ensemble</span> <span class="k">import</span> <span class="n">BaggingClassifier</span>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">sklearn.ensemble</span> <span class="k">import</span> <span class="n">BaggingClassifier</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">sklearn.neighbors</span> <span class="k">import</span> <span class="n">KNeighborsClassifier</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">bagging</span> <span class="o">=</span> <span class="n">BaggingClassifier</span><span class="p">(</span><span class="n">KNeighborsClassifier</span><span class="p">(),</span>
 <span class="gp">... </span>                            <span class="n">max_samples</span><span class="o">=</span><span class="mf">0.5</span><span class="p">,</span> <span class="n">max_features</span><span class="o">=</span><span class="mf">0.5</span><span class="p">)</span>
@@ -331,7 +331,7 @@ prediction of the individual classifiers.</p>
 arrays: a sparse or dense array X of size <code class="docutils literal"><span class="pre">[n_samples,</span> <span class="pre">n_features]</span></code> holding the
 training samples, and an array Y of size <code class="docutils literal"><span class="pre">[n_samples]</span></code> holding the
 target values (class labels) for the training samples:</p>
-<div class="highlight-default"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">sklearn.ensemble</span> <span class="k">import</span> <span class="n">RandomForestClassifier</span>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">sklearn.ensemble</span> <span class="k">import</span> <span class="n">RandomForestClassifier</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">X</span> <span class="o">=</span> <span class="p">[[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">],</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">]]</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">Y</span> <span class="o">=</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">]</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">clf</span> <span class="o">=</span> <span class="n">RandomForestClassifier</span><span class="p">(</span><span class="n">n_estimators</span><span class="o">=</span><span class="mi">10</span><span class="p">)</span>
@@ -369,7 +369,7 @@ candidate feature and the best of these randomly-generated thresholds is
 picked as the splitting rule. This usually allows to reduce the variance
 of the model a bit more, at the expense of a slightly greater increase
 in bias:</p>
-<div class="highlight-default"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">sklearn.cross_validation</span> <span class="k">import</span> <span class="n">cross_val_score</span>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">sklearn.cross_validation</span> <span class="k">import</span> <span class="n">cross_val_score</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">sklearn.datasets</span> <span class="k">import</span> <span class="n">make_blobs</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">sklearn.ensemble</span> <span class="k">import</span> <span class="n">RandomForestClassifier</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">sklearn.ensemble</span> <span class="k">import</span> <span class="n">ExtraTreesClassifier</span>
@@ -378,19 +378,19 @@ in bias:</p>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">X</span><span class="p">,</span> <span class="n">y</span> <span class="o">=</span> <span class="n">make_blobs</span><span class="p">(</span><span class="n">n_samples</span><span class="o">=</span><span class="mi">10000</span><span class="p">,</span> <span class="n">n_features</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span> <span class="n">centers</span><span class="o">=</span><span class="mi">100</span><span class="p">,</span>
 <span class="gp">... </span>    <span class="n">random_state</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
 
-<span class="gp">&gt;&gt;&gt; </span><span class="n">clf</span> <span class="o">=</span> <span class="n">DecisionTreeClassifier</span><span class="p">(</span><span class="n">max_depth</span><span class="o">=</span><span class="k">None</span><span class="p">,</span> <span class="n">min_samples_split</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">clf</span> <span class="o">=</span> <span class="n">DecisionTreeClassifier</span><span class="p">(</span><span class="n">max_depth</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">min_samples_split</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span>
 <span class="gp">... </span>    <span class="n">random_state</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">scores</span> <span class="o">=</span> <span class="n">cross_val_score</span><span class="p">(</span><span class="n">clf</span><span class="p">,</span> <span class="n">X</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">scores</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span>                             
 <span class="go">0.97...</span>
 
-<span class="gp">&gt;&gt;&gt; </span><span class="n">clf</span> <span class="o">=</span> <span class="n">RandomForestClassifier</span><span class="p">(</span><span class="n">n_estimators</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span> <span class="n">max_depth</span><span class="o">=</span><span class="k">None</span><span class="p">,</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">clf</span> <span class="o">=</span> <span class="n">RandomForestClassifier</span><span class="p">(</span><span class="n">n_estimators</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span> <span class="n">max_depth</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
 <span class="gp">... </span>    <span class="n">min_samples_split</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">scores</span> <span class="o">=</span> <span class="n">cross_val_score</span><span class="p">(</span><span class="n">clf</span><span class="p">,</span> <span class="n">X</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">scores</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span>                             
 <span class="go">0.999...</span>
 
-<span class="gp">&gt;&gt;&gt; </span><span class="n">clf</span> <span class="o">=</span> <span class="n">ExtraTreesClassifier</span><span class="p">(</span><span class="n">n_estimators</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span> <span class="n">max_depth</span><span class="o">=</span><span class="k">None</span><span class="p">,</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">clf</span> <span class="o">=</span> <span class="n">ExtraTreesClassifier</span><span class="p">(</span><span class="n">n_estimators</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span> <span class="n">max_depth</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
 <span class="gp">... </span>    <span class="n">min_samples_split</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">scores</span> <span class="o">=</span> <span class="n">cross_val_score</span><span class="p">(</span><span class="n">clf</span><span class="p">,</span> <span class="n">X</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">scores</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span> <span class="o">&gt;</span> <span class="mf">0.999</span>
@@ -574,7 +574,7 @@ AdaBoost-SAMME and AdaBoost-SAMME.R <a class="reference internal" href="#zzrh200
 <h3>1.11.3.1. Usage<a class="headerlink" href="#usage" title="Permalink to this headline">¶</a></h3>
 <p>The following example shows how to fit an AdaBoost classifier with 100 weak
 learners:</p>
-<div class="highlight-default"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">sklearn.cross_validation</span> <span class="k">import</span> <span class="n">cross_val_score</span>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">sklearn.cross_validation</span> <span class="k">import</span> <span class="n">cross_val_score</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">sklearn.datasets</span> <span class="k">import</span> <span class="n">load_iris</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">sklearn.ensemble</span> <span class="k">import</span> <span class="n">AdaBoostClassifier</span>
 
@@ -676,7 +676,7 @@ trees.</p>
 classification.
 The following example shows how to fit a gradient boosting classifier
 with 100 decision stumps as weak learners:</p>
-<div class="highlight-default"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">sklearn.datasets</span> <span class="k">import</span> <span class="n">make_hastie_10_2</span>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">sklearn.datasets</span> <span class="k">import</span> <span class="n">make_hastie_10_2</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">sklearn.ensemble</span> <span class="k">import</span> <span class="n">GradientBoostingClassifier</span>
 
 <span class="gp">&gt;&gt;&gt; </span><span class="n">X</span><span class="p">,</span> <span class="n">y</span> <span class="o">=</span> <span class="n">make_hastie_10_2</span><span class="p">(</span><span class="n">random_state</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
@@ -706,7 +706,7 @@ of classes we strongly recommend to use
 <a class="reference internal" href="#gradient-boosting-loss"><span class="std std-ref">different loss functions</span></a>
 for regression which can be specified via the argument
 <code class="docutils literal"><span class="pre">loss</span></code>; the default loss function for regression is least squares (<code class="docutils literal"><span class="pre">'ls'</span></code>).</p>
-<div class="highlight-default"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">sklearn.metrics</span> <span class="k">import</span> <span class="n">mean_squared_error</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">sklearn.datasets</span> <span class="k">import</span> <span class="n">make_friedman1</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">sklearn.ensemble</span> <span class="k">import</span> <span class="n">GradientBoostingRegressor</span>
@@ -715,7 +715,7 @@ for regression which can be specified via the argument
 <span class="gp">&gt;&gt;&gt; </span><span class="n">X_train</span><span class="p">,</span> <span class="n">X_test</span> <span class="o">=</span> <span class="n">X</span><span class="p">[:</span><span class="mi">200</span><span class="p">],</span> <span class="n">X</span><span class="p">[</span><span class="mi">200</span><span class="p">:]</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">y_train</span><span class="p">,</span> <span class="n">y_test</span> <span class="o">=</span> <span class="n">y</span><span class="p">[:</span><span class="mi">200</span><span class="p">],</span> <span class="n">y</span><span class="p">[</span><span class="mi">200</span><span class="p">:]</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">est</span> <span class="o">=</span> <span class="n">GradientBoostingRegressor</span><span class="p">(</span><span class="n">n_estimators</span><span class="o">=</span><span class="mi">100</span><span class="p">,</span> <span class="n">learning_rate</span><span class="o">=</span><span class="mf">0.1</span><span class="p">,</span>
-<span class="gp">... </span>    <span class="n">max_depth</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">loss</span><span class="o">=</span><span class="s">&#39;ls&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X_train</span><span class="p">,</span> <span class="n">y_train</span><span class="p">)</span>
+<span class="gp">... </span>    <span class="n">max_depth</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">loss</span><span class="o">=</span><span class="s1">&#39;ls&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X_train</span><span class="p">,</span> <span class="n">y_train</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">mean_squared_error</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">est</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">X_test</span><span class="p">))</span>    
 <span class="go">5.00...</span>
 </pre></div>
@@ -748,8 +748,8 @@ the <code class="docutils literal"><span class="pre">feature_importances_</span>
 <p>Both <a class="reference internal" href="generated/sklearn.ensemble.GradientBoostingRegressor.html#sklearn.ensemble.GradientBoostingRegressor" title="sklearn.ensemble.GradientBoostingRegressor"><code class="xref py py-class docutils literal"><span class="pre">GradientBoostingRegressor</span></code></a> and <a class="reference internal" href="generated/sklearn.ensemble.GradientBoostingClassifier.html#sklearn.ensemble.GradientBoostingClassifier" title="sklearn.ensemble.GradientBoostingClassifier"><code class="xref py py-class docutils literal"><span class="pre">GradientBoostingClassifier</span></code></a>
 support <code class="docutils literal"><span class="pre">warm_start=True</span></code> which allows you to add more estimators to an already
 fitted model.</p>
-<div class="highlight-default"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">_</span> <span class="o">=</span> <span class="n">est</span><span class="o">.</span><span class="n">set_params</span><span class="p">(</span><span class="n">n_estimators</span><span class="o">=</span><span class="mi">200</span><span class="p">,</span> <span class="n">warm_start</span><span class="o">=</span><span class="k">True</span><span class="p">)</span>  <span class="c"># set warm_start and new nr of trees</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">_</span> <span class="o">=</span> <span class="n">est</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X_train</span><span class="p">,</span> <span class="n">y_train</span><span class="p">)</span> <span class="c"># fit additional 100 trees to est</span>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">_</span> <span class="o">=</span> <span class="n">est</span><span class="o">.</span><span class="n">set_params</span><span class="p">(</span><span class="n">n_estimators</span><span class="o">=</span><span class="mi">200</span><span class="p">,</span> <span class="n">warm_start</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>  <span class="c1"># set warm_start and new nr of trees</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">_</span> <span class="o">=</span> <span class="n">est</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X_train</span><span class="p">,</span> <span class="n">y_train</span><span class="p">)</span> <span class="c1"># fit additional 100 trees to est</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">mean_squared_error</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">est</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">X_test</span><span class="p">))</span>    
 <span class="go">3.84...</span>
 </pre></div>
@@ -965,7 +965,7 @@ ensembles by simply averaging the feature importance of each tree (see
 <a class="reference internal" href="#random-forest-feature-importance"><span class="std std-ref">Feature importance evaluation</span></a> for more details).</p>
 <p>The feature importance scores of a fit gradient boosting model can be
 accessed via the <code class="docutils literal"><span class="pre">feature_importances_</span></code> property:</p>
-<div class="highlight-default"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">sklearn.datasets</span> <span class="k">import</span> <span class="n">make_hastie_10_2</span>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">sklearn.datasets</span> <span class="k">import</span> <span class="n">make_hastie_10_2</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">sklearn.ensemble</span> <span class="k">import</span> <span class="n">GradientBoostingClassifier</span>
 
 <span class="gp">&gt;&gt;&gt; </span><span class="n">X</span><span class="p">,</span> <span class="n">y</span> <span class="o">=</span> <span class="n">make_hastie_10_2</span><span class="p">(</span><span class="n">random_state</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
@@ -1016,7 +1016,7 @@ to create one-way and two-way partial dependence plots. In the below example
 we show how to create a grid of partial dependence plots: two one-way
 PDPs for the features <code class="docutils literal"><span class="pre">0</span></code> and <code class="docutils literal"><span class="pre">1</span></code> and a two-way PDP between the two
 features:</p>
-<div class="highlight-default"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">sklearn.datasets</span> <span class="k">import</span> <span class="n">make_hastie_10_2</span>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">sklearn.datasets</span> <span class="k">import</span> <span class="n">make_hastie_10_2</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">sklearn.ensemble</span> <span class="k">import</span> <span class="n">GradientBoostingClassifier</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">sklearn.ensemble.partial_dependence</span> <span class="k">import</span> <span class="n">plot_partial_dependence</span>
 
@@ -1029,7 +1029,7 @@ features:</p>
 </div>
 <p>For multi-class models, you need to set the class label for which the
 PDPs should be created via the <code class="docutils literal"><span class="pre">label</span></code> argument:</p>
-<div class="highlight-default"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">sklearn.datasets</span> <span class="k">import</span> <span class="n">load_iris</span>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">sklearn.datasets</span> <span class="k">import</span> <span class="n">load_iris</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">iris</span> <span class="o">=</span> <span class="n">load_iris</span><span class="p">()</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">mc_clf</span> <span class="o">=</span> <span class="n">GradientBoostingClassifier</span><span class="p">(</span><span class="n">n_estimators</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span>
 <span class="gp">... </span>    <span class="n">max_depth</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">iris</span><span class="o">.</span><span class="n">data</span><span class="p">,</span> <span class="n">iris</span><span class="o">.</span><span class="n">target</span><span class="p">)</span>
@@ -1040,7 +1040,7 @@ PDPs should be created via the <code class="docutils literal"><span class="pre">
 <p>If you need the raw values of the partial dependence function rather
 than the plots you can use the
 <a class="reference internal" href="generated/sklearn.ensemble.partial_dependence.partial_dependence.html#sklearn.ensemble.partial_dependence.partial_dependence" title="sklearn.ensemble.partial_dependence.partial_dependence"><code class="xref py py-func docutils literal"><span class="pre">partial_dependence</span></code></a> function:</p>
-<div class="highlight-default"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">sklearn.ensemble.partial_dependence</span> <span class="k">import</span> <span class="n">partial_dependence</span>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">sklearn.ensemble.partial_dependence</span> <span class="k">import</span> <span class="n">partial_dependence</span>
 
 <span class="gp">&gt;&gt;&gt; </span><span class="n">pdp</span><span class="p">,</span> <span class="n">axes</span> <span class="o">=</span> <span class="n">partial_dependence</span><span class="p">(</span><span class="n">clf</span><span class="p">,</span> <span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">X</span><span class="o">=</span><span class="n">X</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">pdp</span>  
@@ -1159,7 +1159,7 @@ on the ascending sort order. E.g., in the following scenario</p>
 <div class="section" id="id24">
 <h4>1.11.5.1.1. Usage<a class="headerlink" href="#id24" title="Permalink to this headline">¶</a></h4>
 <p>The following example shows how to fit the majority rule classifier:</p>
-<div class="highlight-default"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">sklearn</span> <span class="k">import</span> <span class="n">datasets</span>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">sklearn</span> <span class="k">import</span> <span class="n">datasets</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">sklearn</span> <span class="k">import</span> <span class="n">cross_validation</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">sklearn.linear_model</span> <span class="k">import</span> <span class="n">LogisticRegression</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">sklearn.naive_bayes</span> <span class="k">import</span> <span class="n">GaussianNB</span>
@@ -1173,11 +1173,11 @@ on the ascending sort order. E.g., in the following scenario</p>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">clf2</span> <span class="o">=</span> <span class="n">RandomForestClassifier</span><span class="p">(</span><span class="n">random_state</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">clf3</span> <span class="o">=</span> <span class="n">GaussianNB</span><span class="p">()</span>
 
-<span class="gp">&gt;&gt;&gt; </span><span class="n">eclf</span> <span class="o">=</span> <span class="n">VotingClassifier</span><span class="p">(</span><span class="n">estimators</span><span class="o">=</span><span class="p">[(</span><span class="s">&#39;lr&#39;</span><span class="p">,</span> <span class="n">clf1</span><span class="p">),</span> <span class="p">(</span><span class="s">&#39;rf&#39;</span><span class="p">,</span> <span class="n">clf2</span><span class="p">),</span> <span class="p">(</span><span class="s">&#39;gnb&#39;</span><span class="p">,</span> <span class="n">clf3</span><span class="p">)],</span> <span class="n">voting</span><span class="o">=</span><span class="s">&#39;hard&#39;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">eclf</span> <span class="o">=</span> <span class="n">VotingClassifier</span><span class="p">(</span><span class="n">estimators</span><span class="o">=</span><span class="p">[(</span><span class="s1">&#39;lr&#39;</span><span class="p">,</span> <span class="n">clf1</span><span class="p">),</span> <span class="p">(</span><span class="s1">&#39;rf&#39;</span><span class="p">,</span> <span class="n">clf2</span><span class="p">),</span> <span class="p">(</span><span class="s1">&#39;gnb&#39;</span><span class="p">,</span> <span class="n">clf3</span><span class="p">)],</span> <span class="n">voting</span><span class="o">=</span><span class="s1">&#39;hard&#39;</span><span class="p">)</span>
 
-<span class="gp">&gt;&gt;&gt; </span><span class="k">for</span> <span class="n">clf</span><span class="p">,</span> <span class="n">label</span> <span class="ow">in</span> <span class="nb">zip</span><span class="p">([</span><span class="n">clf1</span><span class="p">,</span> <span class="n">clf2</span><span class="p">,</span> <span class="n">clf3</span><span class="p">,</span> <span class="n">eclf</span><span class="p">],</span> <span class="p">[</span><span class="s">&#39;Logistic Regression&#39;</span><span class="p">,</span> <span class="s">&#39;Random Forest&#39;</span><span class="p">,</span> <span class="s">&#39;naive Bayes&#39;</span><span class="p">,</span> <span class="s">&#39;Ensemble&#39;</span><span class="p">]):</span>
-<span class="gp">... </span>    <span class="n">scores</span> <span class="o">=</span> <span class="n">cross_validation</span><span class="o">.</span><span class="n">cross_val_score</span><span class="p">(</span><span class="n">clf</span><span class="p">,</span> <span class="n">X</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">cv</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span> <span class="n">scoring</span><span class="o">=</span><span class="s">&#39;accuracy&#39;</span><span class="p">)</span>
-<span class="gp">... </span>    <span class="nb">print</span><span class="p">(</span><span class="s">&quot;Accuracy: %0.2f (+/- %0.2f) [%s]&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">scores</span><span class="o">.</span><span class="n">mean</span><span class="p">(),</span> <span class="n">scores</span><span class="o">.</span><span class="n">std</span><span class="p">(),</span> <span class="n">label</span><span class="p">))</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="k">for</span> <span class="n">clf</span><span class="p">,</span> <span class="n">label</span> <span class="ow">in</span> <span class="nb">zip</span><span class="p">([</span><span class="n">clf1</span><span class="p">,</span> <span class="n">clf2</span><span class="p">,</span> <span class="n">clf3</span><span class="p">,</span> <span class="n">eclf</span><span class="p">],</span> <span class="p">[</span><span class="s1">&#39;Logistic Regression&#39;</span><span class="p">,</span> <span class="s1">&#39;Random Forest&#39;</span><span class="p">,</span> <span class="s1">&#39;naive Bayes&#39;</span><span class="p">,</span> <span class="s1">&#39;Ensemble&#39;</span><span class="p">]):</span>
+<span class="gp">... </span>    <span class="n">scores</span> <span class="o">=</span> <span class="n">cross_validation</span><span class="o">.</span><span class="n">cross_val_score</span><span class="p">(</span><span class="n">clf</span><span class="p">,</span> <span class="n">X</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">cv</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span> <span class="n">scoring</span><span class="o">=</span><span class="s1">&#39;accuracy&#39;</span><span class="p">)</span>
+<span class="gp">... </span>    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Accuracy: </span><span class="si">%0.2f</span><span class="s2"> (+/- </span><span class="si">%0.2f</span><span class="s2">) [</span><span class="si">%s</span><span class="s2">]&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">scores</span><span class="o">.</span><span class="n">mean</span><span class="p">(),</span> <span class="n">scores</span><span class="o">.</span><span class="n">std</span><span class="p">(),</span> <span class="n">label</span><span class="p">))</span>
 <span class="go">Accuracy: 0.90 (+/- 0.05) [Logistic Regression]</span>
 <span class="go">Accuracy: 0.93 (+/- 0.05) [Random Forest]</span>
 <span class="go">Accuracy: 0.91 (+/- 0.04) [naive Bayes]</span>
@@ -1242,23 +1242,23 @@ highest average probability.</p>
 <p>The following example illustrates how the decision regions may change
 when a soft <cite>VotingClassifier</cite> is used based on an linear Support
 Vector Machine, a Decision Tree, and a K-nearest neighbor classifier:</p>
-<div class="highlight-default"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">sklearn</span> <span class="k">import</span> <span class="n">datasets</span>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">sklearn</span> <span class="k">import</span> <span class="n">datasets</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">sklearn.tree</span> <span class="k">import</span> <span class="n">DecisionTreeClassifier</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">sklearn.neighbors</span> <span class="k">import</span> <span class="n">KNeighborsClassifier</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">sklearn.svm</span> <span class="k">import</span> <span class="n">SVC</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">itertools</span> <span class="k">import</span> <span class="n">product</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">sklearn.ensemble</span> <span class="k">import</span> <span class="n">VotingClassifier</span>
 
-<span class="gp">&gt;&gt;&gt; </span><span class="c"># Loading some example data</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="c1"># Loading some example data</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">iris</span> <span class="o">=</span> <span class="n">datasets</span><span class="o">.</span><span class="n">load_iris</span><span class="p">()</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">X</span> <span class="o">=</span> <span class="n">iris</span><span class="o">.</span><span class="n">data</span><span class="p">[:,</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">2</span><span class="p">]]</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">y</span> <span class="o">=</span> <span class="n">iris</span><span class="o">.</span><span class="n">target</span>
 
-<span class="gp">&gt;&gt;&gt; </span><span class="c"># Training classifiers</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="c1"># Training classifiers</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">clf1</span> <span class="o">=</span> <span class="n">DecisionTreeClassifier</span><span class="p">(</span><span class="n">max_depth</span><span class="o">=</span><span class="mi">4</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">clf2</span> <span class="o">=</span> <span class="n">KNeighborsClassifier</span><span class="p">(</span><span class="n">n_neighbors</span><span class="o">=</span><span class="mi">7</span><span class="p">)</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">clf3</span> <span class="o">=</span> <span class="n">SVC</span><span class="p">(</span><span class="n">kernel</span><span class="o">=</span><span class="s">&#39;rbf&#39;</span><span class="p">,</span> <span class="n">probability</span><span class="o">=</span><span class="k">True</span><span class="p">)</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">eclf</span> <span class="o">=</span> <span class="n">VotingClassifier</span><span class="p">(</span><span class="n">estimators</span><span class="o">=</span><span class="p">[(</span><span class="s">&#39;dt&#39;</span><span class="p">,</span> <span class="n">clf1</span><span class="p">),</span> <span class="p">(</span><span class="s">&#39;knn&#39;</span><span class="p">,</span> <span class="n">clf2</span><span class="p">),</span> <span class="p">(</span><span class="s">&#39;svc&#39;</span><span class="p">,</span> <span class="n">clf3</span><span class="p">)],</span> <span class="n">voting</span><span class="o">=</span><span class="s">&#39;soft&#39;</span><span class="p">,</span> <span class="n">weights</span><span class="o">=</span><span class="p">[</span><span class="mi">2</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">])</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">clf3</span> <span class="o">=</span> <span class="n">SVC</span><span class="p">(</span><span class="n">kernel</span><span class="o">=</span><span class="s1">&#39;rbf&#39;</span><span class="p">,</span> <span class="n">probability</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">eclf</span> <span class="o">=</span> <span class="n">VotingClassifier</span><span class="p">(</span><span class="n">estimators</span><span class="o">=</span><span class="p">[(</span><span class="s1">&#39;dt&#39;</span><span class="p">,</span> <span class="n">clf1</span><span class="p">),</span> <span class="p">(</span><span class="s1">&#39;knn&#39;</span><span class="p">,</span> <span class="n">clf2</span><span class="p">),</span> <span class="p">(</span><span class="s1">&#39;svc&#39;</span><span class="p">,</span> <span class="n">clf3</span><span class="p">)],</span> <span class="n">voting</span><span class="o">=</span><span class="s1">&#39;soft&#39;</span><span class="p">,</span> <span class="n">weights</span><span class="o">=</span><span class="p">[</span><span class="mi">2</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">])</span>
 
 <span class="gp">&gt;&gt;&gt; </span><span class="n">clf1</span> <span class="o">=</span> <span class="n">clf1</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X</span><span class="p">,</span><span class="n">y</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">clf2</span> <span class="o">=</span> <span class="n">clf2</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X</span><span class="p">,</span><span class="n">y</span><span class="p">)</span>
@@ -1274,13 +1274,13 @@ Vector Machine, a Decision Tree, and a K-nearest neighbor classifier:</p>
 <h3>1.11.5.3. Using the <cite>VotingClassifier</cite> with <cite>GridSearch</cite><a class="headerlink" href="#using-the-votingclassifier-with-gridsearch" title="Permalink to this headline">¶</a></h3>
 <p>The <cite>VotingClassifier</cite> can also be used together with <cite>GridSearch</cite> in order
 to tune the hyperparameters of the individual estimators:</p>
-<div class="highlight-default"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">sklearn.grid_search</span> <span class="k">import</span> <span class="n">GridSearchCV</span>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">sklearn.grid_search</span> <span class="k">import</span> <span class="n">GridSearchCV</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">clf1</span> <span class="o">=</span> <span class="n">LogisticRegression</span><span class="p">(</span><span class="n">random_state</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">clf2</span> <span class="o">=</span> <span class="n">RandomForestClassifier</span><span class="p">(</span><span class="n">random_state</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">clf3</span> <span class="o">=</span> <span class="n">GaussianNB</span><span class="p">()</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">eclf</span> <span class="o">=</span> <span class="n">VotingClassifier</span><span class="p">(</span><span class="n">estimators</span><span class="o">=</span><span class="p">[(</span><span class="s">&#39;lr&#39;</span><span class="p">,</span> <span class="n">clf1</span><span class="p">),</span> <span class="p">(</span><span class="s">&#39;rf&#39;</span><span class="p">,</span> <span class="n">clf2</span><span class="p">),</span> <span class="p">(</span><span class="s">&#39;gnb&#39;</span><span class="p">,</span> <span class="n">clf3</span><span class="p">)],</span> <span class="n">voting</span><span class="o">=</span><span class="s">&#39;soft&#39;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">eclf</span> <span class="o">=</span> <span class="n">VotingClassifier</span><span class="p">(</span><span class="n">estimators</span><span class="o">=</span><span class="p">[(</span><span class="s1">&#39;lr&#39;</span><span class="p">,</span> <span class="n">clf1</span><span class="p">),</span> <span class="p">(</span><span class="s1">&#39;rf&#39;</span><span class="p">,</span> <span class="n">clf2</span><span class="p">),</span> <span class="p">(</span><span class="s1">&#39;gnb&#39;</span><span class="p">,</span> <span class="n">clf3</span><span class="p">)],</span> <span class="n">voting</span><span class="o">=</span><span class="s1">&#39;soft&#39;</span><span class="p">)</span>
 
-<span class="gp">&gt;&gt;&gt; </span><span class="n">params</span> <span class="o">=</span> <span class="p">{</span><span class="s">&#39;lr__C&#39;</span><span class="p">:</span> <span class="p">[</span><span class="mf">1.0</span><span class="p">,</span> <span class="mf">100.0</span><span class="p">],</span> <span class="s">&#39;rf__n_estimators&#39;</span><span class="p">:</span> <span class="p">[</span><span class="mi">20</span><span class="p">,</span> <span class="mi">200</span><span class="p">],}</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">params</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;lr__C&#39;</span><span class="p">:</span> <span class="p">[</span><span class="mf">1.0</span><span class="p">,</span> <span class="mf">100.0</span><span class="p">],</span> <span class="s1">&#39;rf__n_estimators&#39;</span><span class="p">:</span> <span class="p">[</span><span class="mi">20</span><span class="p">,</span> <span class="mi">200</span><span class="p">],}</span>
 
 <span class="gp">&gt;&gt;&gt; </span><span class="n">grid</span> <span class="o">=</span> <span class="n">GridSearchCV</span><span class="p">(</span><span class="n">estimator</span><span class="o">=</span><span class="n">eclf</span><span class="p">,</span> <span class="n">param_grid</span><span class="o">=</span><span class="n">params</span><span class="p">,</span> <span class="n">cv</span><span class="o">=</span><span class="mi">5</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">grid</span> <span class="o">=</span> <span class="n">grid</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">iris</span><span class="o">.</span><span class="n">data</span><span class="p">,</span> <span class="n">iris</span><span class="o">.</span><span class="n">target</span><span class="p">)</span>
@@ -1291,11 +1291,11 @@ to tune the hyperparameters of the individual estimators:</p>
 <p>In order to predict the class labels based on the predicted
 class-probabilities (scikit-learn estimators in the VotingClassifier
 must support <code class="docutils literal"><span class="pre">predict_proba</span></code> method):</p>
-<div class="highlight-default"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">eclf</span> <span class="o">=</span> <span class="n">VotingClassifier</span><span class="p">(</span><span class="n">estimators</span><span class="o">=</span><span class="p">[(</span><span class="s">&#39;lr&#39;</span><span class="p">,</span> <span class="n">clf1</span><span class="p">),</span> <span class="p">(</span><span class="s">&#39;rf&#39;</span><span class="p">,</span> <span class="n">clf2</span><span class="p">),</span> <span class="p">(</span><span class="s">&#39;gnb&#39;</span><span class="p">,</span> <span class="n">clf3</span><span class="p">)],</span> <span class="n">voting</span><span class="o">=</span><span class="s">&#39;soft&#39;</span><span class="p">)</span>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">eclf</span> <span class="o">=</span> <span class="n">VotingClassifier</span><span class="p">(</span><span class="n">estimators</span><span class="o">=</span><span class="p">[(</span><span class="s1">&#39;lr&#39;</span><span class="p">,</span> <span class="n">clf1</span><span class="p">),</span> <span class="p">(</span><span class="s1">&#39;rf&#39;</span><span class="p">,</span> <span class="n">clf2</span><span class="p">),</span> <span class="p">(</span><span class="s1">&#39;gnb&#39;</span><span class="p">,</span> <span class="n">clf3</span><span class="p">)],</span> <span class="n">voting</span><span class="o">=</span><span class="s1">&#39;soft&#39;</span><span class="p">)</span>
 </pre></div>
 </div>
 <p>Optionally, weights can be provided for the individual classifiers:</p>
-<div class="highlight-default"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">eclf</span> <span class="o">=</span> <span class="n">VotingClassifier</span><span class="p">(</span><span class="n">estimators</span><span class="o">=</span><span class="p">[(</span><span class="s">&#39;lr&#39;</span><span class="p">,</span> <span class="n">clf1</span><span class="p">),</span> <span class="p">(</span><span class="s">&#39;rf&#39;</span><span class="p">,</span> <span class="n">clf2</span><span class="p">),</span> <span class="p">(</span><span class="s">&#39;gnb&#39;</span><span class="p">,</span> <span class="n">clf3</span><span class="p">)],</span> <span class="n">voting</span><span class="o">=</span><span class="s">&#39;soft&#39;</span><span class="p">,</span> <span class="n">weights</span><span class="o">=</span><span class="p">[</span><span class="mi">2</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">1</span><span class="p">])</span>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">eclf</span> <span class="o">=</span> <span class="n">VotingClassifier</span><span class="p">(</span><span class="n">estimators</span><span class="o">=</span><span class="p">[(</span><span class="s1">&#39;lr&#39;</span><span class="p">,</span> <span class="n">clf1</span><span class="p">),</span> <span class="p">(</span><span class="s1">&#39;rf&#39;</span><span class="p">,</span> <span class="n">clf2</span><span class="p">),</span> <span class="p">(</span><span class="s1">&#39;gnb&#39;</span><span class="p">,</span> <span class="n">clf3</span><span class="p">)],</span> <span class="n">voting</span><span class="o">=</span><span class="s1">&#39;soft&#39;</span><span class="p">,</span> <span class="n">weights</span><span class="o">=</span><span class="p">[</span><span class="mi">2</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">1</span><span class="p">])</span>
 </pre></div>
 </div>
 </div>

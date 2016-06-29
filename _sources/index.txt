@@ -11,16 +11,16 @@
         <div class="span4 box">
         <h2 >
 
-    :ref:`Classification分类 <supervised-learning>`
+    :ref:`分类 <supervised-learning>`
 
     .. raw:: html
 
         </h2>
         <blockquote>
-        <p>Identifying to which category an object belongs to.</p>
+        <p>识别某个对象属于哪个类别。</p>
         <div class="box-links">
-        <strong>Applications</strong>: Spam detection, Image recognition.</br>
-        <strong>Algorithms</strong>:&nbsp;
+        <strong>应用</strong>: 垃圾邮件检测，图像识别。</br>
+        <strong>算法</strong>:&nbsp;
 
     :ref:`SVM<svm>`, :ref:`nearest neighbors<classification>`, :ref:`random forest<forest>`, ...
 
@@ -41,16 +41,16 @@
         <div class="span4 box">
         <h2>
 
-    :ref:`Regression <supervised-learning>`
+    :ref:`回归 <supervised-learning>`
 
     .. raw:: html
 
         </h2>
         <blockquote>
-        <p>Predicting a continuous-valued attribute associated with an object.</p>
+        <p>预测一个与对象相关的值连续的属性</p>
         <div class="box-links">
-        <strong>Applications</strong>: Drug response, Stock prices.</br>
-        <strong>Algorithms</strong>:&nbsp;
+        <strong>应用</strong>: 药品反应，股票价格.</br>
+        <strong>算法</strong>:&nbsp;
 
     :ref:`SVR<svm>`, :ref:`ridge regression<ridge_regression>`, :ref:`Lasso<lasso>`, ...
 
@@ -71,16 +71,16 @@
         <div class="span4 box">
         <h2>
 
-    :ref:`Clustering<clustering>`
+    :ref:`聚类<clustering>`
 
     .. raw:: html
 
         </h2>
         <blockquote>
-        <p>Automatic grouping of similar objects into sets.</p>
+        <p>相似对象的自动分组</p>
         <div class="box-links">
-        <strong>Applications</strong>: Customer segmentation, Grouping experiment outcomes</br>
-        <strong>Algorithms</strong>:&nbsp;
+        <strong>应用</strong>: Customer segmentation, Grouping experiment outcomes</br>
+        <strong>算法</strong>:&nbsp;
 
     :ref:`k-Means<k_means>`, :ref:`spectral clustering<spectral_clustering>`, :ref:`mean-shift<mean_shift>`, ...
 
@@ -105,16 +105,16 @@
         <div class="span4 box">
         <h2>
 
-    :ref:`Dimensionality reduction<decompositions>`
+    :ref:`降维<decompositions>`
 
     .. raw:: html
 
         </h2>
         <blockquote>
-        <p>Reducing the number of random variables to consider.</p>
+        <p>减少要考虑的随机变量的数量</p>
         <div class="box-links">
-        <strong>Applications</strong>: Visualization, Increased efficiency</br>
-        <strong>Algorithms</strong>:&nbsp;
+        <strong>应用</strong>: Visualization, Increased efficiency</br>
+        <strong>算法</strong>:&nbsp;
 
     :ref:`PCA<PCA>`, :ref:`feature selection<feature_selection>`, :ref:`non-negative matrix factorization<NMF>`.
 
@@ -135,16 +135,16 @@
         <div class="span4 box">
         <h2>
 
-    :ref:`Model selection<model_selection>`
+    :ref:`模型选择<model_selection>`
 
     .. raw:: html
 
         </h2>
         <blockquote>
-        <p>Comparing, validating and choosing parameters and models.</p>
+        <p>比较，验证，选择参数和模型。</p>
         <div class="box-links">
-        <strong>Goal</strong>: Improved accuracy via parameter tuning</br>
-        <strong>Modules</strong>:&nbsp;
+        <strong>目标</strong>: 通过参数调试提高模型精度</br>
+        <strong>模块</strong>:&nbsp;
 
     :ref:`grid search<grid_search>`, :ref:`cross validation<cross_validation>`, :ref:`metrics<model_evaluation>`.
 
@@ -166,16 +166,16 @@
         <div class="span4 box">
         <h2>
 
-    :ref:`Preprocessing<preprocessing>`
+    :ref:`预处理<preprocessing>`
 
     .. raw:: html
 
         </h2>
         <blockquote>
-        <p>Feature extraction and normalization.</p>
+        <p>特征提取与归一化。</p>
         <div class="box-links">
-        <strong>Application</strong>: Transforming input data such as text for use with machine learning algorithms.</br>
-        <strong>Modules</strong>:&nbsp;
+        <strong>应用</strong>: 把输入数据（如文本）转换为机器学习算法可用的数据.</br>
+        <strong>模块</strong>:&nbsp;
 
     :ref:`preprocessing<preprocessing>`, :ref:`feature extraction<feature_extraction>`.
 
@@ -202,43 +202,42 @@
             <div class="row-fluid">
                 <!-- News -->
                 <div class="span4">
-                    <h4>News</h4>
+                    <h4>新闻</h4>
                     <ul>
-                    <li><em>On-going development:</em>
-                    <a href="whats_new.html"><em>What's new</em> (changelog)</a>
+                    <li><em>正在开发:</em>
+                    <a href="whats_new.html"><em>What's new</em> (更新日志)</a>
                     </li>
-                    <li><em>November 2015.</em> scikit-learn 0.17.0 is available for download (<a href="whats_new.html">Changelog</a>).
+                    <li><em>2015年11月</em> scikit-learn 0.17.0 提供下载 (<a href="whats_new.html">更新日志</a>).
                     </li>
-                    <li><em>March 2015.</em> scikit-learn 0.16.0 is available for download (<a href="whats_new.html">Changelog</a>).
+                    <li><em>2015年3月</em> scikit-learn 0.16.0 提供下载 (<a href="whats_new.html">更新日志</a>).
                     </li>
-                    <li><em>July 2014.</em> scikit-learn 0.15.0 is available for download (<a href="whats_new.html">Changelog</a>).
+                    <li><em>2014年7月</em> scikit-learn 0.15.0 提供下载 (<a href="whats_new.html">更新日志</a>).
                     </li>
-                    <li><em>July 14-20th, 2014: international sprint.</em>
-                    During this week-long sprint, we gathered 18 of the core
-                    contributors in Paris.
-                    We want to thank our sponsors:
+                    <li><em>2014年7月14日: 国际冲刺.</em>
+                    在这一周的冲刺中，我们在巴黎聚集了18名核心贡献者。 要感谢我们的赞助商 :
                     <a href="http://www.campus-paris-saclay.fr/en/Idex-Paris-Saclay/Les-Lidex/Paris-Saclay-Center-for-Data-Science">
                     Paris-Saclay Center for Data Science</a>
-                    & <a href="https://digicosme.lri.fr">Digicosme</a> and our
-                    hosts <a href="http://lapaillasse.org">La Paillasse</a>,
+                    & <a href="https://digicosme.lri.fr">Digicosme</a> 和我们的主办方
+                     <a href="http://lapaillasse.org">La Paillasse</a>,
                     <a href="http://www.criteo.com/">Criteo</a>,
                     <a href="http://www.inria.fr/">Inria</a>,
                     and <a href="http://www.tinyclues.com/">tinyclues</a>.
                     </li>
-                    <li><em>August 2013.</em> scikit-learn 0.14 is available for download (<a href="whats_new.html">Changelog</a>).
+                    <li><em>2013年8月</em> scikit-learn 0.14 is 提供下载 (<a href="whats_new.html">更新日志</a>).
                     </li>
                     </ul>
                 </div>
 
                 <!-- Community -->
                 <div class="span4">
-                    <h4>Community</h4>
+                    <h4>社区</h4>
                     <ul>
-                    <li><em>About us</em> See <a href="about.html#people">authors</a></li>
-                    <li><em>More Machine Learning</em> Find <a href="related_projects.html">related projects</a></li>
-                    <li><em>Questions?</em> See <a href="faq/">FAQ</a> and <a href="http://stackoverflow.com/questions/tagged/scikit-learn">stackoverflow</a></li>
-                    <li><em>Mailing list:</em> <a href="https://lists.sourceforge.net/lists/listinfo/scikit-learn-general">scikit-learn-general@lists.sourceforge.net</a></li>
+                    <li><em>关于我们</em> See <a href="about.html#people">authors</a></li>
+                    <li><em>更多机器学习</em> 发现 <a href="related_projects.html">相关项目</a></li>
+                    <li><em>疑问</em> 请看 <a href="faq/">FAQ</a> and <a href="http://stackoverflow.com/questions/tagged/scikit-learn">stackoverflow</a></li>
+                    <li><em>邮件列表:</em> <a href="https://lists.sourceforge.net/lists/listinfo/scikit-learn-general">scikit-learn-general@lists.sourceforge.net</a></li>
                     <li><em>IRC:</em> #scikit-learn @ <a href="http://webchat.freenode.net/">freenode</a></li>
+                    <li><em>中文翻译:</em> <a href="https://github.com/lzjqsdd/scikit-learn-doc-cn">scikit-learn-doc-cn</a></li>
                     </ul>
 
                     <form target="_top" id="paypal-form" method="post" action="https://www.paypal.com/cgi-bin/webscr">
@@ -305,7 +304,7 @@
                     </div>
                     <p align="right">
                     <small class="example-link">
-                    <a href="testimonials/testimonials.html">More testimonials</a>
+                    <a href="testimonials/testimonials.html">更多感言</a>
                     </small>
                     </p>
                 </div>
@@ -331,7 +330,7 @@
              </div>
              <div class="span4">
                 <a class="reference internal" href="about.html#funding">
-                   More information on our contributors
+                   更多关于贡献者的信息
                 </a>
              </div>
           </div>

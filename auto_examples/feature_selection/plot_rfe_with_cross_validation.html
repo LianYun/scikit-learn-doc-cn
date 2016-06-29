@@ -65,28 +65,28 @@
         </a>
         </p><div class="navbar">
             <ul>
-                <li><a href="../../index.html">Home</a></li>
-                <li><a href="../../install.html">Installation</a></li>
+                <li><a href="../../index.html">主页</a></li>
+                <li><a href="../../install.html">安装</a></li>
                 <li class="btn-li"><div class="btn-group">
-              <a href="../../documentation.html">Documentation</a>
+              <a href="../../documentation.html">文档</a>
               <a class="btn dropdown-toggle" data-toggle="dropdown">
                  <span class="caret"></span>
               </a>
               <ul class="dropdown-menu">
             <li class="link-title">Scikit-learn 0.17 (stable)</li>
-            <li><a href="../../tutorial/index.html">Tutorials</a></li>
-            <li><a href="../../user_guide.html">User guide</a></li>
+            <li><a href="../../tutorial/index.html">入门指南</a></li>
+            <li><a href="../../user_guide.html">使用手册</a></li>
             <li><a href="../../modules/classes.html">API</a></li>
             <li><a href="../../faq.html">FAQ</a></li>
-            <li><a href="../../developers.html">Contributing</a></li>
+            <li><a href="../../developers.html">贡献</a></li>
             <li class="divider"></li>
                 <li><a href="http://scikit-learn.org/dev/documentation.html">Scikit-learn 0.18 (development)</a></li>
                 <li><a href="http://scikit-learn.org/0.16/documentation.html">Scikit-learn 0.16</a></li>
-				<li><a href="../../_downloads/user_guide.pdf">PDF documentation</a></li>
+				<li><a href="../../_downloads/user_guide.pdf">PDF 文档</a></li>
               </ul>
             </div>
         </li>
-            <li><a href="../index.html">Examples</a></li>
+            <li><a href="../index.html">例子</a></li>
             </ul>
 
             <div class="search_form">
@@ -117,7 +117,7 @@
         accesskey="P">Previous
         <br/>
         <span class="smallrellink">
-        Recursive featur...
+        Recursive fea...
         </span>
             <span class="hiddenrellink">
             Recursive feature elimination
@@ -171,11 +171,11 @@
 number of features selected with cross-validation.</p>
 <img alt="../../_images/plot_rfe_with_cross_validation_001.png" class="align-center" src="../../_images/plot_rfe_with_cross_validation_001.png" />
 <p><strong>Script output</strong>:</p>
-<div class="highlight-default"><div class="highlight"><pre><span class="n">Optimal</span> <span class="n">number</span> <span class="n">of</span> <span class="n">features</span> <span class="p">:</span> <span class="mi">3</span>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">Optimal</span> <span class="n">number</span> <span class="n">of</span> <span class="n">features</span> <span class="p">:</span> <span class="mi">3</span>
 </pre></div>
 </div>
 <p><strong>Python source code:</strong> <a class="reference download internal" href="../../_downloads/plot_rfe_with_cross_validation.py" download=""><code class="xref download docutils literal"><span class="pre">plot_rfe_with_cross_validation.py</span></code></a></p>
-<div class="highlight-default"><div class="highlight"><pre><span class="nb">print</span><span class="p">(</span><span class="n">__doc__</span><span class="p">)</span>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">__doc__</span><span class="p">)</span>
 
 <span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
 <span class="kn">from</span> <span class="nn">sklearn.svm</span> <span class="k">import</span> <a href="../../modules/generated/sklearn.svm.SVC.html#sklearn.svm.SVC"><span class="n">SVC</span></a>
@@ -183,25 +183,25 @@ number of features selected with cross-validation.</p>
 <span class="kn">from</span> <span class="nn">sklearn.feature_selection</span> <span class="k">import</span> <a href="../../modules/generated/sklearn.feature_selection.RFECV.html#sklearn.feature_selection.RFECV"><span class="n">RFECV</span></a>
 <span class="kn">from</span> <span class="nn">sklearn.datasets</span> <span class="k">import</span> <a href="../../modules/generated/sklearn.datasets.make_classification.html#sklearn.datasets.make_classification"><span class="n">make_classification</span></a>
 
-<span class="c"># Build a classification task using 3 informative features</span>
+<span class="c1"># Build a classification task using 3 informative features</span>
 <span class="n">X</span><span class="p">,</span> <span class="n">y</span> <span class="o">=</span> <a href="../../modules/generated/sklearn.datasets.make_classification.html#sklearn.datasets.make_classification"><span class="n">make_classification</span></a><span class="p">(</span><span class="n">n_samples</span><span class="o">=</span><span class="mi">1000</span><span class="p">,</span> <span class="n">n_features</span><span class="o">=</span><span class="mi">25</span><span class="p">,</span> <span class="n">n_informative</span><span class="o">=</span><span class="mi">3</span><span class="p">,</span>
                            <span class="n">n_redundant</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="n">n_repeated</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">n_classes</span><span class="o">=</span><span class="mi">8</span><span class="p">,</span>
                            <span class="n">n_clusters_per_class</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
 
-<span class="c"># Create the RFE object and compute a cross-validated score.</span>
-<span class="n">svc</span> <span class="o">=</span> <a href="../../modules/generated/sklearn.svm.SVC.html#sklearn.svm.SVC"><span class="n">SVC</span></a><span class="p">(</span><span class="n">kernel</span><span class="o">=</span><span class="s">&quot;linear&quot;</span><span class="p">)</span>
-<span class="c"># The &quot;accuracy&quot; scoring is proportional to the number of correct</span>
-<span class="c"># classifications</span>
+<span class="c1"># Create the RFE object and compute a cross-validated score.</span>
+<span class="n">svc</span> <span class="o">=</span> <a href="../../modules/generated/sklearn.svm.SVC.html#sklearn.svm.SVC"><span class="n">SVC</span></a><span class="p">(</span><span class="n">kernel</span><span class="o">=</span><span class="s2">&quot;linear&quot;</span><span class="p">)</span>
+<span class="c1"># The &quot;accuracy&quot; scoring is proportional to the number of correct</span>
+<span class="c1"># classifications</span>
 <span class="n">rfecv</span> <span class="o">=</span> <a href="../../modules/generated/sklearn.feature_selection.RFECV.html#sklearn.feature_selection.RFECV"><span class="n">RFECV</span></a><span class="p">(</span><span class="n">estimator</span><span class="o">=</span><span class="n">svc</span><span class="p">,</span> <span class="n">step</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">cv</span><span class="o">=</span><a href="../../modules/generated/sklearn.cross_validation.StratifiedKFold.html#sklearn.cross_validation.StratifiedKFold"><span class="n">StratifiedKFold</span></a><span class="p">(</span><span class="n">y</span><span class="p">,</span> <span class="mi">2</span><span class="p">),</span>
-              <span class="n">scoring</span><span class="o">=</span><span class="s">&#39;accuracy&#39;</span><span class="p">)</span>
+              <span class="n">scoring</span><span class="o">=</span><span class="s1">&#39;accuracy&#39;</span><span class="p">)</span>
 <span class="n">rfecv</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span>
 
-<span class="nb">print</span><span class="p">(</span><span class="s">&quot;Optimal number of features : %d&quot;</span> <span class="o">%</span> <span class="n">rfecv</span><span class="o">.</span><span class="n">n_features_</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Optimal number of features : </span><span class="si">%d</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="n">rfecv</span><span class="o">.</span><span class="n">n_features_</span><span class="p">)</span>
 
-<span class="c"># Plot number of features VS. cross-validation scores</span>
+<span class="c1"># Plot number of features VS. cross-validation scores</span>
 <a href="http://matplotlib.org/api/figure_api.html#matplotlib.figure"><span class="n">plt</span><span class="o">.</span><span class="n">figure</span></a><span class="p">()</span>
-<a href="http://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.xlabel"><span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span></a><span class="p">(</span><span class="s">&quot;Number of features selected&quot;</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s">&quot;Cross validation score (nb of correct classifications)&quot;</span><span class="p">)</span>
+<a href="http://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.xlabel"><span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span></a><span class="p">(</span><span class="s2">&quot;Number of features selected&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s2">&quot;Cross validation score (nb of correct classifications)&quot;</span><span class="p">)</span>
 <a href="http://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.plot"><span class="n">plt</span><span class="o">.</span><span class="n">plot</span></a><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">rfecv</span><span class="o">.</span><span class="n">grid_scores_</span><span class="p">)</span> <span class="o">+</span> <span class="mi">1</span><span class="p">),</span> <span class="n">rfecv</span><span class="o">.</span><span class="n">grid_scores_</span><span class="p">)</span>
 <a href="http://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.show"><span class="n">plt</span><span class="o">.</span><span class="n">show</span></a><span class="p">()</span>
 </pre></div>

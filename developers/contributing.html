@@ -65,28 +65,28 @@
         </a>
         </p><div class="navbar">
             <ul>
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="../install.html">Installation</a></li>
+                <li><a href="../index.html">主页</a></li>
+                <li><a href="../install.html">安装</a></li>
                 <li class="btn-li"><div class="btn-group">
-              <a href="../documentation.html">Documentation</a>
+              <a href="../documentation.html">文档</a>
               <a class="btn dropdown-toggle" data-toggle="dropdown">
                  <span class="caret"></span>
               </a>
               <ul class="dropdown-menu">
             <li class="link-title">Scikit-learn 0.17 (stable)</li>
-            <li><a href="../tutorial/index.html">Tutorials</a></li>
-            <li><a href="../user_guide.html">User guide</a></li>
+            <li><a href="../tutorial/index.html">入门指南</a></li>
+            <li><a href="../user_guide.html">使用手册</a></li>
             <li><a href="../modules/classes.html">API</a></li>
             <li><a href="../faq.html">FAQ</a></li>
-            <li><a href="../developers.html">Contributing</a></li>
+            <li><a href="../developers.html">贡献</a></li>
             <li class="divider"></li>
                 <li><a href="http://scikit-learn.org/dev/documentation.html">Scikit-learn 0.18 (development)</a></li>
                 <li><a href="http://scikit-learn.org/0.16/documentation.html">Scikit-learn 0.16</a></li>
-				<li><a href="../_downloads/user_guide.pdf">PDF documentation</a></li>
+				<li><a href="../_downloads/user_guide.pdf">PDF 文档</a></li>
               </ul>
             </div>
         </li>
-            <li><a href="../auto_examples/index.html">Examples</a></li>
+            <li><a href="../auto_examples/index.html">例子</a></li>
             </ul>
 
             <div class="search_form">
@@ -117,7 +117,7 @@
         accesskey="P">Previous
         <br/>
         <span class="smallrellink">
-        Developer’s Guid...
+        Developer’s G...
         </span>
             <span class="hiddenrellink">
             Developer’s Guide
@@ -134,7 +134,7 @@
         Up
         <br/>
         <span class="smallrellink">
-        Developer’s Guid...
+        Developer’s G...
         </span>
             <span class="hiddenrellink">
             Developer’s Guide
@@ -228,31 +228,31 @@ also welcome to post feature requests or pull requests.</p>
 <p>We use <a class="reference external" href="http://git-scm.com/">Git</a> for version control and
 <a class="reference external" href="http://github.com/">GitHub</a> for hosting our main repository.</p>
 <p>You can check out the latest sources with the command:</p>
-<div class="highlight-default"><div class="highlight"><pre><span class="n">git</span> <span class="n">clone</span> <span class="n">git</span><span class="p">:</span><span class="o">//</span><span class="n">github</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">scikit</span><span class="o">-</span><span class="n">learn</span><span class="o">/</span><span class="n">scikit</span><span class="o">-</span><span class="n">learn</span><span class="o">.</span><span class="n">git</span>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">git</span> <span class="n">clone</span> <span class="n">git</span><span class="p">:</span><span class="o">//</span><span class="n">github</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">scikit</span><span class="o">-</span><span class="n">learn</span><span class="o">/</span><span class="n">scikit</span><span class="o">-</span><span class="n">learn</span><span class="o">.</span><span class="n">git</span>
 </pre></div>
 </div>
 <p>or if you have write privileges:</p>
-<div class="highlight-default"><div class="highlight"><pre><span class="n">git</span> <span class="n">clone</span> <span class="n">git</span><span class="nd">@github</span><span class="o">.</span><span class="n">com</span><span class="p">:</span><span class="n">scikit</span><span class="o">-</span><span class="n">learn</span><span class="o">/</span><span class="n">scikit</span><span class="o">-</span><span class="n">learn</span><span class="o">.</span><span class="n">git</span>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">git</span> <span class="n">clone</span> <span class="n">git</span><span class="nd">@github</span><span class="o">.</span><span class="n">com</span><span class="p">:</span><span class="n">scikit</span><span class="o">-</span><span class="n">learn</span><span class="o">/</span><span class="n">scikit</span><span class="o">-</span><span class="n">learn</span><span class="o">.</span><span class="n">git</span>
 </pre></div>
 </div>
 <p>If you run the development version, it is cumbersome to reinstall the
 package each time you update the sources. It is thus preferred that
 you add the scikit-learn directory to your <code class="docutils literal"><span class="pre">PYTHONPATH</span></code> and build the
 extension in place:</p>
-<div class="highlight-default"><div class="highlight"><pre><span class="n">python</span> <span class="n">setup</span><span class="o">.</span><span class="n">py</span> <span class="n">build_ext</span> <span class="o">--</span><span class="n">inplace</span>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">python</span> <span class="n">setup</span><span class="o">.</span><span class="n">py</span> <span class="n">build_ext</span> <span class="o">--</span><span class="n">inplace</span>
 </pre></div>
 </div>
 <p>Another option is to use the <code class="docutils literal"><span class="pre">develop</span></code> option if you change your code a lot
 and do not want to have to reinstall every time. This basically builds the
 extension in place and creates a link to the development directory (see
 <a class="reference external" href="https://pythonhosted.org/setuptools/setuptools.html#development-mode">the setuptool docs</a>):</p>
-<div class="highlight-default"><div class="highlight"><pre><span class="n">python</span> <span class="n">setup</span><span class="o">.</span><span class="n">py</span> <span class="n">develop</span>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">python</span> <span class="n">setup</span><span class="o">.</span><span class="n">py</span> <span class="n">develop</span>
 </pre></div>
 </div>
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
 <p>if you decide to do that you have to rerun:</p>
-<div class="highlight-default"><div class="highlight"><pre><span class="n">python</span> <span class="n">setup</span><span class="o">.</span><span class="n">py</span> <span class="n">build_ext</span> <span class="o">--</span><span class="n">inplace</span>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">python</span> <span class="n">setup</span><span class="o">.</span><span class="n">py</span> <span class="n">build_ext</span> <span class="o">--</span><span class="n">inplace</span>
 </pre></div>
 </div>
 <p class="last">every time the source code of a compiled extension is
@@ -285,24 +285,24 @@ button near the top of the page. This creates a copy of the code under your
 account on the GitHub server.</p>
 </li>
 <li><p class="first">Clone this copy to your local disk:</p>
-<div class="highlight-default"><div class="highlight"><pre>$ git clone git@github.com:YourLogin/scikit-learn.git
+<div class="highlight-default"><div class="highlight"><pre><span></span>$ git clone git@github.com:YourLogin/scikit-learn.git
 </pre></div>
 </div>
 </li>
 <li><p class="first">Create a branch to hold your changes:</p>
-<div class="highlight-default"><div class="highlight"><pre>$ git checkout -b my-feature
+<div class="highlight-default"><div class="highlight"><pre><span></span>$ git checkout -b my-feature
 </pre></div>
 </div>
 <p>and start making changes. Never work in the <code class="docutils literal"><span class="pre">master</span></code> branch!</p>
 </li>
 <li><p class="first">Work on this copy, on your computer, using Git to do the version
 control. When you&#8217;re done editing, do:</p>
-<div class="highlight-default"><div class="highlight"><pre>$ git add modified_files
+<div class="highlight-default"><div class="highlight"><pre><span></span>$ git add modified_files
 $ git commit
 </pre></div>
 </div>
 <p>to record your changes in Git, then push them to GitHub with:</p>
-<div class="highlight-default"><div class="highlight"><pre>$ git push -u origin my-feature
+<div class="highlight-default"><div class="highlight"><pre><span></span>$ git push -u origin my-feature
 </pre></div>
 </div>
 </li>
@@ -319,7 +319,7 @@ YourLogin/scikit-learn.git. If you wish to fetch/merge from the main
 repository instead of your forked one, you will need to add another remote
 to use instead of <code class="docutils literal"><span class="pre">origin</span></code>. If we choose the name <code class="docutils literal"><span class="pre">upstream</span></code> for it, the
 command will be:</p>
-<div class="last highlight-default"><div class="highlight"><pre>$ git remote add upstream https://github.com/scikit-learn/scikit-learn.git
+<div class="last highlight-default"><div class="highlight"><pre><span></span>$ git remote add upstream https://github.com/scikit-learn/scikit-learn.git
 </pre></div>
 </div>
 </div>
@@ -340,7 +340,7 @@ usage presented as doctests when appropriate.</p>
 </li>
 <li><p class="first">All other tests pass when everything is rebuilt from scratch. On
 Unix-like systems, check with (from the toplevel source folder):</p>
-<div class="highlight-default"><div class="highlight"><pre>$ make
+<div class="highlight-default"><div class="highlight"><pre><span></span>$ make
 </pre></div>
 </div>
 </li>
@@ -362,26 +362,26 @@ documentation, see the <a class="reference internal" href="#contribute-documenta
 <div><ul>
 <li><p class="first">Code with a good unittest coverage (at least 90%, better 100%), check
 with:</p>
-<div class="highlight-default"><div class="highlight"><pre>$ pip install nose coverage
+<div class="highlight-default"><div class="highlight"><pre><span></span>$ pip install nose coverage
 $ nosetests --with-coverage path/to/tests_for_package
 </pre></div>
 </div>
 <p>see also <a class="reference internal" href="#testing-coverage"><span class="std std-ref">Testing and improving test coverage</span></a></p>
 </li>
 <li><p class="first">No pyflakes warnings, check with:</p>
-<div class="highlight-default"><div class="highlight"><pre>$ pip install pyflakes
+<div class="highlight-default"><div class="highlight"><pre><span></span>$ pip install pyflakes
 $ pyflakes path/to/module.py
 </pre></div>
 </div>
 </li>
 <li><p class="first">No PEP8 warnings, check with:</p>
-<div class="highlight-default"><div class="highlight"><pre>$ pip install pep8
+<div class="highlight-default"><div class="highlight"><pre><span></span>$ pip install pep8
 $ pep8 path/to/module.py
 </pre></div>
 </div>
 </li>
 <li><p class="first">AutoPEP8 can help you fix some of the easy redundant errors:</p>
-<div class="highlight-default"><div class="highlight"><pre>$ pip install autopep8
+<div class="highlight-default"><div class="highlight"><pre><span></span>$ pip install autopep8
 $ autopep8 path/to/pep8.py
 </pre></div>
 </div>
@@ -460,7 +460,7 @@ opposed to how it works &#8220;under the hood&#8221;.</p>
 </li>
 <li><p class="first">&#8220;See also&#8221; in docstrings should be one line per reference,
 with a colon and an explanation, for example:</p>
-<div class="highlight-default"><div class="highlight"><pre><span class="n">See</span> <span class="n">also</span>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">See</span> <span class="n">also</span>
 <span class="o">--------</span>
 <span class="n">SelectKBest</span><span class="p">:</span> <span class="n">Select</span> <span class="n">features</span> <span class="n">based</span> <span class="n">on</span> <span class="n">the</span> <span class="n">k</span> <span class="n">highest</span> <span class="n">scores</span><span class="o">.</span>
 <span class="n">SelectFpr</span><span class="p">:</span> <span class="n">Select</span> <span class="n">features</span> <span class="n">based</span> <span class="n">on</span> <span class="n">a</span> <span class="n">false</span> <span class="n">positive</span> <span class="n">rate</span> <span class="n">test</span><span class="o">.</span>
@@ -619,7 +619,7 @@ repeatability in error checking, the routine should accept a keyword
 <code class="docutils literal"><span class="pre">numpy.random.RandomState</span></code> object.
 See <a class="reference internal" href="../modules/generated/sklearn.utils.check_random_state.html#sklearn.utils.check_random_state" title="sklearn.utils.check_random_state"><code class="xref py py-func docutils literal"><span class="pre">sklearn.utils.check_random_state</span></code></a> in <a class="reference internal" href="utilities.html#developers-utils"><span class="std std-ref">Utilities for Developers</span></a>.</p>
 <p>Here&#8217;s a simple example of code using some of the above guidelines:</p>
-<div class="highlight-default"><div class="highlight"><pre><span class="kn">from</span> <span class="nn">sklearn.utils</span> <span class="k">import</span> <span class="n">check_array</span><span class="p">,</span> <span class="n">check_random_state</span>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.utils</span> <span class="k">import</span> <span class="n">check_array</span><span class="p">,</span> <span class="n">check_random_state</span>
 
 <span class="k">def</span> <span class="nf">choose_random_sample</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="mi">0</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;</span>
@@ -655,18 +655,18 @@ to get an actual random number generator.
 If, for some reason, randomness is needed after <code class="docutils literal"><span class="pre">fit</span></code>,
 the RNG should be stored in an attribute <code class="docutils literal"><span class="pre">random_state_</span></code>.
 The following example should make this clear:</p>
-<div class="highlight-default"><div class="highlight"><pre><span class="k">class</span> <span class="nc">GaussianNoise</span><span class="p">(</span><span class="n">BaseEstimator</span><span class="p">,</span> <span class="n">TransformerMixin</span><span class="p">):</span>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">GaussianNoise</span><span class="p">(</span><span class="n">BaseEstimator</span><span class="p">,</span> <span class="n">TransformerMixin</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;This estimator ignores its input and returns random Gaussian noise.</span>
 
 <span class="sd">    It also does not adhere to all scikit-learn conventions,</span>
 <span class="sd">    but showcases how to handle randomness.</span>
 <span class="sd">    &quot;&quot;&quot;</span>
 
-    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">n_components</span><span class="o">=</span><span class="mi">100</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="k">None</span><span class="p">):</span>
+    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">n_components</span><span class="o">=</span><span class="mi">100</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">random_state</span> <span class="o">=</span> <span class="n">random_state</span>
 
-    <span class="c"># the arguments are ignored anyway, so we make them optional</span>
-    <span class="k">def</span> <span class="nf">fit</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">X</span><span class="o">=</span><span class="k">None</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="k">None</span><span class="p">):</span>
+    <span class="c1"># the arguments are ignored anyway, so we make them optional</span>
+    <span class="k">def</span> <span class="nf">fit</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">X</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">random_state_</span> <span class="o">=</span> <span class="n">check_random_state</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">random_state</span><span class="p">)</span>
 
     <span class="k">def</span> <span class="nf">transform</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">X</span><span class="p">):</span>
@@ -687,38 +687,38 @@ a deprecation warning when it is called/passed/accessed.
 E.g., if the function <code class="docutils literal"><span class="pre">zero_one</span></code> is renamed to <code class="docutils literal"><span class="pre">zero_one_loss</span></code>,
 we add the decorator <code class="docutils literal"><span class="pre">deprecated</span></code> (from <code class="docutils literal"><span class="pre">sklearn.utils</span></code>)
 to <code class="docutils literal"><span class="pre">zero_one</span></code> and call <code class="docutils literal"><span class="pre">zero_one_loss</span></code> from that function:</p>
-<div class="highlight-default"><div class="highlight"><pre><span class="kn">from</span> <span class="nn">..utils</span> <span class="k">import</span> <span class="n">deprecated</span>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">..utils</span> <span class="k">import</span> <span class="n">deprecated</span>
 
-<span class="k">def</span> <span class="nf">zero_one_loss</span><span class="p">(</span><span class="n">y_true</span><span class="p">,</span> <span class="n">y_pred</span><span class="p">,</span> <span class="n">normalize</span><span class="o">=</span><span class="k">True</span><span class="p">):</span>
-    <span class="c"># actual implementation</span>
+<span class="k">def</span> <span class="nf">zero_one_loss</span><span class="p">(</span><span class="n">y_true</span><span class="p">,</span> <span class="n">y_pred</span><span class="p">,</span> <span class="n">normalize</span><span class="o">=</span><span class="kc">True</span><span class="p">):</span>
+    <span class="c1"># actual implementation</span>
     <span class="k">pass</span>
 
-<span class="nd">@deprecated</span><span class="p">(</span><span class="s">&quot;Function &#39;zero_one&#39; has been renamed to &quot;</span>
-            <span class="s">&quot;&#39;zero_one_loss&#39; and will be removed in release 0.15.&quot;</span>
-            <span class="s">&quot;Default behavior is changed from &#39;normalize=False&#39; to &quot;</span>
-            <span class="s">&quot;&#39;normalize=True&#39;&quot;</span><span class="p">)</span>
-<span class="k">def</span> <span class="nf">zero_one</span><span class="p">(</span><span class="n">y_true</span><span class="p">,</span> <span class="n">y_pred</span><span class="p">,</span> <span class="n">normalize</span><span class="o">=</span><span class="k">False</span><span class="p">):</span>
+<span class="nd">@deprecated</span><span class="p">(</span><span class="s2">&quot;Function &#39;zero_one&#39; has been renamed to &quot;</span>
+            <span class="s2">&quot;&#39;zero_one_loss&#39; and will be removed in release 0.15.&quot;</span>
+            <span class="s2">&quot;Default behavior is changed from &#39;normalize=False&#39; to &quot;</span>
+            <span class="s2">&quot;&#39;normalize=True&#39;&quot;</span><span class="p">)</span>
+<span class="k">def</span> <span class="nf">zero_one</span><span class="p">(</span><span class="n">y_true</span><span class="p">,</span> <span class="n">y_pred</span><span class="p">,</span> <span class="n">normalize</span><span class="o">=</span><span class="kc">False</span><span class="p">):</span>
     <span class="k">return</span> <span class="n">zero_one_loss</span><span class="p">(</span><span class="n">y_true</span><span class="p">,</span> <span class="n">y_pred</span><span class="p">,</span> <span class="n">normalize</span><span class="p">)</span>
 </pre></div>
 </div>
 <p>If an attribute is to be deprecated,
 use the decorator <code class="docutils literal"><span class="pre">deprecated</span></code> on a property.
 E.g., renaming an attribute <code class="docutils literal"><span class="pre">labels_</span></code> to <code class="docutils literal"><span class="pre">classes_</span></code> can be done as:</p>
-<div class="highlight-default"><div class="highlight"><pre><span class="nd">@property</span>
-<span class="nd">@deprecated</span><span class="p">(</span><span class="s">&quot;Attribute labels_ is deprecated and &quot;</span>
-            <span class="s">&quot;will be removed in 0.15. Use &#39;classes_&#39; instead&quot;</span><span class="p">)</span>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="nd">@property</span>
+<span class="nd">@deprecated</span><span class="p">(</span><span class="s2">&quot;Attribute labels_ is deprecated and &quot;</span>
+            <span class="s2">&quot;will be removed in 0.15. Use &#39;classes_&#39; instead&quot;</span><span class="p">)</span>
 <span class="k">def</span> <span class="nf">labels_</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
     <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">classes_</span>
 </pre></div>
 </div>
 <p>If a parameter has to be deprecated, use <code class="docutils literal"><span class="pre">DeprecationWarning</span></code> appropriately.
 In following example, k is deprecated and renamed to n_clusters:</p>
-<div class="highlight-default"><div class="highlight"><pre><span class="kn">import</span> <span class="nn">warnings</span>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">warnings</span>
 
-<span class="k">def</span> <span class="nf">example_function</span><span class="p">(</span><span class="n">n_clusters</span><span class="o">=</span><span class="mi">8</span><span class="p">,</span> <span class="n">k</span><span class="o">=</span><span class="k">None</span><span class="p">):</span>
-    <span class="k">if</span> <span class="n">k</span> <span class="ow">is</span> <span class="ow">not</span> <span class="k">None</span><span class="p">:</span>
-        <span class="n">warnings</span><span class="o">.</span><span class="n">warn</span><span class="p">(</span><span class="s">&quot;&#39;k&#39; was renamed to n_clusters and will &quot;</span>
-                      <span class="s">&quot;be removed in 0.15.&quot;</span><span class="p">,</span>
+<span class="k">def</span> <span class="nf">example_function</span><span class="p">(</span><span class="n">n_clusters</span><span class="o">=</span><span class="mi">8</span><span class="p">,</span> <span class="n">k</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+    <span class="k">if</span> <span class="n">k</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="n">warnings</span><span class="o">.</span><span class="n">warn</span><span class="p">(</span><span class="s2">&quot;&#39;k&#39; was renamed to n_clusters and will &quot;</span>
+                      <span class="s2">&quot;be removed in 0.15.&quot;</span><span class="p">,</span>
                       <span class="ne">DeprecationWarning</span><span class="p">)</span>
         <span class="n">n_clusters</span> <span class="o">=</span> <span class="n">k</span>
 </pre></div>
@@ -755,41 +755,41 @@ multiple interfaces):</p>
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Estimator:</th><td class="field-body"><p class="first">The base object, implements a <code class="docutils literal"><span class="pre">fit</span></code> method to learn from data, either:</p>
-<div class="highlight-default"><div class="highlight"><pre><span class="n">estimator</span> <span class="o">=</span> <span class="n">obj</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">targets</span><span class="p">)</span>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">estimator</span> <span class="o">=</span> <span class="n">obj</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">targets</span><span class="p">)</span>
 </pre></div>
 </div>
 <p>or:</p>
-<div class="highlight-default"><div class="highlight"><pre><span class="n">estimator</span> <span class="o">=</span> <span class="n">obj</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">estimator</span> <span class="o">=</span> <span class="n">obj</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
 </pre></div>
 </div>
 </td>
 </tr>
 <tr class="field-even field"><th class="field-name">Predictor:</th><td class="field-body"><p class="first">For supervised learning, or some unsupervised problems, implements:</p>
-<div class="highlight-default"><div class="highlight"><pre><span class="n">prediction</span> <span class="o">=</span> <span class="n">obj</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">prediction</span> <span class="o">=</span> <span class="n">obj</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
 </pre></div>
 </div>
 <p>Classification algorithms usually also offer a way to quantify certainty
 of a prediction, either using <code class="docutils literal"><span class="pre">decision_function</span></code> or <code class="docutils literal"><span class="pre">predict_proba</span></code>:</p>
-<div class="highlight-default"><div class="highlight"><pre><span class="n">probability</span> <span class="o">=</span> <span class="n">obj</span><span class="o">.</span><span class="n">predict_proba</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">probability</span> <span class="o">=</span> <span class="n">obj</span><span class="o">.</span><span class="n">predict_proba</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
 </pre></div>
 </div>
 </td>
 </tr>
 <tr class="field-odd field"><th class="field-name">Transformer:</th><td class="field-body"><p class="first">For filtering or modifying the data, in a supervised or unsupervised
 way, implements:</p>
-<div class="highlight-default"><div class="highlight"><pre><span class="n">new_data</span> <span class="o">=</span> <span class="n">obj</span><span class="o">.</span><span class="n">transform</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">new_data</span> <span class="o">=</span> <span class="n">obj</span><span class="o">.</span><span class="n">transform</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
 </pre></div>
 </div>
 <p>When fitting and transforming can be performed much more efficiently
 together than separately, implements:</p>
-<div class="highlight-default"><div class="highlight"><pre><span class="n">new_data</span> <span class="o">=</span> <span class="n">obj</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">new_data</span> <span class="o">=</span> <span class="n">obj</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
 </pre></div>
 </div>
 </td>
 </tr>
 <tr class="field-even field"><th class="field-name">Model:</th><td class="field-body"><p class="first">A model that can give a <a class="reference external" href="https://en.wikipedia.org/wiki/Goodness_of_fit">goodness of fit</a>
 measure or a likelihood of unseen data, implements (higher is better):</p>
-<div class="last highlight-default"><div class="highlight"><pre><span class="n">score</span> <span class="o">=</span> <span class="n">obj</span><span class="o">.</span><span class="n">score</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
+<div class="last highlight-default"><div class="highlight"><pre><span></span><span class="n">score</span> <span class="o">=</span> <span class="n">obj</span><span class="o">.</span><span class="n">score</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
 </pre></div>
 </div>
 </td>
@@ -803,7 +803,7 @@ measure or a likelihood of unseen data, implements (higher is better):</p>
 object that fits a model based on some training data and is capable of
 inferring some properties on new data. It can be, for instance, a
 classifier or a regressor. All estimators implement the fit method:</p>
-<div class="highlight-default"><div class="highlight"><pre><span class="n">estimator</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">estimator</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span>
 </pre></div>
 </div>
 <p>All built-in estimators also have a <code class="docutils literal"><span class="pre">set_params</span></code> method, which sets
@@ -817,8 +817,8 @@ to <code class="docutils literal"><span class="pre">__init__</span></code>).</p>
 might accept constants as arguments that determine the estimator&#8217;s behavior
 (like the C constant in SVMs). It should not, however, take the actual training
 data as an argument, as this is left to the <code class="docutils literal"><span class="pre">fit()</span></code> method:</p>
-<div class="highlight-default"><div class="highlight"><pre><span class="n">clf2</span> <span class="o">=</span> <span class="n">SVC</span><span class="p">(</span><span class="n">C</span><span class="o">=</span><span class="mf">2.3</span><span class="p">)</span>
-<span class="n">clf3</span> <span class="o">=</span> <span class="n">SVC</span><span class="p">([[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">],</span> <span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">]],</span> <span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">])</span> <span class="c"># WRONG!</span>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">clf2</span> <span class="o">=</span> <span class="n">SVC</span><span class="p">(</span><span class="n">C</span><span class="o">=</span><span class="mf">2.3</span><span class="p">)</span>
+<span class="n">clf3</span> <span class="o">=</span> <span class="n">SVC</span><span class="p">([[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">],</span> <span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">]],</span> <span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">])</span> <span class="c1"># WRONG!</span>
 </pre></div>
 </div>
 <p>The arguments accepted by <code class="docutils literal"><span class="pre">__init__</span></code> should all be keyword arguments
@@ -833,7 +833,7 @@ but rather under the &#8220;Parameters&#8221; section for that estimator.</p>
 correspond to an attribute on the instance</strong>. Scikit-learn relies on this to
 find the relevant attributes to set on an estimator when doing model selection.</p>
 <p>To summarize, an <code class="docutils literal"><span class="pre">__init__</span></code> should look like:</p>
-<div class="highlight-default"><div class="highlight"><pre><span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">param1</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">param2</span><span class="o">=</span><span class="mi">2</span><span class="p">):</span>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">param1</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">param2</span><span class="o">=</span><span class="mi">2</span><span class="p">):</span>
     <span class="bp">self</span><span class="o">.</span><span class="n">param1</span> <span class="o">=</span> <span class="n">param1</span>
     <span class="bp">self</span><span class="o">.</span><span class="n">param2</span> <span class="o">=</span> <span class="n">param2</span>
 </pre></div>
@@ -843,13 +843,13 @@ and the parameters should not be changed.
 The corresponding logic should be put where the parameters are used,
 typically in <code class="docutils literal"><span class="pre">fit</span></code>.
 The following is wrong:</p>
-<div class="highlight-default"><div class="highlight"><pre><span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">param1</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">param2</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="n">param3</span><span class="o">=</span><span class="mi">3</span><span class="p">):</span>
-    <span class="c"># WRONG: parameters should not be modified</span>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">param1</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">param2</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="n">param3</span><span class="o">=</span><span class="mi">3</span><span class="p">):</span>
+    <span class="c1"># WRONG: parameters should not be modified</span>
     <span class="k">if</span> <span class="n">param1</span> <span class="o">&gt;</span> <span class="mi">1</span><span class="p">:</span>
         <span class="n">param2</span> <span class="o">+=</span> <span class="mi">1</span>
     <span class="bp">self</span><span class="o">.</span><span class="n">param1</span> <span class="o">=</span> <span class="n">param1</span>
-    <span class="c"># WRONG: the object&#39;s attributes should have exactly the name of</span>
-    <span class="c"># the argument in the constructor</span>
+    <span class="c1"># WRONG: the object&#39;s attributes should have exactly the name of</span>
+    <span class="c1"># the argument in the constructor</span>
     <span class="bp">self</span><span class="o">.</span><span class="n">param3</span> <span class="o">=</span> <span class="n">param2</span>
 </pre></div>
 </div>
@@ -904,7 +904,7 @@ and <code class="docutils literal"><span class="pre">partial_fit</span></code> m
 the second place if they are implemented.</p>
 <p>The method should return the object (<code class="docutils literal"><span class="pre">self</span></code>). This pattern is useful
 to be able to implement quick one liners in an IPython session such as:</p>
-<div class="highlight-default"><div class="highlight"><pre><span class="n">y_predicted</span> <span class="o">=</span> <span class="n">SVC</span><span class="p">(</span><span class="n">C</span><span class="o">=</span><span class="mi">100</span><span class="p">)</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X_train</span><span class="p">,</span> <span class="n">y_train</span><span class="p">)</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">X_test</span><span class="p">)</span>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">y_predicted</span> <span class="o">=</span> <span class="n">SVC</span><span class="p">(</span><span class="n">C</span><span class="o">=</span><span class="mi">100</span><span class="p">)</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X_train</span><span class="p">,</span> <span class="n">y_train</span><span class="p">)</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">X_test</span><span class="p">)</span>
 </pre></div>
 </div>
 <p>Depending on the nature of the algorithm, <code class="docutils literal"><span class="pre">fit</span></code> can sometimes also
@@ -942,9 +942,9 @@ internals of scikit-learn that you should be aware of in addition to the
 sklearn API outlined above. You can check whether your estimator
 adheres to the scikit-learn interface and standards by running
 <a class="reference internal" href="../modules/generated/sklearn.utils.estimator_checks.check_estimator.html#sklearn.utils.estimator_checks.check_estimator" title="sklearn.utils.estimator_checks.check_estimator"><code class="xref py py-func docutils literal"><span class="pre">utils.estimator_checks.check_estimator</span></code></a> on the class:</p>
-<div class="highlight-default"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">sklearn.utils.estimator_checks</span> <span class="k">import</span> <span class="n">check_estimator</span>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">sklearn.utils.estimator_checks</span> <span class="k">import</span> <span class="n">check_estimator</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">sklearn.svm</span> <span class="k">import</span> <span class="n">LinearSVC</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">check_estimator</span><span class="p">(</span><span class="n">LinearSVC</span><span class="p">)</span>  <span class="c"># passes</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">check_estimator</span><span class="p">(</span><span class="n">LinearSVC</span><span class="p">)</span>  <span class="c1"># passes</span>
 </pre></div>
 </div>
 <p>The main motivation to make a class compatible to the scikit-learn estimator
@@ -956,7 +956,7 @@ you can prevent a lot of boilerplate code
 by deriving a class from <code class="docutils literal"><span class="pre">BaseEstimator</span></code>
 and optionally the mixin classes in <code class="docutils literal"><span class="pre">sklearn.base</span></code>.
 E.g., here&#8217;s a custom classifier:</p>
-<div class="highlight-default"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">sklearn.base</span> <span class="k">import</span> <span class="n">BaseEstimator</span><span class="p">,</span> <span class="n">ClassifierMixin</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="k">class</span> <span class="nc">MajorityClassifier</span><span class="p">(</span><span class="n">BaseEstimator</span><span class="p">,</span> <span class="n">ClassifierMixin</span><span class="p">):</span>
 <span class="gp">... </span>    <span class="sd">&quot;&quot;&quot;Predicts the majority class of its training data.&quot;&quot;&quot;</span>
@@ -964,8 +964,8 @@ E.g., here&#8217;s a custom classifier:</p>
 <span class="gp">... </span>        <span class="k">pass</span>
 <span class="gp">...</span>
 <span class="gp">... </span>    <span class="k">def</span> <span class="nf">fit</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">X</span><span class="p">,</span> <span class="n">y</span><span class="p">):</span>
-<span class="gp">... </span>        <span class="bp">self</span><span class="o">.</span><span class="n">classes_</span><span class="p">,</span> <span class="n">indices</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">unique</span><span class="p">([</span><span class="s">&quot;foo&quot;</span><span class="p">,</span> <span class="s">&quot;bar&quot;</span><span class="p">,</span> <span class="s">&quot;foo&quot;</span><span class="p">],</span>
-<span class="gp">... </span>                                           <span class="n">return_inverse</span><span class="o">=</span><span class="k">True</span><span class="p">)</span>
+<span class="gp">... </span>        <span class="bp">self</span><span class="o">.</span><span class="n">classes_</span><span class="p">,</span> <span class="n">indices</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">unique</span><span class="p">([</span><span class="s2">&quot;foo&quot;</span><span class="p">,</span> <span class="s2">&quot;bar&quot;</span><span class="p">,</span> <span class="s2">&quot;foo&quot;</span><span class="p">],</span>
+<span class="gp">... </span>                                           <span class="n">return_inverse</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
 <span class="gp">... </span>        <span class="bp">self</span><span class="o">.</span><span class="n">majority_</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">argmax</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">bincount</span><span class="p">(</span><span class="n">indices</span><span class="p">))</span>
 <span class="gp">... </span>        <span class="k">return</span> <span class="bp">self</span>
 <span class="gp">...</span>
@@ -993,9 +993,9 @@ grid searches.</p>
 <code class="docutils literal"><span class="pre">__repr__</span></code> method, is to inherit from <code class="docutils literal"><span class="pre">sklearn.base.BaseEstimator</span></code>. If you
 do not want to make your code dependent on scikit-learn, the easiest way to
 implement the interface is:</p>
-<div class="highlight-default"><div class="highlight"><pre><span class="k">def</span> <span class="nf">get_params</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">deep</span><span class="o">=</span><span class="k">True</span><span class="p">):</span>
-    <span class="c"># suppose this estimator has parameters &quot;alpha&quot; and &quot;recursive&quot;</span>
-    <span class="k">return</span> <span class="p">{</span><span class="s">&quot;alpha&quot;</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">alpha</span><span class="p">,</span> <span class="s">&quot;recursive&quot;</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">recursive</span><span class="p">}</span>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">get_params</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">deep</span><span class="o">=</span><span class="kc">True</span><span class="p">):</span>
+    <span class="c1"># suppose this estimator has parameters &quot;alpha&quot; and &quot;recursive&quot;</span>
+    <span class="k">return</span> <span class="p">{</span><span class="s2">&quot;alpha&quot;</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">alpha</span><span class="p">,</span> <span class="s2">&quot;recursive&quot;</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">recursive</span><span class="p">}</span>
 
 <span class="k">def</span> <span class="nf">set_params</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="o">**</span><span class="n">parameters</span><span class="p">):</span>
     <span class="k">for</span> <span class="n">parameter</span><span class="p">,</span> <span class="n">value</span> <span class="ow">in</span> <span class="n">parameters</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
@@ -1075,7 +1075,7 @@ The order of class labels in this attribute
 should match the order in which <code class="docutils literal"><span class="pre">predict_proba</span></code>, <code class="docutils literal"><span class="pre">predict_log_proba</span></code>
 and <code class="docutils literal"><span class="pre">decision_function</span></code> return their values.
 The easiest way to achieve this is to put:</p>
-<div class="highlight-default"><div class="highlight"><pre><span class="bp">self</span><span class="o">.</span><span class="n">classes_</span><span class="p">,</span> <span class="n">y</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">unique</span><span class="p">(</span><span class="n">y</span><span class="p">,</span> <span class="n">return_inverse</span><span class="o">=</span><span class="k">True</span><span class="p">)</span>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="bp">self</span><span class="o">.</span><span class="n">classes_</span><span class="p">,</span> <span class="n">y</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">unique</span><span class="p">(</span><span class="n">y</span><span class="p">,</span> <span class="n">return_inverse</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
 </pre></div>
 </div>
 <p>in <code class="docutils literal"><span class="pre">fit</span></code>.
@@ -1085,7 +1085,7 @@ in the range [0, <code class="docutils literal"><span class="pre">n_classes</spa
 arrays containing class labels from <code class="docutils literal"><span class="pre">classes_</span></code>.
 In a classifier that implements <code class="docutils literal"><span class="pre">decision_function</span></code>,
 this can be achieved with:</p>
-<div class="highlight-default"><div class="highlight"><pre><span class="k">def</span> <span class="nf">predict</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">X</span><span class="p">):</span>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">predict</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">X</span><span class="p">):</span>
     <span class="n">D</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">decision_function</span><span class="p">(</span><span class="n">X</span><span class="p">)</span>
     <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">classes_</span><span class="p">[</span><span class="n">np</span><span class="o">.</span><span class="n">argmax</span><span class="p">(</span><span class="n">D</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)]</span>
 </pre></div>

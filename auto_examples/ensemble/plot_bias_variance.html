@@ -65,28 +65,28 @@
         </a>
         </p><div class="navbar">
             <ul>
-                <li><a href="../../index.html">Home</a></li>
-                <li><a href="../../install.html">Installation</a></li>
+                <li><a href="../../index.html">主页</a></li>
+                <li><a href="../../install.html">安装</a></li>
                 <li class="btn-li"><div class="btn-group">
-              <a href="../../documentation.html">Documentation</a>
+              <a href="../../documentation.html">文档</a>
               <a class="btn dropdown-toggle" data-toggle="dropdown">
                  <span class="caret"></span>
               </a>
               <ul class="dropdown-menu">
             <li class="link-title">Scikit-learn 0.17 (stable)</li>
-            <li><a href="../../tutorial/index.html">Tutorials</a></li>
-            <li><a href="../../user_guide.html">User guide</a></li>
+            <li><a href="../../tutorial/index.html">入门指南</a></li>
+            <li><a href="../../user_guide.html">使用手册</a></li>
             <li><a href="../../modules/classes.html">API</a></li>
             <li><a href="../../faq.html">FAQ</a></li>
-            <li><a href="../../developers.html">Contributing</a></li>
+            <li><a href="../../developers.html">贡献</a></li>
             <li class="divider"></li>
                 <li><a href="http://scikit-learn.org/dev/documentation.html">Scikit-learn 0.18 (development)</a></li>
                 <li><a href="http://scikit-learn.org/0.16/documentation.html">Scikit-learn 0.16</a></li>
-				<li><a href="../../_downloads/user_guide.pdf">PDF documentation</a></li>
+				<li><a href="../../_downloads/user_guide.pdf">PDF 文档</a></li>
               </ul>
             </div>
         </li>
-            <li><a href="../index.html">Examples</a></li>
+            <li><a href="../index.html">例子</a></li>
             </ul>
 
             <div class="search_form">
@@ -117,7 +117,7 @@
         accesskey="P">Previous
         <br/>
         <span class="smallrellink">
-        Plot the decisio...
+        Plot the deci...
         </span>
             <span class="hiddenrellink">
             Plot the decision surfaces of ensembles of trees on the iris dataset
@@ -226,15 +226,15 @@ reduced variance.</p>
 </table>
 <img alt="../../_images/plot_bias_variance_001.png" class="align-center" src="../../_images/plot_bias_variance_001.png" />
 <p><strong>Script output</strong>:</p>
-<div class="highlight-default"><div class="highlight"><pre><span class="n">Tree</span><span class="p">:</span> <span class="mf">0.0255</span> <span class="p">(</span><span class="n">error</span><span class="p">)</span> <span class="o">=</span> <span class="mf">0.0003</span> <span class="p">(</span><span class="n">bias</span><span class="o">^</span><span class="mi">2</span><span class="p">)</span>  <span class="o">+</span> <span class="mf">0.0152</span> <span class="p">(</span><span class="n">var</span><span class="p">)</span> <span class="o">+</span> <span class="mf">0.0098</span> <span class="p">(</span><span class="n">noise</span><span class="p">)</span>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">Tree</span><span class="p">:</span> <span class="mf">0.0255</span> <span class="p">(</span><span class="n">error</span><span class="p">)</span> <span class="o">=</span> <span class="mf">0.0003</span> <span class="p">(</span><span class="n">bias</span><span class="o">^</span><span class="mi">2</span><span class="p">)</span>  <span class="o">+</span> <span class="mf">0.0152</span> <span class="p">(</span><span class="n">var</span><span class="p">)</span> <span class="o">+</span> <span class="mf">0.0098</span> <span class="p">(</span><span class="n">noise</span><span class="p">)</span>
 <span class="n">Bagging</span><span class="p">(</span><span class="n">Tree</span><span class="p">):</span> <span class="mf">0.0196</span> <span class="p">(</span><span class="n">error</span><span class="p">)</span> <span class="o">=</span> <span class="mf">0.0004</span> <span class="p">(</span><span class="n">bias</span><span class="o">^</span><span class="mi">2</span><span class="p">)</span>  <span class="o">+</span> <span class="mf">0.0092</span> <span class="p">(</span><span class="n">var</span><span class="p">)</span> <span class="o">+</span> <span class="mf">0.0098</span> <span class="p">(</span><span class="n">noise</span><span class="p">)</span>
 </pre></div>
 </div>
 <p><strong>Python source code:</strong> <a class="reference download internal" href="../../_downloads/plot_bias_variance.py" download=""><code class="xref download docutils literal"><span class="pre">plot_bias_variance.py</span></code></a></p>
-<div class="highlight-default"><div class="highlight"><pre><span class="nb">print</span><span class="p">(</span><span class="n">__doc__</span><span class="p">)</span>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">__doc__</span><span class="p">)</span>
 
-<span class="c"># Author: Gilles Louppe &lt;g.louppe@gmail.com&gt;</span>
-<span class="c"># License: BSD 3 clause</span>
+<span class="c1"># Author: Gilles Louppe &lt;g.louppe@gmail.com&gt;</span>
+<span class="c1"># License: BSD 3 clause</span>
 
 <span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
 <span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
@@ -242,23 +242,23 @@ reduced variance.</p>
 <span class="kn">from</span> <span class="nn">sklearn.ensemble</span> <span class="k">import</span> <a href="../../modules/generated/sklearn.ensemble.BaggingRegressor.html#sklearn.ensemble.BaggingRegressor"><span class="n">BaggingRegressor</span></a>
 <span class="kn">from</span> <span class="nn">sklearn.tree</span> <span class="k">import</span> <a href="../../modules/generated/sklearn.tree.DecisionTreeRegressor.html#sklearn.tree.DecisionTreeRegressor"><span class="n">DecisionTreeRegressor</span></a>
 
-<span class="c"># Settings</span>
-<span class="n">n_repeat</span> <span class="o">=</span> <span class="mi">50</span>       <span class="c"># Number of iterations for computing expectations</span>
-<span class="n">n_train</span> <span class="o">=</span> <span class="mi">50</span>        <span class="c"># Size of the training set</span>
-<span class="n">n_test</span> <span class="o">=</span> <span class="mi">1000</span>       <span class="c"># Size of the test set</span>
-<span class="n">noise</span> <span class="o">=</span> <span class="mf">0.1</span>         <span class="c"># Standard deviation of the noise</span>
+<span class="c1"># Settings</span>
+<span class="n">n_repeat</span> <span class="o">=</span> <span class="mi">50</span>       <span class="c1"># Number of iterations for computing expectations</span>
+<span class="n">n_train</span> <span class="o">=</span> <span class="mi">50</span>        <span class="c1"># Size of the training set</span>
+<span class="n">n_test</span> <span class="o">=</span> <span class="mi">1000</span>       <span class="c1"># Size of the test set</span>
+<span class="n">noise</span> <span class="o">=</span> <span class="mf">0.1</span>         <span class="c1"># Standard deviation of the noise</span>
 <a href="http://docs.scipy.org/doc/numpy-1.6.0/reference/generated/numpy.random.seed.html#numpy.random.seed"><span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">seed</span></a><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
 
-<span class="c"># Change this for exploring the bias-variance decomposition of other</span>
-<span class="c"># estimators. This should work well for estimators with high variance (e.g.,</span>
-<span class="c"># decision trees or KNN), but poorly for estimators with low variance (e.g.,</span>
-<span class="c"># linear models).</span>
-<span class="n">estimators</span> <span class="o">=</span> <span class="p">[(</span><span class="s">&quot;Tree&quot;</span><span class="p">,</span> <a href="../../modules/generated/sklearn.tree.DecisionTreeRegressor.html#sklearn.tree.DecisionTreeRegressor"><span class="n">DecisionTreeRegressor</span></a><span class="p">()),</span>
-              <span class="p">(</span><span class="s">&quot;Bagging(Tree)&quot;</span><span class="p">,</span> <a href="../../modules/generated/sklearn.ensemble.BaggingRegressor.html#sklearn.ensemble.BaggingRegressor"><span class="n">BaggingRegressor</span></a><span class="p">(</span><a href="../../modules/generated/sklearn.tree.DecisionTreeRegressor.html#sklearn.tree.DecisionTreeRegressor"><span class="n">DecisionTreeRegressor</span></a><span class="p">()))]</span>
+<span class="c1"># Change this for exploring the bias-variance decomposition of other</span>
+<span class="c1"># estimators. This should work well for estimators with high variance (e.g.,</span>
+<span class="c1"># decision trees or KNN), but poorly for estimators with low variance (e.g.,</span>
+<span class="c1"># linear models).</span>
+<span class="n">estimators</span> <span class="o">=</span> <span class="p">[(</span><span class="s2">&quot;Tree&quot;</span><span class="p">,</span> <a href="../../modules/generated/sklearn.tree.DecisionTreeRegressor.html#sklearn.tree.DecisionTreeRegressor"><span class="n">DecisionTreeRegressor</span></a><span class="p">()),</span>
+              <span class="p">(</span><span class="s2">&quot;Bagging(Tree)&quot;</span><span class="p">,</span> <a href="../../modules/generated/sklearn.ensemble.BaggingRegressor.html#sklearn.ensemble.BaggingRegressor"><span class="n">BaggingRegressor</span></a><span class="p">(</span><a href="../../modules/generated/sklearn.tree.DecisionTreeRegressor.html#sklearn.tree.DecisionTreeRegressor"><span class="n">DecisionTreeRegressor</span></a><span class="p">()))]</span>
 
 <span class="n">n_estimators</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">estimators</span><span class="p">)</span>
 
-<span class="c"># Generate data</span>
+<span class="c1"># Generate data</span>
 <span class="k">def</span> <span class="nf">f</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
     <span class="n">x</span> <span class="o">=</span> <span class="n">x</span><span class="o">.</span><span class="n">ravel</span><span class="p">()</span>
 
@@ -290,16 +290,16 @@ reduced variance.</p>
 
 <span class="n">X_test</span><span class="p">,</span> <span class="n">y_test</span> <span class="o">=</span> <span class="n">generate</span><span class="p">(</span><span class="n">n_samples</span><span class="o">=</span><span class="n">n_test</span><span class="p">,</span> <span class="n">noise</span><span class="o">=</span><span class="n">noise</span><span class="p">,</span> <span class="n">n_repeat</span><span class="o">=</span><span class="n">n_repeat</span><span class="p">)</span>
 
-<span class="c"># Loop over estimators to compare</span>
+<span class="c1"># Loop over estimators to compare</span>
 <span class="k">for</span> <span class="n">n</span><span class="p">,</span> <span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="n">estimator</span><span class="p">)</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">estimators</span><span class="p">):</span>
-    <span class="c"># Compute predictions</span>
+    <span class="c1"># Compute predictions</span>
     <span class="n">y_predict</span> <span class="o">=</span> <a href="http://docs.scipy.org/doc/numpy-1.6.0/reference/generated/numpy.zeros.html#numpy.zeros"><span class="n">np</span><span class="o">.</span><span class="n">zeros</span></a><span class="p">((</span><span class="n">n_test</span><span class="p">,</span> <span class="n">n_repeat</span><span class="p">))</span>
 
     <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n_repeat</span><span class="p">):</span>
         <span class="n">estimator</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X_train</span><span class="p">[</span><span class="n">i</span><span class="p">],</span> <span class="n">y_train</span><span class="p">[</span><span class="n">i</span><span class="p">])</span>
         <span class="n">y_predict</span><span class="p">[:,</span> <span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="n">estimator</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">X_test</span><span class="p">)</span>
 
-    <span class="c"># Bias^2 + Variance + Noise decomposition of the mean squared error</span>
+    <span class="c1"># Bias^2 + Variance + Noise decomposition of the mean squared error</span>
     <span class="n">y_error</span> <span class="o">=</span> <a href="http://docs.scipy.org/doc/numpy-1.6.0/reference/generated/numpy.zeros.html#numpy.zeros"><span class="n">np</span><span class="o">.</span><span class="n">zeros</span></a><span class="p">(</span><span class="n">n_test</span><span class="p">)</span>
 
     <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n_repeat</span><span class="p">):</span>
@@ -312,44 +312,44 @@ reduced variance.</p>
     <span class="n">y_bias</span> <span class="o">=</span> <span class="p">(</span><span class="n">f</span><span class="p">(</span><span class="n">X_test</span><span class="p">)</span> <span class="o">-</span> <a href="http://docs.scipy.org/doc/numpy-1.6.0/reference/generated/numpy.mean.html#numpy.mean"><span class="n">np</span><span class="o">.</span><span class="n">mean</span></a><span class="p">(</span><span class="n">y_predict</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">))</span> <span class="o">**</span> <span class="mi">2</span>
     <span class="n">y_var</span> <span class="o">=</span> <a href="http://docs.scipy.org/doc/numpy-1.6.0/reference/generated/numpy.var.html#numpy.var"><span class="n">np</span><span class="o">.</span><span class="n">var</span></a><span class="p">(</span><span class="n">y_predict</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
 
-    <span class="nb">print</span><span class="p">(</span><span class="s">&quot;{0}: {1:.4f} (error) = {2:.4f} (bias^2) &quot;</span>
-          <span class="s">&quot; + {3:.4f} (var) + {4:.4f} (noise)&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">name</span><span class="p">,</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="si">{0}</span><span class="s2">: </span><span class="si">{1:.4f}</span><span class="s2"> (error) = </span><span class="si">{2:.4f}</span><span class="s2"> (bias^2) &quot;</span>
+          <span class="s2">&quot; + </span><span class="si">{3:.4f}</span><span class="s2"> (var) + </span><span class="si">{4:.4f}</span><span class="s2"> (noise)&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">name</span><span class="p">,</span>
                                                       <a href="http://docs.scipy.org/doc/numpy-1.6.0/reference/generated/numpy.mean.html#numpy.mean"><span class="n">np</span><span class="o">.</span><span class="n">mean</span></a><span class="p">(</span><span class="n">y_error</span><span class="p">),</span>
                                                       <a href="http://docs.scipy.org/doc/numpy-1.6.0/reference/generated/numpy.mean.html#numpy.mean"><span class="n">np</span><span class="o">.</span><span class="n">mean</span></a><span class="p">(</span><span class="n">y_bias</span><span class="p">),</span>
                                                       <a href="http://docs.scipy.org/doc/numpy-1.6.0/reference/generated/numpy.mean.html#numpy.mean"><span class="n">np</span><span class="o">.</span><span class="n">mean</span></a><span class="p">(</span><span class="n">y_var</span><span class="p">),</span>
                                                       <a href="http://docs.scipy.org/doc/numpy-1.6.0/reference/generated/numpy.mean.html#numpy.mean"><span class="n">np</span><span class="o">.</span><span class="n">mean</span></a><span class="p">(</span><span class="n">y_noise</span><span class="p">)))</span>
 
-    <span class="c"># Plot figures</span>
+    <span class="c1"># Plot figures</span>
     <a href="http://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.subplot"><span class="n">plt</span><span class="o">.</span><span class="n">subplot</span></a><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="n">n_estimators</span><span class="p">,</span> <span class="n">n</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span>
-    <a href="http://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.plot"><span class="n">plt</span><span class="o">.</span><span class="n">plot</span></a><span class="p">(</span><span class="n">X_test</span><span class="p">,</span> <span class="n">f</span><span class="p">(</span><span class="n">X_test</span><span class="p">),</span> <span class="s">&quot;b&quot;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s">&quot;$f(x)$&quot;</span><span class="p">)</span>
-    <a href="http://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.plot"><span class="n">plt</span><span class="o">.</span><span class="n">plot</span></a><span class="p">(</span><span class="n">X_train</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">y_train</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="s">&quot;.b&quot;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s">&quot;LS ~ $y = f(x)+noise$&quot;</span><span class="p">)</span>
+    <a href="http://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.plot"><span class="n">plt</span><span class="o">.</span><span class="n">plot</span></a><span class="p">(</span><span class="n">X_test</span><span class="p">,</span> <span class="n">f</span><span class="p">(</span><span class="n">X_test</span><span class="p">),</span> <span class="s2">&quot;b&quot;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s2">&quot;$f(x)$&quot;</span><span class="p">)</span>
+    <a href="http://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.plot"><span class="n">plt</span><span class="o">.</span><span class="n">plot</span></a><span class="p">(</span><span class="n">X_train</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">y_train</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="s2">&quot;.b&quot;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s2">&quot;LS ~ $y = f(x)+noise$&quot;</span><span class="p">)</span>
 
     <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n_repeat</span><span class="p">):</span>
         <span class="k">if</span> <span class="n">i</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
-            <a href="http://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.plot"><span class="n">plt</span><span class="o">.</span><span class="n">plot</span></a><span class="p">(</span><span class="n">X_test</span><span class="p">,</span> <span class="n">y_predict</span><span class="p">[:,</span> <span class="n">i</span><span class="p">],</span> <span class="s">&quot;r&quot;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s">&quot;$\^y(x)$&quot;</span><span class="p">)</span>
+            <a href="http://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.plot"><span class="n">plt</span><span class="o">.</span><span class="n">plot</span></a><span class="p">(</span><span class="n">X_test</span><span class="p">,</span> <span class="n">y_predict</span><span class="p">[:,</span> <span class="n">i</span><span class="p">],</span> <span class="s2">&quot;r&quot;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s2">&quot;$\^y(x)$&quot;</span><span class="p">)</span>
         <span class="k">else</span><span class="p">:</span>
-            <a href="http://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.plot"><span class="n">plt</span><span class="o">.</span><span class="n">plot</span></a><span class="p">(</span><span class="n">X_test</span><span class="p">,</span> <span class="n">y_predict</span><span class="p">[:,</span> <span class="n">i</span><span class="p">],</span> <span class="s">&quot;r&quot;</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.05</span><span class="p">)</span>
+            <a href="http://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.plot"><span class="n">plt</span><span class="o">.</span><span class="n">plot</span></a><span class="p">(</span><span class="n">X_test</span><span class="p">,</span> <span class="n">y_predict</span><span class="p">[:,</span> <span class="n">i</span><span class="p">],</span> <span class="s2">&quot;r&quot;</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.05</span><span class="p">)</span>
 
-    <a href="http://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.plot"><span class="n">plt</span><span class="o">.</span><span class="n">plot</span></a><span class="p">(</span><span class="n">X_test</span><span class="p">,</span> <a href="http://docs.scipy.org/doc/numpy-1.6.0/reference/generated/numpy.mean.html#numpy.mean"><span class="n">np</span><span class="o">.</span><span class="n">mean</span></a><span class="p">(</span><span class="n">y_predict</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">),</span> <span class="s">&quot;c&quot;</span><span class="p">,</span>
-             <span class="n">label</span><span class="o">=</span><span class="s">&quot;$\mathbb{E}_{LS} \^y(x)$&quot;</span><span class="p">)</span>
+    <a href="http://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.plot"><span class="n">plt</span><span class="o">.</span><span class="n">plot</span></a><span class="p">(</span><span class="n">X_test</span><span class="p">,</span> <a href="http://docs.scipy.org/doc/numpy-1.6.0/reference/generated/numpy.mean.html#numpy.mean"><span class="n">np</span><span class="o">.</span><span class="n">mean</span></a><span class="p">(</span><span class="n">y_predict</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">),</span> <span class="s2">&quot;c&quot;</span><span class="p">,</span>
+             <span class="n">label</span><span class="o">=</span><span class="s2">&quot;$\mathbb</span><span class="si">{E}</span><span class="s2">_</span><span class="si">{LS}</span><span class="s2"> \^y(x)$&quot;</span><span class="p">)</span>
 
     <a href="http://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.xlim"><span class="n">plt</span><span class="o">.</span><span class="n">xlim</span></a><span class="p">([</span><span class="o">-</span><span class="mi">5</span><span class="p">,</span> <span class="mi">5</span><span class="p">])</span>
     <a href="http://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.title"><span class="n">plt</span><span class="o">.</span><span class="n">title</span></a><span class="p">(</span><span class="n">name</span><span class="p">)</span>
 
     <span class="k">if</span> <span class="n">n</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
-        <a href="http://matplotlib.org/api/legend_api.html#matplotlib.legend"><span class="n">plt</span><span class="o">.</span><span class="n">legend</span></a><span class="p">(</span><span class="n">loc</span><span class="o">=</span><span class="s">&quot;upper left&quot;</span><span class="p">,</span> <span class="n">prop</span><span class="o">=</span><span class="p">{</span><span class="s">&quot;size&quot;</span><span class="p">:</span> <span class="mi">11</span><span class="p">})</span>
+        <a href="http://matplotlib.org/api/legend_api.html#matplotlib.legend"><span class="n">plt</span><span class="o">.</span><span class="n">legend</span></a><span class="p">(</span><span class="n">loc</span><span class="o">=</span><span class="s2">&quot;upper left&quot;</span><span class="p">,</span> <span class="n">prop</span><span class="o">=</span><span class="p">{</span><span class="s2">&quot;size&quot;</span><span class="p">:</span> <span class="mi">11</span><span class="p">})</span>
 
     <a href="http://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.subplot"><span class="n">plt</span><span class="o">.</span><span class="n">subplot</span></a><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="n">n_estimators</span><span class="p">,</span> <span class="n">n_estimators</span> <span class="o">+</span> <span class="n">n</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span>
-    <a href="http://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.plot"><span class="n">plt</span><span class="o">.</span><span class="n">plot</span></a><span class="p">(</span><span class="n">X_test</span><span class="p">,</span> <span class="n">y_error</span><span class="p">,</span> <span class="s">&quot;r&quot;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s">&quot;$error(x)$&quot;</span><span class="p">)</span>
-    <a href="http://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.plot"><span class="n">plt</span><span class="o">.</span><span class="n">plot</span></a><span class="p">(</span><span class="n">X_test</span><span class="p">,</span> <span class="n">y_bias</span><span class="p">,</span> <span class="s">&quot;b&quot;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s">&quot;$bias^2(x)$&quot;</span><span class="p">),</span>
-    <a href="http://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.plot"><span class="n">plt</span><span class="o">.</span><span class="n">plot</span></a><span class="p">(</span><span class="n">X_test</span><span class="p">,</span> <span class="n">y_var</span><span class="p">,</span> <span class="s">&quot;g&quot;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s">&quot;$variance(x)$&quot;</span><span class="p">),</span>
-    <a href="http://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.plot"><span class="n">plt</span><span class="o">.</span><span class="n">plot</span></a><span class="p">(</span><span class="n">X_test</span><span class="p">,</span> <span class="n">y_noise</span><span class="p">,</span> <span class="s">&quot;c&quot;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s">&quot;$noise(x)$&quot;</span><span class="p">)</span>
+    <a href="http://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.plot"><span class="n">plt</span><span class="o">.</span><span class="n">plot</span></a><span class="p">(</span><span class="n">X_test</span><span class="p">,</span> <span class="n">y_error</span><span class="p">,</span> <span class="s2">&quot;r&quot;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s2">&quot;$error(x)$&quot;</span><span class="p">)</span>
+    <a href="http://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.plot"><span class="n">plt</span><span class="o">.</span><span class="n">plot</span></a><span class="p">(</span><span class="n">X_test</span><span class="p">,</span> <span class="n">y_bias</span><span class="p">,</span> <span class="s2">&quot;b&quot;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s2">&quot;$bias^2(x)$&quot;</span><span class="p">),</span>
+    <a href="http://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.plot"><span class="n">plt</span><span class="o">.</span><span class="n">plot</span></a><span class="p">(</span><span class="n">X_test</span><span class="p">,</span> <span class="n">y_var</span><span class="p">,</span> <span class="s2">&quot;g&quot;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s2">&quot;$variance(x)$&quot;</span><span class="p">),</span>
+    <a href="http://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.plot"><span class="n">plt</span><span class="o">.</span><span class="n">plot</span></a><span class="p">(</span><span class="n">X_test</span><span class="p">,</span> <span class="n">y_noise</span><span class="p">,</span> <span class="s2">&quot;c&quot;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s2">&quot;$noise(x)$&quot;</span><span class="p">)</span>
 
     <a href="http://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.xlim"><span class="n">plt</span><span class="o">.</span><span class="n">xlim</span></a><span class="p">([</span><span class="o">-</span><span class="mi">5</span><span class="p">,</span> <span class="mi">5</span><span class="p">])</span>
     <a href="http://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.ylim"><span class="n">plt</span><span class="o">.</span><span class="n">ylim</span></a><span class="p">([</span><span class="mi">0</span><span class="p">,</span> <span class="mf">0.1</span><span class="p">])</span>
 
     <span class="k">if</span> <span class="n">n</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
-        <a href="http://matplotlib.org/api/legend_api.html#matplotlib.legend"><span class="n">plt</span><span class="o">.</span><span class="n">legend</span></a><span class="p">(</span><span class="n">loc</span><span class="o">=</span><span class="s">&quot;upper left&quot;</span><span class="p">,</span> <span class="n">prop</span><span class="o">=</span><span class="p">{</span><span class="s">&quot;size&quot;</span><span class="p">:</span> <span class="mi">11</span><span class="p">})</span>
+        <a href="http://matplotlib.org/api/legend_api.html#matplotlib.legend"><span class="n">plt</span><span class="o">.</span><span class="n">legend</span></a><span class="p">(</span><span class="n">loc</span><span class="o">=</span><span class="s2">&quot;upper left&quot;</span><span class="p">,</span> <span class="n">prop</span><span class="o">=</span><span class="p">{</span><span class="s2">&quot;size&quot;</span><span class="p">:</span> <span class="mi">11</span><span class="p">})</span>
 
 <a href="http://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.show"><span class="n">plt</span><span class="o">.</span><span class="n">show</span></a><span class="p">()</span>
 </pre></div>

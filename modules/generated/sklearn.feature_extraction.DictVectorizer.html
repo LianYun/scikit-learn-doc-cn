@@ -65,28 +65,28 @@
         </a>
         </p><div class="navbar">
             <ul>
-                <li><a href="../../index.html">Home</a></li>
-                <li><a href="../../install.html">Installation</a></li>
+                <li><a href="../../index.html">主页</a></li>
+                <li><a href="../../install.html">安装</a></li>
                 <li class="btn-li"><div class="btn-group">
-              <a href="../../documentation.html">Documentation</a>
+              <a href="../../documentation.html">文档</a>
               <a class="btn dropdown-toggle" data-toggle="dropdown">
                  <span class="caret"></span>
               </a>
               <ul class="dropdown-menu">
             <li class="link-title">Scikit-learn 0.17 (stable)</li>
-            <li><a href="../../tutorial/index.html">Tutorials</a></li>
-            <li><a href="../../user_guide.html">User guide</a></li>
+            <li><a href="../../tutorial/index.html">入门指南</a></li>
+            <li><a href="../../user_guide.html">使用手册</a></li>
             <li><a href="../classes.html">API</a></li>
             <li><a href="../../faq.html">FAQ</a></li>
-            <li><a href="../../developers.html">Contributing</a></li>
+            <li><a href="../../developers.html">贡献</a></li>
             <li class="divider"></li>
                 <li><a href="http://scikit-learn.org/dev/documentation.html">Scikit-learn 0.18 (development)</a></li>
                 <li><a href="http://scikit-learn.org/0.16/documentation.html">Scikit-learn 0.16</a></li>
-				<li><a href="../../_downloads/user_guide.pdf">PDF documentation</a></li>
+				<li><a href="../../_downloads/user_guide.pdf">PDF 文档</a></li>
               </ul>
             </div>
         </li>
-            <li><a href="../../auto_examples/index.html">Examples</a></li>
+            <li><a href="../../auto_examples/index.html">例子</a></li>
             </ul>
 
             <div class="search_form">
@@ -117,7 +117,7 @@
         accesskey="P">Previous
         <br/>
         <span class="smallrellink">
-        sklearn.ensemble...
+        sklearn.ensem...
         </span>
             <span class="hiddenrellink">
             sklearn.ensemble.partial_dependence.plot_partial_dependence
@@ -172,7 +172,7 @@
 <h1><a class="reference internal" href="../classes.html#module-sklearn.feature_extraction" title="sklearn.feature_extraction"><code class="xref py py-mod docutils literal"><span class="pre">sklearn.feature_extraction</span></code></a>.DictVectorizer<a class="headerlink" href="#sklearn-feature-extraction-dictvectorizer" title="Permalink to this headline">¶</a></h1>
 <dl class="class">
 <dt id="sklearn.feature_extraction.DictVectorizer">
-<em class="property">class </em><code class="descclassname">sklearn.feature_extraction.</code><code class="descname">DictVectorizer</code><span class="sig-paren">(</span><em>dtype=&lt;type 'numpy.float64'&gt;</em>, <em>separator='='</em>, <em>sparse=True</em>, <em>sort=True</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/8109726/sklearn/feature_extraction/dict_vectorizer.py#L27"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.feature_extraction.DictVectorizer" title="Permalink to this definition">¶</a></dt>
+<em class="property">class </em><code class="descclassname">sklearn.feature_extraction.</code><code class="descname">DictVectorizer</code><span class="sig-paren">(</span><em>dtype=&lt;type 'numpy.float64'&gt;</em>, <em>separator='='</em>, <em>sparse=True</em>, <em>sort=True</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/33ddabd/sklearn/feature_extraction/dict_vectorizer.py#L27"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.feature_extraction.DictVectorizer" title="Permalink to this definition">¶</a></dt>
 <dd><p>Transforms lists of feature-value mappings to vectors.</p>
 <p>This transformer turns lists of mappings (dict-like objects) of feature
 names to feature values into Numpy arrays or scipy.sparse matrices for use
@@ -234,16 +234,16 @@ and &#8220;f=spam&#8221;).</p>
 </dl>
 </div>
 <p class="rubric">Examples</p>
-<div class="highlight-default"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">sklearn.feature_extraction</span> <span class="k">import</span> <span class="n">DictVectorizer</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">v</span> <span class="o">=</span> <span class="n">DictVectorizer</span><span class="p">(</span><span class="n">sparse</span><span class="o">=</span><span class="k">False</span><span class="p">)</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">D</span> <span class="o">=</span> <span class="p">[{</span><span class="s">&#39;foo&#39;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span> <span class="s">&#39;bar&#39;</span><span class="p">:</span> <span class="mi">2</span><span class="p">},</span> <span class="p">{</span><span class="s">&#39;foo&#39;</span><span class="p">:</span> <span class="mi">3</span><span class="p">,</span> <span class="s">&#39;baz&#39;</span><span class="p">:</span> <span class="mi">1</span><span class="p">}]</span>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">sklearn.feature_extraction</span> <span class="k">import</span> <span class="n">DictVectorizer</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">v</span> <span class="o">=</span> <span class="n">DictVectorizer</span><span class="p">(</span><span class="n">sparse</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">D</span> <span class="o">=</span> <span class="p">[{</span><span class="s1">&#39;foo&#39;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span> <span class="s1">&#39;bar&#39;</span><span class="p">:</span> <span class="mi">2</span><span class="p">},</span> <span class="p">{</span><span class="s1">&#39;foo&#39;</span><span class="p">:</span> <span class="mi">3</span><span class="p">,</span> <span class="s1">&#39;baz&#39;</span><span class="p">:</span> <span class="mi">1</span><span class="p">}]</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">X</span> <span class="o">=</span> <span class="n">v</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">D</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">X</span>
 <span class="go">array([[ 2.,  0.,  1.],</span>
 <span class="go">       [ 0.,  1.,  3.]])</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">v</span><span class="o">.</span><span class="n">inverse_transform</span><span class="p">(</span><span class="n">X</span><span class="p">)</span> <span class="o">==</span>         <span class="p">[{</span><span class="s">&#39;bar&#39;</span><span class="p">:</span> <span class="mf">2.0</span><span class="p">,</span> <span class="s">&#39;foo&#39;</span><span class="p">:</span> <span class="mf">1.0</span><span class="p">},</span> <span class="p">{</span><span class="s">&#39;baz&#39;</span><span class="p">:</span> <span class="mf">1.0</span><span class="p">,</span> <span class="s">&#39;foo&#39;</span><span class="p">:</span> <span class="mf">3.0</span><span class="p">}]</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">v</span><span class="o">.</span><span class="n">inverse_transform</span><span class="p">(</span><span class="n">X</span><span class="p">)</span> <span class="o">==</span>         <span class="p">[{</span><span class="s1">&#39;bar&#39;</span><span class="p">:</span> <span class="mf">2.0</span><span class="p">,</span> <span class="s1">&#39;foo&#39;</span><span class="p">:</span> <span class="mf">1.0</span><span class="p">},</span> <span class="p">{</span><span class="s1">&#39;baz&#39;</span><span class="p">:</span> <span class="mf">1.0</span><span class="p">,</span> <span class="s1">&#39;foo&#39;</span><span class="p">:</span> <span class="mf">3.0</span><span class="p">}]</span>
 <span class="go">True</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">v</span><span class="o">.</span><span class="n">transform</span><span class="p">({</span><span class="s">&#39;foo&#39;</span><span class="p">:</span> <span class="mi">4</span><span class="p">,</span> <span class="s">&#39;unseen_feature&#39;</span><span class="p">:</span> <span class="mi">3</span><span class="p">})</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">v</span><span class="o">.</span><span class="n">transform</span><span class="p">({</span><span class="s1">&#39;foo&#39;</span><span class="p">:</span> <span class="mi">4</span><span class="p">,</span> <span class="s1">&#39;unseen_feature&#39;</span><span class="p">:</span> <span class="mi">3</span><span class="p">})</span>
 <span class="go">array([[ 0.,  0.,  4.]])</span>
 </pre></div>
 </div>
@@ -282,12 +282,12 @@ and &#8220;f=spam&#8221;).</p>
 </table>
 <dl class="method">
 <dt id="sklearn.feature_extraction.DictVectorizer.__init__">
-<code class="descname">__init__</code><span class="sig-paren">(</span><em>dtype=&lt;type 'numpy.float64'&gt;</em>, <em>separator='='</em>, <em>sparse=True</em>, <em>sort=True</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/8109726/sklearn/feature_extraction/dict_vectorizer.py#L91"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.feature_extraction.DictVectorizer.__init__" title="Permalink to this definition">¶</a></dt>
+<code class="descname">__init__</code><span class="sig-paren">(</span><em>dtype=&lt;type 'numpy.float64'&gt;</em>, <em>separator='='</em>, <em>sparse=True</em>, <em>sort=True</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/33ddabd/sklearn/feature_extraction/dict_vectorizer.py#L91"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.feature_extraction.DictVectorizer.__init__" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="method">
 <dt id="sklearn.feature_extraction.DictVectorizer.fit">
-<code class="descname">fit</code><span class="sig-paren">(</span><em>X</em>, <em>y=None</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/8109726/sklearn/feature_extraction/dict_vectorizer.py#L98"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.feature_extraction.DictVectorizer.fit" title="Permalink to this definition">¶</a></dt>
+<code class="descname">fit</code><span class="sig-paren">(</span><em>X</em>, <em>y=None</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/33ddabd/sklearn/feature_extraction/dict_vectorizer.py#L98"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.feature_extraction.DictVectorizer.fit" title="Permalink to this definition">¶</a></dt>
 <dd><p>Learn a list of feature name -&gt; indices mappings.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -310,7 +310,7 @@ objects) to feature values (strings or convertible to dtype).</p>
 
 <dl class="method">
 <dt id="sklearn.feature_extraction.DictVectorizer.fit_transform">
-<code class="descname">fit_transform</code><span class="sig-paren">(</span><em>X</em>, <em>y=None</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/8109726/sklearn/feature_extraction/dict_vectorizer.py#L208"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.feature_extraction.DictVectorizer.fit_transform" title="Permalink to this definition">¶</a></dt>
+<code class="descname">fit_transform</code><span class="sig-paren">(</span><em>X</em>, <em>y=None</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/33ddabd/sklearn/feature_extraction/dict_vectorizer.py#L208"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.feature_extraction.DictVectorizer.fit_transform" title="Permalink to this definition">¶</a></dt>
 <dd><p>Learn a list of feature name -&gt; indices mappings and transform X.</p>
 <p>Like fit(X) followed by transform(X), but does not require
 materializing X in memory.</p>
@@ -338,7 +338,7 @@ objects) to feature values (strings or convertible to dtype).</p>
 
 <dl class="method">
 <dt id="sklearn.feature_extraction.DictVectorizer.get_feature_names">
-<code class="descname">get_feature_names</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/8109726/sklearn/feature_extraction/dict_vectorizer.py#L308"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.feature_extraction.DictVectorizer.get_feature_names" title="Permalink to this definition">¶</a></dt>
+<code class="descname">get_feature_names</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/33ddabd/sklearn/feature_extraction/dict_vectorizer.py#L308"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.feature_extraction.DictVectorizer.get_feature_names" title="Permalink to this definition">¶</a></dt>
 <dd><p>Returns a list of feature names, ordered by their indices.</p>
 <p>If one-of-K coding is applied to categorical features, this will
 include the constructed feature names but not the original ones.</p>
@@ -346,7 +346,7 @@ include the constructed feature names but not the original ones.</p>
 
 <dl class="method">
 <dt id="sklearn.feature_extraction.DictVectorizer.get_params">
-<code class="descname">get_params</code><span class="sig-paren">(</span><em>deep=True</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/8109726/sklearn/base.py#L199"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.feature_extraction.DictVectorizer.get_params" title="Permalink to this definition">¶</a></dt>
+<code class="descname">get_params</code><span class="sig-paren">(</span><em>deep=True</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/33ddabd/sklearn/base.py#L199"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.feature_extraction.DictVectorizer.get_params" title="Permalink to this definition">¶</a></dt>
 <dd><p>Get parameters for this estimator.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -371,7 +371,7 @@ contained subobjects that are estimators.</p>
 
 <dl class="method">
 <dt id="sklearn.feature_extraction.DictVectorizer.inverse_transform">
-<code class="descname">inverse_transform</code><span class="sig-paren">(</span><em>X</em>, <em>dict_type=&lt;type 'dict'&gt;</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/8109726/sklearn/feature_extraction/dict_vectorizer.py#L228"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.feature_extraction.DictVectorizer.inverse_transform" title="Permalink to this definition">¶</a></dt>
+<code class="descname">inverse_transform</code><span class="sig-paren">(</span><em>X</em>, <em>dict_type=&lt;type 'dict'&gt;</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/33ddabd/sklearn/feature_extraction/dict_vectorizer.py#L228"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.feature_extraction.DictVectorizer.inverse_transform" title="Permalink to this definition">¶</a></dt>
 <dd><p>Transform array or sparse matrix X back to feature mappings.</p>
 <p>X must have been produced by this DictVectorizer&#8217;s transform or
 fit_transform method; it may only have passed through transformers
@@ -405,7 +405,7 @@ collections.Mapping API.</p>
 
 <dl class="method">
 <dt id="sklearn.feature_extraction.DictVectorizer.restrict">
-<code class="descname">restrict</code><span class="sig-paren">(</span><em>support</em>, <em>indices=False</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/8109726/sklearn/feature_extraction/dict_vectorizer.py#L316"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.feature_extraction.DictVectorizer.restrict" title="Permalink to this definition">¶</a></dt>
+<code class="descname">restrict</code><span class="sig-paren">(</span><em>support</em>, <em>indices=False</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/33ddabd/sklearn/feature_extraction/dict_vectorizer.py#L316"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.feature_extraction.DictVectorizer.restrict" title="Permalink to this definition">¶</a></dt>
 <dd><p>Restrict the features to those in support using feature selection.</p>
 <p>This function modifies the estimator in-place.</p>
 <table class="docutils field-list" frame="void" rules="none">
@@ -429,10 +429,10 @@ member of feature selectors).</p>
 </tbody>
 </table>
 <p class="rubric">Examples</p>
-<div class="highlight-default"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">sklearn.feature_extraction</span> <span class="k">import</span> <span class="n">DictVectorizer</span>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">sklearn.feature_extraction</span> <span class="k">import</span> <span class="n">DictVectorizer</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">sklearn.feature_selection</span> <span class="k">import</span> <span class="n">SelectKBest</span><span class="p">,</span> <span class="n">chi2</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">v</span> <span class="o">=</span> <span class="n">DictVectorizer</span><span class="p">()</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">D</span> <span class="o">=</span> <span class="p">[{</span><span class="s">&#39;foo&#39;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span> <span class="s">&#39;bar&#39;</span><span class="p">:</span> <span class="mi">2</span><span class="p">},</span> <span class="p">{</span><span class="s">&#39;foo&#39;</span><span class="p">:</span> <span class="mi">3</span><span class="p">,</span> <span class="s">&#39;baz&#39;</span><span class="p">:</span> <span class="mi">1</span><span class="p">}]</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">D</span> <span class="o">=</span> <span class="p">[{</span><span class="s1">&#39;foo&#39;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span> <span class="s1">&#39;bar&#39;</span><span class="p">:</span> <span class="mi">2</span><span class="p">},</span> <span class="p">{</span><span class="s1">&#39;foo&#39;</span><span class="p">:</span> <span class="mi">3</span><span class="p">,</span> <span class="s1">&#39;baz&#39;</span><span class="p">:</span> <span class="mi">1</span><span class="p">}]</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">X</span> <span class="o">=</span> <span class="n">v</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">D</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">support</span> <span class="o">=</span> <span class="n">SelectKBest</span><span class="p">(</span><span class="n">chi2</span><span class="p">,</span> <span class="n">k</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">])</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">v</span><span class="o">.</span><span class="n">get_feature_names</span><span class="p">()</span>
@@ -448,7 +448,7 @@ member of feature selectors).</p>
 
 <dl class="method">
 <dt id="sklearn.feature_extraction.DictVectorizer.set_params">
-<code class="descname">set_params</code><span class="sig-paren">(</span><em>**params</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/8109726/sklearn/base.py#L236"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.feature_extraction.DictVectorizer.set_params" title="Permalink to this definition">¶</a></dt>
+<code class="descname">set_params</code><span class="sig-paren">(</span><em>**params</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/33ddabd/sklearn/base.py#L236"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.feature_extraction.DictVectorizer.set_params" title="Permalink to this definition">¶</a></dt>
 <dd><p>Set the parameters of this estimator.</p>
 <p>The method works on simple estimators as well as on nested objects
 (such as pipelines). The former have parameters of the form
@@ -466,7 +466,7 @@ component of a nested object.</p>
 
 <dl class="method">
 <dt id="sklearn.feature_extraction.DictVectorizer.transform">
-<code class="descname">transform</code><span class="sig-paren">(</span><em>X</em>, <em>y=None</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/8109726/sklearn/feature_extraction/dict_vectorizer.py#L269"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.feature_extraction.DictVectorizer.transform" title="Permalink to this definition">¶</a></dt>
+<code class="descname">transform</code><span class="sig-paren">(</span><em>X</em>, <em>y=None</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/scikit-learn/scikit-learn/blob/33ddabd/sklearn/feature_extraction/dict_vectorizer.py#L269"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sklearn.feature_extraction.DictVectorizer.transform" title="Permalink to this definition">¶</a></dt>
 <dd><p>Transform feature-&gt;value dicts to array or sparse matrix.</p>
 <p>Named features not encountered during fit or fit_transform will be
 silently ignored.</p>

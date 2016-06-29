@@ -65,28 +65,28 @@
         </a>
         </p><div class="navbar">
             <ul>
-                <li><a href="../../index.html">Home</a></li>
-                <li><a href="../../install.html">Installation</a></li>
+                <li><a href="../../index.html">主页</a></li>
+                <li><a href="../../install.html">安装</a></li>
                 <li class="btn-li"><div class="btn-group">
-              <a href="../../documentation.html">Documentation</a>
+              <a href="../../documentation.html">文档</a>
               <a class="btn dropdown-toggle" data-toggle="dropdown">
                  <span class="caret"></span>
               </a>
               <ul class="dropdown-menu">
             <li class="link-title">Scikit-learn 0.17 (stable)</li>
-            <li><a href="../../tutorial/index.html">Tutorials</a></li>
-            <li><a href="../../user_guide.html">User guide</a></li>
+            <li><a href="../../tutorial/index.html">入门指南</a></li>
+            <li><a href="../../user_guide.html">使用手册</a></li>
             <li><a href="../../modules/classes.html">API</a></li>
             <li><a href="../../faq.html">FAQ</a></li>
-            <li><a href="../../developers.html">Contributing</a></li>
+            <li><a href="../../developers.html">贡献</a></li>
             <li class="divider"></li>
                 <li><a href="http://scikit-learn.org/dev/documentation.html">Scikit-learn 0.18 (development)</a></li>
                 <li><a href="http://scikit-learn.org/0.16/documentation.html">Scikit-learn 0.16</a></li>
-				<li><a href="../../_downloads/user_guide.pdf">PDF documentation</a></li>
+				<li><a href="../../_downloads/user_guide.pdf">PDF 文档</a></li>
               </ul>
             </div>
         </li>
-            <li><a href="../index.html">Examples</a></li>
+            <li><a href="../index.html">例子</a></li>
             </ul>
 
             <div class="search_form">
@@ -117,7 +117,7 @@
         accesskey="P">Previous
         <br/>
         <span class="smallrellink">
-        Cross-validation...
+        Cross-validat...
         </span>
             <span class="hiddenrellink">
             Cross-validation on diabetes Dataset Exercise
@@ -170,23 +170,23 @@
 <p>Simple usage of Pipeline that runs successively a univariate
 feature selection with anova and then a C-SVM of the selected features.</p>
 <p><strong>Python source code:</strong> <a class="reference download internal" href="../../_downloads/feature_selection_pipeline.py" download=""><code class="xref download docutils literal"><span class="pre">feature_selection_pipeline.py</span></code></a></p>
-<div class="highlight-default"><div class="highlight"><pre><span class="nb">print</span><span class="p">(</span><span class="n">__doc__</span><span class="p">)</span>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">__doc__</span><span class="p">)</span>
 
 <span class="kn">from</span> <span class="nn">sklearn</span> <span class="k">import</span> <span class="n">svm</span>
 <span class="kn">from</span> <span class="nn">sklearn.datasets</span> <span class="k">import</span> <span class="n">samples_generator</span>
 <span class="kn">from</span> <span class="nn">sklearn.feature_selection</span> <span class="k">import</span> <a href="../../modules/generated/sklearn.feature_selection.SelectKBest.html#sklearn.feature_selection.SelectKBest"><span class="n">SelectKBest</span></a><span class="p">,</span> <a href="../../modules/generated/sklearn.feature_selection.f_regression.html#sklearn.feature_selection.f_regression"><span class="n">f_regression</span></a>
 <span class="kn">from</span> <span class="nn">sklearn.pipeline</span> <span class="k">import</span> <a href="../../modules/generated/sklearn.pipeline.make_pipeline.html#sklearn.pipeline.make_pipeline"><span class="n">make_pipeline</span></a>
 
-<span class="c"># import some data to play with</span>
+<span class="c1"># import some data to play with</span>
 <span class="n">X</span><span class="p">,</span> <span class="n">y</span> <span class="o">=</span> <span class="n">samples_generator</span><span class="o">.</span><span class="n">make_classification</span><span class="p">(</span>
     <span class="n">n_features</span><span class="o">=</span><span class="mi">20</span><span class="p">,</span> <span class="n">n_informative</span><span class="o">=</span><span class="mi">3</span><span class="p">,</span> <span class="n">n_redundant</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">n_classes</span><span class="o">=</span><span class="mi">4</span><span class="p">,</span>
     <span class="n">n_clusters_per_class</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
 
-<span class="c"># ANOVA SVM-C</span>
-<span class="c"># 1) anova filter, take 3 best ranked features</span>
+<span class="c1"># ANOVA SVM-C</span>
+<span class="c1"># 1) anova filter, take 3 best ranked features</span>
 <span class="n">anova_filter</span> <span class="o">=</span> <a href="../../modules/generated/sklearn.feature_selection.SelectKBest.html#sklearn.feature_selection.SelectKBest"><span class="n">SelectKBest</span></a><span class="p">(</span><a href="../../modules/generated/sklearn.feature_selection.f_regression.html#sklearn.feature_selection.f_regression"><span class="n">f_regression</span></a><span class="p">,</span> <span class="n">k</span><span class="o">=</span><span class="mi">3</span><span class="p">)</span>
-<span class="c"># 2) svm</span>
-<span class="n">clf</span> <span class="o">=</span> <a href="../../modules/generated/sklearn.svm.SVC.html#sklearn.svm.SVC"><span class="n">svm</span><span class="o">.</span><span class="n">SVC</span></a><span class="p">(</span><span class="n">kernel</span><span class="o">=</span><span class="s">&#39;linear&#39;</span><span class="p">)</span>
+<span class="c1"># 2) svm</span>
+<span class="n">clf</span> <span class="o">=</span> <a href="../../modules/generated/sklearn.svm.SVC.html#sklearn.svm.SVC"><span class="n">svm</span><span class="o">.</span><span class="n">SVC</span></a><span class="p">(</span><span class="n">kernel</span><span class="o">=</span><span class="s1">&#39;linear&#39;</span><span class="p">)</span>
 
 <span class="n">anova_svm</span> <span class="o">=</span> <a href="../../modules/generated/sklearn.pipeline.make_pipeline.html#sklearn.pipeline.make_pipeline"><span class="n">make_pipeline</span></a><span class="p">(</span><span class="n">anova_filter</span><span class="p">,</span> <span class="n">clf</span><span class="p">)</span>
 <span class="n">anova_svm</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span>

@@ -65,28 +65,28 @@
         </a>
         </p><div class="navbar">
             <ul>
-                <li><a href="../../index.html">Home</a></li>
-                <li><a href="../../install.html">Installation</a></li>
+                <li><a href="../../index.html">主页</a></li>
+                <li><a href="../../install.html">安装</a></li>
                 <li class="btn-li"><div class="btn-group">
-              <a href="../../documentation.html">Documentation</a>
+              <a href="../../documentation.html">文档</a>
               <a class="btn dropdown-toggle" data-toggle="dropdown">
                  <span class="caret"></span>
               </a>
               <ul class="dropdown-menu">
             <li class="link-title">Scikit-learn 0.17 (stable)</li>
-            <li><a href="../../tutorial/index.html">Tutorials</a></li>
-            <li><a href="../../user_guide.html">User guide</a></li>
+            <li><a href="../../tutorial/index.html">入门指南</a></li>
+            <li><a href="../../user_guide.html">使用手册</a></li>
             <li><a href="../../modules/classes.html">API</a></li>
             <li><a href="../../faq.html">FAQ</a></li>
-            <li><a href="../../developers.html">Contributing</a></li>
+            <li><a href="../../developers.html">贡献</a></li>
             <li class="divider"></li>
                 <li><a href="http://scikit-learn.org/dev/documentation.html">Scikit-learn 0.18 (development)</a></li>
                 <li><a href="http://scikit-learn.org/0.16/documentation.html">Scikit-learn 0.16</a></li>
-				<li><a href="../../_downloads/user_guide.pdf">PDF documentation</a></li>
+				<li><a href="../../_downloads/user_guide.pdf">PDF 文档</a></li>
               </ul>
             </div>
         </li>
-            <li><a href="../index.html">Examples</a></li>
+            <li><a href="../index.html">例子</a></li>
             </ul>
 
             <div class="search_form">
@@ -117,7 +117,7 @@
         accesskey="P">Previous
         <br/>
         <span class="smallrellink">
-        Gradient Boostin...
+        Gradient Boos...
         </span>
             <span class="hiddenrellink">
             Gradient Boosting regression
@@ -171,7 +171,7 @@
 to create prediction intervals.</p>
 <img alt="../../_images/plot_gradient_boosting_quantile_001.png" class="align-center" src="../../_images/plot_gradient_boosting_quantile_001.png" />
 <p><strong>Python source code:</strong> <a class="reference download internal" href="../../_downloads/plot_gradient_boosting_quantile.py" download=""><code class="xref download docutils literal"><span class="pre">plot_gradient_boosting_quantile.py</span></code></a></p>
-<div class="highlight-default"><div class="highlight"><pre>
+<div class="highlight-default"><div class="highlight"><pre><span></span>
 <span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
 <span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
 
@@ -184,12 +184,12 @@ to create prediction intervals.</p>
     <span class="sd">&quot;&quot;&quot;The function to predict.&quot;&quot;&quot;</span>
     <span class="k">return</span> <span class="n">x</span> <span class="o">*</span> <a href="http://docs.scipy.org/doc/numpy-1.6.0/reference/generated/numpy.sin.html#numpy.sin"><span class="n">np</span><span class="o">.</span><span class="n">sin</span></a><span class="p">(</span><span class="n">x</span><span class="p">)</span>
 
-<span class="c">#----------------------------------------------------------------------</span>
-<span class="c">#  First the noiseless case</span>
+<span class="c1">#----------------------------------------------------------------------</span>
+<span class="c1">#  First the noiseless case</span>
 <span class="n">X</span> <span class="o">=</span> <a href="http://docs.scipy.org/doc/numpy-1.6.0/reference/generated/numpy.atleast_2d.html#numpy.atleast_2d"><span class="n">np</span><span class="o">.</span><span class="n">atleast_2d</span></a><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">uniform</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mf">10.0</span><span class="p">,</span> <span class="n">size</span><span class="o">=</span><span class="mi">100</span><span class="p">))</span><span class="o">.</span><span class="n">T</span>
 <span class="n">X</span> <span class="o">=</span> <span class="n">X</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">float32</span><span class="p">)</span>
 
-<span class="c"># Observations</span>
+<span class="c1"># Observations</span>
 <span class="n">y</span> <span class="o">=</span> <span class="n">f</span><span class="p">(</span><span class="n">X</span><span class="p">)</span><span class="o">.</span><span class="n">ravel</span><span class="p">()</span>
 
 <span class="n">dy</span> <span class="o">=</span> <span class="mf">1.5</span> <span class="o">+</span> <span class="mf">1.0</span> <span class="o">*</span> <a href="http://docs.scipy.org/doc/numpy-1.6.0/reference/generated/numpy.random.wald.html#numpy.random"><span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">random</span></a><span class="p">(</span><span class="n">y</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
@@ -197,50 +197,50 @@ to create prediction intervals.</p>
 <span class="n">y</span> <span class="o">+=</span> <span class="n">noise</span>
 <span class="n">y</span> <span class="o">=</span> <span class="n">y</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">float32</span><span class="p">)</span>
 
-<span class="c"># Mesh the input space for evaluations of the real function, the prediction and</span>
-<span class="c"># its MSE</span>
+<span class="c1"># Mesh the input space for evaluations of the real function, the prediction and</span>
+<span class="c1"># its MSE</span>
 <span class="n">xx</span> <span class="o">=</span> <a href="http://docs.scipy.org/doc/numpy-1.6.0/reference/generated/numpy.atleast_2d.html#numpy.atleast_2d"><span class="n">np</span><span class="o">.</span><span class="n">atleast_2d</span></a><span class="p">(</span><a href="http://docs.scipy.org/doc/numpy-1.6.0/reference/generated/numpy.linspace.html#numpy.linspace"><span class="n">np</span><span class="o">.</span><span class="n">linspace</span></a><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">1000</span><span class="p">))</span><span class="o">.</span><span class="n">T</span>
 <span class="n">xx</span> <span class="o">=</span> <span class="n">xx</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">float32</span><span class="p">)</span>
 
 <span class="n">alpha</span> <span class="o">=</span> <span class="mf">0.95</span>
 
-<span class="n">clf</span> <span class="o">=</span> <a href="../../modules/generated/sklearn.ensemble.GradientBoostingRegressor.html#sklearn.ensemble.GradientBoostingRegressor"><span class="n">GradientBoostingRegressor</span></a><span class="p">(</span><span class="n">loss</span><span class="o">=</span><span class="s">&#39;quantile&#39;</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="n">alpha</span><span class="p">,</span>
+<span class="n">clf</span> <span class="o">=</span> <a href="../../modules/generated/sklearn.ensemble.GradientBoostingRegressor.html#sklearn.ensemble.GradientBoostingRegressor"><span class="n">GradientBoostingRegressor</span></a><span class="p">(</span><span class="n">loss</span><span class="o">=</span><span class="s1">&#39;quantile&#39;</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="n">alpha</span><span class="p">,</span>
                                 <span class="n">n_estimators</span><span class="o">=</span><span class="mi">250</span><span class="p">,</span> <span class="n">max_depth</span><span class="o">=</span><span class="mi">3</span><span class="p">,</span>
                                 <span class="n">learning_rate</span><span class="o">=.</span><span class="mi">1</span><span class="p">,</span> <span class="n">min_samples_leaf</span><span class="o">=</span><span class="mi">9</span><span class="p">,</span>
                                 <span class="n">min_samples_split</span><span class="o">=</span><span class="mi">9</span><span class="p">)</span>
 
 <span class="n">clf</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span>
 
-<span class="c"># Make the prediction on the meshed x-axis</span>
+<span class="c1"># Make the prediction on the meshed x-axis</span>
 <span class="n">y_upper</span> <span class="o">=</span> <span class="n">clf</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">xx</span><span class="p">)</span>
 
 <span class="n">clf</span><span class="o">.</span><span class="n">set_params</span><span class="p">(</span><span class="n">alpha</span><span class="o">=</span><span class="mf">1.0</span> <span class="o">-</span> <span class="n">alpha</span><span class="p">)</span>
 <span class="n">clf</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span>
 
-<span class="c"># Make the prediction on the meshed x-axis</span>
+<span class="c1"># Make the prediction on the meshed x-axis</span>
 <span class="n">y_lower</span> <span class="o">=</span> <span class="n">clf</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">xx</span><span class="p">)</span>
 
-<span class="n">clf</span><span class="o">.</span><span class="n">set_params</span><span class="p">(</span><span class="n">loss</span><span class="o">=</span><span class="s">&#39;ls&#39;</span><span class="p">)</span>
+<span class="n">clf</span><span class="o">.</span><span class="n">set_params</span><span class="p">(</span><span class="n">loss</span><span class="o">=</span><span class="s1">&#39;ls&#39;</span><span class="p">)</span>
 <span class="n">clf</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span>
 
-<span class="c"># Make the prediction on the meshed x-axis</span>
+<span class="c1"># Make the prediction on the meshed x-axis</span>
 <span class="n">y_pred</span> <span class="o">=</span> <span class="n">clf</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">xx</span><span class="p">)</span>
 
-<span class="c"># Plot the function, the prediction and the 90% confidence interval based on</span>
-<span class="c"># the MSE</span>
+<span class="c1"># Plot the function, the prediction and the 90% confidence interval based on</span>
+<span class="c1"># the MSE</span>
 <span class="n">fig</span> <span class="o">=</span> <a href="http://matplotlib.org/api/figure_api.html#matplotlib.figure"><span class="n">plt</span><span class="o">.</span><span class="n">figure</span></a><span class="p">()</span>
-<a href="http://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.plot"><span class="n">plt</span><span class="o">.</span><span class="n">plot</span></a><span class="p">(</span><span class="n">xx</span><span class="p">,</span> <span class="n">f</span><span class="p">(</span><span class="n">xx</span><span class="p">),</span> <span class="s">&#39;g:&#39;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s">u&#39;$f(x) = x\,\sin(x)$&#39;</span><span class="p">)</span>
-<a href="http://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.plot"><span class="n">plt</span><span class="o">.</span><span class="n">plot</span></a><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="s">&#39;b.&#39;</span><span class="p">,</span> <span class="n">markersize</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s">u&#39;Observations&#39;</span><span class="p">)</span>
-<a href="http://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.plot"><span class="n">plt</span><span class="o">.</span><span class="n">plot</span></a><span class="p">(</span><span class="n">xx</span><span class="p">,</span> <span class="n">y_pred</span><span class="p">,</span> <span class="s">&#39;r-&#39;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s">u&#39;Prediction&#39;</span><span class="p">)</span>
-<a href="http://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.plot"><span class="n">plt</span><span class="o">.</span><span class="n">plot</span></a><span class="p">(</span><span class="n">xx</span><span class="p">,</span> <span class="n">y_upper</span><span class="p">,</span> <span class="s">&#39;k-&#39;</span><span class="p">)</span>
-<a href="http://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.plot"><span class="n">plt</span><span class="o">.</span><span class="n">plot</span></a><span class="p">(</span><span class="n">xx</span><span class="p">,</span> <span class="n">y_lower</span><span class="p">,</span> <span class="s">&#39;k-&#39;</span><span class="p">)</span>
+<a href="http://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.plot"><span class="n">plt</span><span class="o">.</span><span class="n">plot</span></a><span class="p">(</span><span class="n">xx</span><span class="p">,</span> <span class="n">f</span><span class="p">(</span><span class="n">xx</span><span class="p">),</span> <span class="s1">&#39;g:&#39;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">u&#39;$f(x) = x\,\sin(x)$&#39;</span><span class="p">)</span>
+<a href="http://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.plot"><span class="n">plt</span><span class="o">.</span><span class="n">plot</span></a><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="s1">&#39;b.&#39;</span><span class="p">,</span> <span class="n">markersize</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">u&#39;Observations&#39;</span><span class="p">)</span>
+<a href="http://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.plot"><span class="n">plt</span><span class="o">.</span><span class="n">plot</span></a><span class="p">(</span><span class="n">xx</span><span class="p">,</span> <span class="n">y_pred</span><span class="p">,</span> <span class="s1">&#39;r-&#39;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">u&#39;Prediction&#39;</span><span class="p">)</span>
+<a href="http://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.plot"><span class="n">plt</span><span class="o">.</span><span class="n">plot</span></a><span class="p">(</span><span class="n">xx</span><span class="p">,</span> <span class="n">y_upper</span><span class="p">,</span> <span class="s1">&#39;k-&#39;</span><span class="p">)</span>
+<a href="http://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.plot"><span class="n">plt</span><span class="o">.</span><span class="n">plot</span></a><span class="p">(</span><span class="n">xx</span><span class="p">,</span> <span class="n">y_lower</span><span class="p">,</span> <span class="s1">&#39;k-&#39;</span><span class="p">)</span>
 <a href="http://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.fill"><span class="n">plt</span><span class="o">.</span><span class="n">fill</span></a><span class="p">(</span><a href="http://docs.scipy.org/doc/numpy-1.6.0/reference/generated/numpy.concatenate.html#numpy.concatenate"><span class="n">np</span><span class="o">.</span><span class="n">concatenate</span></a><span class="p">([</span><span class="n">xx</span><span class="p">,</span> <span class="n">xx</span><span class="p">[::</span><span class="o">-</span><span class="mi">1</span><span class="p">]]),</span>
          <a href="http://docs.scipy.org/doc/numpy-1.6.0/reference/generated/numpy.concatenate.html#numpy.concatenate"><span class="n">np</span><span class="o">.</span><span class="n">concatenate</span></a><span class="p">([</span><span class="n">y_upper</span><span class="p">,</span> <span class="n">y_lower</span><span class="p">[::</span><span class="o">-</span><span class="mi">1</span><span class="p">]]),</span>
-         <span class="n">alpha</span><span class="o">=.</span><span class="mi">5</span><span class="p">,</span> <span class="n">fc</span><span class="o">=</span><span class="s">&#39;b&#39;</span><span class="p">,</span> <span class="n">ec</span><span class="o">=</span><span class="s">&#39;None&#39;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s">&#39;90% prediction interval&#39;</span><span class="p">)</span>
-<a href="http://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.xlabel"><span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span></a><span class="p">(</span><span class="s">&#39;$x$&#39;</span><span class="p">)</span>
-<a href="http://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.ylabel"><span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span></a><span class="p">(</span><span class="s">&#39;$f(x)$&#39;</span><span class="p">)</span>
+         <span class="n">alpha</span><span class="o">=.</span><span class="mi">5</span><span class="p">,</span> <span class="n">fc</span><span class="o">=</span><span class="s1">&#39;b&#39;</span><span class="p">,</span> <span class="n">ec</span><span class="o">=</span><span class="s1">&#39;None&#39;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;90% prediction interval&#39;</span><span class="p">)</span>
+<a href="http://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.xlabel"><span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span></a><span class="p">(</span><span class="s1">&#39;$x$&#39;</span><span class="p">)</span>
+<a href="http://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.ylabel"><span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span></a><span class="p">(</span><span class="s1">&#39;$f(x)$&#39;</span><span class="p">)</span>
 <a href="http://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.ylim"><span class="n">plt</span><span class="o">.</span><span class="n">ylim</span></a><span class="p">(</span><span class="o">-</span><span class="mi">10</span><span class="p">,</span> <span class="mi">20</span><span class="p">)</span>
-<a href="http://matplotlib.org/api/legend_api.html#matplotlib.legend"><span class="n">plt</span><span class="o">.</span><span class="n">legend</span></a><span class="p">(</span><span class="n">loc</span><span class="o">=</span><span class="s">&#39;upper left&#39;</span><span class="p">)</span>
+<a href="http://matplotlib.org/api/legend_api.html#matplotlib.legend"><span class="n">plt</span><span class="o">.</span><span class="n">legend</span></a><span class="p">(</span><span class="n">loc</span><span class="o">=</span><span class="s1">&#39;upper left&#39;</span><span class="p">)</span>
 <a href="http://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.show"><span class="n">plt</span><span class="o">.</span><span class="n">show</span></a><span class="p">()</span>
 </pre></div>
 </div>

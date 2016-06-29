@@ -65,28 +65,28 @@
         </a>
         </p><div class="navbar">
             <ul>
-                <li><a href="../../index.html">Home</a></li>
-                <li><a href="../../install.html">Installation</a></li>
+                <li><a href="../../index.html">主页</a></li>
+                <li><a href="../../install.html">安装</a></li>
                 <li class="btn-li"><div class="btn-group">
-              <a href="../../documentation.html">Documentation</a>
+              <a href="../../documentation.html">文档</a>
               <a class="btn dropdown-toggle" data-toggle="dropdown">
                  <span class="caret"></span>
               </a>
               <ul class="dropdown-menu">
             <li class="link-title">Scikit-learn 0.17 (stable)</li>
-            <li><a href="../../tutorial/index.html">Tutorials</a></li>
-            <li><a href="../../user_guide.html">User guide</a></li>
+            <li><a href="../../tutorial/index.html">入门指南</a></li>
+            <li><a href="../../user_guide.html">使用手册</a></li>
             <li><a href="../../modules/classes.html">API</a></li>
             <li><a href="../../faq.html">FAQ</a></li>
-            <li><a href="../../developers.html">Contributing</a></li>
+            <li><a href="../../developers.html">贡献</a></li>
             <li class="divider"></li>
                 <li><a href="http://scikit-learn.org/dev/documentation.html">Scikit-learn 0.18 (development)</a></li>
                 <li><a href="http://scikit-learn.org/0.16/documentation.html">Scikit-learn 0.16</a></li>
-				<li><a href="../../_downloads/user_guide.pdf">PDF documentation</a></li>
+				<li><a href="../../_downloads/user_guide.pdf">PDF 文档</a></li>
               </ul>
             </div>
         </li>
-            <li><a href="../index.html">Examples</a></li>
+            <li><a href="../index.html">例子</a></li>
             </ul>
 
             <div class="search_form">
@@ -117,7 +117,7 @@
         accesskey="P">Previous
         <br/>
         <span class="smallrellink">
-        Comparison of th...
+        Comparison of...
         </span>
             <span class="hiddenrellink">
             Comparison of the K-Means and MiniBatchKMeans clustering algorithms
@@ -202,7 +202,7 @@ verified from the labelled scatter plot on the right.</p>
 </li>
 </ul>
 <p><strong>Script output</strong>:</p>
-<div class="highlight-default"><div class="highlight"><pre><span class="n">For</span> <span class="n">n_clusters</span> <span class="o">=</span> <span class="mi">2</span> <span class="n">The</span> <span class="n">average</span> <a href="../../modules/generated/sklearn.metrics.silhouette_score.html#sklearn.metrics.silhouette_score"><span class="n">silhouette_score</span></a> <span class="ow">is</span> <span class="p">:</span> <span class="mf">0.704978749608</span>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">For</span> <span class="n">n_clusters</span> <span class="o">=</span> <span class="mi">2</span> <span class="n">The</span> <span class="n">average</span> <a href="../../modules/generated/sklearn.metrics.silhouette_score.html#sklearn.metrics.silhouette_score"><span class="n">silhouette_score</span></a> <span class="ow">is</span> <span class="p">:</span> <span class="mf">0.704978749608</span>
 <span class="n">For</span> <span class="n">n_clusters</span> <span class="o">=</span> <span class="mi">3</span> <span class="n">The</span> <span class="n">average</span> <a href="../../modules/generated/sklearn.metrics.silhouette_score.html#sklearn.metrics.silhouette_score"><span class="n">silhouette_score</span></a> <span class="ow">is</span> <span class="p">:</span> <span class="mf">0.588200401213</span>
 <span class="n">For</span> <span class="n">n_clusters</span> <span class="o">=</span> <span class="mi">4</span> <span class="n">The</span> <span class="n">average</span> <a href="../../modules/generated/sklearn.metrics.silhouette_score.html#sklearn.metrics.silhouette_score"><span class="n">silhouette_score</span></a> <span class="ow">is</span> <span class="p">:</span> <span class="mf">0.650518663273</span>
 <span class="n">For</span> <span class="n">n_clusters</span> <span class="o">=</span> <span class="mi">5</span> <span class="n">The</span> <span class="n">average</span> <a href="../../modules/generated/sklearn.metrics.silhouette_score.html#sklearn.metrics.silhouette_score"><span class="n">silhouette_score</span></a> <span class="ow">is</span> <span class="p">:</span> <span class="mf">0.563764690262</span>
@@ -210,7 +210,7 @@ verified from the labelled scatter plot on the right.</p>
 </pre></div>
 </div>
 <p><strong>Python source code:</strong> <a class="reference download internal" href="../../_downloads/plot_kmeans_silhouette_analysis.py" download=""><code class="xref download docutils literal"><span class="pre">plot_kmeans_silhouette_analysis.py</span></code></a></p>
-<div class="highlight-default"><div class="highlight"><pre>
+<div class="highlight-default"><div class="highlight"><pre><span></span>
 <span class="kn">from</span> <span class="nn">__future__</span> <span class="k">import</span> <span class="n">print_function</span>
 
 <span class="kn">from</span> <span class="nn">sklearn.datasets</span> <span class="k">import</span> <a href="../../modules/generated/sklearn.datasets.make_blobs.html#sklearn.datasets.make_blobs"><span class="n">make_blobs</span></a>
@@ -223,51 +223,51 @@ verified from the labelled scatter plot on the right.</p>
 
 <span class="nb">print</span><span class="p">(</span><span class="n">__doc__</span><span class="p">)</span>
 
-<span class="c"># Generating the sample data from make_blobs</span>
-<span class="c"># This particular setting has one distict cluster and 3 clusters placed close</span>
-<span class="c"># together.</span>
+<span class="c1"># Generating the sample data from make_blobs</span>
+<span class="c1"># This particular setting has one distict cluster and 3 clusters placed close</span>
+<span class="c1"># together.</span>
 <span class="n">X</span><span class="p">,</span> <span class="n">y</span> <span class="o">=</span> <a href="../../modules/generated/sklearn.datasets.make_blobs.html#sklearn.datasets.make_blobs"><span class="n">make_blobs</span></a><span class="p">(</span><span class="n">n_samples</span><span class="o">=</span><span class="mi">500</span><span class="p">,</span>
                   <span class="n">n_features</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span>
                   <span class="n">centers</span><span class="o">=</span><span class="mi">4</span><span class="p">,</span>
                   <span class="n">cluster_std</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span>
                   <span class="n">center_box</span><span class="o">=</span><span class="p">(</span><span class="o">-</span><span class="mf">10.0</span><span class="p">,</span> <span class="mf">10.0</span><span class="p">),</span>
-                  <span class="n">shuffle</span><span class="o">=</span><span class="k">True</span><span class="p">,</span>
-                  <span class="n">random_state</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>  <span class="c"># For reproducibility</span>
+                  <span class="n">shuffle</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+                  <span class="n">random_state</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>  <span class="c1"># For reproducibility</span>
 
 <span class="n">range_n_clusters</span> <span class="o">=</span> <span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">]</span>
 
 <span class="k">for</span> <span class="n">n_clusters</span> <span class="ow">in</span> <span class="n">range_n_clusters</span><span class="p">:</span>
-    <span class="c"># Create a subplot with 1 row and 2 columns</span>
+    <span class="c1"># Create a subplot with 1 row and 2 columns</span>
     <span class="n">fig</span><span class="p">,</span> <span class="p">(</span><span class="n">ax1</span><span class="p">,</span> <span class="n">ax2</span><span class="p">)</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
     <span class="n">fig</span><span class="o">.</span><span class="n">set_size_inches</span><span class="p">(</span><span class="mi">18</span><span class="p">,</span> <span class="mi">7</span><span class="p">)</span>
 
-    <span class="c"># The 1st subplot is the silhouette plot</span>
-    <span class="c"># The silhouette coefficient can range from -1, 1 but in this example all</span>
-    <span class="c"># lie within [-0.1, 1]</span>
+    <span class="c1"># The 1st subplot is the silhouette plot</span>
+    <span class="c1"># The silhouette coefficient can range from -1, 1 but in this example all</span>
+    <span class="c1"># lie within [-0.1, 1]</span>
     <span class="n">ax1</span><span class="o">.</span><span class="n">set_xlim</span><span class="p">([</span><span class="o">-</span><span class="mf">0.1</span><span class="p">,</span> <span class="mi">1</span><span class="p">])</span>
-    <span class="c"># The (n_clusters+1)*10 is for inserting blank space between silhouette</span>
-    <span class="c"># plots of individual clusters, to demarcate them clearly.</span>
+    <span class="c1"># The (n_clusters+1)*10 is for inserting blank space between silhouette</span>
+    <span class="c1"># plots of individual clusters, to demarcate them clearly.</span>
     <span class="n">ax1</span><span class="o">.</span><span class="n">set_ylim</span><span class="p">([</span><span class="mi">0</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">X</span><span class="p">)</span> <span class="o">+</span> <span class="p">(</span><span class="n">n_clusters</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span> <span class="o">*</span> <span class="mi">10</span><span class="p">])</span>
 
-    <span class="c"># Initialize the clusterer with n_clusters value and a random generator</span>
-    <span class="c"># seed of 10 for reproducibility.</span>
+    <span class="c1"># Initialize the clusterer with n_clusters value and a random generator</span>
+    <span class="c1"># seed of 10 for reproducibility.</span>
     <span class="n">clusterer</span> <span class="o">=</span> <a href="../../modules/generated/sklearn.cluster.KMeans.html#sklearn.cluster.KMeans"><span class="n">KMeans</span></a><span class="p">(</span><span class="n">n_clusters</span><span class="o">=</span><span class="n">n_clusters</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="mi">10</span><span class="p">)</span>
     <span class="n">cluster_labels</span> <span class="o">=</span> <span class="n">clusterer</span><span class="o">.</span><span class="n">fit_predict</span><span class="p">(</span><span class="n">X</span><span class="p">)</span>
 
-    <span class="c"># The silhouette_score gives the average value for all the samples.</span>
-    <span class="c"># This gives a perspective into the density and separation of the formed</span>
-    <span class="c"># clusters</span>
+    <span class="c1"># The silhouette_score gives the average value for all the samples.</span>
+    <span class="c1"># This gives a perspective into the density and separation of the formed</span>
+    <span class="c1"># clusters</span>
     <span class="n">silhouette_avg</span> <span class="o">=</span> <a href="../../modules/generated/sklearn.metrics.silhouette_score.html#sklearn.metrics.silhouette_score"><span class="n">silhouette_score</span></a><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">cluster_labels</span><span class="p">)</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s">&quot;For n_clusters =&quot;</span><span class="p">,</span> <span class="n">n_clusters</span><span class="p">,</span>
-          <span class="s">&quot;The average silhouette_score is :&quot;</span><span class="p">,</span> <span class="n">silhouette_avg</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;For n_clusters =&quot;</span><span class="p">,</span> <span class="n">n_clusters</span><span class="p">,</span>
+          <span class="s2">&quot;The average silhouette_score is :&quot;</span><span class="p">,</span> <span class="n">silhouette_avg</span><span class="p">)</span>
 
-    <span class="c"># Compute the silhouette scores for each sample</span>
+    <span class="c1"># Compute the silhouette scores for each sample</span>
     <span class="n">sample_silhouette_values</span> <span class="o">=</span> <a href="../../modules/generated/sklearn.metrics.silhouette_samples.html#sklearn.metrics.silhouette_samples"><span class="n">silhouette_samples</span></a><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">cluster_labels</span><span class="p">)</span>
 
     <span class="n">y_lower</span> <span class="o">=</span> <span class="mi">10</span>
     <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n_clusters</span><span class="p">):</span>
-        <span class="c"># Aggregate the silhouette scores for samples belonging to</span>
-        <span class="c"># cluster i, and sort them</span>
+        <span class="c1"># Aggregate the silhouette scores for samples belonging to</span>
+        <span class="c1"># cluster i, and sort them</span>
         <span class="n">ith_cluster_silhouette_values</span> <span class="o">=</span> \
             <span class="n">sample_silhouette_values</span><span class="p">[</span><span class="n">cluster_labels</span> <span class="o">==</span> <span class="n">i</span><span class="p">]</span>
 
@@ -281,43 +281,43 @@ verified from the labelled scatter plot on the right.</p>
                           <span class="mi">0</span><span class="p">,</span> <span class="n">ith_cluster_silhouette_values</span><span class="p">,</span>
                           <span class="n">facecolor</span><span class="o">=</span><span class="n">color</span><span class="p">,</span> <span class="n">edgecolor</span><span class="o">=</span><span class="n">color</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.7</span><span class="p">)</span>
 
-        <span class="c"># Label the silhouette plots with their cluster numbers at the middle</span>
+        <span class="c1"># Label the silhouette plots with their cluster numbers at the middle</span>
         <span class="n">ax1</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="o">-</span><span class="mf">0.05</span><span class="p">,</span> <span class="n">y_lower</span> <span class="o">+</span> <span class="mf">0.5</span> <span class="o">*</span> <span class="n">size_cluster_i</span><span class="p">,</span> <span class="nb">str</span><span class="p">(</span><span class="n">i</span><span class="p">))</span>
 
-        <span class="c"># Compute the new y_lower for next plot</span>
-        <span class="n">y_lower</span> <span class="o">=</span> <span class="n">y_upper</span> <span class="o">+</span> <span class="mi">10</span>  <span class="c"># 10 for the 0 samples</span>
+        <span class="c1"># Compute the new y_lower for next plot</span>
+        <span class="n">y_lower</span> <span class="o">=</span> <span class="n">y_upper</span> <span class="o">+</span> <span class="mi">10</span>  <span class="c1"># 10 for the 0 samples</span>
 
-    <span class="n">ax1</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s">&quot;The silhouette plot for the various clusters.&quot;</span><span class="p">)</span>
-    <span class="n">ax1</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s">&quot;The silhouette coefficient values&quot;</span><span class="p">)</span>
-    <span class="n">ax1</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s">&quot;Cluster label&quot;</span><span class="p">)</span>
+    <span class="n">ax1</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s2">&quot;The silhouette plot for the various clusters.&quot;</span><span class="p">)</span>
+    <span class="n">ax1</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s2">&quot;The silhouette coefficient values&quot;</span><span class="p">)</span>
+    <span class="n">ax1</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s2">&quot;Cluster label&quot;</span><span class="p">)</span>
 
-    <span class="c"># The vertical line for average silhoutte score of all the values</span>
-    <span class="n">ax1</span><span class="o">.</span><span class="n">axvline</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="n">silhouette_avg</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s">&quot;red&quot;</span><span class="p">,</span> <span class="n">linestyle</span><span class="o">=</span><span class="s">&quot;--&quot;</span><span class="p">)</span>
+    <span class="c1"># The vertical line for average silhoutte score of all the values</span>
+    <span class="n">ax1</span><span class="o">.</span><span class="n">axvline</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="n">silhouette_avg</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s2">&quot;red&quot;</span><span class="p">,</span> <span class="n">linestyle</span><span class="o">=</span><span class="s2">&quot;--&quot;</span><span class="p">)</span>
 
-    <span class="n">ax1</span><span class="o">.</span><span class="n">set_yticks</span><span class="p">([])</span>  <span class="c"># Clear the yaxis labels / ticks</span>
+    <span class="n">ax1</span><span class="o">.</span><span class="n">set_yticks</span><span class="p">([])</span>  <span class="c1"># Clear the yaxis labels / ticks</span>
     <span class="n">ax1</span><span class="o">.</span><span class="n">set_xticks</span><span class="p">([</span><span class="o">-</span><span class="mf">0.1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mf">0.2</span><span class="p">,</span> <span class="mf">0.4</span><span class="p">,</span> <span class="mf">0.6</span><span class="p">,</span> <span class="mf">0.8</span><span class="p">,</span> <span class="mi">1</span><span class="p">])</span>
 
-    <span class="c"># 2nd Plot showing the actual clusters formed</span>
+    <span class="c1"># 2nd Plot showing the actual clusters formed</span>
     <span class="n">colors</span> <span class="o">=</span> <span class="n">cm</span><span class="o">.</span><span class="n">spectral</span><span class="p">(</span><span class="n">cluster_labels</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="nb">float</span><span class="p">)</span> <span class="o">/</span> <span class="n">n_clusters</span><span class="p">)</span>
-    <span class="n">ax2</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">X</span><span class="p">[:,</span> <span class="mi">0</span><span class="p">],</span> <span class="n">X</span><span class="p">[:,</span> <span class="mi">1</span><span class="p">],</span> <span class="n">marker</span><span class="o">=</span><span class="s">&#39;.&#39;</span><span class="p">,</span> <span class="n">s</span><span class="o">=</span><span class="mi">30</span><span class="p">,</span> <span class="n">lw</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.7</span><span class="p">,</span>
+    <span class="n">ax2</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">X</span><span class="p">[:,</span> <span class="mi">0</span><span class="p">],</span> <span class="n">X</span><span class="p">[:,</span> <span class="mi">1</span><span class="p">],</span> <span class="n">marker</span><span class="o">=</span><span class="s1">&#39;.&#39;</span><span class="p">,</span> <span class="n">s</span><span class="o">=</span><span class="mi">30</span><span class="p">,</span> <span class="n">lw</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.7</span><span class="p">,</span>
                 <span class="n">c</span><span class="o">=</span><span class="n">colors</span><span class="p">)</span>
 
-    <span class="c"># Labeling the clusters</span>
+    <span class="c1"># Labeling the clusters</span>
     <span class="n">centers</span> <span class="o">=</span> <span class="n">clusterer</span><span class="o">.</span><span class="n">cluster_centers_</span>
-    <span class="c"># Draw white circles at cluster centers</span>
+    <span class="c1"># Draw white circles at cluster centers</span>
     <span class="n">ax2</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">centers</span><span class="p">[:,</span> <span class="mi">0</span><span class="p">],</span> <span class="n">centers</span><span class="p">[:,</span> <span class="mi">1</span><span class="p">],</span>
-                <span class="n">marker</span><span class="o">=</span><span class="s">&#39;o&#39;</span><span class="p">,</span> <span class="n">c</span><span class="o">=</span><span class="s">&quot;white&quot;</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">s</span><span class="o">=</span><span class="mi">200</span><span class="p">)</span>
+                <span class="n">marker</span><span class="o">=</span><span class="s1">&#39;o&#39;</span><span class="p">,</span> <span class="n">c</span><span class="o">=</span><span class="s2">&quot;white&quot;</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">s</span><span class="o">=</span><span class="mi">200</span><span class="p">)</span>
 
     <span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">c</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">centers</span><span class="p">):</span>
-        <span class="n">ax2</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">c</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">c</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">marker</span><span class="o">=</span><span class="s">&#39;$%d$&#39;</span> <span class="o">%</span> <span class="n">i</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">s</span><span class="o">=</span><span class="mi">50</span><span class="p">)</span>
+        <span class="n">ax2</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">c</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">c</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">marker</span><span class="o">=</span><span class="s1">&#39;$</span><span class="si">%d</span><span class="s1">$&#39;</span> <span class="o">%</span> <span class="n">i</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">s</span><span class="o">=</span><span class="mi">50</span><span class="p">)</span>
 
-    <span class="n">ax2</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s">&quot;The visualization of the clustered data.&quot;</span><span class="p">)</span>
-    <span class="n">ax2</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s">&quot;Feature space for the 1st feature&quot;</span><span class="p">)</span>
-    <span class="n">ax2</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s">&quot;Feature space for the 2nd feature&quot;</span><span class="p">)</span>
+    <span class="n">ax2</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s2">&quot;The visualization of the clustered data.&quot;</span><span class="p">)</span>
+    <span class="n">ax2</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s2">&quot;Feature space for the 1st feature&quot;</span><span class="p">)</span>
+    <span class="n">ax2</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s2">&quot;Feature space for the 2nd feature&quot;</span><span class="p">)</span>
 
-    <a href="http://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.suptitle"><span class="n">plt</span><span class="o">.</span><span class="n">suptitle</span></a><span class="p">((</span><span class="s">&quot;Silhouette analysis for KMeans clustering on sample data &quot;</span>
-                  <span class="s">&quot;with n_clusters = %d&quot;</span> <span class="o">%</span> <span class="n">n_clusters</span><span class="p">),</span>
-                 <span class="n">fontsize</span><span class="o">=</span><span class="mi">14</span><span class="p">,</span> <span class="n">fontweight</span><span class="o">=</span><span class="s">&#39;bold&#39;</span><span class="p">)</span>
+    <a href="http://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.suptitle"><span class="n">plt</span><span class="o">.</span><span class="n">suptitle</span></a><span class="p">((</span><span class="s2">&quot;Silhouette analysis for KMeans clustering on sample data &quot;</span>
+                  <span class="s2">&quot;with n_clusters = </span><span class="si">%d</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="n">n_clusters</span><span class="p">),</span>
+                 <span class="n">fontsize</span><span class="o">=</span><span class="mi">14</span><span class="p">,</span> <span class="n">fontweight</span><span class="o">=</span><span class="s1">&#39;bold&#39;</span><span class="p">)</span>
 
     <a href="http://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.show"><span class="n">plt</span><span class="o">.</span><span class="n">show</span></a><span class="p">()</span>
 </pre></div>

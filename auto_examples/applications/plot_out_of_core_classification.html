@@ -65,28 +65,28 @@
         </a>
         </p><div class="navbar">
             <ul>
-                <li><a href="../../index.html">Home</a></li>
-                <li><a href="../../install.html">Installation</a></li>
+                <li><a href="../../index.html">主页</a></li>
+                <li><a href="../../install.html">安装</a></li>
                 <li class="btn-li"><div class="btn-group">
-              <a href="../../documentation.html">Documentation</a>
+              <a href="../../documentation.html">文档</a>
               <a class="btn dropdown-toggle" data-toggle="dropdown">
                  <span class="caret"></span>
               </a>
               <ul class="dropdown-menu">
             <li class="link-title">Scikit-learn 0.17 (stable)</li>
-            <li><a href="../../tutorial/index.html">Tutorials</a></li>
-            <li><a href="../../user_guide.html">User guide</a></li>
+            <li><a href="../../tutorial/index.html">入门指南</a></li>
+            <li><a href="../../user_guide.html">使用手册</a></li>
             <li><a href="../../modules/classes.html">API</a></li>
             <li><a href="../../faq.html">FAQ</a></li>
-            <li><a href="../../developers.html">Contributing</a></li>
+            <li><a href="../../developers.html">贡献</a></li>
             <li class="divider"></li>
                 <li><a href="http://scikit-learn.org/dev/documentation.html">Scikit-learn 0.18 (development)</a></li>
                 <li><a href="http://scikit-learn.org/0.16/documentation.html">Scikit-learn 0.16</a></li>
-				<li><a href="../../_downloads/user_guide.pdf">PDF documentation</a></li>
+				<li><a href="../../_downloads/user_guide.pdf">PDF 文档</a></li>
               </ul>
             </div>
         </li>
-            <li><a href="../index.html">Examples</a></li>
+            <li><a href="../index.html">例子</a></li>
             </ul>
 
             <div class="search_form">
@@ -193,7 +193,7 @@ feeding them to the learner.</p>
 </li>
 </ul>
 <p><strong>Script output</strong>:</p>
-<div class="highlight-default"><div class="highlight"><pre><span class="n">Test</span> <span class="nb">set</span> <span class="ow">is</span> <span class="mi">982</span> <span class="n">documents</span> <span class="p">(</span><span class="mi">90</span> <span class="n">positive</span><span class="p">)</span>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">Test</span> <span class="nb">set</span> <span class="ow">is</span> <span class="mi">982</span> <span class="n">documents</span> <span class="p">(</span><span class="mi">90</span> <span class="n">positive</span><span class="p">)</span>
   <span class="n">Passive</span><span class="o">-</span><span class="n">Aggressive</span> <span class="n">classifier</span> <span class="p">:</span>          <span class="mi">994</span> <span class="n">train</span> <span class="n">docs</span> <span class="p">(</span>   <span class="mi">121</span> <span class="n">positive</span><span class="p">)</span>    <span class="mi">982</span> <span class="n">test</span> <span class="n">docs</span> <span class="p">(</span>    <span class="mi">90</span> <span class="n">positive</span><span class="p">)</span> <span class="n">accuracy</span><span class="p">:</span> <span class="mf">0.939</span> <span class="ow">in</span> <span class="mf">1.38</span><span class="n">s</span> <span class="p">(</span>  <span class="mi">721</span> <span class="n">docs</span><span class="o">/</span><span class="n">s</span><span class="p">)</span>
           <a href="../../modules/generated/sklearn.linear_model.Perceptron.html#sklearn.linear_model.Perceptron"><span class="n">Perceptron</span></a> <span class="n">classifier</span> <span class="p">:</span>          <span class="mi">994</span> <span class="n">train</span> <span class="n">docs</span> <span class="p">(</span>   <span class="mi">121</span> <span class="n">positive</span><span class="p">)</span>    <span class="mi">982</span> <span class="n">test</span> <span class="n">docs</span> <span class="p">(</span>    <span class="mi">90</span> <span class="n">positive</span><span class="p">)</span> <span class="n">accuracy</span><span class="p">:</span> <span class="mf">0.934</span> <span class="ow">in</span> <span class="mf">1.38</span><span class="n">s</span> <span class="p">(</span>  <span class="mi">719</span> <span class="n">docs</span><span class="o">/</span><span class="n">s</span><span class="p">)</span>
                  <span class="n">SGD</span> <span class="n">classifier</span> <span class="p">:</span>          <span class="mi">994</span> <span class="n">train</span> <span class="n">docs</span> <span class="p">(</span>   <span class="mi">121</span> <span class="n">positive</span><span class="p">)</span>    <span class="mi">982</span> <span class="n">test</span> <span class="n">docs</span> <span class="p">(</span>    <span class="mi">90</span> <span class="n">positive</span><span class="p">)</span> <span class="n">accuracy</span><span class="p">:</span> <span class="mf">0.928</span> <span class="ow">in</span> <span class="mf">1.39</span><span class="n">s</span> <span class="p">(</span>  <span class="mi">717</span> <span class="n">docs</span><span class="o">/</span><span class="n">s</span><span class="p">)</span>
@@ -237,10 +237,10 @@ feeding them to the learner.</p>
 </pre></div>
 </div>
 <p><strong>Python source code:</strong> <a class="reference download internal" href="../../_downloads/plot_out_of_core_classification.py" download=""><code class="xref download docutils literal"><span class="pre">plot_out_of_core_classification.py</span></code></a></p>
-<div class="highlight-default"><div class="highlight"><pre>
-<span class="c"># Authors: Eustache Diemert &lt;eustache@diemert.fr&gt;</span>
-<span class="c">#          @FedericoV &lt;https://github.com/FedericoV/&gt;</span>
-<span class="c"># License: BSD 3 clause</span>
+<div class="highlight-default"><div class="highlight"><pre><span></span>
+<span class="c1"># Authors: Eustache Diemert &lt;eustache@diemert.fr&gt;</span>
+<span class="c1">#          @FedericoV &lt;https://github.com/FedericoV/&gt;</span>
+<span class="c1"># License: BSD 3 clause</span>
 
 <span class="kn">from</span> <span class="nn">__future__</span> <span class="k">import</span> <span class="n">print_function</span>
 
@@ -266,40 +266,40 @@ feeding them to the learner.</p>
 
 
 <span class="k">def</span> <span class="nf">_not_in_sphinx</span><span class="p">():</span>
-    <span class="c"># Hack to detect whether we are running by the sphinx builder</span>
-    <span class="k">return</span> <span class="s">&#39;__file__&#39;</span> <span class="ow">in</span> <span class="nb">globals</span><span class="p">()</span>
+    <span class="c1"># Hack to detect whether we are running by the sphinx builder</span>
+    <span class="k">return</span> <span class="s1">&#39;__file__&#39;</span> <span class="ow">in</span> <span class="nb">globals</span><span class="p">()</span>
 
 
-<span class="c">###############################################################################</span>
-<span class="c"># Reuters Dataset related routines</span>
-<span class="c">###############################################################################</span>
+<span class="c1">###############################################################################</span>
+<span class="c1"># Reuters Dataset related routines</span>
+<span class="c1">###############################################################################</span>
 
 
 <span class="k">class</span> <span class="nc">ReutersParser</span><span class="p">(</span><span class="n">html_parser</span><span class="o">.</span><span class="n">HTMLParser</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Utility class to parse a SGML file and yield documents one at a time.&quot;&quot;&quot;</span>
 
-    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">encoding</span><span class="o">=</span><span class="s">&#39;latin-1&#39;</span><span class="p">):</span>
+    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">encoding</span><span class="o">=</span><span class="s1">&#39;latin-1&#39;</span><span class="p">):</span>
         <span class="n">html_parser</span><span class="o">.</span><span class="n">HTMLParser</span><span class="o">.</span><span class="n">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">_reset</span><span class="p">()</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">encoding</span> <span class="o">=</span> <span class="n">encoding</span>
 
     <span class="k">def</span> <span class="nf">handle_starttag</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">tag</span><span class="p">,</span> <span class="n">attrs</span><span class="p">):</span>
-        <span class="n">method</span> <span class="o">=</span> <span class="s">&#39;start_&#39;</span> <span class="o">+</span> <span class="n">tag</span>
-        <span class="nb">getattr</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">method</span><span class="p">,</span> <span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="k">None</span><span class="p">)(</span><span class="n">attrs</span><span class="p">)</span>
+        <span class="n">method</span> <span class="o">=</span> <span class="s1">&#39;start_&#39;</span> <span class="o">+</span> <span class="n">tag</span>
+        <span class="nb">getattr</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">method</span><span class="p">,</span> <span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="kc">None</span><span class="p">)(</span><span class="n">attrs</span><span class="p">)</span>
 
     <span class="k">def</span> <span class="nf">handle_endtag</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">tag</span><span class="p">):</span>
-        <span class="n">method</span> <span class="o">=</span> <span class="s">&#39;end_&#39;</span> <span class="o">+</span> <span class="n">tag</span>
-        <span class="nb">getattr</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">method</span><span class="p">,</span> <span class="k">lambda</span><span class="p">:</span> <span class="k">None</span><span class="p">)()</span>
+        <span class="n">method</span> <span class="o">=</span> <span class="s1">&#39;end_&#39;</span> <span class="o">+</span> <span class="n">tag</span>
+        <span class="nb">getattr</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">method</span><span class="p">,</span> <span class="k">lambda</span><span class="p">:</span> <span class="kc">None</span><span class="p">)()</span>
 
     <span class="k">def</span> <span class="nf">_reset</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">in_title</span> <span class="o">=</span> <span class="mi">0</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">in_body</span> <span class="o">=</span> <span class="mi">0</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">in_topics</span> <span class="o">=</span> <span class="mi">0</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">in_topic_d</span> <span class="o">=</span> <span class="mi">0</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">title</span> <span class="o">=</span> <span class="s">&quot;&quot;</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">body</span> <span class="o">=</span> <span class="s">&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">title</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">body</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">topics</span> <span class="o">=</span> <span class="p">[]</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">topic_d</span> <span class="o">=</span> <span class="s">&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">topic_d</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span>
 
     <span class="k">def</span> <span class="nf">parse</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">fd</span><span class="p">):</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">docs</span> <span class="o">=</span> <span class="p">[]</span>
@@ -322,10 +322,10 @@ feeding them to the learner.</p>
         <span class="k">pass</span>
 
     <span class="k">def</span> <span class="nf">end_reuters</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">body</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">sub</span><span class="p">(</span><span class="s">r&#39;\s+&#39;</span><span class="p">,</span> <span class="s">r&#39; &#39;</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">body</span><span class="p">)</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">docs</span><span class="o">.</span><span class="n">append</span><span class="p">({</span><span class="s">&#39;title&#39;</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">title</span><span class="p">,</span>
-                          <span class="s">&#39;body&#39;</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">body</span><span class="p">,</span>
-                          <span class="s">&#39;topics&#39;</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">topics</span><span class="p">})</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">body</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">sub</span><span class="p">(</span><span class="s1">r&#39;\s+&#39;</span><span class="p">,</span> <span class="s1">r&#39; &#39;</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">body</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">docs</span><span class="o">.</span><span class="n">append</span><span class="p">({</span><span class="s1">&#39;title&#39;</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">title</span><span class="p">,</span>
+                          <span class="s1">&#39;body&#39;</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">body</span><span class="p">,</span>
+                          <span class="s1">&#39;topics&#39;</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">topics</span><span class="p">})</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">_reset</span><span class="p">()</span>
 
     <span class="k">def</span> <span class="nf">start_title</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">attributes</span><span class="p">):</span>
@@ -352,10 +352,10 @@ feeding them to the learner.</p>
     <span class="k">def</span> <span class="nf">end_d</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">in_topic_d</span> <span class="o">=</span> <span class="mi">0</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">topics</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">topic_d</span><span class="p">)</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">topic_d</span> <span class="o">=</span> <span class="s">&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">topic_d</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span>
 
 
-<span class="k">def</span> <span class="nf">stream_reuters_documents</span><span class="p">(</span><span class="n">data_path</span><span class="o">=</span><span class="k">None</span><span class="p">):</span>
+<span class="k">def</span> <span class="nf">stream_reuters_documents</span><span class="p">(</span><span class="n">data_path</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Iterate over documents of the Reuters dataset.</span>
 
 <span class="sd">    The Reuters archive will automatically be downloaded and uncompressed if</span>
@@ -366,65 +366,65 @@ feeding them to the learner.</p>
 
 <span class="sd">    &quot;&quot;&quot;</span>
 
-    <span class="n">DOWNLOAD_URL</span> <span class="o">=</span> <span class="p">(</span><span class="s">&#39;http://archive.ics.uci.edu/ml/machine-learning-databases/&#39;</span>
-                    <span class="s">&#39;reuters21578-mld/reuters21578.tar.gz&#39;</span><span class="p">)</span>
-    <span class="n">ARCHIVE_FILENAME</span> <span class="o">=</span> <span class="s">&#39;reuters21578.tar.gz&#39;</span>
+    <span class="n">DOWNLOAD_URL</span> <span class="o">=</span> <span class="p">(</span><span class="s1">&#39;http://archive.ics.uci.edu/ml/machine-learning-databases/&#39;</span>
+                    <span class="s1">&#39;reuters21578-mld/reuters21578.tar.gz&#39;</span><span class="p">)</span>
+    <span class="n">ARCHIVE_FILENAME</span> <span class="o">=</span> <span class="s1">&#39;reuters21578.tar.gz&#39;</span>
 
-    <span class="k">if</span> <span class="n">data_path</span> <span class="ow">is</span> <span class="k">None</span><span class="p">:</span>
-        <span class="n">data_path</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><a href="../../modules/generated/sklearn.datasets.get_data_home.html#sklearn.datasets.get_data_home"><span class="n">get_data_home</span></a><span class="p">(),</span> <span class="s">&quot;reuters&quot;</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">data_path</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="n">data_path</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><a href="../../modules/generated/sklearn.datasets.get_data_home.html#sklearn.datasets.get_data_home"><span class="n">get_data_home</span></a><span class="p">(),</span> <span class="s2">&quot;reuters&quot;</span><span class="p">)</span>
     <span class="k">if</span> <span class="ow">not</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">exists</span><span class="p">(</span><span class="n">data_path</span><span class="p">):</span>
         <span class="sd">&quot;&quot;&quot;Download the dataset.&quot;&quot;&quot;</span>
-        <span class="nb">print</span><span class="p">(</span><span class="s">&quot;downloading dataset (once and for all) into %s&quot;</span> <span class="o">%</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;downloading dataset (once and for all) into </span><span class="si">%s</span><span class="s2">&quot;</span> <span class="o">%</span>
               <span class="n">data_path</span><span class="p">)</span>
         <span class="n">os</span><span class="o">.</span><span class="n">mkdir</span><span class="p">(</span><span class="n">data_path</span><span class="p">)</span>
 
         <span class="k">def</span> <span class="nf">progress</span><span class="p">(</span><span class="n">blocknum</span><span class="p">,</span> <span class="n">bs</span><span class="p">,</span> <span class="n">size</span><span class="p">):</span>
-            <span class="n">total_sz_mb</span> <span class="o">=</span> <span class="s">&#39;%.2f MB&#39;</span> <span class="o">%</span> <span class="p">(</span><span class="n">size</span> <span class="o">/</span> <span class="mi">1</span><span class="n">e6</span><span class="p">)</span>
-            <span class="n">current_sz_mb</span> <span class="o">=</span> <span class="s">&#39;%.2f MB&#39;</span> <span class="o">%</span> <span class="p">((</span><span class="n">blocknum</span> <span class="o">*</span> <span class="n">bs</span><span class="p">)</span> <span class="o">/</span> <span class="mi">1</span><span class="n">e6</span><span class="p">)</span>
+            <span class="n">total_sz_mb</span> <span class="o">=</span> <span class="s1">&#39;</span><span class="si">%.2f</span><span class="s1"> MB&#39;</span> <span class="o">%</span> <span class="p">(</span><span class="n">size</span> <span class="o">/</span> <span class="mi">1</span><span class="n">e6</span><span class="p">)</span>
+            <span class="n">current_sz_mb</span> <span class="o">=</span> <span class="s1">&#39;</span><span class="si">%.2f</span><span class="s1"> MB&#39;</span> <span class="o">%</span> <span class="p">((</span><span class="n">blocknum</span> <span class="o">*</span> <span class="n">bs</span><span class="p">)</span> <span class="o">/</span> <span class="mi">1</span><span class="n">e6</span><span class="p">)</span>
             <span class="k">if</span> <span class="n">_not_in_sphinx</span><span class="p">():</span>
-                <span class="nb">print</span><span class="p">(</span><span class="s">&#39;</span><span class="se">\r</span><span class="s">downloaded %s / %s&#39;</span> <span class="o">%</span> <span class="p">(</span><span class="n">current_sz_mb</span><span class="p">,</span> <span class="n">total_sz_mb</span><span class="p">),</span>
-                      <span class="n">end</span><span class="o">=</span><span class="s">&#39;&#39;</span><span class="p">)</span>
+                <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;</span><span class="se">\r</span><span class="s1">downloaded </span><span class="si">%s</span><span class="s1"> / </span><span class="si">%s</span><span class="s1">&#39;</span> <span class="o">%</span> <span class="p">(</span><span class="n">current_sz_mb</span><span class="p">,</span> <span class="n">total_sz_mb</span><span class="p">),</span>
+                      <span class="n">end</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">)</span>
 
         <span class="n">archive_path</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">data_path</span><span class="p">,</span> <span class="n">ARCHIVE_FILENAME</span><span class="p">)</span>
         <span class="n">urllib</span><span class="o">.</span><span class="n">request</span><span class="o">.</span><span class="n">urlretrieve</span><span class="p">(</span><span class="n">DOWNLOAD_URL</span><span class="p">,</span> <span class="n">filename</span><span class="o">=</span><span class="n">archive_path</span><span class="p">,</span>
                                    <span class="n">reporthook</span><span class="o">=</span><span class="n">progress</span><span class="p">)</span>
         <span class="k">if</span> <span class="n">_not_in_sphinx</span><span class="p">():</span>
-            <span class="nb">print</span><span class="p">(</span><span class="s">&#39;</span><span class="se">\r</span><span class="s">&#39;</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s">&#39;&#39;</span><span class="p">)</span>
-        <span class="nb">print</span><span class="p">(</span><span class="s">&quot;untarring Reuters dataset...&quot;</span><span class="p">)</span>
-        <span class="n">tarfile</span><span class="o">.</span><span class="n">open</span><span class="p">(</span><span class="n">archive_path</span><span class="p">,</span> <span class="s">&#39;r:gz&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">extractall</span><span class="p">(</span><span class="n">data_path</span><span class="p">)</span>
-        <span class="nb">print</span><span class="p">(</span><span class="s">&quot;done.&quot;</span><span class="p">)</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;</span><span class="se">\r</span><span class="s1">&#39;</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;untarring Reuters dataset...&quot;</span><span class="p">)</span>
+        <span class="n">tarfile</span><span class="o">.</span><span class="n">open</span><span class="p">(</span><span class="n">archive_path</span><span class="p">,</span> <span class="s1">&#39;r:gz&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">extractall</span><span class="p">(</span><span class="n">data_path</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;done.&quot;</span><span class="p">)</span>
 
     <span class="n">parser</span> <span class="o">=</span> <span class="n">ReutersParser</span><span class="p">()</span>
-    <span class="k">for</span> <span class="n">filename</span> <span class="ow">in</span> <span class="n">glob</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">data_path</span><span class="p">,</span> <span class="s">&quot;*.sgm&quot;</span><span class="p">)):</span>
-        <span class="k">for</span> <span class="n">doc</span> <span class="ow">in</span> <span class="n">parser</span><span class="o">.</span><span class="n">parse</span><span class="p">(</span><span class="nb">open</span><span class="p">(</span><span class="n">filename</span><span class="p">,</span> <span class="s">&#39;rb&#39;</span><span class="p">)):</span>
+    <span class="k">for</span> <span class="n">filename</span> <span class="ow">in</span> <span class="n">glob</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">data_path</span><span class="p">,</span> <span class="s2">&quot;*.sgm&quot;</span><span class="p">)):</span>
+        <span class="k">for</span> <span class="n">doc</span> <span class="ow">in</span> <span class="n">parser</span><span class="o">.</span><span class="n">parse</span><span class="p">(</span><span class="nb">open</span><span class="p">(</span><span class="n">filename</span><span class="p">,</span> <span class="s1">&#39;rb&#39;</span><span class="p">)):</span>
             <span class="k">yield</span> <span class="n">doc</span>
 
 
-<span class="c">###############################################################################</span>
-<span class="c"># Main</span>
-<span class="c">###############################################################################</span>
-<span class="c"># Create the vectorizer and limit the number of features to a reasonable</span>
-<span class="c"># maximum</span>
-<span class="n">vectorizer</span> <span class="o">=</span> <a href="../../modules/generated/sklearn.feature_extraction.text.HashingVectorizer.html#sklearn.feature_extraction.text.HashingVectorizer"><span class="n">HashingVectorizer</span></a><span class="p">(</span><span class="n">decode_error</span><span class="o">=</span><span class="s">&#39;ignore&#39;</span><span class="p">,</span> <span class="n">n_features</span><span class="o">=</span><span class="mi">2</span> <span class="o">**</span> <span class="mi">18</span><span class="p">,</span>
-                               <span class="n">non_negative</span><span class="o">=</span><span class="k">True</span><span class="p">)</span>
+<span class="c1">###############################################################################</span>
+<span class="c1"># Main</span>
+<span class="c1">###############################################################################</span>
+<span class="c1"># Create the vectorizer and limit the number of features to a reasonable</span>
+<span class="c1"># maximum</span>
+<span class="n">vectorizer</span> <span class="o">=</span> <a href="../../modules/generated/sklearn.feature_extraction.text.HashingVectorizer.html#sklearn.feature_extraction.text.HashingVectorizer"><span class="n">HashingVectorizer</span></a><span class="p">(</span><span class="n">decode_error</span><span class="o">=</span><span class="s1">&#39;ignore&#39;</span><span class="p">,</span> <span class="n">n_features</span><span class="o">=</span><span class="mi">2</span> <span class="o">**</span> <span class="mi">18</span><span class="p">,</span>
+                               <span class="n">non_negative</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
 
 
-<span class="c"># Iterator over parsed Reuters SGML files.</span>
+<span class="c1"># Iterator over parsed Reuters SGML files.</span>
 <span class="n">data_stream</span> <span class="o">=</span> <span class="n">stream_reuters_documents</span><span class="p">()</span>
 
-<span class="c"># We learn a binary classification between the &quot;acq&quot; class and all the others.</span>
-<span class="c"># &quot;acq&quot; was chosen as it is more or less evenly distributed in the Reuters</span>
-<span class="c"># files. For other datasets, one should take care of creating a test set with</span>
-<span class="c"># a realistic portion of positive instances.</span>
+<span class="c1"># We learn a binary classification between the &quot;acq&quot; class and all the others.</span>
+<span class="c1"># &quot;acq&quot; was chosen as it is more or less evenly distributed in the Reuters</span>
+<span class="c1"># files. For other datasets, one should take care of creating a test set with</span>
+<span class="c1"># a realistic portion of positive instances.</span>
 <span class="n">all_classes</span> <span class="o">=</span> <a href="http://docs.scipy.org/doc/numpy-1.6.0/reference/generated/numpy.array.html#numpy.array"><span class="n">np</span><span class="o">.</span><span class="n">array</span></a><span class="p">([</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">])</span>
-<span class="n">positive_class</span> <span class="o">=</span> <span class="s">&#39;acq&#39;</span>
+<span class="n">positive_class</span> <span class="o">=</span> <span class="s1">&#39;acq&#39;</span>
 
-<span class="c"># Here are some classifiers that support the `partial_fit` method</span>
+<span class="c1"># Here are some classifiers that support the `partial_fit` method</span>
 <span class="n">partial_fit_classifiers</span> <span class="o">=</span> <span class="p">{</span>
-    <span class="s">&#39;SGD&#39;</span><span class="p">:</span> <a href="../../modules/generated/sklearn.linear_model.SGDClassifier.html#sklearn.linear_model.SGDClassifier"><span class="n">SGDClassifier</span></a><span class="p">(),</span>
-    <span class="s">&#39;Perceptron&#39;</span><span class="p">:</span> <a href="../../modules/generated/sklearn.linear_model.Perceptron.html#sklearn.linear_model.Perceptron"><span class="n">Perceptron</span></a><span class="p">(),</span>
-    <span class="s">&#39;NB Multinomial&#39;</span><span class="p">:</span> <a href="../../modules/generated/sklearn.naive_bayes.MultinomialNB.html#sklearn.naive_bayes.MultinomialNB"><span class="n">MultinomialNB</span></a><span class="p">(</span><span class="n">alpha</span><span class="o">=</span><span class="mf">0.01</span><span class="p">),</span>
-    <span class="s">&#39;Passive-Aggressive&#39;</span><span class="p">:</span> <a href="../../modules/generated/sklearn.linear_model.PassiveAggressiveClassifier.html#sklearn.linear_model.PassiveAggressiveClassifier"><span class="n">PassiveAggressiveClassifier</span></a><span class="p">(),</span>
+    <span class="s1">&#39;SGD&#39;</span><span class="p">:</span> <a href="../../modules/generated/sklearn.linear_model.SGDClassifier.html#sklearn.linear_model.SGDClassifier"><span class="n">SGDClassifier</span></a><span class="p">(),</span>
+    <span class="s1">&#39;Perceptron&#39;</span><span class="p">:</span> <a href="../../modules/generated/sklearn.linear_model.Perceptron.html#sklearn.linear_model.Perceptron"><span class="n">Perceptron</span></a><span class="p">(),</span>
+    <span class="s1">&#39;NB Multinomial&#39;</span><span class="p">:</span> <a href="../../modules/generated/sklearn.naive_bayes.MultinomialNB.html#sklearn.naive_bayes.MultinomialNB"><span class="n">MultinomialNB</span></a><span class="p">(</span><span class="n">alpha</span><span class="o">=</span><span class="mf">0.01</span><span class="p">),</span>
+    <span class="s1">&#39;Passive-Aggressive&#39;</span><span class="p">:</span> <a href="../../modules/generated/sklearn.linear_model.PassiveAggressiveClassifier.html#sklearn.linear_model.PassiveAggressiveClassifier"><span class="n">PassiveAggressiveClassifier</span></a><span class="p">(),</span>
 <span class="p">}</span>
 
 
@@ -434,9 +434,9 @@ feeding them to the learner.</p>
 <span class="sd">    Note: size is before excluding invalid docs with no topics assigned.</span>
 
 <span class="sd">    &quot;&quot;&quot;</span>
-    <span class="n">data</span> <span class="o">=</span> <span class="p">[(</span><span class="s">u&#39;{title}</span><span class="se">\n\n</span><span class="s">{body}&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="o">**</span><span class="n">doc</span><span class="p">),</span> <span class="n">pos_class</span> <span class="ow">in</span> <span class="n">doc</span><span class="p">[</span><span class="s">&#39;topics&#39;</span><span class="p">])</span>
+    <span class="n">data</span> <span class="o">=</span> <span class="p">[(</span><span class="s1">u&#39;</span><span class="si">{title}</span><span class="se">\n\n</span><span class="si">{body}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="o">**</span><span class="n">doc</span><span class="p">),</span> <span class="n">pos_class</span> <span class="ow">in</span> <span class="n">doc</span><span class="p">[</span><span class="s1">&#39;topics&#39;</span><span class="p">])</span>
             <span class="k">for</span> <span class="n">doc</span> <span class="ow">in</span> <span class="n">itertools</span><span class="o">.</span><span class="n">islice</span><span class="p">(</span><span class="n">doc_iter</span><span class="p">,</span> <span class="n">size</span><span class="p">)</span>
-            <span class="k">if</span> <span class="n">doc</span><span class="p">[</span><span class="s">&#39;topics&#39;</span><span class="p">]]</span>
+            <span class="k">if</span> <span class="n">doc</span><span class="p">[</span><span class="s1">&#39;topics&#39;</span><span class="p">]]</span>
     <span class="k">if</span> <span class="ow">not</span> <span class="nb">len</span><span class="p">(</span><span class="n">data</span><span class="p">):</span>
         <span class="k">return</span> <a href="http://docs.scipy.org/doc/numpy-1.6.0/reference/generated/numpy.asarray.html#numpy.asarray"><span class="n">np</span><span class="o">.</span><span class="n">asarray</span></a><span class="p">([],</span> <span class="n">dtype</span><span class="o">=</span><span class="nb">int</span><span class="p">),</span> <a href="http://docs.scipy.org/doc/numpy-1.6.0/reference/generated/numpy.asarray.html#numpy.asarray"><span class="n">np</span><span class="o">.</span><span class="n">asarray</span></a><span class="p">([],</span> <span class="n">dtype</span><span class="o">=</span><span class="nb">int</span><span class="p">)</span>
     <span class="n">X_text</span><span class="p">,</span> <span class="n">y</span> <span class="o">=</span> <span class="nb">zip</span><span class="p">(</span><span class="o">*</span><span class="n">data</span><span class="p">)</span>
@@ -451,10 +451,10 @@ feeding them to the learner.</p>
         <span class="n">X_text</span><span class="p">,</span> <span class="n">y</span> <span class="o">=</span> <span class="n">get_minibatch</span><span class="p">(</span><span class="n">doc_iter</span><span class="p">,</span> <span class="n">minibatch_size</span><span class="p">)</span>
 
 
-<span class="c"># test data statistics</span>
-<span class="n">test_stats</span> <span class="o">=</span> <span class="p">{</span><span class="s">&#39;n_test&#39;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span> <span class="s">&#39;n_test_pos&#39;</span><span class="p">:</span> <span class="mi">0</span><span class="p">}</span>
+<span class="c1"># test data statistics</span>
+<span class="n">test_stats</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;n_test&#39;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span> <span class="s1">&#39;n_test_pos&#39;</span><span class="p">:</span> <span class="mi">0</span><span class="p">}</span>
 
-<span class="c"># First we hold out a number of examples to estimate accuracy</span>
+<span class="c1"># First we hold out a number of examples to estimate accuracy</span>
 <span class="n">n_test_documents</span> <span class="o">=</span> <span class="mi">1000</span>
 <span class="n">tick</span> <span class="o">=</span> <span class="n">time</span><span class="o">.</span><span class="n">time</span><span class="p">()</span>
 <span class="n">X_test_text</span><span class="p">,</span> <span class="n">y_test</span> <span class="o">=</span> <span class="n">get_minibatch</span><span class="p">(</span><span class="n">data_stream</span><span class="p">,</span> <span class="mi">1000</span><span class="p">)</span>
@@ -462,44 +462,44 @@ feeding them to the learner.</p>
 <span class="n">tick</span> <span class="o">=</span> <span class="n">time</span><span class="o">.</span><span class="n">time</span><span class="p">()</span>
 <span class="n">X_test</span> <span class="o">=</span> <span class="n">vectorizer</span><span class="o">.</span><span class="n">transform</span><span class="p">(</span><span class="n">X_test_text</span><span class="p">)</span>
 <span class="n">vectorizing_time</span> <span class="o">=</span> <span class="n">time</span><span class="o">.</span><span class="n">time</span><span class="p">()</span> <span class="o">-</span> <span class="n">tick</span>
-<span class="n">test_stats</span><span class="p">[</span><span class="s">&#39;n_test&#39;</span><span class="p">]</span> <span class="o">+=</span> <span class="nb">len</span><span class="p">(</span><span class="n">y_test</span><span class="p">)</span>
-<span class="n">test_stats</span><span class="p">[</span><span class="s">&#39;n_test_pos&#39;</span><span class="p">]</span> <span class="o">+=</span> <span class="nb">sum</span><span class="p">(</span><span class="n">y_test</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s">&quot;Test set is %d documents (%d positive)&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">y_test</span><span class="p">),</span> <span class="nb">sum</span><span class="p">(</span><span class="n">y_test</span><span class="p">)))</span>
+<span class="n">test_stats</span><span class="p">[</span><span class="s1">&#39;n_test&#39;</span><span class="p">]</span> <span class="o">+=</span> <span class="nb">len</span><span class="p">(</span><span class="n">y_test</span><span class="p">)</span>
+<span class="n">test_stats</span><span class="p">[</span><span class="s1">&#39;n_test_pos&#39;</span><span class="p">]</span> <span class="o">+=</span> <span class="nb">sum</span><span class="p">(</span><span class="n">y_test</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Test set is </span><span class="si">%d</span><span class="s2"> documents (</span><span class="si">%d</span><span class="s2"> positive)&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">y_test</span><span class="p">),</span> <span class="nb">sum</span><span class="p">(</span><span class="n">y_test</span><span class="p">)))</span>
 
 
 <span class="k">def</span> <span class="nf">progress</span><span class="p">(</span><span class="n">cls_name</span><span class="p">,</span> <span class="n">stats</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Report progress information, return a string.&quot;&quot;&quot;</span>
-    <span class="n">duration</span> <span class="o">=</span> <span class="n">time</span><span class="o">.</span><span class="n">time</span><span class="p">()</span> <span class="o">-</span> <span class="n">stats</span><span class="p">[</span><span class="s">&#39;t0&#39;</span><span class="p">]</span>
-    <span class="n">s</span> <span class="o">=</span> <span class="s">&quot;%20s classifier : </span><span class="se">\t</span><span class="s">&quot;</span> <span class="o">%</span> <span class="n">cls_name</span>
-    <span class="n">s</span> <span class="o">+=</span> <span class="s">&quot;%(n_train)6d train docs (%(n_train_pos)6d positive) &quot;</span> <span class="o">%</span> <span class="n">stats</span>
-    <span class="n">s</span> <span class="o">+=</span> <span class="s">&quot;%(n_test)6d test docs (%(n_test_pos)6d positive) &quot;</span> <span class="o">%</span> <span class="n">test_stats</span>
-    <span class="n">s</span> <span class="o">+=</span> <span class="s">&quot;accuracy: %(accuracy).3f &quot;</span> <span class="o">%</span> <span class="n">stats</span>
-    <span class="n">s</span> <span class="o">+=</span> <span class="s">&quot;in %.2fs (%5d docs/s)&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">duration</span><span class="p">,</span> <span class="n">stats</span><span class="p">[</span><span class="s">&#39;n_train&#39;</span><span class="p">]</span> <span class="o">/</span> <span class="n">duration</span><span class="p">)</span>
+    <span class="n">duration</span> <span class="o">=</span> <span class="n">time</span><span class="o">.</span><span class="n">time</span><span class="p">()</span> <span class="o">-</span> <span class="n">stats</span><span class="p">[</span><span class="s1">&#39;t0&#39;</span><span class="p">]</span>
+    <span class="n">s</span> <span class="o">=</span> <span class="s2">&quot;</span><span class="si">%20s</span><span class="s2"> classifier : </span><span class="se">\t</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="n">cls_name</span>
+    <span class="n">s</span> <span class="o">+=</span> <span class="s2">&quot;</span><span class="si">%(n_train)6d</span><span class="s2"> train docs (</span><span class="si">%(n_train_pos)6d</span><span class="s2"> positive) &quot;</span> <span class="o">%</span> <span class="n">stats</span>
+    <span class="n">s</span> <span class="o">+=</span> <span class="s2">&quot;</span><span class="si">%(n_test)6d</span><span class="s2"> test docs (</span><span class="si">%(n_test_pos)6d</span><span class="s2"> positive) &quot;</span> <span class="o">%</span> <span class="n">test_stats</span>
+    <span class="n">s</span> <span class="o">+=</span> <span class="s2">&quot;accuracy: </span><span class="si">%(accuracy).3f</span><span class="s2"> &quot;</span> <span class="o">%</span> <span class="n">stats</span>
+    <span class="n">s</span> <span class="o">+=</span> <span class="s2">&quot;in </span><span class="si">%.2f</span><span class="s2">s (</span><span class="si">%5d</span><span class="s2"> docs/s)&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">duration</span><span class="p">,</span> <span class="n">stats</span><span class="p">[</span><span class="s1">&#39;n_train&#39;</span><span class="p">]</span> <span class="o">/</span> <span class="n">duration</span><span class="p">)</span>
     <span class="k">return</span> <span class="n">s</span>
 
 
 <span class="n">cls_stats</span> <span class="o">=</span> <span class="p">{}</span>
 
 <span class="k">for</span> <span class="n">cls_name</span> <span class="ow">in</span> <span class="n">partial_fit_classifiers</span><span class="p">:</span>
-    <span class="n">stats</span> <span class="o">=</span> <span class="p">{</span><span class="s">&#39;n_train&#39;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span> <span class="s">&#39;n_train_pos&#39;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
-             <span class="s">&#39;accuracy&#39;</span><span class="p">:</span> <span class="mf">0.0</span><span class="p">,</span> <span class="s">&#39;accuracy_history&#39;</span><span class="p">:</span> <span class="p">[(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">)],</span> <span class="s">&#39;t0&#39;</span><span class="p">:</span> <span class="n">time</span><span class="o">.</span><span class="n">time</span><span class="p">(),</span>
-             <span class="s">&#39;runtime_history&#39;</span><span class="p">:</span> <span class="p">[(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">)],</span> <span class="s">&#39;total_fit_time&#39;</span><span class="p">:</span> <span class="mf">0.0</span><span class="p">}</span>
+    <span class="n">stats</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;n_train&#39;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span> <span class="s1">&#39;n_train_pos&#39;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+             <span class="s1">&#39;accuracy&#39;</span><span class="p">:</span> <span class="mf">0.0</span><span class="p">,</span> <span class="s1">&#39;accuracy_history&#39;</span><span class="p">:</span> <span class="p">[(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">)],</span> <span class="s1">&#39;t0&#39;</span><span class="p">:</span> <span class="n">time</span><span class="o">.</span><span class="n">time</span><span class="p">(),</span>
+             <span class="s1">&#39;runtime_history&#39;</span><span class="p">:</span> <span class="p">[(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">)],</span> <span class="s1">&#39;total_fit_time&#39;</span><span class="p">:</span> <span class="mf">0.0</span><span class="p">}</span>
     <span class="n">cls_stats</span><span class="p">[</span><span class="n">cls_name</span><span class="p">]</span> <span class="o">=</span> <span class="n">stats</span>
 
 <span class="n">get_minibatch</span><span class="p">(</span><span class="n">data_stream</span><span class="p">,</span> <span class="n">n_test_documents</span><span class="p">)</span>
-<span class="c"># Discard test set</span>
+<span class="c1"># Discard test set</span>
 
-<span class="c"># We will feed the classifier with mini-batches of 1000 documents; this means</span>
-<span class="c"># we have at most 1000 docs in memory at any time.  The smaller the document</span>
-<span class="c"># batch, the bigger the relative overhead of the partial fit methods.</span>
+<span class="c1"># We will feed the classifier with mini-batches of 1000 documents; this means</span>
+<span class="c1"># we have at most 1000 docs in memory at any time.  The smaller the document</span>
+<span class="c1"># batch, the bigger the relative overhead of the partial fit methods.</span>
 <span class="n">minibatch_size</span> <span class="o">=</span> <span class="mi">1000</span>
 
-<span class="c"># Create the data_stream that parses Reuters SGML files and iterates on</span>
-<span class="c"># documents as a stream.</span>
+<span class="c1"># Create the data_stream that parses Reuters SGML files and iterates on</span>
+<span class="c1"># documents as a stream.</span>
 <span class="n">minibatch_iterators</span> <span class="o">=</span> <span class="n">iter_minibatches</span><span class="p">(</span><span class="n">data_stream</span><span class="p">,</span> <span class="n">minibatch_size</span><span class="p">)</span>
 <span class="n">total_vect_time</span> <span class="o">=</span> <span class="mf">0.0</span>
 
-<span class="c"># Main loop : iterate on mini-batchs of examples</span>
+<span class="c1"># Main loop : iterate on mini-batchs of examples</span>
 <span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="p">(</span><span class="n">X_train_text</span><span class="p">,</span> <span class="n">y_train</span><span class="p">)</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">minibatch_iterators</span><span class="p">):</span>
 
     <span class="n">tick</span> <span class="o">=</span> <span class="n">time</span><span class="o">.</span><span class="n">time</span><span class="p">()</span>
@@ -508,76 +508,76 @@ feeding them to the learner.</p>
 
     <span class="k">for</span> <span class="n">cls_name</span><span class="p">,</span> <span class="n">cls</span> <span class="ow">in</span> <span class="n">partial_fit_classifiers</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
         <span class="n">tick</span> <span class="o">=</span> <span class="n">time</span><span class="o">.</span><span class="n">time</span><span class="p">()</span>
-        <span class="c"># update estimator with examples in the current mini-batch</span>
+        <span class="c1"># update estimator with examples in the current mini-batch</span>
         <span class="n">cls</span><span class="o">.</span><span class="n">partial_fit</span><span class="p">(</span><span class="n">X_train</span><span class="p">,</span> <span class="n">y_train</span><span class="p">,</span> <span class="n">classes</span><span class="o">=</span><span class="n">all_classes</span><span class="p">)</span>
 
-        <span class="c"># accumulate test accuracy stats</span>
-        <span class="n">cls_stats</span><span class="p">[</span><span class="n">cls_name</span><span class="p">][</span><span class="s">&#39;total_fit_time&#39;</span><span class="p">]</span> <span class="o">+=</span> <span class="n">time</span><span class="o">.</span><span class="n">time</span><span class="p">()</span> <span class="o">-</span> <span class="n">tick</span>
-        <span class="n">cls_stats</span><span class="p">[</span><span class="n">cls_name</span><span class="p">][</span><span class="s">&#39;n_train&#39;</span><span class="p">]</span> <span class="o">+=</span> <span class="n">X_train</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
-        <span class="n">cls_stats</span><span class="p">[</span><span class="n">cls_name</span><span class="p">][</span><span class="s">&#39;n_train_pos&#39;</span><span class="p">]</span> <span class="o">+=</span> <span class="nb">sum</span><span class="p">(</span><span class="n">y_train</span><span class="p">)</span>
+        <span class="c1"># accumulate test accuracy stats</span>
+        <span class="n">cls_stats</span><span class="p">[</span><span class="n">cls_name</span><span class="p">][</span><span class="s1">&#39;total_fit_time&#39;</span><span class="p">]</span> <span class="o">+=</span> <span class="n">time</span><span class="o">.</span><span class="n">time</span><span class="p">()</span> <span class="o">-</span> <span class="n">tick</span>
+        <span class="n">cls_stats</span><span class="p">[</span><span class="n">cls_name</span><span class="p">][</span><span class="s1">&#39;n_train&#39;</span><span class="p">]</span> <span class="o">+=</span> <span class="n">X_train</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+        <span class="n">cls_stats</span><span class="p">[</span><span class="n">cls_name</span><span class="p">][</span><span class="s1">&#39;n_train_pos&#39;</span><span class="p">]</span> <span class="o">+=</span> <span class="nb">sum</span><span class="p">(</span><span class="n">y_train</span><span class="p">)</span>
         <span class="n">tick</span> <span class="o">=</span> <span class="n">time</span><span class="o">.</span><span class="n">time</span><span class="p">()</span>
-        <span class="n">cls_stats</span><span class="p">[</span><span class="n">cls_name</span><span class="p">][</span><span class="s">&#39;accuracy&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">cls</span><span class="o">.</span><span class="n">score</span><span class="p">(</span><span class="n">X_test</span><span class="p">,</span> <span class="n">y_test</span><span class="p">)</span>
-        <span class="n">cls_stats</span><span class="p">[</span><span class="n">cls_name</span><span class="p">][</span><span class="s">&#39;prediction_time&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">time</span><span class="o">.</span><span class="n">time</span><span class="p">()</span> <span class="o">-</span> <span class="n">tick</span>
-        <span class="n">acc_history</span> <span class="o">=</span> <span class="p">(</span><span class="n">cls_stats</span><span class="p">[</span><span class="n">cls_name</span><span class="p">][</span><span class="s">&#39;accuracy&#39;</span><span class="p">],</span>
-                       <span class="n">cls_stats</span><span class="p">[</span><span class="n">cls_name</span><span class="p">][</span><span class="s">&#39;n_train&#39;</span><span class="p">])</span>
-        <span class="n">cls_stats</span><span class="p">[</span><span class="n">cls_name</span><span class="p">][</span><span class="s">&#39;accuracy_history&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">acc_history</span><span class="p">)</span>
-        <span class="n">run_history</span> <span class="o">=</span> <span class="p">(</span><span class="n">cls_stats</span><span class="p">[</span><span class="n">cls_name</span><span class="p">][</span><span class="s">&#39;accuracy&#39;</span><span class="p">],</span>
-                       <span class="n">total_vect_time</span> <span class="o">+</span> <span class="n">cls_stats</span><span class="p">[</span><span class="n">cls_name</span><span class="p">][</span><span class="s">&#39;total_fit_time&#39;</span><span class="p">])</span>
-        <span class="n">cls_stats</span><span class="p">[</span><span class="n">cls_name</span><span class="p">][</span><span class="s">&#39;runtime_history&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">run_history</span><span class="p">)</span>
+        <span class="n">cls_stats</span><span class="p">[</span><span class="n">cls_name</span><span class="p">][</span><span class="s1">&#39;accuracy&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">cls</span><span class="o">.</span><span class="n">score</span><span class="p">(</span><span class="n">X_test</span><span class="p">,</span> <span class="n">y_test</span><span class="p">)</span>
+        <span class="n">cls_stats</span><span class="p">[</span><span class="n">cls_name</span><span class="p">][</span><span class="s1">&#39;prediction_time&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">time</span><span class="o">.</span><span class="n">time</span><span class="p">()</span> <span class="o">-</span> <span class="n">tick</span>
+        <span class="n">acc_history</span> <span class="o">=</span> <span class="p">(</span><span class="n">cls_stats</span><span class="p">[</span><span class="n">cls_name</span><span class="p">][</span><span class="s1">&#39;accuracy&#39;</span><span class="p">],</span>
+                       <span class="n">cls_stats</span><span class="p">[</span><span class="n">cls_name</span><span class="p">][</span><span class="s1">&#39;n_train&#39;</span><span class="p">])</span>
+        <span class="n">cls_stats</span><span class="p">[</span><span class="n">cls_name</span><span class="p">][</span><span class="s1">&#39;accuracy_history&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">acc_history</span><span class="p">)</span>
+        <span class="n">run_history</span> <span class="o">=</span> <span class="p">(</span><span class="n">cls_stats</span><span class="p">[</span><span class="n">cls_name</span><span class="p">][</span><span class="s1">&#39;accuracy&#39;</span><span class="p">],</span>
+                       <span class="n">total_vect_time</span> <span class="o">+</span> <span class="n">cls_stats</span><span class="p">[</span><span class="n">cls_name</span><span class="p">][</span><span class="s1">&#39;total_fit_time&#39;</span><span class="p">])</span>
+        <span class="n">cls_stats</span><span class="p">[</span><span class="n">cls_name</span><span class="p">][</span><span class="s1">&#39;runtime_history&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">run_history</span><span class="p">)</span>
 
         <span class="k">if</span> <span class="n">i</span> <span class="o">%</span> <span class="mi">3</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
             <span class="nb">print</span><span class="p">(</span><span class="n">progress</span><span class="p">(</span><span class="n">cls_name</span><span class="p">,</span> <span class="n">cls_stats</span><span class="p">[</span><span class="n">cls_name</span><span class="p">]))</span>
     <span class="k">if</span> <span class="n">i</span> <span class="o">%</span> <span class="mi">3</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
-        <span class="nb">print</span><span class="p">(</span><span class="s">&#39;</span><span class="se">\n</span><span class="s">&#39;</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">)</span>
 
 
-<span class="c">###############################################################################</span>
-<span class="c"># Plot results</span>
-<span class="c">###############################################################################</span>
+<span class="c1">###############################################################################</span>
+<span class="c1"># Plot results</span>
+<span class="c1">###############################################################################</span>
 
 
 <span class="k">def</span> <span class="nf">plot_accuracy</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">x_legend</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Plot accuracy as a function of x.&quot;&quot;&quot;</span>
     <span class="n">x</span> <span class="o">=</span> <a href="http://docs.scipy.org/doc/numpy-1.6.0/reference/generated/numpy.array.html#numpy.array"><span class="n">np</span><span class="o">.</span><span class="n">array</span></a><span class="p">(</span><span class="n">x</span><span class="p">)</span>
     <span class="n">y</span> <span class="o">=</span> <a href="http://docs.scipy.org/doc/numpy-1.6.0/reference/generated/numpy.array.html#numpy.array"><span class="n">np</span><span class="o">.</span><span class="n">array</span></a><span class="p">(</span><span class="n">y</span><span class="p">)</span>
-    <a href="http://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.title"><span class="n">plt</span><span class="o">.</span><span class="n">title</span></a><span class="p">(</span><span class="s">&#39;Classification accuracy as a function of %s&#39;</span> <span class="o">%</span> <span class="n">x_legend</span><span class="p">)</span>
-    <a href="http://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.xlabel"><span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span></a><span class="p">(</span><span class="s">&#39;%s&#39;</span> <span class="o">%</span> <span class="n">x_legend</span><span class="p">)</span>
-    <a href="http://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.ylabel"><span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span></a><span class="p">(</span><span class="s">&#39;Accuracy&#39;</span><span class="p">)</span>
-    <a href="http://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.grid"><span class="n">plt</span><span class="o">.</span><span class="n">grid</span></a><span class="p">(</span><span class="k">True</span><span class="p">)</span>
+    <a href="http://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.title"><span class="n">plt</span><span class="o">.</span><span class="n">title</span></a><span class="p">(</span><span class="s1">&#39;Classification accuracy as a function of </span><span class="si">%s</span><span class="s1">&#39;</span> <span class="o">%</span> <span class="n">x_legend</span><span class="p">)</span>
+    <a href="http://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.xlabel"><span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span></a><span class="p">(</span><span class="s1">&#39;</span><span class="si">%s</span><span class="s1">&#39;</span> <span class="o">%</span> <span class="n">x_legend</span><span class="p">)</span>
+    <a href="http://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.ylabel"><span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span></a><span class="p">(</span><span class="s1">&#39;Accuracy&#39;</span><span class="p">)</span>
+    <a href="http://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.grid"><span class="n">plt</span><span class="o">.</span><span class="n">grid</span></a><span class="p">(</span><span class="kc">True</span><span class="p">)</span>
     <a href="http://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.plot"><span class="n">plt</span><span class="o">.</span><span class="n">plot</span></a><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span>
 
-<a href="http://matplotlib.org/api/matplotlib_configuration_api.html#matplotlib.rcParams"><span class="n">rcParams</span></a><span class="p">[</span><span class="s">&#39;legend.fontsize&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="mi">10</span>
+<a href="http://matplotlib.org/api/matplotlib_configuration_api.html#matplotlib.rcParams"><span class="n">rcParams</span></a><span class="p">[</span><span class="s1">&#39;legend.fontsize&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="mi">10</span>
 <span class="n">cls_names</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="nb">sorted</span><span class="p">(</span><span class="n">cls_stats</span><span class="o">.</span><span class="n">keys</span><span class="p">()))</span>
 
-<span class="c"># Plot accuracy evolution</span>
+<span class="c1"># Plot accuracy evolution</span>
 <a href="http://matplotlib.org/api/figure_api.html#matplotlib.figure"><span class="n">plt</span><span class="o">.</span><span class="n">figure</span></a><span class="p">()</span>
 <span class="k">for</span> <span class="n">_</span><span class="p">,</span> <span class="n">stats</span> <span class="ow">in</span> <span class="nb">sorted</span><span class="p">(</span><span class="n">cls_stats</span><span class="o">.</span><span class="n">items</span><span class="p">()):</span>
-    <span class="c"># Plot accuracy evolution with #examples</span>
-    <span class="n">accuracy</span><span class="p">,</span> <span class="n">n_examples</span> <span class="o">=</span> <span class="nb">zip</span><span class="p">(</span><span class="o">*</span><span class="n">stats</span><span class="p">[</span><span class="s">&#39;accuracy_history&#39;</span><span class="p">])</span>
-    <span class="n">plot_accuracy</span><span class="p">(</span><span class="n">n_examples</span><span class="p">,</span> <span class="n">accuracy</span><span class="p">,</span> <span class="s">&quot;training examples (#)&quot;</span><span class="p">)</span>
+    <span class="c1"># Plot accuracy evolution with #examples</span>
+    <span class="n">accuracy</span><span class="p">,</span> <span class="n">n_examples</span> <span class="o">=</span> <span class="nb">zip</span><span class="p">(</span><span class="o">*</span><span class="n">stats</span><span class="p">[</span><span class="s1">&#39;accuracy_history&#39;</span><span class="p">])</span>
+    <span class="n">plot_accuracy</span><span class="p">(</span><span class="n">n_examples</span><span class="p">,</span> <span class="n">accuracy</span><span class="p">,</span> <span class="s2">&quot;training examples (#)&quot;</span><span class="p">)</span>
     <span class="n">ax</span> <span class="o">=</span> <a href="http://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.gca"><span class="n">plt</span><span class="o">.</span><span class="n">gca</span></a><span class="p">()</span>
     <span class="n">ax</span><span class="o">.</span><span class="n">set_ylim</span><span class="p">((</span><span class="mf">0.8</span><span class="p">,</span> <span class="mi">1</span><span class="p">))</span>
-<a href="http://matplotlib.org/api/legend_api.html#matplotlib.legend"><span class="n">plt</span><span class="o">.</span><span class="n">legend</span></a><span class="p">(</span><span class="n">cls_names</span><span class="p">,</span> <span class="n">loc</span><span class="o">=</span><span class="s">&#39;best&#39;</span><span class="p">)</span>
+<a href="http://matplotlib.org/api/legend_api.html#matplotlib.legend"><span class="n">plt</span><span class="o">.</span><span class="n">legend</span></a><span class="p">(</span><span class="n">cls_names</span><span class="p">,</span> <span class="n">loc</span><span class="o">=</span><span class="s1">&#39;best&#39;</span><span class="p">)</span>
 
 <a href="http://matplotlib.org/api/figure_api.html#matplotlib.figure"><span class="n">plt</span><span class="o">.</span><span class="n">figure</span></a><span class="p">()</span>
 <span class="k">for</span> <span class="n">_</span><span class="p">,</span> <span class="n">stats</span> <span class="ow">in</span> <span class="nb">sorted</span><span class="p">(</span><span class="n">cls_stats</span><span class="o">.</span><span class="n">items</span><span class="p">()):</span>
-    <span class="c"># Plot accuracy evolution with runtime</span>
-    <span class="n">accuracy</span><span class="p">,</span> <span class="n">runtime</span> <span class="o">=</span> <span class="nb">zip</span><span class="p">(</span><span class="o">*</span><span class="n">stats</span><span class="p">[</span><span class="s">&#39;runtime_history&#39;</span><span class="p">])</span>
-    <span class="n">plot_accuracy</span><span class="p">(</span><span class="n">runtime</span><span class="p">,</span> <span class="n">accuracy</span><span class="p">,</span> <span class="s">&#39;runtime (s)&#39;</span><span class="p">)</span>
+    <span class="c1"># Plot accuracy evolution with runtime</span>
+    <span class="n">accuracy</span><span class="p">,</span> <span class="n">runtime</span> <span class="o">=</span> <span class="nb">zip</span><span class="p">(</span><span class="o">*</span><span class="n">stats</span><span class="p">[</span><span class="s1">&#39;runtime_history&#39;</span><span class="p">])</span>
+    <span class="n">plot_accuracy</span><span class="p">(</span><span class="n">runtime</span><span class="p">,</span> <span class="n">accuracy</span><span class="p">,</span> <span class="s1">&#39;runtime (s)&#39;</span><span class="p">)</span>
     <span class="n">ax</span> <span class="o">=</span> <a href="http://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.gca"><span class="n">plt</span><span class="o">.</span><span class="n">gca</span></a><span class="p">()</span>
     <span class="n">ax</span><span class="o">.</span><span class="n">set_ylim</span><span class="p">((</span><span class="mf">0.8</span><span class="p">,</span> <span class="mi">1</span><span class="p">))</span>
-<a href="http://matplotlib.org/api/legend_api.html#matplotlib.legend"><span class="n">plt</span><span class="o">.</span><span class="n">legend</span></a><span class="p">(</span><span class="n">cls_names</span><span class="p">,</span> <span class="n">loc</span><span class="o">=</span><span class="s">&#39;best&#39;</span><span class="p">)</span>
+<a href="http://matplotlib.org/api/legend_api.html#matplotlib.legend"><span class="n">plt</span><span class="o">.</span><span class="n">legend</span></a><span class="p">(</span><span class="n">cls_names</span><span class="p">,</span> <span class="n">loc</span><span class="o">=</span><span class="s1">&#39;best&#39;</span><span class="p">)</span>
 
-<span class="c"># Plot fitting times</span>
+<span class="c1"># Plot fitting times</span>
 <a href="http://matplotlib.org/api/figure_api.html#matplotlib.figure"><span class="n">plt</span><span class="o">.</span><span class="n">figure</span></a><span class="p">()</span>
 <span class="n">fig</span> <span class="o">=</span> <a href="http://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.gcf"><span class="n">plt</span><span class="o">.</span><span class="n">gcf</span></a><span class="p">()</span>
 <span class="n">cls_runtime</span> <span class="o">=</span> <span class="p">[]</span>
 <span class="k">for</span> <span class="n">cls_name</span><span class="p">,</span> <span class="n">stats</span> <span class="ow">in</span> <span class="nb">sorted</span><span class="p">(</span><span class="n">cls_stats</span><span class="o">.</span><span class="n">items</span><span class="p">()):</span>
-    <span class="n">cls_runtime</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">stats</span><span class="p">[</span><span class="s">&#39;total_fit_time&#39;</span><span class="p">])</span>
+    <span class="n">cls_runtime</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">stats</span><span class="p">[</span><span class="s1">&#39;total_fit_time&#39;</span><span class="p">])</span>
 
 <span class="n">cls_runtime</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">total_vect_time</span><span class="p">)</span>
-<span class="n">cls_names</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s">&#39;Vectorization&#39;</span><span class="p">)</span>
-<span class="n">bar_colors</span> <span class="o">=</span> <a href="http://matplotlib.org/api/matplotlib_configuration_api.html#matplotlib.rcParams"><span class="n">rcParams</span></a><span class="p">[</span><span class="s">&#39;axes.color_cycle&#39;</span><span class="p">][:</span><span class="nb">len</span><span class="p">(</span><span class="n">cls_names</span><span class="p">)]</span>
+<span class="n">cls_names</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s1">&#39;Vectorization&#39;</span><span class="p">)</span>
+<span class="n">bar_colors</span> <span class="o">=</span> <a href="http://matplotlib.org/api/matplotlib_configuration_api.html#matplotlib.rcParams"><span class="n">rcParams</span></a><span class="p">[</span><span class="s1">&#39;axes.color_cycle&#39;</span><span class="p">][:</span><span class="nb">len</span><span class="p">(</span><span class="n">cls_names</span><span class="p">)]</span>
 
 <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplot</span><span class="p">(</span><span class="mi">111</span><span class="p">)</span>
 <span class="n">rectangles</span> <span class="o">=</span> <a href="http://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.bar"><span class="n">plt</span><span class="o">.</span><span class="n">bar</span></a><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">cls_names</span><span class="p">)),</span> <span class="n">cls_runtime</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="mf">0.5</span><span class="p">,</span>
@@ -587,8 +587,8 @@ feeding them to the learner.</p>
 <span class="n">ax</span><span class="o">.</span><span class="n">set_xticklabels</span><span class="p">(</span><span class="n">cls_names</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">10</span><span class="p">)</span>
 <span class="n">ymax</span> <span class="o">=</span> <span class="nb">max</span><span class="p">(</span><span class="n">cls_runtime</span><span class="p">)</span> <span class="o">*</span> <span class="mf">1.2</span>
 <span class="n">ax</span><span class="o">.</span><span class="n">set_ylim</span><span class="p">((</span><span class="mi">0</span><span class="p">,</span> <span class="n">ymax</span><span class="p">))</span>
-<span class="n">ax</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s">&#39;runtime (s)&#39;</span><span class="p">)</span>
-<span class="n">ax</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s">&#39;Training Times&#39;</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s1">&#39;runtime (s)&#39;</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s1">&#39;Training Times&#39;</span><span class="p">)</span>
 
 
 <span class="k">def</span> <span class="nf">autolabel</span><span class="p">(</span><span class="n">rectangles</span><span class="p">):</span>
@@ -596,24 +596,24 @@ feeding them to the learner.</p>
     <span class="k">for</span> <span class="n">rect</span> <span class="ow">in</span> <span class="n">rectangles</span><span class="p">:</span>
         <span class="n">height</span> <span class="o">=</span> <span class="n">rect</span><span class="o">.</span><span class="n">get_height</span><span class="p">()</span>
         <span class="n">ax</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="n">rect</span><span class="o">.</span><span class="n">get_x</span><span class="p">()</span> <span class="o">+</span> <span class="n">rect</span><span class="o">.</span><span class="n">get_width</span><span class="p">()</span> <span class="o">/</span> <span class="mf">2.</span><span class="p">,</span>
-                <span class="mf">1.05</span> <span class="o">*</span> <span class="n">height</span><span class="p">,</span> <span class="s">&#39;%.4f&#39;</span> <span class="o">%</span> <span class="n">height</span><span class="p">,</span>
-                <span class="n">ha</span><span class="o">=</span><span class="s">&#39;center&#39;</span><span class="p">,</span> <span class="n">va</span><span class="o">=</span><span class="s">&#39;bottom&#39;</span><span class="p">)</span>
+                <span class="mf">1.05</span> <span class="o">*</span> <span class="n">height</span><span class="p">,</span> <span class="s1">&#39;</span><span class="si">%.4f</span><span class="s1">&#39;</span> <span class="o">%</span> <span class="n">height</span><span class="p">,</span>
+                <span class="n">ha</span><span class="o">=</span><span class="s1">&#39;center&#39;</span><span class="p">,</span> <span class="n">va</span><span class="o">=</span><span class="s1">&#39;bottom&#39;</span><span class="p">)</span>
 
 <span class="n">autolabel</span><span class="p">(</span><span class="n">rectangles</span><span class="p">)</span>
 <a href="http://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.show"><span class="n">plt</span><span class="o">.</span><span class="n">show</span></a><span class="p">()</span>
 
-<span class="c"># Plot prediction times</span>
+<span class="c1"># Plot prediction times</span>
 <a href="http://matplotlib.org/api/figure_api.html#matplotlib.figure"><span class="n">plt</span><span class="o">.</span><span class="n">figure</span></a><span class="p">()</span>
-<span class="c">#fig = plt.gcf()</span>
+<span class="c1">#fig = plt.gcf()</span>
 <span class="n">cls_runtime</span> <span class="o">=</span> <span class="p">[]</span>
 <span class="n">cls_names</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="nb">sorted</span><span class="p">(</span><span class="n">cls_stats</span><span class="o">.</span><span class="n">keys</span><span class="p">()))</span>
 <span class="k">for</span> <span class="n">cls_name</span><span class="p">,</span> <span class="n">stats</span> <span class="ow">in</span> <span class="nb">sorted</span><span class="p">(</span><span class="n">cls_stats</span><span class="o">.</span><span class="n">items</span><span class="p">()):</span>
-    <span class="n">cls_runtime</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">stats</span><span class="p">[</span><span class="s">&#39;prediction_time&#39;</span><span class="p">])</span>
+    <span class="n">cls_runtime</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">stats</span><span class="p">[</span><span class="s1">&#39;prediction_time&#39;</span><span class="p">])</span>
 <span class="n">cls_runtime</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">parsing_time</span><span class="p">)</span>
-<span class="n">cls_names</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s">&#39;Read/Parse</span><span class="se">\n</span><span class="s">+Feat.Extr.&#39;</span><span class="p">)</span>
+<span class="n">cls_names</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s1">&#39;Read/Parse</span><span class="se">\n</span><span class="s1">+Feat.Extr.&#39;</span><span class="p">)</span>
 <span class="n">cls_runtime</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">vectorizing_time</span><span class="p">)</span>
-<span class="n">cls_names</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s">&#39;Hashing</span><span class="se">\n</span><span class="s">+Vect.&#39;</span><span class="p">)</span>
-<span class="n">bar_colors</span> <span class="o">=</span> <a href="http://matplotlib.org/api/matplotlib_configuration_api.html#matplotlib.rcParams"><span class="n">rcParams</span></a><span class="p">[</span><span class="s">&#39;axes.color_cycle&#39;</span><span class="p">][:</span><span class="nb">len</span><span class="p">(</span><span class="n">cls_names</span><span class="p">)]</span>
+<span class="n">cls_names</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s1">&#39;Hashing</span><span class="se">\n</span><span class="s1">+Vect.&#39;</span><span class="p">)</span>
+<span class="n">bar_colors</span> <span class="o">=</span> <a href="http://matplotlib.org/api/matplotlib_configuration_api.html#matplotlib.rcParams"><span class="n">rcParams</span></a><span class="p">[</span><span class="s1">&#39;axes.color_cycle&#39;</span><span class="p">][:</span><span class="nb">len</span><span class="p">(</span><span class="n">cls_names</span><span class="p">)]</span>
 
 <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplot</span><span class="p">(</span><span class="mi">111</span><span class="p">)</span>
 <span class="n">rectangles</span> <span class="o">=</span> <a href="http://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.bar"><span class="n">plt</span><span class="o">.</span><span class="n">bar</span></a><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">cls_names</span><span class="p">)),</span> <span class="n">cls_runtime</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="mf">0.5</span><span class="p">,</span>
@@ -624,8 +624,8 @@ feeding them to the learner.</p>
 <a href="http://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.setp"><span class="n">plt</span><span class="o">.</span><span class="n">setp</span></a><span class="p">(</span><a href="http://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.xticks"><span class="n">plt</span><span class="o">.</span><span class="n">xticks</span></a><span class="p">()[</span><span class="mi">1</span><span class="p">],</span> <span class="n">rotation</span><span class="o">=</span><span class="mi">30</span><span class="p">)</span>
 <span class="n">ymax</span> <span class="o">=</span> <span class="nb">max</span><span class="p">(</span><span class="n">cls_runtime</span><span class="p">)</span> <span class="o">*</span> <span class="mf">1.2</span>
 <span class="n">ax</span><span class="o">.</span><span class="n">set_ylim</span><span class="p">((</span><span class="mi">0</span><span class="p">,</span> <span class="n">ymax</span><span class="p">))</span>
-<span class="n">ax</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s">&#39;runtime (s)&#39;</span><span class="p">)</span>
-<span class="n">ax</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s">&#39;Prediction Times (%d instances)&#39;</span> <span class="o">%</span> <span class="n">n_test_documents</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s1">&#39;runtime (s)&#39;</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s1">&#39;Prediction Times (</span><span class="si">%d</span><span class="s1"> instances)&#39;</span> <span class="o">%</span> <span class="n">n_test_documents</span><span class="p">)</span>
 <span class="n">autolabel</span><span class="p">(</span><span class="n">rectangles</span><span class="p">)</span>
 <a href="http://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.show"><span class="n">plt</span><span class="o">.</span><span class="n">show</span></a><span class="p">()</span>
 </pre></div>

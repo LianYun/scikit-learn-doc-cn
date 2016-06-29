@@ -65,28 +65,28 @@
         </a>
         </p><div class="navbar">
             <ul>
-                <li><a href="../../index.html">Home</a></li>
-                <li><a href="../../install.html">Installation</a></li>
+                <li><a href="../../index.html">主页</a></li>
+                <li><a href="../../install.html">安装</a></li>
                 <li class="btn-li"><div class="btn-group">
-              <a href="../../documentation.html">Documentation</a>
+              <a href="../../documentation.html">文档</a>
               <a class="btn dropdown-toggle" data-toggle="dropdown">
                  <span class="caret"></span>
               </a>
               <ul class="dropdown-menu">
             <li class="link-title">Scikit-learn 0.17 (stable)</li>
-            <li><a href="../../tutorial/index.html">Tutorials</a></li>
-            <li><a href="../../user_guide.html">User guide</a></li>
+            <li><a href="../../tutorial/index.html">入门指南</a></li>
+            <li><a href="../../user_guide.html">使用手册</a></li>
             <li><a href="../../modules/classes.html">API</a></li>
             <li><a href="../../faq.html">FAQ</a></li>
-            <li><a href="../../developers.html">Contributing</a></li>
+            <li><a href="../../developers.html">贡献</a></li>
             <li class="divider"></li>
                 <li><a href="http://scikit-learn.org/dev/documentation.html">Scikit-learn 0.18 (development)</a></li>
                 <li><a href="http://scikit-learn.org/0.16/documentation.html">Scikit-learn 0.16</a></li>
-				<li><a href="../../_downloads/user_guide.pdf">PDF documentation</a></li>
+				<li><a href="../../_downloads/user_guide.pdf">PDF 文档</a></li>
               </ul>
             </div>
         </li>
-            <li><a href="../index.html">Examples</a></li>
+            <li><a href="../index.html">例子</a></li>
             </ul>
 
             <div class="search_form">
@@ -117,7 +117,7 @@
         accesskey="P">Previous
         <br/>
         <span class="smallrellink">
-        Recognizing hand...
+        Recognizing h...
         </span>
             <span class="hiddenrellink">
             Recognizing hand-written digits
@@ -170,7 +170,7 @@
 <p>Shows how shrinkage improves classification.</p>
 <img alt="../../_images/plot_lda_001.png" class="align-center" src="../../_images/plot_lda_001.png" />
 <p><strong>Python source code:</strong> <a class="reference download internal" href="../../_downloads/plot_lda.py" download=""><code class="xref download docutils literal"><span class="pre">plot_lda.py</span></code></a></p>
-<div class="highlight-default"><div class="highlight"><pre>
+<div class="highlight-default"><div class="highlight"><pre><span></span>
 <span class="kn">from</span> <span class="nn">__future__</span> <span class="k">import</span> <span class="n">division</span>
 
 <span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
@@ -180,11 +180,11 @@
 <span class="kn">from</span> <span class="nn">sklearn.discriminant_analysis</span> <span class="k">import</span> <a href="../../modules/generated/sklearn.discriminant_analysis.LinearDiscriminantAnalysis.html#sklearn.discriminant_analysis.LinearDiscriminantAnalysis"><span class="n">LinearDiscriminantAnalysis</span></a>
 
 
-<span class="n">n_train</span> <span class="o">=</span> <span class="mi">20</span>  <span class="c"># samples for training</span>
-<span class="n">n_test</span> <span class="o">=</span> <span class="mi">200</span>  <span class="c"># samples for testing</span>
-<span class="n">n_averages</span> <span class="o">=</span> <span class="mi">50</span>  <span class="c"># how often to repeat classification</span>
-<span class="n">n_features_max</span> <span class="o">=</span> <span class="mi">75</span>  <span class="c"># maximum number of features</span>
-<span class="n">step</span> <span class="o">=</span> <span class="mi">4</span>  <span class="c"># step size for the calculation</span>
+<span class="n">n_train</span> <span class="o">=</span> <span class="mi">20</span>  <span class="c1"># samples for training</span>
+<span class="n">n_test</span> <span class="o">=</span> <span class="mi">200</span>  <span class="c1"># samples for testing</span>
+<span class="n">n_averages</span> <span class="o">=</span> <span class="mi">50</span>  <span class="c1"># how often to repeat classification</span>
+<span class="n">n_features_max</span> <span class="o">=</span> <span class="mi">75</span>  <span class="c1"># maximum number of features</span>
+<span class="n">step</span> <span class="o">=</span> <span class="mi">4</span>  <span class="c1"># step size for the calculation</span>
 
 
 <span class="k">def</span> <span class="nf">generate_data</span><span class="p">(</span><span class="n">n_samples</span><span class="p">,</span> <span class="n">n_features</span><span class="p">):</span>
@@ -198,7 +198,7 @@
 <span class="sd">    &quot;&quot;&quot;</span>
     <span class="n">X</span><span class="p">,</span> <span class="n">y</span> <span class="o">=</span> <a href="../../modules/generated/sklearn.datasets.make_blobs.html#sklearn.datasets.make_blobs"><span class="n">make_blobs</span></a><span class="p">(</span><span class="n">n_samples</span><span class="o">=</span><span class="n">n_samples</span><span class="p">,</span> <span class="n">n_features</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">centers</span><span class="o">=</span><span class="p">[[</span><span class="o">-</span><span class="mi">2</span><span class="p">],</span> <span class="p">[</span><span class="mi">2</span><span class="p">]])</span>
 
-    <span class="c"># add non-discriminative features</span>
+    <span class="c1"># add non-discriminative features</span>
     <span class="k">if</span> <span class="n">n_features</span> <span class="o">&gt;</span> <span class="mi">1</span><span class="p">:</span>
         <span class="n">X</span> <span class="o">=</span> <a href="http://docs.scipy.org/doc/numpy-1.6.0/reference/generated/numpy.hstack.html#numpy.hstack"><span class="n">np</span><span class="o">.</span><span class="n">hstack</span></a><span class="p">([</span><span class="n">X</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">randn</span><span class="p">(</span><span class="n">n_samples</span><span class="p">,</span> <span class="n">n_features</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)])</span>
     <span class="k">return</span> <span class="n">X</span><span class="p">,</span> <span class="n">y</span>
@@ -210,8 +210,8 @@
     <span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n_averages</span><span class="p">):</span>
         <span class="n">X</span><span class="p">,</span> <span class="n">y</span> <span class="o">=</span> <span class="n">generate_data</span><span class="p">(</span><span class="n">n_train</span><span class="p">,</span> <span class="n">n_features</span><span class="p">)</span>
 
-        <span class="n">clf1</span> <span class="o">=</span> <a href="../../modules/generated/sklearn.discriminant_analysis.LinearDiscriminantAnalysis.html#sklearn.discriminant_analysis.LinearDiscriminantAnalysis"><span class="n">LinearDiscriminantAnalysis</span></a><span class="p">(</span><span class="n">solver</span><span class="o">=</span><span class="s">&#39;lsqr&#39;</span><span class="p">,</span> <span class="n">shrinkage</span><span class="o">=</span><span class="s">&#39;auto&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span>
-        <span class="n">clf2</span> <span class="o">=</span> <a href="../../modules/generated/sklearn.discriminant_analysis.LinearDiscriminantAnalysis.html#sklearn.discriminant_analysis.LinearDiscriminantAnalysis"><span class="n">LinearDiscriminantAnalysis</span></a><span class="p">(</span><span class="n">solver</span><span class="o">=</span><span class="s">&#39;lsqr&#39;</span><span class="p">,</span> <span class="n">shrinkage</span><span class="o">=</span><span class="k">None</span><span class="p">)</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span>
+        <span class="n">clf1</span> <span class="o">=</span> <a href="../../modules/generated/sklearn.discriminant_analysis.LinearDiscriminantAnalysis.html#sklearn.discriminant_analysis.LinearDiscriminantAnalysis"><span class="n">LinearDiscriminantAnalysis</span></a><span class="p">(</span><span class="n">solver</span><span class="o">=</span><span class="s1">&#39;lsqr&#39;</span><span class="p">,</span> <span class="n">shrinkage</span><span class="o">=</span><span class="s1">&#39;auto&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span>
+        <span class="n">clf2</span> <span class="o">=</span> <a href="../../modules/generated/sklearn.discriminant_analysis.LinearDiscriminantAnalysis.html#sklearn.discriminant_analysis.LinearDiscriminantAnalysis"><span class="n">LinearDiscriminantAnalysis</span></a><span class="p">(</span><span class="n">solver</span><span class="o">=</span><span class="s1">&#39;lsqr&#39;</span><span class="p">,</span> <span class="n">shrinkage</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span>
 
         <span class="n">X</span><span class="p">,</span> <span class="n">y</span> <span class="o">=</span> <span class="n">generate_data</span><span class="p">(</span><span class="n">n_test</span><span class="p">,</span> <span class="n">n_features</span><span class="p">)</span>
         <span class="n">score_clf1</span> <span class="o">+=</span> <span class="n">clf1</span><span class="o">.</span><span class="n">score</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span>
@@ -223,16 +223,16 @@
 <span class="n">features_samples_ratio</span> <span class="o">=</span> <a href="http://docs.scipy.org/doc/numpy-1.6.0/reference/generated/numpy.array.html#numpy.array"><span class="n">np</span><span class="o">.</span><span class="n">array</span></a><span class="p">(</span><span class="n">n_features_range</span><span class="p">)</span> <span class="o">/</span> <span class="n">n_train</span>
 
 <a href="http://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.plot"><span class="n">plt</span><span class="o">.</span><span class="n">plot</span></a><span class="p">(</span><span class="n">features_samples_ratio</span><span class="p">,</span> <span class="n">acc_clf1</span><span class="p">,</span> <span class="n">linewidth</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span>
-         <span class="n">label</span><span class="o">=</span><span class="s">&quot;Linear Discriminant Analysis with shrinkage&quot;</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s">&#39;r&#39;</span><span class="p">)</span>
+         <span class="n">label</span><span class="o">=</span><span class="s2">&quot;Linear Discriminant Analysis with shrinkage&quot;</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;r&#39;</span><span class="p">)</span>
 <a href="http://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.plot"><span class="n">plt</span><span class="o">.</span><span class="n">plot</span></a><span class="p">(</span><span class="n">features_samples_ratio</span><span class="p">,</span> <span class="n">acc_clf2</span><span class="p">,</span> <span class="n">linewidth</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span>
-         <span class="n">label</span><span class="o">=</span><span class="s">&quot;Linear Discriminant Analysis&quot;</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s">&#39;g&#39;</span><span class="p">)</span>
+         <span class="n">label</span><span class="o">=</span><span class="s2">&quot;Linear Discriminant Analysis&quot;</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;g&#39;</span><span class="p">)</span>
 
-<a href="http://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.xlabel"><span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span></a><span class="p">(</span><span class="s">&#39;n_features / n_samples&#39;</span><span class="p">)</span>
-<a href="http://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.ylabel"><span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span></a><span class="p">(</span><span class="s">&#39;Classification accuracy&#39;</span><span class="p">)</span>
+<a href="http://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.xlabel"><span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span></a><span class="p">(</span><span class="s1">&#39;n_features / n_samples&#39;</span><span class="p">)</span>
+<a href="http://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.ylabel"><span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span></a><span class="p">(</span><span class="s1">&#39;Classification accuracy&#39;</span><span class="p">)</span>
 
-<a href="http://matplotlib.org/api/legend_api.html#matplotlib.legend"><span class="n">plt</span><span class="o">.</span><span class="n">legend</span></a><span class="p">(</span><span class="n">loc</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">prop</span><span class="o">=</span><span class="p">{</span><span class="s">&#39;size&#39;</span><span class="p">:</span> <span class="mi">12</span><span class="p">})</span>
-<a href="http://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.suptitle"><span class="n">plt</span><span class="o">.</span><span class="n">suptitle</span></a><span class="p">(</span><span class="s">&#39;Linear Discriminant Analysis vs. </span><span class="se">\</span>
-<span class="s">shrinkage Linear Discriminant Analysis (1 discriminative feature)&#39;</span><span class="p">)</span>
+<a href="http://matplotlib.org/api/legend_api.html#matplotlib.legend"><span class="n">plt</span><span class="o">.</span><span class="n">legend</span></a><span class="p">(</span><span class="n">loc</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">prop</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;size&#39;</span><span class="p">:</span> <span class="mi">12</span><span class="p">})</span>
+<a href="http://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.suptitle"><span class="n">plt</span><span class="o">.</span><span class="n">suptitle</span></a><span class="p">(</span><span class="s1">&#39;Linear Discriminant Analysis vs. </span><span class="se">\</span>
+<span class="s1">shrinkage Linear Discriminant Analysis (1 discriminative feature)&#39;</span><span class="p">)</span>
 <a href="http://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.show"><span class="n">plt</span><span class="o">.</span><span class="n">show</span></a><span class="p">()</span>
 </pre></div>
 </div>

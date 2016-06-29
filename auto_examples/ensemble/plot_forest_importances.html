@@ -65,28 +65,28 @@
         </a>
         </p><div class="navbar">
             <ul>
-                <li><a href="../../index.html">Home</a></li>
-                <li><a href="../../install.html">Installation</a></li>
+                <li><a href="../../index.html">主页</a></li>
+                <li><a href="../../install.html">安装</a></li>
                 <li class="btn-li"><div class="btn-group">
-              <a href="../../documentation.html">Documentation</a>
+              <a href="../../documentation.html">文档</a>
               <a class="btn dropdown-toggle" data-toggle="dropdown">
                  <span class="caret"></span>
               </a>
               <ul class="dropdown-menu">
             <li class="link-title">Scikit-learn 0.17 (stable)</li>
-            <li><a href="../../tutorial/index.html">Tutorials</a></li>
-            <li><a href="../../user_guide.html">User guide</a></li>
+            <li><a href="../../tutorial/index.html">入门指南</a></li>
+            <li><a href="../../user_guide.html">使用手册</a></li>
             <li><a href="../../modules/classes.html">API</a></li>
             <li><a href="../../faq.html">FAQ</a></li>
-            <li><a href="../../developers.html">Contributing</a></li>
+            <li><a href="../../developers.html">贡献</a></li>
             <li class="divider"></li>
                 <li><a href="http://scikit-learn.org/dev/documentation.html">Scikit-learn 0.18 (development)</a></li>
                 <li><a href="http://scikit-learn.org/0.16/documentation.html">Scikit-learn 0.16</a></li>
-				<li><a href="../../_downloads/user_guide.pdf">PDF documentation</a></li>
+				<li><a href="../../_downloads/user_guide.pdf">PDF 文档</a></li>
               </ul>
             </div>
         </li>
-            <li><a href="../index.html">Examples</a></li>
+            <li><a href="../index.html">例子</a></li>
             </ul>
 
             <div class="search_form">
@@ -117,7 +117,7 @@
         accesskey="P">Previous
         <br/>
         <span class="smallrellink">
-        Decision Tree Re...
+        Decision Tree...
         </span>
             <span class="hiddenrellink">
             Decision Tree Regression with AdaBoost
@@ -174,7 +174,7 @@ importances of the forest, along with their inter-trees variability.</p>
 remaining are not.</p>
 <img alt="../../_images/plot_forest_importances_001.png" class="align-center" src="../../_images/plot_forest_importances_001.png" />
 <p><strong>Script output</strong>:</p>
-<div class="highlight-default"><div class="highlight"><pre><span class="n">Feature</span> <span class="n">ranking</span><span class="p">:</span>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">Feature</span> <span class="n">ranking</span><span class="p">:</span>
 <span class="mf">1.</span> <span class="n">feature</span> <span class="mi">0</span> <span class="p">(</span><span class="mf">0.250402</span><span class="p">)</span>
 <span class="mf">2.</span> <span class="n">feature</span> <span class="mi">1</span> <span class="p">(</span><span class="mf">0.231094</span><span class="p">)</span>
 <span class="mf">3.</span> <span class="n">feature</span> <span class="mi">2</span> <span class="p">(</span><span class="mf">0.148057</span><span class="p">)</span>
@@ -188,7 +188,7 @@ remaining are not.</p>
 </pre></div>
 </div>
 <p><strong>Python source code:</strong> <a class="reference download internal" href="../../_downloads/plot_forest_importances.py" download=""><code class="xref download docutils literal"><span class="pre">plot_forest_importances.py</span></code></a></p>
-<div class="highlight-default"><div class="highlight"><pre><span class="nb">print</span><span class="p">(</span><span class="n">__doc__</span><span class="p">)</span>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">__doc__</span><span class="p">)</span>
 
 <span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
 <span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
@@ -196,7 +196,7 @@ remaining are not.</p>
 <span class="kn">from</span> <span class="nn">sklearn.datasets</span> <span class="k">import</span> <a href="../../modules/generated/sklearn.datasets.make_classification.html#sklearn.datasets.make_classification"><span class="n">make_classification</span></a>
 <span class="kn">from</span> <span class="nn">sklearn.ensemble</span> <span class="k">import</span> <a href="../../modules/generated/sklearn.ensemble.ExtraTreesClassifier.html#sklearn.ensemble.ExtraTreesClassifier"><span class="n">ExtraTreesClassifier</span></a>
 
-<span class="c"># Build a classification task using 3 informative features</span>
+<span class="c1"># Build a classification task using 3 informative features</span>
 <span class="n">X</span><span class="p">,</span> <span class="n">y</span> <span class="o">=</span> <a href="../../modules/generated/sklearn.datasets.make_classification.html#sklearn.datasets.make_classification"><span class="n">make_classification</span></a><span class="p">(</span><span class="n">n_samples</span><span class="o">=</span><span class="mi">1000</span><span class="p">,</span>
                            <span class="n">n_features</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span>
                            <span class="n">n_informative</span><span class="o">=</span><span class="mi">3</span><span class="p">,</span>
@@ -204,9 +204,9 @@ remaining are not.</p>
                            <span class="n">n_repeated</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span>
                            <span class="n">n_classes</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span>
                            <span class="n">random_state</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span>
-                           <span class="n">shuffle</span><span class="o">=</span><span class="k">False</span><span class="p">)</span>
+                           <span class="n">shuffle</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
 
-<span class="c"># Build a forest and compute the feature importances</span>
+<span class="c1"># Build a forest and compute the feature importances</span>
 <span class="n">forest</span> <span class="o">=</span> <a href="../../modules/generated/sklearn.ensemble.ExtraTreesClassifier.html#sklearn.ensemble.ExtraTreesClassifier"><span class="n">ExtraTreesClassifier</span></a><span class="p">(</span><span class="n">n_estimators</span><span class="o">=</span><span class="mi">250</span><span class="p">,</span>
                               <span class="n">random_state</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
 
@@ -216,17 +216,17 @@ remaining are not.</p>
              <span class="n">axis</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
 <span class="n">indices</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">argsort</span><span class="p">(</span><span class="n">importances</span><span class="p">)[::</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
 
-<span class="c"># Print the feature ranking</span>
-<span class="nb">print</span><span class="p">(</span><span class="s">&quot;Feature ranking:&quot;</span><span class="p">)</span>
+<span class="c1"># Print the feature ranking</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Feature ranking:&quot;</span><span class="p">)</span>
 
 <span class="k">for</span> <span class="n">f</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">X</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">1</span><span class="p">]):</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s">&quot;%d. feature %d (%f)&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">f</span> <span class="o">+</span> <span class="mi">1</span><span class="p">,</span> <span class="n">indices</span><span class="p">[</span><span class="n">f</span><span class="p">],</span> <span class="n">importances</span><span class="p">[</span><span class="n">indices</span><span class="p">[</span><span class="n">f</span><span class="p">]]))</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="si">%d</span><span class="s2">. feature </span><span class="si">%d</span><span class="s2"> (</span><span class="si">%f</span><span class="s2">)&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">f</span> <span class="o">+</span> <span class="mi">1</span><span class="p">,</span> <span class="n">indices</span><span class="p">[</span><span class="n">f</span><span class="p">],</span> <span class="n">importances</span><span class="p">[</span><span class="n">indices</span><span class="p">[</span><span class="n">f</span><span class="p">]]))</span>
 
-<span class="c"># Plot the feature importances of the forest</span>
+<span class="c1"># Plot the feature importances of the forest</span>
 <a href="http://matplotlib.org/api/figure_api.html#matplotlib.figure"><span class="n">plt</span><span class="o">.</span><span class="n">figure</span></a><span class="p">()</span>
-<a href="http://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.title"><span class="n">plt</span><span class="o">.</span><span class="n">title</span></a><span class="p">(</span><span class="s">&quot;Feature importances&quot;</span><span class="p">)</span>
+<a href="http://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.title"><span class="n">plt</span><span class="o">.</span><span class="n">title</span></a><span class="p">(</span><span class="s2">&quot;Feature importances&quot;</span><span class="p">)</span>
 <a href="http://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.bar"><span class="n">plt</span><span class="o">.</span><span class="n">bar</span></a><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="n">X</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">1</span><span class="p">]),</span> <span class="n">importances</span><span class="p">[</span><span class="n">indices</span><span class="p">],</span>
-       <span class="n">color</span><span class="o">=</span><span class="s">&quot;r&quot;</span><span class="p">,</span> <span class="n">yerr</span><span class="o">=</span><span class="n">std</span><span class="p">[</span><span class="n">indices</span><span class="p">],</span> <span class="n">align</span><span class="o">=</span><span class="s">&quot;center&quot;</span><span class="p">)</span>
+       <span class="n">color</span><span class="o">=</span><span class="s2">&quot;r&quot;</span><span class="p">,</span> <span class="n">yerr</span><span class="o">=</span><span class="n">std</span><span class="p">[</span><span class="n">indices</span><span class="p">],</span> <span class="n">align</span><span class="o">=</span><span class="s2">&quot;center&quot;</span><span class="p">)</span>
 <a href="http://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.xticks"><span class="n">plt</span><span class="o">.</span><span class="n">xticks</span></a><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="n">X</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">1</span><span class="p">]),</span> <span class="n">indices</span><span class="p">)</span>
 <a href="http://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.xlim"><span class="n">plt</span><span class="o">.</span><span class="n">xlim</span></a><span class="p">([</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="n">X</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">1</span><span class="p">]])</span>
 <a href="http://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.show"><span class="n">plt</span><span class="o">.</span><span class="n">show</span></a><span class="p">()</span>

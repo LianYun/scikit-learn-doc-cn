@@ -65,28 +65,28 @@
         </a>
         </p><div class="navbar">
             <ul>
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="../install.html">Installation</a></li>
+                <li><a href="../index.html">主页</a></li>
+                <li><a href="../install.html">安装</a></li>
                 <li class="btn-li"><div class="btn-group">
-              <a href="../documentation.html">Documentation</a>
+              <a href="../documentation.html">文档</a>
               <a class="btn dropdown-toggle" data-toggle="dropdown">
                  <span class="caret"></span>
               </a>
               <ul class="dropdown-menu">
             <li class="link-title">Scikit-learn 0.17 (stable)</li>
-            <li><a href="../tutorial/index.html">Tutorials</a></li>
-            <li><a href="../user_guide.html">User guide</a></li>
+            <li><a href="../tutorial/index.html">入门指南</a></li>
+            <li><a href="../user_guide.html">使用手册</a></li>
             <li><a href="classes.html">API</a></li>
             <li><a href="../faq.html">FAQ</a></li>
-            <li><a href="../developers.html">Contributing</a></li>
+            <li><a href="../developers.html">贡献</a></li>
             <li class="divider"></li>
                 <li><a href="http://scikit-learn.org/dev/documentation.html">Scikit-learn 0.18 (development)</a></li>
                 <li><a href="http://scikit-learn.org/0.16/documentation.html">Scikit-learn 0.16</a></li>
-				<li><a href="../_downloads/user_guide.pdf">PDF documentation</a></li>
+				<li><a href="../_downloads/user_guide.pdf">PDF 文档</a></li>
               </ul>
             </div>
         </li>
-            <li><a href="../auto_examples/index.html">Examples</a></li>
+            <li><a href="../auto_examples/index.html">例子</a></li>
             </ul>
 
             <div class="search_form">
@@ -117,7 +117,7 @@
         accesskey="P">Previous
         <br/>
         <span class="smallrellink">
-        4. Dataset trans...
+        4. Dataset tr...
         </span>
             <span class="hiddenrellink">
             4. Dataset transformations
@@ -134,7 +134,7 @@
         Up
         <br/>
         <span class="smallrellink">
-        4. Dataset trans...
+        4. Dataset tr...
         </span>
             <span class="hiddenrellink">
             4. Dataset transformations
@@ -198,10 +198,10 @@ The last estimator may be any type (transformer, classifier, etc.).</p>
 <p>The <a class="reference internal" href="generated/sklearn.pipeline.Pipeline.html#sklearn.pipeline.Pipeline" title="sklearn.pipeline.Pipeline"><code class="xref py py-class docutils literal"><span class="pre">Pipeline</span></code></a> is build using a list of <code class="docutils literal"><span class="pre">(key,</span> <span class="pre">value)</span></code> pairs, where
 the <code class="docutils literal"><span class="pre">key</span></code> a string containing the name you want to give this step and <code class="docutils literal"><span class="pre">value</span></code>
 is an estimator object:</p>
-<div class="highlight-default"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">sklearn.pipeline</span> <span class="k">import</span> <span class="n">Pipeline</span>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">sklearn.pipeline</span> <span class="k">import</span> <span class="n">Pipeline</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">sklearn.svm</span> <span class="k">import</span> <span class="n">SVC</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">sklearn.decomposition</span> <span class="k">import</span> <span class="n">PCA</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">estimators</span> <span class="o">=</span> <span class="p">[(</span><span class="s">&#39;reduce_dim&#39;</span><span class="p">,</span> <span class="n">PCA</span><span class="p">()),</span> <span class="p">(</span><span class="s">&#39;svm&#39;</span><span class="p">,</span> <span class="n">SVC</span><span class="p">())]</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">estimators</span> <span class="o">=</span> <span class="p">[(</span><span class="s1">&#39;reduce_dim&#39;</span><span class="p">,</span> <span class="n">PCA</span><span class="p">()),</span> <span class="p">(</span><span class="s1">&#39;svm&#39;</span><span class="p">,</span> <span class="n">SVC</span><span class="p">())]</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">clf</span> <span class="o">=</span> <span class="n">Pipeline</span><span class="p">(</span><span class="n">estimators</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">clf</span> 
 <span class="go">Pipeline(steps=[(&#39;reduce_dim&#39;, PCA(copy=True, n_components=None,</span>
@@ -215,7 +215,7 @@ is an estimator object:</p>
 for constructing pipelines;
 it takes a variable number of estimators and returns a pipeline,
 filling in the names automatically:</p>
-<div class="highlight-default"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">sklearn.pipeline</span> <span class="k">import</span> <span class="n">make_pipeline</span>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">sklearn.pipeline</span> <span class="k">import</span> <span class="n">make_pipeline</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">sklearn.naive_bayes</span> <span class="k">import</span> <span class="n">MultinomialNB</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">sklearn.preprocessing</span> <span class="k">import</span> <span class="n">Binarizer</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">make_pipeline</span><span class="p">(</span><span class="n">Binarizer</span><span class="p">(),</span> <span class="n">MultinomialNB</span><span class="p">())</span> 
@@ -226,18 +226,18 @@ filling in the names automatically:</p>
 </pre></div>
 </div>
 <p>The estimators of a pipeline are stored as a list in the <code class="docutils literal"><span class="pre">steps</span></code> attribute:</p>
-<div class="highlight-default"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">clf</span><span class="o">.</span><span class="n">steps</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">clf</span><span class="o">.</span><span class="n">steps</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
 <span class="go">(&#39;reduce_dim&#39;, PCA(copy=True, n_components=None, whiten=False))</span>
 </pre></div>
 </div>
 <p>and as a <code class="docutils literal"><span class="pre">dict</span></code> in <code class="docutils literal"><span class="pre">named_steps</span></code>:</p>
-<div class="highlight-default"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">clf</span><span class="o">.</span><span class="n">named_steps</span><span class="p">[</span><span class="s">&#39;reduce_dim&#39;</span><span class="p">]</span>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">clf</span><span class="o">.</span><span class="n">named_steps</span><span class="p">[</span><span class="s1">&#39;reduce_dim&#39;</span><span class="p">]</span>
 <span class="go">PCA(copy=True, n_components=None, whiten=False)</span>
 </pre></div>
 </div>
 <p>Parameters of the estimators in the pipeline can be accessed using the
 <code class="docutils literal"><span class="pre">&lt;estimator&gt;__&lt;parameter&gt;</span></code> syntax:</p>
-<div class="highlight-default"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">clf</span><span class="o">.</span><span class="n">set_params</span><span class="p">(</span><span class="n">svm__C</span><span class="o">=</span><span class="mi">10</span><span class="p">)</span> 
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">clf</span><span class="o">.</span><span class="n">set_params</span><span class="p">(</span><span class="n">svm__C</span><span class="o">=</span><span class="mi">10</span><span class="p">)</span> 
 <span class="go">Pipeline(steps=[(&#39;reduce_dim&#39;, PCA(copy=True, n_components=None,</span>
 <span class="go">    whiten=False)), (&#39;svm&#39;, SVC(C=10, cache_size=200, class_weight=None,</span>
 <span class="go">    coef0=0.0, decision_function_shape=None, degree=3, gamma=&#39;auto&#39;,</span>
@@ -246,7 +246,7 @@ filling in the names automatically:</p>
 </pre></div>
 </div>
 <p>This is particularly important for doing grid searches:</p>
-<div class="highlight-default"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">sklearn.grid_search</span> <span class="k">import</span> <span class="n">GridSearchCV</span>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">sklearn.grid_search</span> <span class="k">import</span> <span class="n">GridSearchCV</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">params</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">(</span><span class="n">reduce_dim__n_components</span><span class="o">=</span><span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">10</span><span class="p">],</span>
 <span class="gp">... </span>              <span class="n">svm__C</span><span class="o">=</span><span class="p">[</span><span class="mf">0.1</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">100</span><span class="p">])</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">grid_search</span> <span class="o">=</span> <span class="n">GridSearchCV</span><span class="p">(</span><span class="n">clf</span><span class="p">,</span> <span class="n">param_grid</span><span class="o">=</span><span class="n">params</span><span class="p">)</span>
@@ -301,10 +301,10 @@ responsibility.)</p>
 where the <code class="docutils literal"><span class="pre">key</span></code> is the name you want to give to a given transformation
 (an arbitrary string; it only serves as an identifier)
 and <code class="docutils literal"><span class="pre">value</span></code> is an estimator object:</p>
-<div class="highlight-default"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">sklearn.pipeline</span> <span class="k">import</span> <span class="n">FeatureUnion</span>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">sklearn.pipeline</span> <span class="k">import</span> <span class="n">FeatureUnion</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">sklearn.decomposition</span> <span class="k">import</span> <span class="n">PCA</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">sklearn.decomposition</span> <span class="k">import</span> <span class="n">KernelPCA</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">estimators</span> <span class="o">=</span> <span class="p">[(</span><span class="s">&#39;linear_pca&#39;</span><span class="p">,</span> <span class="n">PCA</span><span class="p">()),</span> <span class="p">(</span><span class="s">&#39;kernel_pca&#39;</span><span class="p">,</span> <span class="n">KernelPCA</span><span class="p">())]</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">estimators</span> <span class="o">=</span> <span class="p">[(</span><span class="s1">&#39;linear_pca&#39;</span><span class="p">,</span> <span class="n">PCA</span><span class="p">()),</span> <span class="p">(</span><span class="s1">&#39;kernel_pca&#39;</span><span class="p">,</span> <span class="n">KernelPCA</span><span class="p">())]</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">combined</span> <span class="o">=</span> <span class="n">FeatureUnion</span><span class="p">(</span><span class="n">estimators</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">combined</span> 
 <span class="go">FeatureUnion(n_jobs=1, transformer_list=[(&#39;linear_pca&#39;, PCA(copy=True,</span>

@@ -65,28 +65,28 @@
         </a>
         </p><div class="navbar">
             <ul>
-                <li><a href="../../index.html">Home</a></li>
-                <li><a href="../../install.html">Installation</a></li>
+                <li><a href="../../index.html">主页</a></li>
+                <li><a href="../../install.html">安装</a></li>
                 <li class="btn-li"><div class="btn-group">
-              <a href="../../documentation.html">Documentation</a>
+              <a href="../../documentation.html">文档</a>
               <a class="btn dropdown-toggle" data-toggle="dropdown">
                  <span class="caret"></span>
               </a>
               <ul class="dropdown-menu">
             <li class="link-title">Scikit-learn 0.17 (stable)</li>
-            <li><a href="../../tutorial/index.html">Tutorials</a></li>
-            <li><a href="../../user_guide.html">User guide</a></li>
+            <li><a href="../../tutorial/index.html">入门指南</a></li>
+            <li><a href="../../user_guide.html">使用手册</a></li>
             <li><a href="../../modules/classes.html">API</a></li>
             <li><a href="../../faq.html">FAQ</a></li>
-            <li><a href="../../developers.html">Contributing</a></li>
+            <li><a href="../../developers.html">贡献</a></li>
             <li class="divider"></li>
                 <li><a href="http://scikit-learn.org/dev/documentation.html">Scikit-learn 0.18 (development)</a></li>
                 <li><a href="http://scikit-learn.org/0.16/documentation.html">Scikit-learn 0.16</a></li>
-				<li><a href="../../_downloads/user_guide.pdf">PDF documentation</a></li>
+				<li><a href="../../_downloads/user_guide.pdf">PDF 文档</a></li>
               </ul>
             </div>
         </li>
-            <li><a href="../index.html">Examples</a></li>
+            <li><a href="../index.html">例子</a></li>
             </ul>
 
             <div class="search_form">
@@ -117,7 +117,7 @@
         accesskey="P">Previous
         <br/>
         <span class="smallrellink">
-        Density Estimati...
+        Density Estim...
         </span>
             <span class="hiddenrellink">
             Density Estimation for a mixture of Gaussians
@@ -183,7 +183,7 @@ per cluster than there are dimensions in the data, due to
 regularization properties of the inference algorithm.</p>
 <img alt="../../_images/plot_gmm_001.png" class="align-center" src="../../_images/plot_gmm_001.png" />
 <p><strong>Python source code:</strong> <a class="reference download internal" href="../../_downloads/plot_gmm.py" download=""><code class="xref download docutils literal"><span class="pre">plot_gmm.py</span></code></a></p>
-<div class="highlight-default"><div class="highlight"><pre><span class="kn">import</span> <span class="nn">itertools</span>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">itertools</span>
 
 <span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
 <span class="kn">from</span> <span class="nn">scipy</span> <span class="k">import</span> <span class="n">linalg</span>
@@ -192,43 +192,43 @@ regularization properties of the inference algorithm.</p>
 
 <span class="kn">from</span> <span class="nn">sklearn</span> <span class="k">import</span> <span class="n">mixture</span>
 
-<span class="c"># Number of samples per component</span>
+<span class="c1"># Number of samples per component</span>
 <span class="n">n_samples</span> <span class="o">=</span> <span class="mi">500</span>
 
-<span class="c"># Generate random sample, two components</span>
+<span class="c1"># Generate random sample, two components</span>
 <a href="http://docs.scipy.org/doc/numpy-1.6.0/reference/generated/numpy.random.seed.html#numpy.random.seed"><span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">seed</span></a><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
 <span class="n">C</span> <span class="o">=</span> <a href="http://docs.scipy.org/doc/numpy-1.6.0/reference/generated/numpy.array.html#numpy.array"><span class="n">np</span><span class="o">.</span><span class="n">array</span></a><span class="p">([[</span><span class="mf">0.</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.1</span><span class="p">],</span> <span class="p">[</span><span class="mf">1.7</span><span class="p">,</span> <span class="o">.</span><span class="mi">4</span><span class="p">]])</span>
 <span class="n">X</span> <span class="o">=</span> <a href="http://docs.scipy.org/doc/numpy-1.6.0/reference/generated/numpy.r_.html#numpy.r_"><span class="n">np</span><span class="o">.</span><span class="n">r_</span></a><span class="p">[</span><a href="http://docs.scipy.org/doc/numpy-1.6.0/reference/generated/numpy.dot.html#numpy.dot"><span class="n">np</span><span class="o">.</span><span class="n">dot</span></a><span class="p">(</span><a href="http://docs.scipy.org/doc/numpy-1.6.0/reference/generated/numpy.random.randn.html#numpy.random.randn"><span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">randn</span></a><span class="p">(</span><span class="n">n_samples</span><span class="p">,</span> <span class="mi">2</span><span class="p">),</span> <span class="n">C</span><span class="p">),</span>
           <span class="o">.</span><span class="mi">7</span> <span class="o">*</span> <a href="http://docs.scipy.org/doc/numpy-1.6.0/reference/generated/numpy.random.randn.html#numpy.random.randn"><span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">randn</span></a><span class="p">(</span><span class="n">n_samples</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span> <span class="o">+</span> <a href="http://docs.scipy.org/doc/numpy-1.6.0/reference/generated/numpy.array.html#numpy.array"><span class="n">np</span><span class="o">.</span><span class="n">array</span></a><span class="p">([</span><span class="o">-</span><span class="mi">6</span><span class="p">,</span> <span class="mi">3</span><span class="p">])]</span>
 
-<span class="c"># Fit a mixture of Gaussians with EM using five components</span>
-<span class="n">gmm</span> <span class="o">=</span> <a href="../../modules/generated/sklearn.mixture.GMM.html#sklearn.mixture.GMM"><span class="n">mixture</span><span class="o">.</span><span class="n">GMM</span></a><span class="p">(</span><span class="n">n_components</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span> <span class="n">covariance_type</span><span class="o">=</span><span class="s">&#39;full&#39;</span><span class="p">)</span>
+<span class="c1"># Fit a mixture of Gaussians with EM using five components</span>
+<span class="n">gmm</span> <span class="o">=</span> <a href="../../modules/generated/sklearn.mixture.GMM.html#sklearn.mixture.GMM"><span class="n">mixture</span><span class="o">.</span><span class="n">GMM</span></a><span class="p">(</span><span class="n">n_components</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span> <span class="n">covariance_type</span><span class="o">=</span><span class="s1">&#39;full&#39;</span><span class="p">)</span>
 <span class="n">gmm</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X</span><span class="p">)</span>
 
-<span class="c"># Fit a Dirichlet process mixture of Gaussians using five components</span>
-<span class="n">dpgmm</span> <span class="o">=</span> <a href="../../modules/generated/sklearn.mixture.DPGMM.html#sklearn.mixture.DPGMM"><span class="n">mixture</span><span class="o">.</span><span class="n">DPGMM</span></a><span class="p">(</span><span class="n">n_components</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span> <span class="n">covariance_type</span><span class="o">=</span><span class="s">&#39;full&#39;</span><span class="p">)</span>
+<span class="c1"># Fit a Dirichlet process mixture of Gaussians using five components</span>
+<span class="n">dpgmm</span> <span class="o">=</span> <a href="../../modules/generated/sklearn.mixture.DPGMM.html#sklearn.mixture.DPGMM"><span class="n">mixture</span><span class="o">.</span><span class="n">DPGMM</span></a><span class="p">(</span><span class="n">n_components</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span> <span class="n">covariance_type</span><span class="o">=</span><span class="s1">&#39;full&#39;</span><span class="p">)</span>
 <span class="n">dpgmm</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X</span><span class="p">)</span>
 
-<span class="n">color_iter</span> <span class="o">=</span> <span class="n">itertools</span><span class="o">.</span><span class="n">cycle</span><span class="p">([</span><span class="s">&#39;r&#39;</span><span class="p">,</span> <span class="s">&#39;g&#39;</span><span class="p">,</span> <span class="s">&#39;b&#39;</span><span class="p">,</span> <span class="s">&#39;c&#39;</span><span class="p">,</span> <span class="s">&#39;m&#39;</span><span class="p">])</span>
+<span class="n">color_iter</span> <span class="o">=</span> <span class="n">itertools</span><span class="o">.</span><span class="n">cycle</span><span class="p">([</span><span class="s1">&#39;r&#39;</span><span class="p">,</span> <span class="s1">&#39;g&#39;</span><span class="p">,</span> <span class="s1">&#39;b&#39;</span><span class="p">,</span> <span class="s1">&#39;c&#39;</span><span class="p">,</span> <span class="s1">&#39;m&#39;</span><span class="p">])</span>
 
-<span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="p">(</span><span class="n">clf</span><span class="p">,</span> <span class="n">title</span><span class="p">)</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">([(</span><span class="n">gmm</span><span class="p">,</span> <span class="s">&#39;GMM&#39;</span><span class="p">),</span>
-                                  <span class="p">(</span><span class="n">dpgmm</span><span class="p">,</span> <span class="s">&#39;Dirichlet Process GMM&#39;</span><span class="p">)]):</span>
+<span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="p">(</span><span class="n">clf</span><span class="p">,</span> <span class="n">title</span><span class="p">)</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">([(</span><span class="n">gmm</span><span class="p">,</span> <span class="s1">&#39;GMM&#39;</span><span class="p">),</span>
+                                  <span class="p">(</span><span class="n">dpgmm</span><span class="p">,</span> <span class="s1">&#39;Dirichlet Process GMM&#39;</span><span class="p">)]):</span>
     <span class="n">splot</span> <span class="o">=</span> <a href="http://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.subplot"><span class="n">plt</span><span class="o">.</span><span class="n">subplot</span></a><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span> <span class="o">+</span> <span class="n">i</span><span class="p">)</span>
     <span class="n">Y_</span> <span class="o">=</span> <span class="n">clf</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">X</span><span class="p">)</span>
     <span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="p">(</span><span class="n">mean</span><span class="p">,</span> <span class="n">covar</span><span class="p">,</span> <span class="n">color</span><span class="p">)</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="nb">zip</span><span class="p">(</span>
             <span class="n">clf</span><span class="o">.</span><span class="n">means_</span><span class="p">,</span> <span class="n">clf</span><span class="o">.</span><span class="n">_get_covars</span><span class="p">(),</span> <span class="n">color_iter</span><span class="p">)):</span>
         <span class="n">v</span><span class="p">,</span> <span class="n">w</span> <span class="o">=</span> <a href="http://docs.scipy.org/doc/scipy-0.11.0/reference/generated/scipy.linalg.eigh.html#scipy.linalg.eigh"><span class="n">linalg</span><span class="o">.</span><span class="n">eigh</span></a><span class="p">(</span><span class="n">covar</span><span class="p">)</span>
         <span class="n">u</span> <span class="o">=</span> <span class="n">w</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">/</span> <a href="http://docs.scipy.org/doc/scipy-0.11.0/reference/generated/scipy.linalg.norm.html#scipy.linalg.norm"><span class="n">linalg</span><span class="o">.</span><span class="n">norm</span></a><span class="p">(</span><span class="n">w</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
-        <span class="c"># as the DP will not use every component it has access to</span>
-        <span class="c"># unless it needs it, we shouldn&#39;t plot the redundant</span>
-        <span class="c"># components.</span>
+        <span class="c1"># as the DP will not use every component it has access to</span>
+        <span class="c1"># unless it needs it, we shouldn&#39;t plot the redundant</span>
+        <span class="c1"># components.</span>
         <span class="k">if</span> <span class="ow">not</span> <a href="http://docs.scipy.org/doc/numpy-1.6.0/reference/generated/numpy.any.html#numpy.any"><span class="n">np</span><span class="o">.</span><span class="n">any</span></a><span class="p">(</span><span class="n">Y_</span> <span class="o">==</span> <span class="n">i</span><span class="p">):</span>
             <span class="k">continue</span>
         <a href="http://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.scatter"><span class="n">plt</span><span class="o">.</span><span class="n">scatter</span></a><span class="p">(</span><span class="n">X</span><span class="p">[</span><span class="n">Y_</span> <span class="o">==</span> <span class="n">i</span><span class="p">,</span> <span class="mi">0</span><span class="p">],</span> <span class="n">X</span><span class="p">[</span><span class="n">Y_</span> <span class="o">==</span> <span class="n">i</span><span class="p">,</span> <span class="mi">1</span><span class="p">],</span> <span class="o">.</span><span class="mi">8</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="n">color</span><span class="p">)</span>
 
-        <span class="c"># Plot an ellipse to show the Gaussian component</span>
+        <span class="c1"># Plot an ellipse to show the Gaussian component</span>
         <span class="n">angle</span> <span class="o">=</span> <a href="http://docs.scipy.org/doc/numpy-1.6.0/reference/generated/numpy.arctan.html#numpy.arctan"><span class="n">np</span><span class="o">.</span><span class="n">arctan</span></a><span class="p">(</span><span class="n">u</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">/</span> <span class="n">u</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
-        <span class="n">angle</span> <span class="o">=</span> <span class="mi">180</span> <span class="o">*</span> <span class="n">angle</span> <span class="o">/</span> <span class="n">np</span><span class="o">.</span><span class="n">pi</span>  <span class="c"># convert to degrees</span>
+        <span class="n">angle</span> <span class="o">=</span> <span class="mi">180</span> <span class="o">*</span> <span class="n">angle</span> <span class="o">/</span> <span class="n">np</span><span class="o">.</span><span class="n">pi</span>  <span class="c1"># convert to degrees</span>
         <span class="n">ell</span> <span class="o">=</span> <span class="n">mpl</span><span class="o">.</span><span class="n">patches</span><span class="o">.</span><span class="n">Ellipse</span><span class="p">(</span><span class="n">mean</span><span class="p">,</span> <span class="n">v</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">v</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="mi">180</span> <span class="o">+</span> <span class="n">angle</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="n">color</span><span class="p">)</span>
         <span class="n">ell</span><span class="o">.</span><span class="n">set_clip_box</span><span class="p">(</span><span class="n">splot</span><span class="o">.</span><span class="n">bbox</span><span class="p">)</span>
         <span class="n">ell</span><span class="o">.</span><span class="n">set_alpha</span><span class="p">(</span><span class="mf">0.5</span><span class="p">)</span>

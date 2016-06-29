@@ -65,28 +65,28 @@
         </a>
         </p><div class="navbar">
             <ul>
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="../install.html">Installation</a></li>
+                <li><a href="../index.html">主页</a></li>
+                <li><a href="../install.html">安装</a></li>
                 <li class="btn-li"><div class="btn-group">
-              <a href="../documentation.html">Documentation</a>
+              <a href="../documentation.html">文档</a>
               <a class="btn dropdown-toggle" data-toggle="dropdown">
                  <span class="caret"></span>
               </a>
               <ul class="dropdown-menu">
             <li class="link-title">Scikit-learn 0.17 (stable)</li>
-            <li><a href="../tutorial/index.html">Tutorials</a></li>
-            <li><a href="../user_guide.html">User guide</a></li>
+            <li><a href="../tutorial/index.html">入门指南</a></li>
+            <li><a href="../user_guide.html">使用手册</a></li>
             <li><a href="classes.html">API</a></li>
             <li><a href="../faq.html">FAQ</a></li>
-            <li><a href="../developers.html">Contributing</a></li>
+            <li><a href="../developers.html">贡献</a></li>
             <li class="divider"></li>
                 <li><a href="http://scikit-learn.org/dev/documentation.html">Scikit-learn 0.18 (development)</a></li>
                 <li><a href="http://scikit-learn.org/0.16/documentation.html">Scikit-learn 0.16</a></li>
-				<li><a href="../_downloads/user_guide.pdf">PDF documentation</a></li>
+				<li><a href="../_downloads/user_guide.pdf">PDF 文档</a></li>
               </ul>
             </div>
         </li>
-            <li><a href="../auto_examples/index.html">Examples</a></li>
+            <li><a href="../auto_examples/index.html">例子</a></li>
             </ul>
 
             <div class="search_form">
@@ -117,7 +117,7 @@
         accesskey="P">Previous
         <br/>
         <span class="smallrellink">
-        6. Strategies to...
+        6. Strategies...
         </span>
             <span class="hiddenrellink">
             6. Strategies to scale computationally: bigger data
@@ -266,9 +266,9 @@ max, to be checked depending on the hardware) for the sparse input
 representation to be faster than the dense input representation on a machine
 with many CPUs and an optimized BLAS implementation.</p>
 <p>Here is sample code to test the sparsity of your input:</p>
-<div class="highlight-default"><div class="highlight"><pre><span class="k">def</span> <span class="nf">sparsity_ratio</span><span class="p">(</span><span class="n">X</span><span class="p">):</span>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">sparsity_ratio</span><span class="p">(</span><span class="n">X</span><span class="p">):</span>
     <span class="k">return</span> <span class="mf">1.0</span> <span class="o">-</span> <span class="n">np</span><span class="o">.</span><span class="n">count_nonzero</span><span class="p">(</span><span class="n">X</span><span class="p">)</span> <span class="o">/</span> <span class="nb">float</span><span class="p">(</span><span class="n">X</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">*</span> <span class="n">X</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
-<span class="nb">print</span><span class="p">(</span><span class="s">&quot;input sparsity ratio:&quot;</span><span class="p">,</span> <span class="n">sparsity_ratio</span><span class="p">(</span><span class="n">X</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;input sparsity ratio:&quot;</span><span class="p">,</span> <span class="n">sparsity_ratio</span><span class="p">(</span><span class="n">X</span><span class="p">))</span>
 </pre></div>
 </div>
 <p>As a rule of thumb you can consider that if the sparsity ratio is greater
@@ -372,9 +372,9 @@ BLAS implementation and lead to orders of magnitude speedup over a
 non-optimized BLAS.</p>
 <p>You can display the BLAS / LAPACK implementation used by your NumPy / SciPy /
 scikit-learn install with the following commands:</p>
-<div class="highlight-default"><div class="highlight"><pre><span class="kn">from</span> <span class="nn">numpy.distutils.system_info</span> <span class="k">import</span> <span class="n">get_info</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">get_info</span><span class="p">(</span><span class="s">&#39;blas_opt&#39;</span><span class="p">))</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">get_info</span><span class="p">(</span><span class="s">&#39;lapack_opt&#39;</span><span class="p">))</span>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">numpy.distutils.system_info</span> <span class="k">import</span> <span class="n">get_info</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">get_info</span><span class="p">(</span><span class="s1">&#39;blas_opt&#39;</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">get_info</span><span class="p">(</span><span class="s1">&#39;lapack_opt&#39;</span><span class="p">))</span>
 </pre></div>
 </div>
 <dl class="docutils">
@@ -416,7 +416,7 @@ In this context it means that we want to control the model sparsity (i.e. the
 number of non-zero coordinates in the model vectors). It is generally a good
 idea to combine model sparsity with sparse input data representation.</p>
 <p>Here is sample code that illustrates the use of the <code class="docutils literal"><span class="pre">sparsify()</span></code> method:</p>
-<div class="highlight-default"><div class="highlight"><pre><span class="n">clf</span> <span class="o">=</span> <span class="n">SGDRegressor</span><span class="p">(</span><span class="n">penalty</span><span class="o">=</span><span class="s">&#39;elasticnet&#39;</span><span class="p">,</span> <span class="n">l1_ratio</span><span class="o">=</span><span class="mf">0.25</span><span class="p">)</span>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">clf</span> <span class="o">=</span> <span class="n">SGDRegressor</span><span class="p">(</span><span class="n">penalty</span><span class="o">=</span><span class="s1">&#39;elasticnet&#39;</span><span class="p">,</span> <span class="n">l1_ratio</span><span class="o">=</span><span class="mf">0.25</span><span class="p">)</span>
 <span class="n">clf</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X_train</span><span class="p">,</span> <span class="n">y_train</span><span class="p">)</span><span class="o">.</span><span class="n">sparsify</span><span class="p">()</span>
 <span class="n">clf</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">X_test</span><span class="p">)</span>
 </pre></div>

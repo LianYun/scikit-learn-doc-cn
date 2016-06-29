@@ -65,28 +65,28 @@
         </a>
         </p><div class="navbar">
             <ul>
-                <li><a href="../../index.html">Home</a></li>
-                <li><a href="../../install.html">Installation</a></li>
+                <li><a href="../../index.html">主页</a></li>
+                <li><a href="../../install.html">安装</a></li>
                 <li class="btn-li"><div class="btn-group">
-              <a href="../../documentation.html">Documentation</a>
+              <a href="../../documentation.html">文档</a>
               <a class="btn dropdown-toggle" data-toggle="dropdown">
                  <span class="caret"></span>
               </a>
               <ul class="dropdown-menu">
             <li class="link-title">Scikit-learn 0.17 (stable)</li>
-            <li><a href="../../tutorial/index.html">Tutorials</a></li>
-            <li><a href="../../user_guide.html">User guide</a></li>
+            <li><a href="../../tutorial/index.html">入门指南</a></li>
+            <li><a href="../../user_guide.html">使用手册</a></li>
             <li><a href="../../modules/classes.html">API</a></li>
             <li><a href="../../faq.html">FAQ</a></li>
-            <li><a href="../../developers.html">Contributing</a></li>
+            <li><a href="../../developers.html">贡献</a></li>
             <li class="divider"></li>
                 <li><a href="http://scikit-learn.org/dev/documentation.html">Scikit-learn 0.18 (development)</a></li>
                 <li><a href="http://scikit-learn.org/0.16/documentation.html">Scikit-learn 0.16</a></li>
-				<li><a href="../../_downloads/user_guide.pdf">PDF documentation</a></li>
+				<li><a href="../../_downloads/user_guide.pdf">PDF 文档</a></li>
               </ul>
             </div>
         </li>
-            <li><a href="../index.html">Examples</a></li>
+            <li><a href="../index.html">例子</a></li>
             </ul>
 
             <div class="search_form">
@@ -117,7 +117,7 @@
         accesskey="P">Previous
         <br/>
         <span class="smallrellink">
-        A demo of K-Mean...
+        A demo of K-M...
         </span>
             <span class="hiddenrellink">
             A demo of K-Means clustering on the handwritten digits data
@@ -186,7 +186,7 @@ value of k on various overlapping sub-samples of the dataset.</p>
 </li>
 </ul>
 <p><strong>Script output</strong>:</p>
-<div class="highlight-default"><div class="highlight"><pre><span class="n">Computing</span> <span class="n">adjusted_rand_score</span> <span class="k">for</span> <span class="mi">10</span> <span class="n">values</span> <span class="n">of</span> <span class="n">n_clusters</span> <span class="ow">and</span> <span class="n">n_samples</span><span class="o">=</span><span class="mi">100</span>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">Computing</span> <span class="n">adjusted_rand_score</span> <span class="k">for</span> <span class="mi">10</span> <span class="n">values</span> <span class="n">of</span> <span class="n">n_clusters</span> <span class="ow">and</span> <span class="n">n_samples</span><span class="o">=</span><span class="mi">100</span>
 <span class="n">done</span> <span class="ow">in</span> <span class="mf">0.123</span><span class="n">s</span>
 <span class="n">Computing</span> <span class="n">v_measure_score</span> <span class="k">for</span> <span class="mi">10</span> <span class="n">values</span> <span class="n">of</span> <span class="n">n_clusters</span> <span class="ow">and</span> <span class="n">n_samples</span><span class="o">=</span><span class="mi">100</span>
 <span class="n">done</span> <span class="ow">in</span> <span class="mf">0.029</span><span class="n">s</span>
@@ -205,10 +205,10 @@ value of k on various overlapping sub-samples of the dataset.</p>
 </pre></div>
 </div>
 <p><strong>Python source code:</strong> <a class="reference download internal" href="../../_downloads/plot_adjusted_for_chance_measures.py" download=""><code class="xref download docutils literal"><span class="pre">plot_adjusted_for_chance_measures.py</span></code></a></p>
-<div class="highlight-default"><div class="highlight"><pre><span class="nb">print</span><span class="p">(</span><span class="n">__doc__</span><span class="p">)</span>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">__doc__</span><span class="p">)</span>
 
-<span class="c"># Author: Olivier Grisel &lt;olivier.grisel@ensta.org&gt;</span>
-<span class="c"># License: BSD 3 clause</span>
+<span class="c1"># Author: Olivier Grisel &lt;olivier.grisel@ensta.org&gt;</span>
+<span class="c1"># License: BSD 3 clause</span>
 
 <span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
 <span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
@@ -217,7 +217,7 @@ value of k on various overlapping sub-samples of the dataset.</p>
 
 
 <span class="k">def</span> <span class="nf">uniform_labelings_scores</span><span class="p">(</span><span class="n">score_func</span><span class="p">,</span> <span class="n">n_samples</span><span class="p">,</span> <span class="n">n_clusters_range</span><span class="p">,</span>
-                             <span class="n">fixed_n_classes</span><span class="o">=</span><span class="k">None</span><span class="p">,</span> <span class="n">n_runs</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span> <span class="n">seed</span><span class="o">=</span><span class="mi">42</span><span class="p">):</span>
+                             <span class="n">fixed_n_classes</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">n_runs</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span> <span class="n">seed</span><span class="o">=</span><span class="mi">42</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Compute score for 2 random uniform cluster labelings.</span>
 
 <span class="sd">    Both random labelings have the same number of clusters for each value</span>
@@ -229,13 +229,13 @@ value of k on various overlapping sub-samples of the dataset.</p>
     <span class="n">random_labels</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">RandomState</span><span class="p">(</span><span class="n">seed</span><span class="p">)</span><span class="o">.</span><span class="n">random_integers</span>
     <span class="n">scores</span> <span class="o">=</span> <a href="http://docs.scipy.org/doc/numpy-1.6.0/reference/generated/numpy.zeros.html#numpy.zeros"><span class="n">np</span><span class="o">.</span><span class="n">zeros</span></a><span class="p">((</span><span class="nb">len</span><span class="p">(</span><span class="n">n_clusters_range</span><span class="p">),</span> <span class="n">n_runs</span><span class="p">))</span>
 
-    <span class="k">if</span> <span class="n">fixed_n_classes</span> <span class="ow">is</span> <span class="ow">not</span> <span class="k">None</span><span class="p">:</span>
+    <span class="k">if</span> <span class="n">fixed_n_classes</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
         <span class="n">labels_a</span> <span class="o">=</span> <span class="n">random_labels</span><span class="p">(</span><span class="n">low</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">high</span><span class="o">=</span><span class="n">fixed_n_classes</span> <span class="o">-</span> <span class="mi">1</span><span class="p">,</span>
                                  <span class="n">size</span><span class="o">=</span><span class="n">n_samples</span><span class="p">)</span>
 
     <span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">k</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">n_clusters_range</span><span class="p">):</span>
         <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n_runs</span><span class="p">):</span>
-            <span class="k">if</span> <span class="n">fixed_n_classes</span> <span class="ow">is</span> <span class="k">None</span><span class="p">:</span>
+            <span class="k">if</span> <span class="n">fixed_n_classes</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
                 <span class="n">labels_a</span> <span class="o">=</span> <span class="n">random_labels</span><span class="p">(</span><span class="n">low</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">high</span><span class="o">=</span><span class="n">k</span> <span class="o">-</span> <span class="mi">1</span><span class="p">,</span> <span class="n">size</span><span class="o">=</span><span class="n">n_samples</span><span class="p">)</span>
             <span class="n">labels_b</span> <span class="o">=</span> <span class="n">random_labels</span><span class="p">(</span><span class="n">low</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">high</span><span class="o">=</span><span class="n">k</span> <span class="o">-</span> <span class="mi">1</span><span class="p">,</span> <span class="n">size</span><span class="o">=</span><span class="n">n_samples</span><span class="p">)</span>
             <span class="n">scores</span><span class="p">[</span><span class="n">i</span><span class="p">,</span> <span class="n">j</span><span class="p">]</span> <span class="o">=</span> <span class="n">score_func</span><span class="p">(</span><span class="n">labels_a</span><span class="p">,</span> <span class="n">labels_b</span><span class="p">)</span>
@@ -248,7 +248,7 @@ value of k on various overlapping sub-samples of the dataset.</p>
     <a href="../../modules/generated/sklearn.metrics.mutual_info_score.html#sklearn.metrics.mutual_info_score"><span class="n">metrics</span><span class="o">.</span><span class="n">mutual_info_score</span></a><span class="p">,</span>
 <span class="p">]</span>
 
-<span class="c"># 2 independent random clusterings with equal cluster number</span>
+<span class="c1"># 2 independent random clusterings with equal cluster number</span>
 
 <span class="n">n_samples</span> <span class="o">=</span> <span class="mi">100</span>
 <span class="n">n_clusters_range</span> <span class="o">=</span> <a href="http://docs.scipy.org/doc/numpy-1.6.0/reference/generated/numpy.linspace.html#numpy.linspace"><span class="n">np</span><span class="o">.</span><span class="n">linspace</span></a><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="n">n_samples</span><span class="p">,</span> <span class="mi">10</span><span class="p">)</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">int</span><span class="p">)</span>
@@ -258,26 +258,26 @@ value of k on various overlapping sub-samples of the dataset.</p>
 <span class="n">plots</span> <span class="o">=</span> <span class="p">[]</span>
 <span class="n">names</span> <span class="o">=</span> <span class="p">[]</span>
 <span class="k">for</span> <span class="n">score_func</span> <span class="ow">in</span> <span class="n">score_funcs</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s">&quot;Computing %s for %d values of n_clusters and n_samples=%d&quot;</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Computing </span><span class="si">%s</span><span class="s2"> for </span><span class="si">%d</span><span class="s2"> values of n_clusters and n_samples=</span><span class="si">%d</span><span class="s2">&quot;</span>
           <span class="o">%</span> <span class="p">(</span><span class="n">score_func</span><span class="o">.</span><span class="n">__name__</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">n_clusters_range</span><span class="p">),</span> <span class="n">n_samples</span><span class="p">))</span>
 
     <span class="n">t0</span> <span class="o">=</span> <span class="n">time</span><span class="p">()</span>
     <span class="n">scores</span> <span class="o">=</span> <span class="n">uniform_labelings_scores</span><span class="p">(</span><span class="n">score_func</span><span class="p">,</span> <span class="n">n_samples</span><span class="p">,</span> <span class="n">n_clusters_range</span><span class="p">)</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s">&quot;done in %0.3fs&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">time</span><span class="p">()</span> <span class="o">-</span> <span class="n">t0</span><span class="p">))</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;done in </span><span class="si">%0.3f</span><span class="s2">s&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">time</span><span class="p">()</span> <span class="o">-</span> <span class="n">t0</span><span class="p">))</span>
     <span class="n">plots</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><a href="http://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.errorbar"><span class="n">plt</span><span class="o">.</span><span class="n">errorbar</span></a><span class="p">(</span>
         <span class="n">n_clusters_range</span><span class="p">,</span> <a href="http://docs.scipy.org/doc/numpy-1.6.0/reference/generated/numpy.median.html#numpy.median"><span class="n">np</span><span class="o">.</span><span class="n">median</span></a><span class="p">(</span><span class="n">scores</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">),</span> <span class="n">scores</span><span class="o">.</span><span class="n">std</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">))[</span><span class="mi">0</span><span class="p">])</span>
     <span class="n">names</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">score_func</span><span class="o">.</span><span class="n">__name__</span><span class="p">)</span>
 
-<a href="http://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.title"><span class="n">plt</span><span class="o">.</span><span class="n">title</span></a><span class="p">(</span><span class="s">&quot;Clustering measures for 2 random uniform labelings</span><span class="se">\n</span><span class="s">&quot;</span>
-          <span class="s">&quot;with equal number of clusters&quot;</span><span class="p">)</span>
-<a href="http://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.xlabel"><span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span></a><span class="p">(</span><span class="s">&#39;Number of clusters (Number of samples is fixed to %d)&#39;</span> <span class="o">%</span> <span class="n">n_samples</span><span class="p">)</span>
-<a href="http://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.ylabel"><span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span></a><span class="p">(</span><span class="s">&#39;Score value&#39;</span><span class="p">)</span>
+<a href="http://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.title"><span class="n">plt</span><span class="o">.</span><span class="n">title</span></a><span class="p">(</span><span class="s2">&quot;Clustering measures for 2 random uniform labelings</span><span class="se">\n</span><span class="s2">&quot;</span>
+          <span class="s2">&quot;with equal number of clusters&quot;</span><span class="p">)</span>
+<a href="http://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.xlabel"><span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span></a><span class="p">(</span><span class="s1">&#39;Number of clusters (Number of samples is fixed to </span><span class="si">%d</span><span class="s1">)&#39;</span> <span class="o">%</span> <span class="n">n_samples</span><span class="p">)</span>
+<a href="http://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.ylabel"><span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span></a><span class="p">(</span><span class="s1">&#39;Score value&#39;</span><span class="p">)</span>
 <a href="http://matplotlib.org/api/legend_api.html#matplotlib.legend"><span class="n">plt</span><span class="o">.</span><span class="n">legend</span></a><span class="p">(</span><span class="n">plots</span><span class="p">,</span> <span class="n">names</span><span class="p">)</span>
 <a href="http://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.ylim"><span class="n">plt</span><span class="o">.</span><span class="n">ylim</span></a><span class="p">(</span><span class="n">ymin</span><span class="o">=-</span><span class="mf">0.05</span><span class="p">,</span> <span class="n">ymax</span><span class="o">=</span><span class="mf">1.05</span><span class="p">)</span>
 
 
-<span class="c"># Random labeling with varying n_clusters against ground class labels</span>
-<span class="c"># with fixed number of clusters</span>
+<span class="c1"># Random labeling with varying n_clusters against ground class labels</span>
+<span class="c1"># with fixed number of clusters</span>
 
 <span class="n">n_samples</span> <span class="o">=</span> <span class="mi">1000</span>
 <span class="n">n_clusters_range</span> <span class="o">=</span> <a href="http://docs.scipy.org/doc/numpy-1.6.0/reference/generated/numpy.linspace.html#numpy.linspace"><span class="n">np</span><span class="o">.</span><span class="n">linspace</span></a><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">100</span><span class="p">,</span> <span class="mi">10</span><span class="p">)</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">int</span><span class="p">)</span>
@@ -288,21 +288,21 @@ value of k on various overlapping sub-samples of the dataset.</p>
 <span class="n">plots</span> <span class="o">=</span> <span class="p">[]</span>
 <span class="n">names</span> <span class="o">=</span> <span class="p">[]</span>
 <span class="k">for</span> <span class="n">score_func</span> <span class="ow">in</span> <span class="n">score_funcs</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s">&quot;Computing %s for %d values of n_clusters and n_samples=%d&quot;</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Computing </span><span class="si">%s</span><span class="s2"> for </span><span class="si">%d</span><span class="s2"> values of n_clusters and n_samples=</span><span class="si">%d</span><span class="s2">&quot;</span>
           <span class="o">%</span> <span class="p">(</span><span class="n">score_func</span><span class="o">.</span><span class="n">__name__</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">n_clusters_range</span><span class="p">),</span> <span class="n">n_samples</span><span class="p">))</span>
 
     <span class="n">t0</span> <span class="o">=</span> <span class="n">time</span><span class="p">()</span>
     <span class="n">scores</span> <span class="o">=</span> <span class="n">uniform_labelings_scores</span><span class="p">(</span><span class="n">score_func</span><span class="p">,</span> <span class="n">n_samples</span><span class="p">,</span> <span class="n">n_clusters_range</span><span class="p">,</span>
                                       <span class="n">fixed_n_classes</span><span class="o">=</span><span class="n">n_classes</span><span class="p">)</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s">&quot;done in %0.3fs&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">time</span><span class="p">()</span> <span class="o">-</span> <span class="n">t0</span><span class="p">))</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;done in </span><span class="si">%0.3f</span><span class="s2">s&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">time</span><span class="p">()</span> <span class="o">-</span> <span class="n">t0</span><span class="p">))</span>
     <span class="n">plots</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><a href="http://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.errorbar"><span class="n">plt</span><span class="o">.</span><span class="n">errorbar</span></a><span class="p">(</span>
         <span class="n">n_clusters_range</span><span class="p">,</span> <span class="n">scores</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">),</span> <span class="n">scores</span><span class="o">.</span><span class="n">std</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">))[</span><span class="mi">0</span><span class="p">])</span>
     <span class="n">names</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">score_func</span><span class="o">.</span><span class="n">__name__</span><span class="p">)</span>
 
-<a href="http://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.title"><span class="n">plt</span><span class="o">.</span><span class="n">title</span></a><span class="p">(</span><span class="s">&quot;Clustering measures for random uniform labeling</span><span class="se">\n</span><span class="s">&quot;</span>
-          <span class="s">&quot;against reference assignment with %d classes&quot;</span> <span class="o">%</span> <span class="n">n_classes</span><span class="p">)</span>
-<a href="http://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.xlabel"><span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span></a><span class="p">(</span><span class="s">&#39;Number of clusters (Number of samples is fixed to %d)&#39;</span> <span class="o">%</span> <span class="n">n_samples</span><span class="p">)</span>
-<a href="http://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.ylabel"><span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span></a><span class="p">(</span><span class="s">&#39;Score value&#39;</span><span class="p">)</span>
+<a href="http://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.title"><span class="n">plt</span><span class="o">.</span><span class="n">title</span></a><span class="p">(</span><span class="s2">&quot;Clustering measures for random uniform labeling</span><span class="se">\n</span><span class="s2">&quot;</span>
+          <span class="s2">&quot;against reference assignment with </span><span class="si">%d</span><span class="s2"> classes&quot;</span> <span class="o">%</span> <span class="n">n_classes</span><span class="p">)</span>
+<a href="http://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.xlabel"><span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span></a><span class="p">(</span><span class="s1">&#39;Number of clusters (Number of samples is fixed to </span><span class="si">%d</span><span class="s1">)&#39;</span> <span class="o">%</span> <span class="n">n_samples</span><span class="p">)</span>
+<a href="http://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.ylabel"><span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span></a><span class="p">(</span><span class="s1">&#39;Score value&#39;</span><span class="p">)</span>
 <a href="http://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.ylim"><span class="n">plt</span><span class="o">.</span><span class="n">ylim</span></a><span class="p">(</span><span class="n">ymin</span><span class="o">=-</span><span class="mf">0.05</span><span class="p">,</span> <span class="n">ymax</span><span class="o">=</span><span class="mf">1.05</span><span class="p">)</span>
 <a href="http://matplotlib.org/api/legend_api.html#matplotlib.legend"><span class="n">plt</span><span class="o">.</span><span class="n">legend</span></a><span class="p">(</span><span class="n">plots</span><span class="p">,</span> <span class="n">names</span><span class="p">)</span>
 <a href="http://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.show"><span class="n">plt</span><span class="o">.</span><span class="n">show</span></a><span class="p">()</span>

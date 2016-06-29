@@ -65,28 +65,28 @@
         </a>
         </p><div class="navbar">
             <ul>
-                <li><a href="../../index.html">Home</a></li>
-                <li><a href="../../install.html">Installation</a></li>
+                <li><a href="../../index.html">主页</a></li>
+                <li><a href="../../install.html">安装</a></li>
                 <li class="btn-li"><div class="btn-group">
-              <a href="../../documentation.html">Documentation</a>
+              <a href="../../documentation.html">文档</a>
               <a class="btn dropdown-toggle" data-toggle="dropdown">
                  <span class="caret"></span>
               </a>
               <ul class="dropdown-menu">
             <li class="link-title">Scikit-learn 0.17 (stable)</li>
-            <li><a href="../../tutorial/index.html">Tutorials</a></li>
-            <li><a href="../../user_guide.html">User guide</a></li>
+            <li><a href="../../tutorial/index.html">入门指南</a></li>
+            <li><a href="../../user_guide.html">使用手册</a></li>
             <li><a href="../../modules/classes.html">API</a></li>
             <li><a href="../../faq.html">FAQ</a></li>
-            <li><a href="../../developers.html">Contributing</a></li>
+            <li><a href="../../developers.html">贡献</a></li>
             <li class="divider"></li>
                 <li><a href="http://scikit-learn.org/dev/documentation.html">Scikit-learn 0.18 (development)</a></li>
                 <li><a href="http://scikit-learn.org/0.16/documentation.html">Scikit-learn 0.16</a></li>
-				<li><a href="../../_downloads/user_guide.pdf">PDF documentation</a></li>
+				<li><a href="../../_downloads/user_guide.pdf">PDF 文档</a></li>
               </ul>
             </div>
         </li>
-            <li><a href="../index.html">Examples</a></li>
+            <li><a href="../index.html">例子</a></li>
             </ul>
 
             <div class="search_form">
@@ -117,7 +117,7 @@
         accesskey="P">Previous
         <br/>
         <span class="smallrellink">
-        Model selection ...
+        Model selecti...
         </span>
             <span class="hiddenrellink">
             Model selection with Probabilistic PCA and Factor Analysis (FA)
@@ -192,7 +192,7 @@ matrix decomposition (dimension reduction) methods from the module
 </li>
 </ul>
 <p><strong>Script output</strong>:</p>
-<div class="highlight-default"><div class="highlight"><pre><span class="n">Dataset</span> <span class="n">consists</span> <span class="n">of</span> <span class="mi">400</span> <span class="n">faces</span>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">Dataset</span> <span class="n">consists</span> <span class="n">of</span> <span class="mi">400</span> <span class="n">faces</span>
 <span class="n">Extracting</span> <span class="n">the</span> <span class="n">top</span> <span class="mi">6</span> <span class="n">Eigenfaces</span> <span class="o">-</span> <span class="n">RandomizedPCA</span><span class="o">...</span>
 <span class="n">done</span> <span class="ow">in</span> <span class="mf">0.129</span><span class="n">s</span>
 <span class="n">Extracting</span> <span class="n">the</span> <span class="n">top</span> <span class="mi">6</span> <span class="n">Non</span><span class="o">-</span><span class="n">negative</span> <span class="n">components</span> <span class="o">-</span> <span class="n">NMF</span><span class="o">...</span>
@@ -210,10 +210,10 @@ matrix decomposition (dimension reduction) methods from the module
 </pre></div>
 </div>
 <p><strong>Python source code:</strong> <a class="reference download internal" href="../../_downloads/plot_faces_decomposition.py" download=""><code class="xref download docutils literal"><span class="pre">plot_faces_decomposition.py</span></code></a></p>
-<div class="highlight-default"><div class="highlight"><pre><span class="nb">print</span><span class="p">(</span><span class="n">__doc__</span><span class="p">)</span>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">__doc__</span><span class="p">)</span>
 
-<span class="c"># Authors: Vlad Niculae, Alexandre Gramfort</span>
-<span class="c"># License: BSD 3 clause</span>
+<span class="c1"># Authors: Vlad Niculae, Alexandre Gramfort</span>
+<span class="c1"># License: BSD 3 clause</span>
 
 <span class="kn">import</span> <span class="nn">logging</span>
 <span class="kn">from</span> <span class="nn">time</span> <span class="k">import</span> <span class="n">time</span>
@@ -225,31 +225,31 @@ matrix decomposition (dimension reduction) methods from the module
 <span class="kn">from</span> <span class="nn">sklearn.cluster</span> <span class="k">import</span> <a href="../../modules/generated/sklearn.cluster.MiniBatchKMeans.html#sklearn.cluster.MiniBatchKMeans"><span class="n">MiniBatchKMeans</span></a>
 <span class="kn">from</span> <span class="nn">sklearn</span> <span class="k">import</span> <span class="n">decomposition</span>
 
-<span class="c"># Display progress logs on stdout</span>
+<span class="c1"># Display progress logs on stdout</span>
 <span class="n">logging</span><span class="o">.</span><span class="n">basicConfig</span><span class="p">(</span><span class="n">level</span><span class="o">=</span><span class="n">logging</span><span class="o">.</span><span class="n">INFO</span><span class="p">,</span>
-                    <span class="nb">format</span><span class="o">=</span><span class="s">&#39;%(asctime)s %(levelname)s %(message)s&#39;</span><span class="p">)</span>
+                    <span class="nb">format</span><span class="o">=</span><span class="s1">&#39;</span><span class="si">%(asctime)s</span><span class="s1"> </span><span class="si">%(levelname)s</span><span class="s1"> </span><span class="si">%(message)s</span><span class="s1">&#39;</span><span class="p">)</span>
 <span class="n">n_row</span><span class="p">,</span> <span class="n">n_col</span> <span class="o">=</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span>
 <span class="n">n_components</span> <span class="o">=</span> <span class="n">n_row</span> <span class="o">*</span> <span class="n">n_col</span>
 <span class="n">image_shape</span> <span class="o">=</span> <span class="p">(</span><span class="mi">64</span><span class="p">,</span> <span class="mi">64</span><span class="p">)</span>
 <span class="n">rng</span> <span class="o">=</span> <span class="n">RandomState</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
 
-<span class="c">###############################################################################</span>
-<span class="c"># Load faces data</span>
-<span class="n">dataset</span> <span class="o">=</span> <a href="../../modules/generated/sklearn.datasets.fetch_olivetti_faces.html#sklearn.datasets.fetch_olivetti_faces"><span class="n">fetch_olivetti_faces</span></a><span class="p">(</span><span class="n">shuffle</span><span class="o">=</span><span class="k">True</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="n">rng</span><span class="p">)</span>
+<span class="c1">###############################################################################</span>
+<span class="c1"># Load faces data</span>
+<span class="n">dataset</span> <span class="o">=</span> <a href="../../modules/generated/sklearn.datasets.fetch_olivetti_faces.html#sklearn.datasets.fetch_olivetti_faces"><span class="n">fetch_olivetti_faces</span></a><span class="p">(</span><span class="n">shuffle</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="n">rng</span><span class="p">)</span>
 <span class="n">faces</span> <span class="o">=</span> <span class="n">dataset</span><span class="o">.</span><span class="n">data</span>
 
 <span class="n">n_samples</span><span class="p">,</span> <span class="n">n_features</span> <span class="o">=</span> <span class="n">faces</span><span class="o">.</span><span class="n">shape</span>
 
-<span class="c"># global centering</span>
+<span class="c1"># global centering</span>
 <span class="n">faces_centered</span> <span class="o">=</span> <span class="n">faces</span> <span class="o">-</span> <span class="n">faces</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
 
-<span class="c"># local centering</span>
+<span class="c1"># local centering</span>
 <span class="n">faces_centered</span> <span class="o">-=</span> <span class="n">faces_centered</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span><span class="o">.</span><span class="n">reshape</span><span class="p">(</span><span class="n">n_samples</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">)</span>
 
-<span class="nb">print</span><span class="p">(</span><span class="s">&quot;Dataset consists of %d faces&quot;</span> <span class="o">%</span> <span class="n">n_samples</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Dataset consists of </span><span class="si">%d</span><span class="s2"> faces&quot;</span> <span class="o">%</span> <span class="n">n_samples</span><span class="p">)</span>
 
 
-<span class="c">###############################################################################</span>
+<span class="c1">###############################################################################</span>
 <span class="k">def</span> <span class="nf">plot_gallery</span><span class="p">(</span><span class="n">title</span><span class="p">,</span> <span class="n">images</span><span class="p">,</span> <span class="n">n_col</span><span class="o">=</span><span class="n">n_col</span><span class="p">,</span> <span class="n">n_row</span><span class="o">=</span><span class="n">n_row</span><span class="p">):</span>
     <a href="http://matplotlib.org/api/figure_api.html#matplotlib.figure"><span class="n">plt</span><span class="o">.</span><span class="n">figure</span></a><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mf">2.</span> <span class="o">*</span> <span class="n">n_col</span><span class="p">,</span> <span class="mf">2.26</span> <span class="o">*</span> <span class="n">n_row</span><span class="p">))</span>
     <a href="http://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.suptitle"><span class="n">plt</span><span class="o">.</span><span class="n">suptitle</span></a><span class="p">(</span><span class="n">title</span><span class="p">,</span> <span class="n">size</span><span class="o">=</span><span class="mi">16</span><span class="p">)</span>
@@ -257,77 +257,77 @@ matrix decomposition (dimension reduction) methods from the module
         <a href="http://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.subplot"><span class="n">plt</span><span class="o">.</span><span class="n">subplot</span></a><span class="p">(</span><span class="n">n_row</span><span class="p">,</span> <span class="n">n_col</span><span class="p">,</span> <span class="n">i</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span>
         <span class="n">vmax</span> <span class="o">=</span> <span class="nb">max</span><span class="p">(</span><span class="n">comp</span><span class="o">.</span><span class="n">max</span><span class="p">(),</span> <span class="o">-</span><span class="n">comp</span><span class="o">.</span><span class="n">min</span><span class="p">())</span>
         <a href="http://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.imshow"><span class="n">plt</span><span class="o">.</span><span class="n">imshow</span></a><span class="p">(</span><span class="n">comp</span><span class="o">.</span><span class="n">reshape</span><span class="p">(</span><span class="n">image_shape</span><span class="p">),</span> <span class="n">cmap</span><span class="o">=</span><span class="n">plt</span><span class="o">.</span><span class="n">cm</span><span class="o">.</span><span class="n">gray</span><span class="p">,</span>
-                   <span class="n">interpolation</span><span class="o">=</span><span class="s">&#39;nearest&#39;</span><span class="p">,</span>
+                   <span class="n">interpolation</span><span class="o">=</span><span class="s1">&#39;nearest&#39;</span><span class="p">,</span>
                    <span class="n">vmin</span><span class="o">=-</span><span class="n">vmax</span><span class="p">,</span> <span class="n">vmax</span><span class="o">=</span><span class="n">vmax</span><span class="p">)</span>
         <a href="http://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.xticks"><span class="n">plt</span><span class="o">.</span><span class="n">xticks</span></a><span class="p">(())</span>
         <a href="http://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.yticks"><span class="n">plt</span><span class="o">.</span><span class="n">yticks</span></a><span class="p">(())</span>
     <a href="http://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.subplots_adjust"><span class="n">plt</span><span class="o">.</span><span class="n">subplots_adjust</span></a><span class="p">(</span><span class="mf">0.01</span><span class="p">,</span> <span class="mf">0.05</span><span class="p">,</span> <span class="mf">0.99</span><span class="p">,</span> <span class="mf">0.93</span><span class="p">,</span> <span class="mf">0.04</span><span class="p">,</span> <span class="mf">0.</span><span class="p">)</span>
 
-<span class="c">###############################################################################</span>
-<span class="c"># List of the different estimators, whether to center and transpose the</span>
-<span class="c"># problem, and whether the transformer uses the clustering API.</span>
+<span class="c1">###############################################################################</span>
+<span class="c1"># List of the different estimators, whether to center and transpose the</span>
+<span class="c1"># problem, and whether the transformer uses the clustering API.</span>
 <span class="n">estimators</span> <span class="o">=</span> <span class="p">[</span>
-    <span class="p">(</span><span class="s">&#39;Eigenfaces - RandomizedPCA&#39;</span><span class="p">,</span>
-     <a href="../../modules/generated/sklearn.decomposition.RandomizedPCA.html#sklearn.decomposition.RandomizedPCA"><span class="n">decomposition</span><span class="o">.</span><span class="n">RandomizedPCA</span></a><span class="p">(</span><span class="n">n_components</span><span class="o">=</span><span class="n">n_components</span><span class="p">,</span> <span class="n">whiten</span><span class="o">=</span><span class="k">True</span><span class="p">),</span>
-     <span class="k">True</span><span class="p">),</span>
+    <span class="p">(</span><span class="s1">&#39;Eigenfaces - RandomizedPCA&#39;</span><span class="p">,</span>
+     <a href="../../modules/generated/sklearn.decomposition.RandomizedPCA.html#sklearn.decomposition.RandomizedPCA"><span class="n">decomposition</span><span class="o">.</span><span class="n">RandomizedPCA</span></a><span class="p">(</span><span class="n">n_components</span><span class="o">=</span><span class="n">n_components</span><span class="p">,</span> <span class="n">whiten</span><span class="o">=</span><span class="kc">True</span><span class="p">),</span>
+     <span class="kc">True</span><span class="p">),</span>
 
-    <span class="p">(</span><span class="s">&#39;Non-negative components - NMF&#39;</span><span class="p">,</span>
-     <a href="../../modules/generated/sklearn.decomposition.NMF.html#sklearn.decomposition.NMF"><span class="n">decomposition</span><span class="o">.</span><span class="n">NMF</span></a><span class="p">(</span><span class="n">n_components</span><span class="o">=</span><span class="n">n_components</span><span class="p">,</span> <span class="n">init</span><span class="o">=</span><span class="s">&#39;nndsvda&#39;</span><span class="p">,</span> <span class="n">tol</span><span class="o">=</span><span class="mi">5</span><span class="n">e</span><span class="o">-</span><span class="mi">3</span><span class="p">),</span>
-     <span class="k">False</span><span class="p">),</span>
+    <span class="p">(</span><span class="s1">&#39;Non-negative components - NMF&#39;</span><span class="p">,</span>
+     <a href="../../modules/generated/sklearn.decomposition.NMF.html#sklearn.decomposition.NMF"><span class="n">decomposition</span><span class="o">.</span><span class="n">NMF</span></a><span class="p">(</span><span class="n">n_components</span><span class="o">=</span><span class="n">n_components</span><span class="p">,</span> <span class="n">init</span><span class="o">=</span><span class="s1">&#39;nndsvda&#39;</span><span class="p">,</span> <span class="n">tol</span><span class="o">=</span><span class="mi">5</span><span class="n">e</span><span class="o">-</span><span class="mi">3</span><span class="p">),</span>
+     <span class="kc">False</span><span class="p">),</span>
 
-    <span class="p">(</span><span class="s">&#39;Independent components - FastICA&#39;</span><span class="p">,</span>
-     <a href="../../modules/generated/sklearn.decomposition.FastICA.html#sklearn.decomposition.FastICA"><span class="n">decomposition</span><span class="o">.</span><span class="n">FastICA</span></a><span class="p">(</span><span class="n">n_components</span><span class="o">=</span><span class="n">n_components</span><span class="p">,</span> <span class="n">whiten</span><span class="o">=</span><span class="k">True</span><span class="p">),</span>
-     <span class="k">True</span><span class="p">),</span>
+    <span class="p">(</span><span class="s1">&#39;Independent components - FastICA&#39;</span><span class="p">,</span>
+     <a href="../../modules/generated/sklearn.decomposition.FastICA.html#sklearn.decomposition.FastICA"><span class="n">decomposition</span><span class="o">.</span><span class="n">FastICA</span></a><span class="p">(</span><span class="n">n_components</span><span class="o">=</span><span class="n">n_components</span><span class="p">,</span> <span class="n">whiten</span><span class="o">=</span><span class="kc">True</span><span class="p">),</span>
+     <span class="kc">True</span><span class="p">),</span>
 
-    <span class="p">(</span><span class="s">&#39;Sparse comp. - MiniBatchSparsePCA&#39;</span><span class="p">,</span>
+    <span class="p">(</span><span class="s1">&#39;Sparse comp. - MiniBatchSparsePCA&#39;</span><span class="p">,</span>
      <a href="../../modules/generated/sklearn.decomposition.MiniBatchSparsePCA.html#sklearn.decomposition.MiniBatchSparsePCA"><span class="n">decomposition</span><span class="o">.</span><span class="n">MiniBatchSparsePCA</span></a><span class="p">(</span><span class="n">n_components</span><span class="o">=</span><span class="n">n_components</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.8</span><span class="p">,</span>
                                       <span class="n">n_iter</span><span class="o">=</span><span class="mi">100</span><span class="p">,</span> <span class="n">batch_size</span><span class="o">=</span><span class="mi">3</span><span class="p">,</span>
                                       <span class="n">random_state</span><span class="o">=</span><span class="n">rng</span><span class="p">),</span>
-     <span class="k">True</span><span class="p">),</span>
+     <span class="kc">True</span><span class="p">),</span>
 
-    <span class="p">(</span><span class="s">&#39;MiniBatchDictionaryLearning&#39;</span><span class="p">,</span>
+    <span class="p">(</span><span class="s1">&#39;MiniBatchDictionaryLearning&#39;</span><span class="p">,</span>
         <a href="../../modules/generated/sklearn.decomposition.MiniBatchDictionaryLearning.html#sklearn.decomposition.MiniBatchDictionaryLearning"><span class="n">decomposition</span><span class="o">.</span><span class="n">MiniBatchDictionaryLearning</span></a><span class="p">(</span><span class="n">n_components</span><span class="o">=</span><span class="mi">15</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.1</span><span class="p">,</span>
                                                   <span class="n">n_iter</span><span class="o">=</span><span class="mi">50</span><span class="p">,</span> <span class="n">batch_size</span><span class="o">=</span><span class="mi">3</span><span class="p">,</span>
                                                   <span class="n">random_state</span><span class="o">=</span><span class="n">rng</span><span class="p">),</span>
-     <span class="k">True</span><span class="p">),</span>
+     <span class="kc">True</span><span class="p">),</span>
 
-    <span class="p">(</span><span class="s">&#39;Cluster centers - MiniBatchKMeans&#39;</span><span class="p">,</span>
+    <span class="p">(</span><span class="s1">&#39;Cluster centers - MiniBatchKMeans&#39;</span><span class="p">,</span>
         <a href="../../modules/generated/sklearn.cluster.MiniBatchKMeans.html#sklearn.cluster.MiniBatchKMeans"><span class="n">MiniBatchKMeans</span></a><span class="p">(</span><span class="n">n_clusters</span><span class="o">=</span><span class="n">n_components</span><span class="p">,</span> <span class="n">tol</span><span class="o">=</span><span class="mi">1</span><span class="n">e</span><span class="o">-</span><span class="mi">3</span><span class="p">,</span> <span class="n">batch_size</span><span class="o">=</span><span class="mi">20</span><span class="p">,</span>
                         <span class="n">max_iter</span><span class="o">=</span><span class="mi">50</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="n">rng</span><span class="p">),</span>
-     <span class="k">True</span><span class="p">),</span>
+     <span class="kc">True</span><span class="p">),</span>
 
-    <span class="p">(</span><span class="s">&#39;Factor Analysis components - FA&#39;</span><span class="p">,</span>
+    <span class="p">(</span><span class="s1">&#39;Factor Analysis components - FA&#39;</span><span class="p">,</span>
      <a href="../../modules/generated/sklearn.decomposition.FactorAnalysis.html#sklearn.decomposition.FactorAnalysis"><span class="n">decomposition</span><span class="o">.</span><span class="n">FactorAnalysis</span></a><span class="p">(</span><span class="n">n_components</span><span class="o">=</span><span class="n">n_components</span><span class="p">,</span> <span class="n">max_iter</span><span class="o">=</span><span class="mi">2</span><span class="p">),</span>
-     <span class="k">True</span><span class="p">),</span>
+     <span class="kc">True</span><span class="p">),</span>
 <span class="p">]</span>
 
 
-<span class="c">###############################################################################</span>
-<span class="c"># Plot a sample of the input data</span>
+<span class="c1">###############################################################################</span>
+<span class="c1"># Plot a sample of the input data</span>
 
-<span class="n">plot_gallery</span><span class="p">(</span><span class="s">&quot;First centered Olivetti faces&quot;</span><span class="p">,</span> <span class="n">faces_centered</span><span class="p">[:</span><span class="n">n_components</span><span class="p">])</span>
+<span class="n">plot_gallery</span><span class="p">(</span><span class="s2">&quot;First centered Olivetti faces&quot;</span><span class="p">,</span> <span class="n">faces_centered</span><span class="p">[:</span><span class="n">n_components</span><span class="p">])</span>
 
-<span class="c">###############################################################################</span>
-<span class="c"># Do the estimation and plot it</span>
+<span class="c1">###############################################################################</span>
+<span class="c1"># Do the estimation and plot it</span>
 
 <span class="k">for</span> <span class="n">name</span><span class="p">,</span> <span class="n">estimator</span><span class="p">,</span> <span class="n">center</span> <span class="ow">in</span> <span class="n">estimators</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s">&quot;Extracting the top %d %s...&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">n_components</span><span class="p">,</span> <span class="n">name</span><span class="p">))</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Extracting the top </span><span class="si">%d</span><span class="s2"> </span><span class="si">%s</span><span class="s2">...&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">n_components</span><span class="p">,</span> <span class="n">name</span><span class="p">))</span>
     <span class="n">t0</span> <span class="o">=</span> <span class="n">time</span><span class="p">()</span>
     <span class="n">data</span> <span class="o">=</span> <span class="n">faces</span>
     <span class="k">if</span> <span class="n">center</span><span class="p">:</span>
         <span class="n">data</span> <span class="o">=</span> <span class="n">faces_centered</span>
     <span class="n">estimator</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
     <span class="n">train_time</span> <span class="o">=</span> <span class="p">(</span><span class="n">time</span><span class="p">()</span> <span class="o">-</span> <span class="n">t0</span><span class="p">)</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s">&quot;done in %0.3fs&quot;</span> <span class="o">%</span> <span class="n">train_time</span><span class="p">)</span>
-    <span class="k">if</span> <span class="nb">hasattr</span><span class="p">(</span><span class="n">estimator</span><span class="p">,</span> <span class="s">&#39;cluster_centers_&#39;</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;done in </span><span class="si">%0.3f</span><span class="s2">s&quot;</span> <span class="o">%</span> <span class="n">train_time</span><span class="p">)</span>
+    <span class="k">if</span> <span class="nb">hasattr</span><span class="p">(</span><span class="n">estimator</span><span class="p">,</span> <span class="s1">&#39;cluster_centers_&#39;</span><span class="p">):</span>
         <span class="n">components_</span> <span class="o">=</span> <span class="n">estimator</span><span class="o">.</span><span class="n">cluster_centers_</span>
     <span class="k">else</span><span class="p">:</span>
         <span class="n">components_</span> <span class="o">=</span> <span class="n">estimator</span><span class="o">.</span><span class="n">components_</span>
-    <span class="k">if</span> <span class="nb">hasattr</span><span class="p">(</span><span class="n">estimator</span><span class="p">,</span> <span class="s">&#39;noise_variance_&#39;</span><span class="p">):</span>
-        <span class="n">plot_gallery</span><span class="p">(</span><span class="s">&quot;Pixelwise variance&quot;</span><span class="p">,</span>
+    <span class="k">if</span> <span class="nb">hasattr</span><span class="p">(</span><span class="n">estimator</span><span class="p">,</span> <span class="s1">&#39;noise_variance_&#39;</span><span class="p">):</span>
+        <span class="n">plot_gallery</span><span class="p">(</span><span class="s2">&quot;Pixelwise variance&quot;</span><span class="p">,</span>
                      <span class="n">estimator</span><span class="o">.</span><span class="n">noise_variance_</span><span class="o">.</span><span class="n">reshape</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">),</span> <span class="n">n_col</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span>
                      <span class="n">n_row</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
-    <span class="n">plot_gallery</span><span class="p">(</span><span class="s">&#39;%s - Train time %.1fs&#39;</span> <span class="o">%</span> <span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="n">train_time</span><span class="p">),</span>
+    <span class="n">plot_gallery</span><span class="p">(</span><span class="s1">&#39;</span><span class="si">%s</span><span class="s1"> - Train time </span><span class="si">%.1f</span><span class="s1">s&#39;</span> <span class="o">%</span> <span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="n">train_time</span><span class="p">),</span>
                  <span class="n">components_</span><span class="p">[:</span><span class="n">n_components</span><span class="p">])</span>
 
 <a href="http://matplotlib.org/api/pyplot_api.html#matplotlib.pyplot.show"><span class="n">plt</span><span class="o">.</span><span class="n">show</span></a><span class="p">()</span>

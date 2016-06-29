@@ -65,28 +65,28 @@
         </a>
         </p><div class="navbar">
             <ul>
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="../install.html">Installation</a></li>
+                <li><a href="../index.html">主页</a></li>
+                <li><a href="../install.html">安装</a></li>
                 <li class="btn-li"><div class="btn-group">
-              <a href="../documentation.html">Documentation</a>
+              <a href="../documentation.html">文档</a>
               <a class="btn dropdown-toggle" data-toggle="dropdown">
                  <span class="caret"></span>
               </a>
               <ul class="dropdown-menu">
             <li class="link-title">Scikit-learn 0.17 (stable)</li>
-            <li><a href="../tutorial/index.html">Tutorials</a></li>
-            <li><a href="../user_guide.html">User guide</a></li>
+            <li><a href="../tutorial/index.html">入门指南</a></li>
+            <li><a href="../user_guide.html">使用手册</a></li>
             <li><a href="../modules/classes.html">API</a></li>
             <li><a href="../faq.html">FAQ</a></li>
-            <li><a href="../developers.html">Contributing</a></li>
+            <li><a href="../developers.html">贡献</a></li>
             <li class="divider"></li>
                 <li><a href="http://scikit-learn.org/dev/documentation.html">Scikit-learn 0.18 (development)</a></li>
                 <li><a href="http://scikit-learn.org/0.16/documentation.html">Scikit-learn 0.16</a></li>
-				<li><a href="../_downloads/user_guide.pdf">PDF documentation</a></li>
+				<li><a href="../_downloads/user_guide.pdf">PDF 文档</a></li>
               </ul>
             </div>
         </li>
-            <li><a href="index.html">Examples</a></li>
+            <li><a href="index.html">例子</a></li>
             </ul>
 
             <div class="search_form">
@@ -117,7 +117,7 @@
         accesskey="P">Previous
         <br/>
         <span class="smallrellink">
-        Comparison of ke...
+        Comparison of...
         </span>
             <span class="hiddenrellink">
             Comparison of kernel ridge regression and SVR
@@ -185,10 +185,10 @@ set of features.</p>
 <p>The choice of features is not particularly helpful, but serves to illustrate
 the technique.</p>
 <p><strong>Python source code:</strong> <a class="reference download internal" href="../_downloads/hetero_feature_union.py" download=""><code class="xref download docutils literal"><span class="pre">hetero_feature_union.py</span></code></a></p>
-<div class="highlight-default"><div class="highlight"><pre>
-<span class="c"># Author: Matt Terry &lt;matt.terry@gmail.com&gt;</span>
-<span class="c">#</span>
-<span class="c"># License: BSD 3 clause</span>
+<div class="highlight-default"><div class="highlight"><pre><span></span>
+<span class="c1"># Author: Matt Terry &lt;matt.terry@gmail.com&gt;</span>
+<span class="c1">#</span>
+<span class="c1"># License: BSD 3 clause</span>
 <span class="kn">from</span> <span class="nn">__future__</span> <span class="k">import</span> <span class="n">print_function</span>
 
 <span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
@@ -238,7 +238,7 @@ the technique.</p>
     <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">key</span><span class="p">):</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">key</span> <span class="o">=</span> <span class="n">key</span>
 
-    <span class="k">def</span> <span class="nf">fit</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="k">None</span><span class="p">):</span>
+    <span class="k">def</span> <span class="nf">fit</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
         <span class="k">return</span> <span class="bp">self</span>
 
     <span class="k">def</span> <span class="nf">transform</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">data_dict</span><span class="p">):</span>
@@ -248,12 +248,12 @@ the technique.</p>
 <span class="k">class</span> <span class="nc">TextStats</span><span class="p">(</span><a href="../modules/generated/sklearn.base.BaseEstimator.html#sklearn.base.BaseEstimator"><span class="n">BaseEstimator</span></a><span class="p">,</span> <a href="../modules/generated/sklearn.base.TransformerMixin.html#sklearn.base.TransformerMixin"><span class="n">TransformerMixin</span></a><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Extract features from each document for DictVectorizer&quot;&quot;&quot;</span>
 
-    <span class="k">def</span> <span class="nf">fit</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="k">None</span><span class="p">):</span>
+    <span class="k">def</span> <span class="nf">fit</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
         <span class="k">return</span> <span class="bp">self</span>
 
     <span class="k">def</span> <span class="nf">transform</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">posts</span><span class="p">):</span>
-        <span class="k">return</span> <span class="p">[{</span><span class="s">&#39;length&#39;</span><span class="p">:</span> <span class="nb">len</span><span class="p">(</span><span class="n">text</span><span class="p">),</span>
-                 <span class="s">&#39;num_sentences&#39;</span><span class="p">:</span> <span class="n">text</span><span class="o">.</span><span class="n">count</span><span class="p">(</span><span class="s">&#39;.&#39;</span><span class="p">)}</span>
+        <span class="k">return</span> <span class="p">[{</span><span class="s1">&#39;length&#39;</span><span class="p">:</span> <span class="nb">len</span><span class="p">(</span><span class="n">text</span><span class="p">),</span>
+                 <span class="s1">&#39;num_sentences&#39;</span><span class="p">:</span> <span class="n">text</span><span class="o">.</span><span class="n">count</span><span class="p">(</span><span class="s1">&#39;.&#39;</span><span class="p">)}</span>
                 <span class="k">for</span> <span class="n">text</span> <span class="ow">in</span> <span class="n">posts</span><span class="p">]</span>
 
 
@@ -263,79 +263,79 @@ the technique.</p>
 <span class="sd">    Takes a sequence of strings and produces a dict of sequences.  Keys are</span>
 <span class="sd">    `subject` and `body`.</span>
 <span class="sd">    &quot;&quot;&quot;</span>
-    <span class="k">def</span> <span class="nf">fit</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="k">None</span><span class="p">):</span>
+    <span class="k">def</span> <span class="nf">fit</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
         <span class="k">return</span> <span class="bp">self</span>
 
     <span class="k">def</span> <span class="nf">transform</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">posts</span><span class="p">):</span>
         <span class="n">features</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">recarray</span><span class="p">(</span><span class="n">shape</span><span class="o">=</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">posts</span><span class="p">),),</span>
-                               <span class="n">dtype</span><span class="o">=</span><span class="p">[(</span><span class="s">&#39;subject&#39;</span><span class="p">,</span> <span class="nb">object</span><span class="p">),</span> <span class="p">(</span><span class="s">&#39;body&#39;</span><span class="p">,</span> <span class="nb">object</span><span class="p">)])</span>
+                               <span class="n">dtype</span><span class="o">=</span><span class="p">[(</span><span class="s1">&#39;subject&#39;</span><span class="p">,</span> <span class="nb">object</span><span class="p">),</span> <span class="p">(</span><span class="s1">&#39;body&#39;</span><span class="p">,</span> <span class="nb">object</span><span class="p">)])</span>
         <span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">text</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">posts</span><span class="p">):</span>
-            <span class="n">headers</span><span class="p">,</span> <span class="n">_</span><span class="p">,</span> <span class="n">bod</span> <span class="o">=</span> <span class="n">text</span><span class="o">.</span><span class="n">partition</span><span class="p">(</span><span class="s">&#39;</span><span class="se">\n\n</span><span class="s">&#39;</span><span class="p">)</span>
+            <span class="n">headers</span><span class="p">,</span> <span class="n">_</span><span class="p">,</span> <span class="n">bod</span> <span class="o">=</span> <span class="n">text</span><span class="o">.</span><span class="n">partition</span><span class="p">(</span><span class="s1">&#39;</span><span class="se">\n\n</span><span class="s1">&#39;</span><span class="p">)</span>
             <span class="n">bod</span> <span class="o">=</span> <span class="n">strip_newsgroup_footer</span><span class="p">(</span><span class="n">bod</span><span class="p">)</span>
             <span class="n">bod</span> <span class="o">=</span> <span class="n">strip_newsgroup_quoting</span><span class="p">(</span><span class="n">bod</span><span class="p">)</span>
-            <span class="n">features</span><span class="p">[</span><span class="s">&#39;body&#39;</span><span class="p">][</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="n">bod</span>
+            <span class="n">features</span><span class="p">[</span><span class="s1">&#39;body&#39;</span><span class="p">][</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="n">bod</span>
 
-            <span class="n">prefix</span> <span class="o">=</span> <span class="s">&#39;Subject:&#39;</span>
-            <span class="n">sub</span> <span class="o">=</span> <span class="s">&#39;&#39;</span>
-            <span class="k">for</span> <span class="n">line</span> <span class="ow">in</span> <span class="n">headers</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s">&#39;</span><span class="se">\n</span><span class="s">&#39;</span><span class="p">):</span>
+            <span class="n">prefix</span> <span class="o">=</span> <span class="s1">&#39;Subject:&#39;</span>
+            <span class="n">sub</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span>
+            <span class="k">for</span> <span class="n">line</span> <span class="ow">in</span> <span class="n">headers</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">):</span>
                 <span class="k">if</span> <span class="n">line</span><span class="o">.</span><span class="n">startswith</span><span class="p">(</span><span class="n">prefix</span><span class="p">):</span>
                     <span class="n">sub</span> <span class="o">=</span> <span class="n">line</span><span class="p">[</span><span class="nb">len</span><span class="p">(</span><span class="n">prefix</span><span class="p">):]</span>
                     <span class="k">break</span>
-            <span class="n">features</span><span class="p">[</span><span class="s">&#39;subject&#39;</span><span class="p">][</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="n">sub</span>
+            <span class="n">features</span><span class="p">[</span><span class="s1">&#39;subject&#39;</span><span class="p">][</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="n">sub</span>
 
         <span class="k">return</span> <span class="n">features</span>
 
 
 <span class="n">pipeline</span> <span class="o">=</span> <a href="../modules/generated/sklearn.pipeline.Pipeline.html#sklearn.pipeline.Pipeline"><span class="n">Pipeline</span></a><span class="p">([</span>
-    <span class="c"># Extract the subject &amp; body</span>
-    <span class="p">(</span><span class="s">&#39;subjectbody&#39;</span><span class="p">,</span> <span class="n">SubjectBodyExtractor</span><span class="p">()),</span>
+    <span class="c1"># Extract the subject &amp; body</span>
+    <span class="p">(</span><span class="s1">&#39;subjectbody&#39;</span><span class="p">,</span> <span class="n">SubjectBodyExtractor</span><span class="p">()),</span>
 
-    <span class="c"># Use FeatureUnion to combine the features from subject and body</span>
-    <span class="p">(</span><span class="s">&#39;union&#39;</span><span class="p">,</span> <a href="../modules/generated/sklearn.pipeline.FeatureUnion.html#sklearn.pipeline.FeatureUnion"><span class="n">FeatureUnion</span></a><span class="p">(</span>
+    <span class="c1"># Use FeatureUnion to combine the features from subject and body</span>
+    <span class="p">(</span><span class="s1">&#39;union&#39;</span><span class="p">,</span> <a href="../modules/generated/sklearn.pipeline.FeatureUnion.html#sklearn.pipeline.FeatureUnion"><span class="n">FeatureUnion</span></a><span class="p">(</span>
         <span class="n">transformer_list</span><span class="o">=</span><span class="p">[</span>
 
-            <span class="c"># Pipeline for pulling features from the post&#39;s subject line</span>
-            <span class="p">(</span><span class="s">&#39;subject&#39;</span><span class="p">,</span> <a href="../modules/generated/sklearn.pipeline.Pipeline.html#sklearn.pipeline.Pipeline"><span class="n">Pipeline</span></a><span class="p">([</span>
-                <span class="p">(</span><span class="s">&#39;selector&#39;</span><span class="p">,</span> <span class="n">ItemSelector</span><span class="p">(</span><span class="n">key</span><span class="o">=</span><span class="s">&#39;subject&#39;</span><span class="p">)),</span>
-                <span class="p">(</span><span class="s">&#39;tfidf&#39;</span><span class="p">,</span> <a href="../modules/generated/sklearn.feature_extraction.text.TfidfVectorizer.html#sklearn.feature_extraction.text.TfidfVectorizer"><span class="n">TfidfVectorizer</span></a><span class="p">(</span><span class="n">min_df</span><span class="o">=</span><span class="mi">50</span><span class="p">)),</span>
+            <span class="c1"># Pipeline for pulling features from the post&#39;s subject line</span>
+            <span class="p">(</span><span class="s1">&#39;subject&#39;</span><span class="p">,</span> <a href="../modules/generated/sklearn.pipeline.Pipeline.html#sklearn.pipeline.Pipeline"><span class="n">Pipeline</span></a><span class="p">([</span>
+                <span class="p">(</span><span class="s1">&#39;selector&#39;</span><span class="p">,</span> <span class="n">ItemSelector</span><span class="p">(</span><span class="n">key</span><span class="o">=</span><span class="s1">&#39;subject&#39;</span><span class="p">)),</span>
+                <span class="p">(</span><span class="s1">&#39;tfidf&#39;</span><span class="p">,</span> <a href="../modules/generated/sklearn.feature_extraction.text.TfidfVectorizer.html#sklearn.feature_extraction.text.TfidfVectorizer"><span class="n">TfidfVectorizer</span></a><span class="p">(</span><span class="n">min_df</span><span class="o">=</span><span class="mi">50</span><span class="p">)),</span>
             <span class="p">])),</span>
 
-            <span class="c"># Pipeline for standard bag-of-words model for body</span>
-            <span class="p">(</span><span class="s">&#39;body_bow&#39;</span><span class="p">,</span> <a href="../modules/generated/sklearn.pipeline.Pipeline.html#sklearn.pipeline.Pipeline"><span class="n">Pipeline</span></a><span class="p">([</span>
-                <span class="p">(</span><span class="s">&#39;selector&#39;</span><span class="p">,</span> <span class="n">ItemSelector</span><span class="p">(</span><span class="n">key</span><span class="o">=</span><span class="s">&#39;body&#39;</span><span class="p">)),</span>
-                <span class="p">(</span><span class="s">&#39;tfidf&#39;</span><span class="p">,</span> <a href="../modules/generated/sklearn.feature_extraction.text.TfidfVectorizer.html#sklearn.feature_extraction.text.TfidfVectorizer"><span class="n">TfidfVectorizer</span></a><span class="p">()),</span>
-                <span class="p">(</span><span class="s">&#39;best&#39;</span><span class="p">,</span> <a href="../modules/generated/sklearn.decomposition.TruncatedSVD.html#sklearn.decomposition.TruncatedSVD"><span class="n">TruncatedSVD</span></a><span class="p">(</span><span class="n">n_components</span><span class="o">=</span><span class="mi">50</span><span class="p">)),</span>
+            <span class="c1"># Pipeline for standard bag-of-words model for body</span>
+            <span class="p">(</span><span class="s1">&#39;body_bow&#39;</span><span class="p">,</span> <a href="../modules/generated/sklearn.pipeline.Pipeline.html#sklearn.pipeline.Pipeline"><span class="n">Pipeline</span></a><span class="p">([</span>
+                <span class="p">(</span><span class="s1">&#39;selector&#39;</span><span class="p">,</span> <span class="n">ItemSelector</span><span class="p">(</span><span class="n">key</span><span class="o">=</span><span class="s1">&#39;body&#39;</span><span class="p">)),</span>
+                <span class="p">(</span><span class="s1">&#39;tfidf&#39;</span><span class="p">,</span> <a href="../modules/generated/sklearn.feature_extraction.text.TfidfVectorizer.html#sklearn.feature_extraction.text.TfidfVectorizer"><span class="n">TfidfVectorizer</span></a><span class="p">()),</span>
+                <span class="p">(</span><span class="s1">&#39;best&#39;</span><span class="p">,</span> <a href="../modules/generated/sklearn.decomposition.TruncatedSVD.html#sklearn.decomposition.TruncatedSVD"><span class="n">TruncatedSVD</span></a><span class="p">(</span><span class="n">n_components</span><span class="o">=</span><span class="mi">50</span><span class="p">)),</span>
             <span class="p">])),</span>
 
-            <span class="c"># Pipeline for pulling ad hoc features from post&#39;s body</span>
-            <span class="p">(</span><span class="s">&#39;body_stats&#39;</span><span class="p">,</span> <a href="../modules/generated/sklearn.pipeline.Pipeline.html#sklearn.pipeline.Pipeline"><span class="n">Pipeline</span></a><span class="p">([</span>
-                <span class="p">(</span><span class="s">&#39;selector&#39;</span><span class="p">,</span> <span class="n">ItemSelector</span><span class="p">(</span><span class="n">key</span><span class="o">=</span><span class="s">&#39;body&#39;</span><span class="p">)),</span>
-                <span class="p">(</span><span class="s">&#39;stats&#39;</span><span class="p">,</span> <span class="n">TextStats</span><span class="p">()),</span>  <span class="c"># returns a list of dicts</span>
-                <span class="p">(</span><span class="s">&#39;vect&#39;</span><span class="p">,</span> <a href="../modules/generated/sklearn.feature_extraction.DictVectorizer.html#sklearn.feature_extraction.DictVectorizer"><span class="n">DictVectorizer</span></a><span class="p">()),</span>  <span class="c"># list of dicts -&gt; feature matrix</span>
+            <span class="c1"># Pipeline for pulling ad hoc features from post&#39;s body</span>
+            <span class="p">(</span><span class="s1">&#39;body_stats&#39;</span><span class="p">,</span> <a href="../modules/generated/sklearn.pipeline.Pipeline.html#sklearn.pipeline.Pipeline"><span class="n">Pipeline</span></a><span class="p">([</span>
+                <span class="p">(</span><span class="s1">&#39;selector&#39;</span><span class="p">,</span> <span class="n">ItemSelector</span><span class="p">(</span><span class="n">key</span><span class="o">=</span><span class="s1">&#39;body&#39;</span><span class="p">)),</span>
+                <span class="p">(</span><span class="s1">&#39;stats&#39;</span><span class="p">,</span> <span class="n">TextStats</span><span class="p">()),</span>  <span class="c1"># returns a list of dicts</span>
+                <span class="p">(</span><span class="s1">&#39;vect&#39;</span><span class="p">,</span> <a href="../modules/generated/sklearn.feature_extraction.DictVectorizer.html#sklearn.feature_extraction.DictVectorizer"><span class="n">DictVectorizer</span></a><span class="p">()),</span>  <span class="c1"># list of dicts -&gt; feature matrix</span>
             <span class="p">])),</span>
 
         <span class="p">],</span>
 
-        <span class="c"># weight components in FeatureUnion</span>
+        <span class="c1"># weight components in FeatureUnion</span>
         <span class="n">transformer_weights</span><span class="o">=</span><span class="p">{</span>
-            <span class="s">&#39;subject&#39;</span><span class="p">:</span> <span class="mf">0.8</span><span class="p">,</span>
-            <span class="s">&#39;body_bow&#39;</span><span class="p">:</span> <span class="mf">0.5</span><span class="p">,</span>
-            <span class="s">&#39;body_stats&#39;</span><span class="p">:</span> <span class="mf">1.0</span><span class="p">,</span>
+            <span class="s1">&#39;subject&#39;</span><span class="p">:</span> <span class="mf">0.8</span><span class="p">,</span>
+            <span class="s1">&#39;body_bow&#39;</span><span class="p">:</span> <span class="mf">0.5</span><span class="p">,</span>
+            <span class="s1">&#39;body_stats&#39;</span><span class="p">:</span> <span class="mf">1.0</span><span class="p">,</span>
         <span class="p">},</span>
     <span class="p">)),</span>
 
-    <span class="c"># Use a SVC classifier on the combined features</span>
-    <span class="p">(</span><span class="s">&#39;svc&#39;</span><span class="p">,</span> <a href="../modules/generated/sklearn.svm.SVC.html#sklearn.svm.SVC"><span class="n">SVC</span></a><span class="p">(</span><span class="n">kernel</span><span class="o">=</span><span class="s">&#39;linear&#39;</span><span class="p">)),</span>
+    <span class="c1"># Use a SVC classifier on the combined features</span>
+    <span class="p">(</span><span class="s1">&#39;svc&#39;</span><span class="p">,</span> <a href="../modules/generated/sklearn.svm.SVC.html#sklearn.svm.SVC"><span class="n">SVC</span></a><span class="p">(</span><span class="n">kernel</span><span class="o">=</span><span class="s1">&#39;linear&#39;</span><span class="p">)),</span>
 <span class="p">])</span>
 
-<span class="c"># limit the list of categories to make running this exmaple faster.</span>
-<span class="n">categories</span> <span class="o">=</span> <span class="p">[</span><span class="s">&#39;alt.atheism&#39;</span><span class="p">,</span> <span class="s">&#39;talk.religion.misc&#39;</span><span class="p">]</span>
+<span class="c1"># limit the list of categories to make running this exmaple faster.</span>
+<span class="n">categories</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;alt.atheism&#39;</span><span class="p">,</span> <span class="s1">&#39;talk.religion.misc&#39;</span><span class="p">]</span>
 <span class="n">train</span> <span class="o">=</span> <a href="../modules/generated/sklearn.datasets.fetch_20newsgroups.html#sklearn.datasets.fetch_20newsgroups"><span class="n">fetch_20newsgroups</span></a><span class="p">(</span><span class="n">random_state</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span>
-                           <span class="n">subset</span><span class="o">=</span><span class="s">&#39;train&#39;</span><span class="p">,</span>
+                           <span class="n">subset</span><span class="o">=</span><span class="s1">&#39;train&#39;</span><span class="p">,</span>
                            <span class="n">categories</span><span class="o">=</span><span class="n">categories</span><span class="p">,</span>
                            <span class="p">)</span>
 <span class="n">test</span> <span class="o">=</span> <a href="../modules/generated/sklearn.datasets.fetch_20newsgroups.html#sklearn.datasets.fetch_20newsgroups"><span class="n">fetch_20newsgroups</span></a><span class="p">(</span><span class="n">random_state</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span>
-                          <span class="n">subset</span><span class="o">=</span><span class="s">&#39;test&#39;</span><span class="p">,</span>
+                          <span class="n">subset</span><span class="o">=</span><span class="s1">&#39;test&#39;</span><span class="p">,</span>
                           <span class="n">categories</span><span class="o">=</span><span class="n">categories</span><span class="p">,</span>
                           <span class="p">)</span>
 
