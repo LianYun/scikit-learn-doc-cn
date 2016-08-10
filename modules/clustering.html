@@ -175,20 +175,20 @@
 </ul>
 </li>
 <li><a class="reference internal" href="#mutual-information-based-scores">2.3.9.2. Mutual Information based scores</a><ul>
-<li><a class="reference internal" href="#id9">2.3.9.2.1. Advantages</a></li>
-<li><a class="reference internal" href="#id10">2.3.9.2.2. Drawbacks</a></li>
-<li><a class="reference internal" href="#id11">2.3.9.2.3. Mathematical formulation</a></li>
+<li><a class="reference internal" href="#id13">2.3.9.2.1. Advantages</a></li>
+<li><a class="reference internal" href="#id14">2.3.9.2.2. Drawbacks</a></li>
+<li><a class="reference internal" href="#id15">2.3.9.2.3. Mathematical formulation</a></li>
 </ul>
 </li>
 <li><a class="reference internal" href="#homogeneity-completeness-and-v-measure">2.3.9.3. Homogeneity, completeness and V-measure</a><ul>
-<li><a class="reference internal" href="#id13">2.3.9.3.1. Advantages</a></li>
-<li><a class="reference internal" href="#id14">2.3.9.3.2. Drawbacks</a></li>
-<li><a class="reference internal" href="#id15">2.3.9.3.3. Mathematical formulation</a></li>
+<li><a class="reference internal" href="#id17">2.3.9.3.1. Advantages</a></li>
+<li><a class="reference internal" href="#id18">2.3.9.3.2. Drawbacks</a></li>
+<li><a class="reference internal" href="#id19">2.3.9.3.3. Mathematical formulation</a></li>
 </ul>
 </li>
 <li><a class="reference internal" href="#silhouette-coefficient">2.3.9.4. Silhouette Coefficient</a><ul>
-<li><a class="reference internal" href="#id17">2.3.9.4.1. Advantages</a></li>
-<li><a class="reference internal" href="#id18">2.3.9.4.2. Drawbacks</a></li>
+<li><a class="reference internal" href="#id21">2.3.9.4.1. Advantages</a></li>
+<li><a class="reference internal" href="#id22">2.3.9.4.2. Drawbacks</a></li>
 </ul>
 </li>
 </ul>
@@ -214,31 +214,25 @@
             
   <div class="section" id="clustering">
 <span id="id1"></span><h1>2.3. Clustering<a class="headerlink" href="#clustering" title="Permalink to this headline">¶</a></h1>
-<p><a class="reference external" href="https://en.wikipedia.org/wiki/Cluster_analysis">Clustering</a> of
-unlabeled data can be performed with the module <a class="reference internal" href="classes.html#module-sklearn.cluster" title="sklearn.cluster"><code class="xref py py-mod docutils literal"><span class="pre">sklearn.cluster</span></code></a>.</p>
-<p>Each clustering algorithm comes in two variants: a class, that implements
-the <code class="docutils literal"><span class="pre">fit</span></code> method to learn the clusters on train data, and a function,
-that, given train data, returns an array of integer labels corresponding
-to the different clusters. For the class, the labels over the training
-data can be found in the <code class="docutils literal"><span class="pre">labels_</span></code> attribute.</p>
+<p>未经标注的数据可以用:mod:<a href="#id2"><span class="problematic" id="id3">`</span></a>sklearn.cluster`来进行
+<a href="#id4"><span class="problematic" id="id5">`</span></a>Clustering &lt;<a class="reference external" href="https://en.wikipedia.org/wiki/Cluster_analysis">https://en.wikipedia.org/wiki/Cluster_analysis</a>&gt;&#8217;（聚类）</p>
+<p>每个聚类算法都会有两个变种：一个类，其中有一个``fit``成员方法通过训练数据
+来学习聚类；一个函数，输入训练数据，返回一个整数数组，每个整数代表一个特定
+的聚类。对于类来说，训练数据的标签可以在类的``label_``属性中找到。</p>
 <div class="topic">
-<p class="topic-title first">Input data</p>
-<p>One important thing to note is that the algorithms implemented in
-this module take different kinds of matrix as input.  On one hand,
-<a class="reference internal" href="generated/sklearn.cluster.MeanShift.html#sklearn.cluster.MeanShift" title="sklearn.cluster.MeanShift"><code class="xref py py-class docutils literal"><span class="pre">MeanShift</span></code></a> and <a class="reference internal" href="generated/sklearn.cluster.KMeans.html#sklearn.cluster.KMeans" title="sklearn.cluster.KMeans"><code class="xref py py-class docutils literal"><span class="pre">KMeans</span></code></a> take data matrices of shape
-[n_samples, n_features]. These can be obtained from the classes in
-the <a class="reference internal" href="classes.html#module-sklearn.feature_extraction" title="sklearn.feature_extraction"><code class="xref py py-mod docutils literal"><span class="pre">sklearn.feature_extraction</span></code></a> module. On the other hand,
-<a class="reference internal" href="generated/sklearn.cluster.AffinityPropagation.html#sklearn.cluster.AffinityPropagation" title="sklearn.cluster.AffinityPropagation"><code class="xref py py-class docutils literal"><span class="pre">AffinityPropagation</span></code></a> and <a class="reference internal" href="generated/sklearn.cluster.SpectralClustering.html#sklearn.cluster.SpectralClustering" title="sklearn.cluster.SpectralClustering"><code class="xref py py-class docutils literal"><span class="pre">SpectralClustering</span></code></a> take
-similarity matrices of shape [n_samples, n_samples].  These can be
-obtained from the functions in the <a class="reference internal" href="classes.html#module-sklearn.metrics.pairwise" title="sklearn.metrics.pairwise"><code class="xref py py-mod docutils literal"><span class="pre">sklearn.metrics.pairwise</span></code></a>
-module. In other words, <a class="reference internal" href="generated/sklearn.cluster.MeanShift.html#sklearn.cluster.MeanShift" title="sklearn.cluster.MeanShift"><code class="xref py py-class docutils literal"><span class="pre">MeanShift</span></code></a> and <a class="reference internal" href="generated/sklearn.cluster.KMeans.html#sklearn.cluster.KMeans" title="sklearn.cluster.KMeans"><code class="xref py py-class docutils literal"><span class="pre">KMeans</span></code></a> work
-with points in a vector space, whereas <a class="reference internal" href="generated/sklearn.cluster.AffinityPropagation.html#sklearn.cluster.AffinityPropagation" title="sklearn.cluster.AffinityPropagation"><code class="xref py py-class docutils literal"><span class="pre">AffinityPropagation</span></code></a>
-and <a class="reference internal" href="generated/sklearn.cluster.SpectralClustering.html#sklearn.cluster.SpectralClustering" title="sklearn.cluster.SpectralClustering"><code class="xref py py-class docutils literal"><span class="pre">SpectralClustering</span></code></a> can work with arbitrary objects, as
-long as a similarity measure exists for such objects.</p>
+<p class="topic-title first">输入数据</p>
+<p>一个值得注意的事情是：实现这个模组的算法的输入有不同种类的矩阵。一方面
+<code class="xref py py-class docutils literal"><span class="pre">MeanShift`和:class:`KMeans`接受格式如[n_samples,</span> <span class="pre">n_samples]的矩阵。</span>
+<span class="pre">这可以利用:mod:`sklearn.feature_extraction`中的类们实现。另一方面，</span>
+<span class="pre">:class:`AffinityPropagation`和:class:`SpectralClustering`接受格式如</span>
+<span class="pre">[n_samples,</span> <span class="pre">n_samples]的矩阵。这可以利用:mod:`sklearn.metrics.pairwise</span></code>
+中的类们实现。也就是说，<code class="xref py py-class docutils literal"><span class="pre">MeanShift`和:class:`KMeans`能够利用向量</span>
+<span class="pre">空间中的一个点，而:class:`AffinityPropagation`和:class:`SpectralClustering</span></code>
+能够利用任意的对象，只要对这个对象可以定义距离。</p>
 </div>
 <div class="section" id="overview-of-clustering-methods">
 <h2>2.3.1. Overview of clustering methods<a class="headerlink" href="#overview-of-clustering-methods" title="Permalink to this headline">¶</a></h2>
-<div class="figure align-center" id="id19">
+<div class="figure align-center" id="id23">
 <a class="reference external image-reference" href="../auto_examples/cluster/plot_cluster_comparison.html"><img alt="../_images/plot_cluster_comparison_0011.png" src="../_images/plot_cluster_comparison_0011.png" style="width: 950.0px; height: 475.0px;" /></a>
 <p class="caption"><span class="caption-text">A comparison of the clustering algorithms in scikit-learn</span></p>
 </div>
@@ -327,7 +321,7 @@ mixture models. KMeans can be seen as a special case of Gaussian mixture
 model with equal covariance per component.</p>
 </div>
 <div class="section" id="k-means">
-<span id="id2"></span><h2>2.3.2. K-means<a class="headerlink" href="#k-means" title="Permalink to this headline">¶</a></h2>
+<span id="id6"></span><h2>2.3.2. K-means<a class="headerlink" href="#k-means" title="Permalink to this headline">¶</a></h2>
 <p>The <a class="reference internal" href="generated/sklearn.cluster.KMeans.html#sklearn.cluster.KMeans" title="sklearn.cluster.KMeans"><code class="xref py py-class docutils literal"><span class="pre">KMeans</span></code></a> algorithm clusters data by trying to separate samples
 in n groups of equal variance, minimizing a criterion known as the
 <a class="reference external" href="inertia">inertia</a> or within-cluster sum-of-squares.
@@ -467,7 +461,7 @@ wide web</em> (2010)</li>
 </div>
 </div>
 <div class="section" id="affinity-propagation">
-<span id="id3"></span><h2>2.3.3. Affinity Propagation<a class="headerlink" href="#affinity-propagation" title="Permalink to this headline">¶</a></h2>
+<span id="id7"></span><h2>2.3.3. Affinity Propagation<a class="headerlink" href="#affinity-propagation" title="Permalink to this headline">¶</a></h2>
 <p><a class="reference internal" href="generated/sklearn.cluster.AffinityPropagation.html#sklearn.cluster.AffinityPropagation" title="sklearn.cluster.AffinityPropagation"><code class="xref py py-class docutils literal"><span class="pre">AffinityPropagation</span></code></a> creates clusters by sending messages between
 pairs of samples until convergence. A dataset is then described using a small
 number of exemplars, which are identified as those most representative of other
@@ -524,7 +518,7 @@ to be the exemplar of sample <img class="math" src="../_images/math/a581f053bbfa
 and the calculation of each iterates until convergence.</p>
 </div>
 <div class="section" id="mean-shift">
-<span id="id4"></span><h2>2.3.4. Mean Shift<a class="headerlink" href="#mean-shift" title="Permalink to this headline">¶</a></h2>
+<span id="id8"></span><h2>2.3.4. Mean Shift<a class="headerlink" href="#mean-shift" title="Permalink to this headline">¶</a></h2>
 <p><a class="reference internal" href="generated/sklearn.cluster.MeanShift.html#sklearn.cluster.MeanShift" title="sklearn.cluster.MeanShift"><code class="xref py py-class docutils literal"><span class="pre">MeanShift</span></code></a> clustering aims to discover <em>blobs</em> in a smooth density of
 samples. It is a centroid based algorithm, which works by updating candidates
 for centroids to be the mean of the points within a given region. These
@@ -570,7 +564,7 @@ D. Comaniciu and P. Meer, <em>IEEE Transactions on Pattern Analysis and Machine 
 </div>
 </div>
 <div class="section" id="spectral-clustering">
-<span id="id5"></span><h2>2.3.5. Spectral clustering<a class="headerlink" href="#spectral-clustering" title="Permalink to this headline">¶</a></h2>
+<span id="id9"></span><h2>2.3.5. Spectral clustering<a class="headerlink" href="#spectral-clustering" title="Permalink to this headline">¶</a></h2>
 <p><a class="reference internal" href="generated/sklearn.cluster.SpectralClustering.html#sklearn.cluster.SpectralClustering" title="sklearn.cluster.SpectralClustering"><code class="xref py py-class docutils literal"><span class="pre">SpectralClustering</span></code></a> does a low-dimension embedding of the
 affinity matrix between samples, followed by a KMeans in the low
 dimensional space. It is especially efficient if the affinity matrix is
@@ -651,7 +645,7 @@ Andrew Y. Ng, Michael I. Jordan, Yair Weiss, 2001</li>
 </div>
 </div>
 <div class="section" id="hierarchical-clustering">
-<span id="id6"></span><h2>2.3.6. Hierarchical clustering<a class="headerlink" href="#hierarchical-clustering" title="Permalink to this headline">¶</a></h2>
+<span id="id10"></span><h2>2.3.6. Hierarchical clustering<a class="headerlink" href="#hierarchical-clustering" title="Permalink to this headline">¶</a></h2>
 <p>Hierarchical clustering is a general family of clustering algorithms that
 build nested clusters by merging or splitting them successively. This
 hierarchy of clusters is represented as a tree (or dendrogram). The root of the
@@ -785,7 +779,7 @@ each class.</p>
 </div>
 </div>
 <div class="section" id="dbscan">
-<span id="id7"></span><h2>2.3.7. DBSCAN<a class="headerlink" href="#dbscan" title="Permalink to this headline">¶</a></h2>
+<span id="id11"></span><h2>2.3.7. DBSCAN<a class="headerlink" href="#dbscan" title="Permalink to this headline">¶</a></h2>
 <p>The <a class="reference internal" href="generated/sklearn.cluster.DBSCAN.html#sklearn.cluster.DBSCAN" title="sklearn.cluster.DBSCAN"><code class="xref py py-class docutils literal"><span class="pre">DBSCAN</span></code></a> algorithm views clusters as areas of high density
 separated by areas of low density. Due to this rather generic view, clusters
 found by DBSCAN can be any shape, as opposed to k-means which assumes that
@@ -857,7 +851,7 @@ and Data Mining, Portland, OR, AAAI Press, pp. 226–231. 1996</li>
 </div>
 </div>
 <div class="section" id="birch">
-<span id="id8"></span><h2>2.3.8. Birch<a class="headerlink" href="#birch" title="Permalink to this headline">¶</a></h2>
+<span id="id12"></span><h2>2.3.8. Birch<a class="headerlink" href="#birch" title="Permalink to this headline">¶</a></h2>
 <p>The <a class="reference internal" href="generated/sklearn.cluster.Birch.html#sklearn.cluster.Birch" title="sklearn.cluster.Birch"><code class="xref py py-class docutils literal"><span class="pre">Birch</span></code></a> builds a tree called the Characteristic Feature Tree (CFT)
 for the given data. The data is essentially lossy compressed to a set of
 Characteristic Feature nodes (CF Nodes). The CF Nodes have a number of
@@ -1110,8 +1104,8 @@ not change the score. Thus they can be used as a <strong>consensus measure</stro
 <span class="go">-0.10526...</span>
 </pre></div>
 </div>
-<div class="section" id="id9">
-<h4>2.3.9.2.1. Advantages<a class="headerlink" href="#id9" title="Permalink to this headline">¶</a></h4>
+<div class="section" id="id13">
+<h4>2.3.9.2.1. Advantages<a class="headerlink" href="#id13" title="Permalink to this headline">¶</a></h4>
 <ul class="simple">
 <li><strong>Random (uniform) label assignments have a AMI score close to 0.0</strong>
 for any value of <code class="docutils literal"><span class="pre">n_clusters</span></code> and <code class="docutils literal"><span class="pre">n_samples</span></code> (which is not the
@@ -1127,8 +1121,8 @@ blob shapes with results of spectral clustering algorithms which can
 find cluster with &#8220;folded&#8221; shapes.</li>
 </ul>
 </div>
-<div class="section" id="id10">
-<h4>2.3.9.2.2. Drawbacks<a class="headerlink" href="#id10" title="Permalink to this headline">¶</a></h4>
+<div class="section" id="id14">
+<h4>2.3.9.2.2. Drawbacks<a class="headerlink" href="#id14" title="Permalink to this headline">¶</a></h4>
 <ul>
 <li><p class="first">Contrary to inertia, <strong>MI-based measures require the knowledge
 of the ground truth classes</strong> while almost never available in practice or
@@ -1151,8 +1145,8 @@ Index.</li>
 </ul>
 </div>
 </div>
-<div class="section" id="id11">
-<h4>2.3.9.2.3. Mathematical formulation<a class="headerlink" href="#id11" title="Permalink to this headline">¶</a></h4>
+<div class="section" id="id15">
+<h4>2.3.9.2.3. Mathematical formulation<a class="headerlink" href="#id15" title="Permalink to this headline">¶</a></h4>
 <p>Assume two label assignments (of the same N objects), <img class="math" src="../_images/math/73f5e249c88b2b3068263480f576b051cb5c4f6e.png" alt="U"/> and <img class="math" src="../_images/math/c99df7a209495334da442b1ec998abaabfa320d8.png" alt="V"/>.
 Their entropy is the amount of uncertainty for a partition set, defined by:</p>
 <div class="math">
@@ -1242,7 +1236,7 @@ cluster.</li>
 </pre></div>
 </div>
 <p>The V-measure is actually equivalent to the mutual information (NMI)
-discussed above normalized by the sum of the label entropies <a class="reference internal" href="#b2011" id="id12">[B2011]</a>.</p>
+discussed above normalized by the sum of the label entropies <a class="reference internal" href="#b2011" id="id16">[B2011]</a>.</p>
 <p>Homogeneity, completeness and V-measure can be computed at once using
 <a class="reference internal" href="generated/sklearn.metrics.homogeneity_completeness_v_measure.html#sklearn.metrics.homogeneity_completeness_v_measure" title="sklearn.metrics.homogeneity_completeness_v_measure"><code class="xref py py-func docutils literal"><span class="pre">homogeneity_completeness_v_measure</span></code></a> as follows:</p>
 <div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">metrics</span><span class="o">.</span><span class="n">homogeneity_completeness_v_measure</span><span class="p">(</span><span class="n">labels_true</span><span class="p">,</span> <span class="n">labels_pred</span><span class="p">)</span>
@@ -1268,8 +1262,8 @@ the <strong>agreement</strong> of two independent assignments on the same datase
 </pre></div>
 </div>
 </div>
-<div class="section" id="id13">
-<h4>2.3.9.3.1. Advantages<a class="headerlink" href="#id13" title="Permalink to this headline">¶</a></h4>
+<div class="section" id="id17">
+<h4>2.3.9.3.1. Advantages<a class="headerlink" href="#id17" title="Permalink to this headline">¶</a></h4>
 <ul class="simple">
 <li><strong>Bounded scores</strong>: 0.0 is as bad as it can be, 1.0 is a perfect score.</li>
 <li>Intuitive interpretation: clustering with bad V-measure can be
@@ -1281,8 +1275,8 @@ blob shapes with results of spectral clustering algorithms which can
 find cluster with &#8220;folded&#8221; shapes.</li>
 </ul>
 </div>
-<div class="section" id="id14">
-<h4>2.3.9.3.2. Drawbacks<a class="headerlink" href="#id14" title="Permalink to this headline">¶</a></h4>
+<div class="section" id="id18">
+<h4>2.3.9.3.2. Drawbacks<a class="headerlink" href="#id18" title="Permalink to this headline">¶</a></h4>
 <ul>
 <li><p class="first">The previously introduced metrics are <strong>not normalized with regards to
 random labeling</strong>: this means that depending on the number of samples,
@@ -1313,8 +1307,8 @@ for random assignments.</li>
 </ul>
 </div>
 </div>
-<div class="section" id="id15">
-<h4>2.3.9.3.3. Mathematical formulation<a class="headerlink" href="#id15" title="Permalink to this headline">¶</a></h4>
+<div class="section" id="id19">
+<h4>2.3.9.3.3. Mathematical formulation<a class="headerlink" href="#id19" title="Permalink to this headline">¶</a></h4>
 <p>Homogeneity and completeness scores are formally given by:</p>
 <div class="math">
 <p><img src="../_images/math/7619008642a65b458c69557691e02850e42a2dd4.png" alt="h = 1 - \frac{H(C|K)}{H(C)}"/></p>
@@ -1351,7 +1345,7 @@ Andrew Rosenberg and Julia Hirschberg, 2007</td></tr>
 <table class="docutils citation" frame="void" id="b2011" rules="none">
 <colgroup><col class="label" /><col /></colgroup>
 <tbody valign="top">
-<tr><td class="label"><a class="fn-backref" href="#id12">[B2011]</a></td><td><a class="reference external" href="http://www.cs.columbia.edu/~hila/hila-thesis-distributed.pdf">Identication and Characterization of Events in Social Media</a>, Hila
+<tr><td class="label"><a class="fn-backref" href="#id16">[B2011]</a></td><td><a class="reference external" href="http://www.cs.columbia.edu/~hila/hila-thesis-distributed.pdf">Identication and Characterization of Events in Social Media</a>, Hila
 Becker, PhD Thesis.</td></tr>
 </tbody>
 </table>
@@ -1359,7 +1353,7 @@ Becker, PhD Thesis.</td></tr>
 </div>
 </div>
 <div class="section" id="silhouette-coefficient">
-<span id="id16"></span><h3>2.3.9.4. Silhouette Coefficient<a class="headerlink" href="#silhouette-coefficient" title="Permalink to this headline">¶</a></h3>
+<span id="id20"></span><h3>2.3.9.4. Silhouette Coefficient<a class="headerlink" href="#silhouette-coefficient" title="Permalink to this headline">¶</a></h3>
 <p>If the ground truth labels are not known, evaluation must be performed using
 the model itself. The Silhouette Coefficient
 (<a class="reference internal" href="generated/sklearn.metrics.silhouette_score.html#sklearn.metrics.silhouette_score" title="sklearn.metrics.silhouette_score"><code class="xref py py-func docutils literal"><span class="pre">sklearn.metrics.silhouette_score</span></code></a>)
@@ -1406,8 +1400,8 @@ and Applied Mathematics 20: 53–65.
 <a class="reference external" href="http://dx.doi.org/10.1016/0377-0427(87)90125-7">doi:10.1016/0377-0427(87)90125-7</a>.</li>
 </ul>
 </div>
-<div class="section" id="id17">
-<h4>2.3.9.4.1. Advantages<a class="headerlink" href="#id17" title="Permalink to this headline">¶</a></h4>
+<div class="section" id="id21">
+<h4>2.3.9.4.1. Advantages<a class="headerlink" href="#id21" title="Permalink to this headline">¶</a></h4>
 <ul class="simple">
 <li>The score is bounded between -1 for incorrect clustering and +1 for highly
 dense clustering. Scores around zero indicate overlapping clusters.</li>
@@ -1415,8 +1409,8 @@ dense clustering. Scores around zero indicate overlapping clusters.</li>
 to a standard concept of a cluster.</li>
 </ul>
 </div>
-<div class="section" id="id18">
-<h4>2.3.9.4.2. Drawbacks<a class="headerlink" href="#id18" title="Permalink to this headline">¶</a></h4>
+<div class="section" id="id22">
+<h4>2.3.9.4.2. Drawbacks<a class="headerlink" href="#id22" title="Permalink to this headline">¶</a></h4>
 <ul class="simple">
 <li>The Silhouette Coefficient is generally higher for convex clusters than other
 concepts of clusters, such as density based clusters like those obtained

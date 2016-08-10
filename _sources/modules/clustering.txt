@@ -4,31 +4,26 @@
 Clustering
 ==========
 
-`Clustering <https://en.wikipedia.org/wiki/Cluster_analysis>`__ of
-unlabeled data can be performed with the module :mod:`sklearn.cluster`.
+未经标注的数据可以用:mod:`sklearn.cluster`来进行
+`Clustering <https://en.wikipedia.org/wiki/Cluster_analysis>'（聚类）
 
-Each clustering algorithm comes in two variants: a class, that implements
-the ``fit`` method to learn the clusters on train data, and a function,
-that, given train data, returns an array of integer labels corresponding
-to the different clusters. For the class, the labels over the training
-data can be found in the ``labels_`` attribute.
+每个聚类算法都会有两个变种：一个类，其中有一个``fit``成员方法通过训练数据
+来学习聚类；一个函数，输入训练数据，返回一个整数数组，每个整数代表一个特定
+的聚类。对于类来说，训练数据的标签可以在类的``label_``属性中找到。
+
 
 .. currentmodule:: sklearn.cluster
 
-.. topic:: Input data
+.. topic:: 输入数据
 
-    One important thing to note is that the algorithms implemented in
-    this module take different kinds of matrix as input.  On one hand,
-    :class:`MeanShift` and :class:`KMeans` take data matrices of shape
-    [n_samples, n_features]. These can be obtained from the classes in
-    the :mod:`sklearn.feature_extraction` module. On the other hand,
-    :class:`AffinityPropagation` and :class:`SpectralClustering` take
-    similarity matrices of shape [n_samples, n_samples].  These can be
-    obtained from the functions in the :mod:`sklearn.metrics.pairwise`
-    module. In other words, :class:`MeanShift` and :class:`KMeans` work
-    with points in a vector space, whereas :class:`AffinityPropagation`
-    and :class:`SpectralClustering` can work with arbitrary objects, as
-    long as a similarity measure exists for such objects.
+	一个值得注意的事情是：实现这个模组的算法的输入有不同种类的矩阵。一方面
+	:class:`MeanShift`和:class:`KMeans`接受格式如[n_samples, n_samples]的矩阵。
+	这可以利用:mod:`sklearn.feature_extraction`中的类们实现。另一方面，
+	:class:`AffinityPropagation`和:class:`SpectralClustering`接受格式如
+	[n_samples, n_samples]的矩阵。这可以利用:mod:`sklearn.metrics.pairwise`
+	中的类们实现。也就是说，:class:`MeanShift`和:class:`KMeans`能够利用向量
+	空间中的一个点，而:class:`AffinityPropagation`和:class:`SpectralClustering`
+	能够利用任意的对象，只要对这个对象可以定义距离。
 
 Overview of clustering methods
 ===============================
